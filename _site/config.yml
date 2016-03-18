@@ -1,0 +1,9 @@
+#site settings
+
+title: cool site
+description:
+baseurl: ""
+url: "http://localhost/"
+
+#build settings
+markdown: kramdown
