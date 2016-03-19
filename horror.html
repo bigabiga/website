@@ -1,11 +1,13 @@
 ---
 layout: category
 ---
-{% for post in site.posts %}
-  {% if post.genre == 'Horror' %}
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
-    <p>{{ post.excerpt }}</p>
-    <img src="{{ post.image }}">
-  {% endif %}
-{% endfor %}
+<div class="inner-nav">
+  <div class="title">Horror</div>
+</div>
+<div class="thumbnails">
+  {% for post in site.posts %}
+    {% if post.genre == 'Horror' %}
+      {% include thumbnail.html %}
+    {% endif %}
+  {% endfor %}
+</div>
