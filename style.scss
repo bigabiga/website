@@ -1,0 +1,77 @@
+---
+---
+
+@import url("reset.css");
+
+$nav-background: #784962;
+$light-background: #A8D5D9;
+
+body {
+  font-family: 'Noto Serif', serif;
+}
+
+.header {
+  font-size: 32px;
+  color: #048A95;
+  padding: 14px;
+}
+
+.nav-bar {
+  background: $nav-background;
+  color: #F3EFF1;
+  padding: 0 10px;
+
+  .controls {
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    > * {
+      display: inline-block;
+      background: rgba(white, 0.25);
+      margin: 4px 2px;
+      border-radius: 3px;
+      padding: 5px 8px;
+    }
+
+    .search {
+      width: 140px;
+    }
+  }
+
+  .drop-menus .drop-menu {
+    display: inline-block;
+    padding: 10px 6px;
+  }
+}
+
+.thumbnails {
+  padding: 20px;
+
+  .thumbnail {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+  }
+
+  .film-image {
+    width: 100%;
+    display: block;
+  }
+
+  .film-description {
+    width: 100%;
+    background-color: $light-background;
+    padding: 10px;
+  }
+}
+
+.inner-nav {
+  background: #A8D5D9;
+  padding: 6px 10px;
+
+  .title {
+    color: #048A95;
+    font-size: 22px;
+  }
+}
