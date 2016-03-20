@@ -1,0 +1,35 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include basic-head.html %}
+</head>
+<body>
+  {% include header.html %}
+  {% include nav-bar.html %}
+  <div class="elemnt-title">
+    <h2>
+      Featured this week
+    </h2>
+  </div>
+  <div class="carousel">
+    <div class="film">
+      {% for post in site.posts limit: 3 %}
+        {% if post.title == "Alfred Hitchcock Notorious (1946)" %}
+          <a href="{{ post.url }}">
+          <div class="item">
+            <img class="film-image" src="{{ post.image }}">
+            <h3> {{ post.title }} </h3>
+          </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</body>
+<footer>
+  {% include footer.html %}
+</footer>
+</html>
