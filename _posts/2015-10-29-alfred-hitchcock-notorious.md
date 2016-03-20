@@ -8,8 +8,9 @@ recommended: yes
 image: feature-images/Grant-Bergman-Notorious.jpg
 video: https://www.youtube.com/watch?v=FrXM7dC9PoQ
 Synopsis: A woman is asked to spy on a group of Nazi friends in South America. How far will she have to go to ingratiate herself with them?
-Directed by: Alfred Hitchcock
+Directed by: Alfred Hitgit chcock
 Cast: Cary Grant,Ingrid Bergman, Claude Rains
 imdb: http://www.imdb.com/title/tt0038787/?ref_=fn_al_tt_1
 ---
+
 
