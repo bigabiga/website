@@ -6,6 +6,8 @@ body {
   font-size: 32px;
   color: #048A95;
   padding: 14px; }
+  .header .logo {
+    display: inline-block; }
 
 .nav-bar {
   background: #784962;
@@ -28,6 +30,16 @@ body {
       line-height: 27px;
       padding: 0 8px;
       color: white; }
+      .nav-bar .controls .search::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .nav-bar .controls .search:-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.5); }
+      .nav-bar .controls .search::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.5); }
+      .nav-bar .controls .search:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
     padding: 10px 6px; }
@@ -95,5 +107,5 @@ body {
     left: 0;
     right: 0;
     padding: 10px;
-    background: rgba(30, 123, 133, 0.75);
+    background: rgba(30, 123, 133, 0.6);
     color: white; }

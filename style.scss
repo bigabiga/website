@@ -18,6 +18,10 @@ body {
   font-size: 32px;
   color: #048A95;
   padding: 14px;
+
+  .logo {
+    display: inline-block;
+  }
 }
 
 .nav-bar {
@@ -45,6 +49,22 @@ body {
       line-height: 27px;
       padding: 0 8px;
       color: white;
+
+      &::-webkit-input-placeholder {
+        color: rgba(white, 0.5);
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: rgba(white, 0.5);
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        color: rgba(white, 0.5);
+      }
+
+      &:-ms-input-placeholder {
+        color: rgba(white, 0.5);
+      }
     }
   }
 
@@ -142,7 +162,7 @@ body {
       left: 0;
       right: 0;
       padding: 10px;
-      background: rgba($darker-green, 0.75);
+      background: rgba($darker-green, 0.6);
       color: white;
     }
   }
