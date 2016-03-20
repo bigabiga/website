@@ -11,13 +11,15 @@ layout: default
 <body>
         {% include header.html %}
         {% include nav-bar.html %}
-        <div class="film-cont">
-                <h2>{{ page.title }}</h2>
-                <h3>{{ page.genre }}</h3>
-                {{  page.video }}
-                <div class="details">
-                        <p><span class="detail-type">Synopsis: </span>{{ page.synopsis }}</p>
-                </div>
+        <div class="main">
+          <div class="film-cont">
+                  <h2>{{ page.title }}</h2>
+                  <h3>{{ page.genre }}</h3>
+                  {{  page.video }}
+                  <div class="details">
+                          <p><span class="detail-type">Synopsis: </span>{{ page.synopsis }}</p>
+                  </div>
+          </div>
         </div>
 </body>
 <footer>

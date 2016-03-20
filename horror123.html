@@ -1,13 +1,15 @@
 ---
 layout: category
 ---
-<div class="inner-nav">
-  <div class="title">Horror</div>
-</div>
-<div class="thumbnails">
-  {% for post in site.posts %}
-    {% if post.genre == 'Horror' %}
-      {% include thumbnail.html %}
-    {% endif %}
-  {% endfor %}
+<div class="main">
+  <div class="inner-nav">
+    <div class="title">Horror</div>
+  </div>
+  <div class="thumbnails">
+    {% for post in site.posts %}
+      {% if post.genre == 'Horror' %}
+        {% include thumbnail.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>

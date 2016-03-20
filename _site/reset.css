@@ -67,3 +67,8 @@ textarea
   font-family:'Noto Serif', serif;
   outline: none;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
