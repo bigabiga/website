@@ -66,6 +66,17 @@ body {
         color: rgba(white, 0.5);
       }
     }
+
+    .social {
+      svg {
+        width: 18px;
+        height: 18px;
+
+        path {
+          fill: white;
+        }
+      }
+    }
   }
 
   .drop-menus .drop-menu {
