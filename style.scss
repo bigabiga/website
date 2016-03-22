@@ -158,7 +158,32 @@ body {
 
     .title {
       position: absolute;
-      bottom: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: rgba($darker-green, 0.6);
+      color: white;
+    }
+  }
+}
+
+.home-categories {
+  .category {
+    display: inline-block;
+    width: 170px;
+    height: 130px;
+    margin-right: 1%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      height: 100%;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 0;
       left: 0;
       right: 0;
       padding: 10px;

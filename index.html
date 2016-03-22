@@ -17,15 +17,44 @@
         </h2>
       </div>
       <div class="slider">
-        {% for post in site.posts limit: 3 %}
-          {% if post.title == "Alfred Hitchcock Notorious (1946)" %}
-            <a href="{{ post.url }}">
+        {% for film in site.films limit: 3 %}
+          {% if film.title == "Watch The Bat (1959)" %}
+            <a href="{{ film.url }}">
             <div class="film">
-              <img class="film-image" src="{{ post.image }}">
-              <div class="title"><h3> {{ post.title }} </h3></div>
+              <img class="film-image" src="{{ film.image }}">
+              <div class="title"><h3> {{ film.title }} </h3></div>
             </div>
             </a>
+          <a href="{{ film.url }}">
+            <div class="film">
+              <img class="film-image" src="{{ film.image }}">
+              <div class="title"><h3> {{ film.title }} </h3></div>
+            </div>
+          </a>
+          <a href="{{ film.url }}">
+            <div class="film">
+              <img class="film-image" src="{{ film.image }}">
+              <div class="title"><h3> {{ film.title }} </h3></div>
+            </div>
+          </a>
           {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="home-element">
+      <div class="element-title">
+        <h2>
+          Films by genre
+        </h2>
+      </div>
+      <div class="home-categories">
+        {% for genre in site.genres limit: 8 %}
+        <a href="{{ genre.url }}">
+          <div class="category">
+            <img class="genre-image" src="{{ genre.feature-image }}">
+            <div class="title"><h3> {{ genre.title }} </h3></div>
+          </div>
+        </a>
         {% endfor %}
       </div>
     </div>
