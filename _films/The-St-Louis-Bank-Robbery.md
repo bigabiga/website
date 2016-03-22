@@ -20,7 +20,7 @@ recommended: no
 
 image: /feature-images/The-Great-St-Louis-Bank-Robbery-(1959).jpg
 
-video: <iframe width="480" height="360" src="https://www.youtube.com/embed/8COkakAg4eI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+video: https://www.youtube.com/embed/8COkakAg4eI?rel=0&amp;showinfo=0
 
 synopsis: Classic 1959 crime film that focuses on the planning of a bank robbery in St. Louis. Steve McQueen stars as a college dropout, hoping that the stolen money would help him go back to college. Unfortunately, the robbery doesn't go off as planned. The movie is based on a real 1953 bank robbery attempt in St. Louis.
 
