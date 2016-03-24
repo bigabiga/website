@@ -16,6 +16,8 @@ genre:
 - Crime
 - Horror
 
+decade: 1950s
+
 recommended: no
 
 image: /feature-images/The-Great-St-Louis-Bank-Robbery-(1959).jpg
@@ -27,6 +29,11 @@ synopsis: Classic 1959 crime film that focuses on the planning of a bank robbery
 directed by:
 - Charles Guggenheim
 - John Stix
+
+year: 1959
+
+country: USA
+
 cast:
 - Steve McQueen
 - Crahan Denton

@@ -15,6 +15,8 @@ genre:
 - Film-Noir
 - Drama
 
+decade: 1950s
+
 recommended: no
 
 image: /feature-images/Life-at-Stake.png
@@ -24,6 +26,10 @@ video: https://www.youtube.com/embed/G8Qhi1sUpPw?rel=0&amp;controls=0&amp;showin
 synopsis: also known as Key Man, this film-noir tells the story of an unemployed out-of-luck architect that encounters a married woman who has an unexpected business proposal for him. Soon the architect begins to suspect the woman's motives.
 
 directed by: Paul Guilfoyle
+
+year: 1954
+
+country: USA
 
 cast:
 - Angela Lansbury
