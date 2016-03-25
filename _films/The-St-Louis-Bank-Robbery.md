@@ -12,7 +12,7 @@ title: The St. Louis Bank Robbery (1959)
 permalink: films/The-St-Louis-Bank-Robbery-(1959)
 
 genre:
-- Film-Noir
+- Film Noir
 - Crime
 - Horror
 

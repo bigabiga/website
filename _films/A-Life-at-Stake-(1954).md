@@ -12,7 +12,7 @@ title: A Life at Stake (1954)
 permalink: films/A-Life-at-Stake-(1954)
 
 genre:
-- Film-Noir
+- Film Noir
 - Drama
 
 decade: 1950s

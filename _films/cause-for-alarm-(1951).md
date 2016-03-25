@@ -12,7 +12,7 @@ title: Cause for Alarm! (1951)
 permalink: films/Cause-for-Alarm-(1951)
 
 genre:
-- Film-Noir
+- Film Noir
 - Drama
 - Crime
 
