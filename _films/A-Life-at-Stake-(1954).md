@@ -7,7 +7,7 @@ meta-description: Watch A Life at Stake (1954) and other classic film-noir movie
 
 excerpt: also known as Key Man, this film-noir tells the story of an unemployed out-of-luck architect that encounters a married woman who has an unexpected business proposal for him. Soon the architect begins to suspect the woman's motives.
 
-title: A Life at Stake (1954)
+title: A Life at Stake
 
 permalink: films/A-Life-at-Stake-(1954)
 

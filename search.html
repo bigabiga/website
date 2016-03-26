@@ -1,0 +1,35 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include basic-head.html %}
+  <script>
+    var a = location.href;
+    var b = a.substring(a.indexOf("?")+1);
+
+    function toggle_visibility() {
+      var e = document.getElementById(b);
+      e.style.display = 'none';
+    }
+  </script>
+</head>
+<body onload="toggle_visibility()">
+{% include header.html %}
+{% include nav-bar.html %}
+<div class="main">
+  <div class="inner-nav">
+    <div class="title">Search</div>
+  </div>
+  <div class="thumbnails">
+    {% for film in site.films %}
+    {% include thumbnail.html %}
+    {% endfor %}
+  </div>
+</div>
+</body>
+<footer>
+  {% include footer.html %}
+</footer>
+</html>
+

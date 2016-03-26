@@ -31,6 +31,7 @@ body {
 
   .controls {
     position: absolute;
+    display: block;
     top: 0;
     right: 10px;
 
@@ -82,6 +83,40 @@ body {
   .drop-menus .drop-menu {
     display: inline-block;
     padding: 10px 6px;
+    cursor: pointer;
+
+
+    &:hover {
+      .menu {
+        display: block;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      display: none;
+      z-index: 1000;
+      cursor: default;
+      top: 36px;
+      left: 0;
+      min-width: 170px;
+      padding: 10px 0;
+      background: white;
+      border-radius: 3px;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+      color: black;
+      font-size: 15px;
+      line-height: 30px;
+
+      li {
+        cursor: pointer;
+        padding: 0 20px;
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
   }
 }
 

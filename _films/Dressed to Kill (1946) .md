@@ -8,7 +8,7 @@ meta-description: Watch Dressed to Kill (1946), also known as Prelude to Murder 
 excerpt: Also known as Prelude to Murder, Dressed to Kill is another classic Sherlock Holmes movie, the last (but not least) of fourteen films starring Basil Rathbone and Nigel Bruce. Holmes sets out to find out why a trio of murderous villains is desperate to reach three simple, cheap music boxes.
 
 
-
+film-id: dressed-to-kill
 
 title: Dressed to Kill (1946)
 

@@ -15,6 +15,7 @@ body {
   padding: 0 10px; }
   .nav-bar .controls {
     position: absolute;
+    display: block;
     top: 0;
     right: 10px; }
     .nav-bar .controls > * {
@@ -47,7 +48,30 @@ body {
         fill: white; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
-    padding: 10px 6px; }
+    padding: 10px 6px;
+    cursor: pointer; }
+    .nav-bar .drop-menus .drop-menu:hover .menu {
+      display: block; }
+    .nav-bar .drop-menus .drop-menu .menu {
+      position: absolute;
+      display: none;
+      z-index: 1000;
+      cursor: default;
+      top: 36px;
+      left: 0;
+      min-width: 170px;
+      padding: 10px 0;
+      background: white;
+      border-radius: 3px;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+      color: black;
+      font-size: 15px;
+      line-height: 30px; }
+      .nav-bar .drop-menus .drop-menu .menu li {
+        cursor: pointer;
+        padding: 0 20px; }
+        .nav-bar .drop-menus .drop-menu .menu li:hover {
+          background: #eee; }
 
 .thumbnails {
   padding: 20px; }

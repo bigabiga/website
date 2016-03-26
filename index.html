@@ -17,7 +17,7 @@
         </h2>
       </div>
       <div class="slider">
-        {% for film in site.films limit: 3 %}
+        {% for film in site.films %}
           {% if film.title == "Watch The Bat (1959)" %}
             <a href="{{ film.url }}">
             <div class="film">
