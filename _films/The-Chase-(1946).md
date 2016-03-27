@@ -8,9 +8,9 @@ meta-description: Watch The Chase (1946) and other classic Film Noir movies at L
 excerpt: Chuck Scott (stars Robert Cummings) is enchanted by his bose's wife, a true femme-fatale. His involvement with her soon becomes a real-life nightmare. This dark cult-classic film-noir is based on the novel The Black Path of Fear, written by Cornell Woolrich.
 
 
-title: Watch The Chase (1946)
+title: Watch The Chase
 
-permalink: films/Watch-The-Chase-(1946)
+permalink: films/Watch-The-Chase-1946
 
 genre:
 - Film Noir

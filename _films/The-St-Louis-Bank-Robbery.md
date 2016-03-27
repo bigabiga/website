@@ -7,9 +7,9 @@ meta-description: Classic 1959 crime film that focuses on the planning of a bank
 
 excerpt: Classic 1959 crime film that focuses on the planning of a bank robbery in St. Louis. Steve McQueen stars as a college dropout, hoping that the stolen money would help him go back to college. Unfortunately, the robbery doesn't go off as planned. The movie is based on a real 1953 bank robbery attempt in St. Louis.
 
-title: The St. Louis Bank Robbery (1959)
+title: The St. Louis Bank Robbery
 
-permalink: films/The-St-Louis-Bank-Robbery-(1959)
+permalink: films/The-St-Louis-Bank-Robbery-1959
 
 genre:
 - Film Noir

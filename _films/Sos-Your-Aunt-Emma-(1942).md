@@ -8,10 +8,10 @@ meta-description: Watch So's Your Aunt Emma! (1942) Aunt Emma is an old spinster
 
 excerpt: Aunt Emma is an old spinster, falsely accused of being the infamous murderer "Ma Parker". The movie is also known as "Meet the Mob".
 
-title: So's Your Aunt Emma! (1942)
+title: So's Your Aunt Emma!
 
 
-permalink: films/Watch-Sos-Your-Aunt-Emma!-(1942)
+permalink: films/Watch-Sos-Your-Aunt-Emma!-1942
 
 genre:
 - Action

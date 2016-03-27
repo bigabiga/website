@@ -8,10 +8,10 @@ meta-description: Watch Gangster Story (1959) and other old movies online free. 
 excerpt: Jack Martin is a gangster who hides from the law. Low in funds, he decides to rob a small bank. However, now not only the FBI and the police are after him, but also the outrageous local mob boss.
 
 
-title: Gangster Story (1959)
+title: Gangster Story
 
 
-permalink: films/Watch-Gangster-Story-(1959)
+permalink: films/Watch-Gangster-Story-1959
 
 genre:
 - Crime

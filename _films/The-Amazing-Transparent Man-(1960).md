@@ -7,9 +7,9 @@ meta-description: Cult B-movie about an ex-U.S army major inventing an invisibil
 
 excerpt: This classic B-movie follows the story of a crazy ex-U.S Army major who invents an invisibility formula. He plans to create an army of cold-hearted invisible zombies.
 
-title: The Amazing Transparent Man (1960)
+title: The Amazing Transparent Man
 
-permalink: films/The-Amazing-Transparent-Man-(1960)
+permalink: films/The-Amazing-Transparent-Man-1960
 
 genre:
 - B-movie

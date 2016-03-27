@@ -7,10 +7,10 @@ meta-description: Watch The Scar (1948), a timeless classic Film Noir movie. Fin
 
 excerpt: John Muller, a brilliant crook just released from prison, finds out that he is pursued by the big-time gambler he once robbed. Muller decides to take a new identity as a psychiatrist. However, soon Muller find himself in a hopeless situation.
 
-title: The Scar (1948)
+title: The Scar
 
 
-permalink: films/Watch-The-Scar-(1948)
+permalink: films/Watch-The-Scar-1948
 
 genre:
 - Crime

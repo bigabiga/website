@@ -9,10 +9,10 @@ excerpt: An American journalist in 1930s Japan decides to expose the government'
 
 
 
-title: Blood on the Sun (1945)
+title: Blood on the Sun
 
 
-permalink: films/Watch-Blood-on-the-Sun-(1945)
+permalink: films/Watch-Blood-on-the-Sun-1945
 
 genre:
 - Romance

@@ -7,10 +7,10 @@ meta-description: Watch Q Planes (1939), old British spy film. Find hundreds of 
 
 excerpt: Also known as Clouds Over Europe, This British spy film tells the story of a British secret service man who suspects that the disappearance of a number of experimental planes is more than just a coincidence.
 
-title:  Q Planes (1939)
+title:  Q Planes
 
 
-permalink: films/Watch-Q-Planes-(1939)
+permalink: films/Watch-Q-Planes-1939
 
 genre:
 - Comedy

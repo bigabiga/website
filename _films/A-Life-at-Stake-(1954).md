@@ -1,7 +1,7 @@
 ---
 layout: film
 
-meta-title: Watch A Life at Stake (1954)
+meta-title: Watch A Life at Stake
 
 meta-description: Watch A Life at Stake (1954) and other classic film-noir movies at La Filmothèque.
 
@@ -9,7 +9,7 @@ excerpt: also known as Key Man, this film-noir tells the story of an unemployed 
 
 title: A Life at Stake
 
-permalink: films/A-Life-at-Stake-(1954)
+permalink: films/A-Life-at-Stake-1954
 
 genre:
 - Film Noir

@@ -10,9 +10,9 @@ meta-description: Of Human Bondage (1935) is a compelling pre-code melodrama abo
 excerpt: Of Human Bondage is a classic, compelling pre-code melodrama about love and obsession, directed by John Cromwell. A young man is attracted to an unfeeling waitress who may eventually destroy them both. Bette Davis larger than life persona makes this film widely considered as the movie that made her a star.
 
 
-title: Of Human Bondage (1935)
+title: Of Human Bondage
 
-permalink: films/Watch-Of-Human-Bondage-(1935)
+permalink: films/Watch-Of-Human-Bondage-1935
 
 genre:
 - Romance

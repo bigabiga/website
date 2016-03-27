@@ -7,9 +7,9 @@ meta-description: Watch Made for Each Other (1939) and other old drama movies at
 
 excerpt: John and Jane get married after one day of acquaintance. John's mother disapproves of the marriage. The couple struggles to get through their first year of marriage, tormented by money problems and by sickness. Nevertheless, their love never falters.
 
-title: Made for Each Other (1939)
+title: Made for Each Other
 
-permalink: films/Made-for-Each-Other-(1939)
+permalink: films/Made-for-Each-Other-1939
 
 genre:
 - Romance

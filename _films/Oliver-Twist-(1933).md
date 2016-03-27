@@ -7,9 +7,9 @@ meta-description: Watch Oliver Twist (1933), classic American Pre-Code film and 
 
 excerpt: The earliest Hollywood Sound Version of Charles Dickens's novel, this American Pre-Code movie was made on an extremely low budget. It tells the classic story of a young orphan in 1830's London that is abused in a workhouse, then falls into the grips of a gang of criminals.
 
-title: Watch Oliver Twist (1933)
+title: Watch Oliver Twist
 
-permalink: films/Watch-Oliver-Twist-(1933)
+permalink: films/Watch-Oliver-Twist-1933
 
 genre:
 - Drama

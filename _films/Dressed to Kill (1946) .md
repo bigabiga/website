@@ -10,10 +10,10 @@ excerpt: Also known as Prelude to Murder, Dressed to Kill is another classic She
 
 film-id: dressed-to-kill
 
-title: Dressed to Kill (1946)
+title: Dressed to Kill
 
 
-permalink: films/Watch-Dressed-to-Kill-(1946)
+permalink: films/Watch-Dressed-to-Kill-1946
 
 
 genre:

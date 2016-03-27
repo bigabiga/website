@@ -10,52 +10,54 @@
   {% include header.html %}
   {% include nav-bar.html %}
   <div class="main">
-    <div class="home-element">
-      <div class="element-title">
-        <h2>
-          Featured this week
-        </h2>
-      </div>
-      <div class="slider">
-        {% for film in site.films %}
-          {% if film.title == "Watch The Bat (1959)" %}
+    <div class="content">
+      <div class="home-element">
+        <div class="element-title">
+          <h2>
+            Featured this week
+          </h2>
+        </div>
+        <div class="slider">
+          {% for film in site.films %}
+            {% if film.title == "Watch The Bat" %}
+              <a href="{{ film.url }}">
+              <div class="film">
+                <img class="film-image" src="{{ film.image }}">
+                <div class="title"><h3> {{ film.title }} </h3></div>
+              </div>
+              </a>
             <a href="{{ film.url }}">
-            <div class="film">
-              <img class="film-image" src="{{ film.image }}">
-              <div class="title"><h3> {{ film.title }} </h3></div>
-            </div>
+              <div class="film">
+                <img class="film-image" src="{{ film.image }}">
+                <div class="title"><h3> {{ film.title }} </h3></div>
+              </div>
             </a>
-          <a href="{{ film.url }}">
-            <div class="film">
-              <img class="film-image" src="{{ film.image }}">
-              <div class="title"><h3> {{ film.title }} </h3></div>
+            <a href="{{ film.url }}">
+              <div class="film">
+                <img class="film-image" src="{{ film.image }}">
+                <div class="title"><h3> {{ film.title }} </h3></div>
+              </div>
+            </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="home-element">
+        <div class="element-title">
+          <h2>
+            Films by genre
+          </h2>
+        </div>
+        <div class="home-categories">
+          {% for genre in site.genres limit: 8 %}
+          <a href="{{ genre.url }}">
+            <div class="category">
+              <img class="genre-image" src="{{ genre.feature-image }}">
+              <div class="title"><h3> {{ genre.title }} </h3></div>
             </div>
           </a>
-          <a href="{{ film.url }}">
-            <div class="film">
-              <img class="film-image" src="{{ film.image }}">
-              <div class="title"><h3> {{ film.title }} </h3></div>
-            </div>
-          </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-    <div class="home-element">
-      <div class="element-title">
-        <h2>
-          Films by genre
-        </h2>
-      </div>
-      <div class="home-categories">
-        {% for genre in site.genres limit: 8 %}
-        <a href="{{ genre.url }}">
-          <div class="category">
-            <img class="genre-image" src="{{ genre.feature-image }}">
-            <div class="title"><h3> {{ genre.title }} </h3></div>
-          </div>
-        </a>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

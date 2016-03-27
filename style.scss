@@ -9,15 +9,96 @@ $darker-green: #1E7B85;
 $light-background: rgba(#70BBC2, 0.5);
 $green-font: #127983;
 
+@mixin kavon($size: 6px, $top: 15px, $right: 13px, $color: rgba(white, 0.6), $background: $nav-background) {
+  &:before {
+    content: '';
+    position: absolute;
+    top: $top + 2px;
+    right: $right;
+    width: $size;
+    height: $size;
+    background: $color;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: $top;
+    right: $right;
+    width: $size;
+    height: $size;
+    background: $background;
+    transform: rotate(45deg);
+  }
+}
+
+@mixin dropdown-menu($top: 40px) {
+  cursor: pointer;
+
+  &:hover {
+    .menu {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    transition: opacity 0.1s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    cursor: default;
+    top: $top;
+    left: 0;
+    min-width: 190px;
+    padding: 10px 0;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+
+    li {
+      cursor: pointer;
+      padding: 0 20px;
+      //transition: background-color 0.2s ease;
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
 
 body {
   font-family: 'Noto Serif', serif;
+  background-image: url("/background.jpg");
+  //background-size: 80px 60px;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+.content,
+.top-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   font-size: 32px;
   color: #048A95;
-  padding: 14px;
+  padding: 11px 10px 8px 10px;
+  //background: rgba(#048A95, 0.1);
 
   .logo {
     display: inline-block;
@@ -28,47 +109,70 @@ body {
   background: $nav-background;
   color: #F3EFF1;
   padding: 0 10px;
+  z-index: 100;
 
   .controls {
     position: absolute;
     display: block;
-    top: 0;
-    right: 10px;
+    top: 2px;
+    right: 30px;
 
-    > * {
+    .search {
+      display: inline-block;
+
+      input.search-input {
+        width: 140px;
+        height: 27px;
+        line-height: 27px;
+        padding: 0 8px 0  26px;
+        color: white;
+        background: rgba(white, 0.25);
+        margin: 4px 2px;
+        border-radius: 3px;
+
+        &::-webkit-input-placeholder {
+          color: rgba(white, 0.5);
+        }
+
+        &:-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(white, 0.5);
+        }
+
+        &::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(white, 0.5);
+        }
+
+        &:-ms-input-placeholder {
+          color: rgba(white, 0.5);
+        }
+      }
+
+      .icon {
+        position: absolute;
+        top: 9px;
+        left: 7px;
+
+        svg {
+          width: 18px;
+          height: 18px;
+
+          path {
+            fill: rgba(white, 0.5);;
+          }
+        }
+      }
+    }
+
+    .social {
       display: inline-block;
       background: rgba(white, 0.25);
       margin: 4px 2px;
       border-radius: 3px;
       padding: 5px 8px;
       height: 27px;
-    }
 
-    .search {
-      width: 140px;
-      height: 27px;
-      line-height: 27px;
-      padding: 0 8px;
-      color: white;
-
-      &::-webkit-input-placeholder {
-        color: rgba(white, 0.5);
-      }
-
-      &:-moz-placeholder { /* Firefox 18- */
-        color: rgba(white, 0.5);
-      }
-
-      &::-moz-placeholder {  /* Firefox 19+ */
-        color: rgba(white, 0.5);
-      }
-
-      &:-ms-input-placeholder {
-        color: rgba(white, 0.5);
-      }
-    }
-
-    .social {
       svg {
         width: 18px;
         height: 18px;
@@ -81,42 +185,10 @@ body {
   }
 
   .drop-menus .drop-menu {
+    @include dropdown-menu;
+    @include kavon;
     display: inline-block;
-    padding: 10px 6px;
-    cursor: pointer;
-
-
-    &:hover {
-      .menu {
-        display: block;
-      }
-    }
-
-    .menu {
-      position: absolute;
-      display: none;
-      z-index: 1000;
-      cursor: default;
-      top: 36px;
-      left: 0;
-      min-width: 170px;
-      padding: 10px 0;
-      background: white;
-      border-radius: 3px;
-      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
-      color: black;
-      font-size: 15px;
-      line-height: 30px;
-
-      li {
-        cursor: pointer;
-        padding: 0 20px;
-
-        &:hover {
-          background: #eee;
-        }
-      }
-    }
+    padding: 12px 28px 12px 6px;
   }
 }
 
@@ -143,11 +215,33 @@ body {
 
 .inner-nav {
   background: $light-background;
-  padding: 6px 10px;
+  padding: 12px 10px;
 
   .title {
     color: #048A95;
     font-size: 22px;
+  }
+
+  .controls {
+    position: absolute;
+    top: 9px;
+    right: 40px;
+
+    .sort-by {
+      @include dropdown-menu(27px);
+      @include kavon(6px, 6px, 10px, $green-font, $light-green);
+      height: 27px;
+      font-size: 14px;
+      line-height: 27px;
+      background: $light-green;
+      color: $green-font;
+      padding: 0 26px 0  8px;
+
+      .menu {
+        left: auto;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -173,22 +267,19 @@ body {
 
 .main {
   min-height: 800px;
-  background-image: url("/background.jpg");
-  //background-size: 80px 60px;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
 }
 
 .element-title {
   color: $green-font;
   text-transform: uppercase;
   line-height: 30px;
+  margin-bottom: 4px;
 }
 
 .home-element {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 14px;
   padding-top: 10px;
 }
 

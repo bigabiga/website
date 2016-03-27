@@ -9,13 +9,13 @@ excerpt: Classic sci-fi B-movie directed by Roger Corman. It tells the story of 
 
 
 
-title: Last Woman on Earth (1960)
+title: Last Woman on Earth
 
 
-permalink: films/Last-Woman-on-Earth-(1960)
+permalink: films/Last-Woman-on-Earth-1960
 
 genre:
-- B-movies
+- B-movie
 - Sci-Fi
 
 decade: 1960s

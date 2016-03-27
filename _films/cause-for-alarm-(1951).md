@@ -7,9 +7,9 @@ meta-description: Watch Cause for Alarm! Classic film-noir suspense movie. Old c
 
 excerpt: This 1951 Film-Noir suspense movie  is based on a short story by Larry Marcus. Mr. Jones is an invalid husband who wrongfully believes his wife Ellen  and his doctor are having an affair and also conspiring to kill him. He describes that suspicion in a letter, which creates a serious concern when he suffers a fatal collapse and die.
 
-title: Cause for Alarm! (1951)
+title: Cause for Alarm!
 
-permalink: films/Cause-for-Alarm-(1951)
+permalink: films/Cause-for-Alarm-1951
 
 genre:
 - Film Noir
