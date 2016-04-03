@@ -22,7 +22,7 @@ decade: 1930s
 
 recommended: no
 
-image: /feature-images/The-Thirteenth-Guest-(1932).png
+image: /feature-images/The-Thirteenth-Guest-1932.png
 
 video: https://www.youtube.com/embed/71IJjCbbK7k?rel=0&amp;controls=0&amp;showinfo=0
 

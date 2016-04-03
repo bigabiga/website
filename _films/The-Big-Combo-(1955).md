@@ -21,7 +21,7 @@ decade: 1950s
 
 recommended: yes
 
-image: /feature-images/The-Big-Combo-(1955).jpg
+image: /feature-images/The-Big-Combo-1955.jpg
 
 video: https://www.youtube.com/embed/iIkCXF9Y4ow?rel=0&amp;controls=0&amp;showinfo=0
 

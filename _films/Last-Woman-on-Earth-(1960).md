@@ -22,7 +22,7 @@ decade: 1960s
 
 recommended: no
 
-image: /feature-images/Last-Woman-on-Earth-(1960).jpg
+image: /feature-images/Last-Woman-on-Earth-1960.jpg
 
 video: https://www.youtube.com/embed/GS68mYb4I10?rel=0&amp;controls=0&amp;showinfo=0
 

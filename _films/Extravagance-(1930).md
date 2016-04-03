@@ -22,7 +22,7 @@ decade: 1930s
 
 recommended: no
 
-image: /feature-images/Extravagance-(1930).jpg
+image: /feature-images/Extravagance-1930.jpg
 
 video: https://www.youtube.com/embed/Z-S1vBPqm3w?rel=0&amp;controls=0&amp;showinfo=0
 

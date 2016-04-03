@@ -13,15 +13,25 @@
         {% include header.html %}
         {% include nav-bar.html %}
         <div class="main">
-                <div class="content">
-                  <div class="film-cont">
-                          <h2>{{ page.title }}</h2>
-                          <h3>{{ page.genre }}</h3>
-                          <iframe width="600" height="300" src="{{  page.video }} frameborder="0" allowfullscreen></iframe>
-                          <div class="details">
-                                  <p><span class="detail-type">Synopsis: </span>{{ page.synopsis }}</p>
+                <div class="top-content">
+                        <div class="left-content">
+                          <div class="film-cont">
+                                  <iframe width="100%" src="{{  page.video }} frameborder="0" allowfullscreen></iframe>
+                                  <div class="info">
+                                          <h2>{{ page.title }}</h2>
+                                          <h3>{{ page.genre }}</h3>
+                                          <div class="details">
+                                                  <p><span class="detail-type">Synopsis: </span>{{ page.synopsis }}</p>
+                                          </div>
+                                  </div>
                           </div>
-                  </div>
+                                <div class="panel"></div>
+                                <div class="panel"></div>
+                        </div>
+                </div>
+
+                <div class="right-bar">
+
                 </div>
         </div>
 </body>

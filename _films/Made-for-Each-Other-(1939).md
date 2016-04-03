@@ -20,7 +20,7 @@ decade: 1930s
 
 recommended: no
 
-image: /feature-images/Made-for-Each-Other-(1939).jpg
+image: /feature-images/Made-for-Each-Other-1939.jpg
 
 video: https://www.youtube.com/embed/LcYKLVbBMyg?rel=0&amp;controls=0&amp;showinfo=0
 

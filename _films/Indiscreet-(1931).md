@@ -20,7 +20,7 @@ decade: 1930s
 
 recommended: yes
 
-image: /feature-images/Indiscreet-(1931)Gloria-Swanson.jpg
+image: /feature-images/Indiscreet-1931-Gloria-Swanson.jpg
 
 video: https://www.youtube.com/embed/ObOS_XSMpso?rel=0&amp;controls=0&amp;showinfo=0
 

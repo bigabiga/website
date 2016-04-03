@@ -22,7 +22,7 @@ decade: 1940s
 
 recommended: no
 
-image: /feature-images/So's-Your-Aunt-Emma-(1942).jpg
+image: /feature-images/Sos-Your-Aunt-Emma-1942.jpg
 
 video: https://www.youtube.com/embed/MYTeRiEKSEY?rel=0&amp;controls=0&amp;showinfo=0
 

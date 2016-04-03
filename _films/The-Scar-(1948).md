@@ -21,7 +21,7 @@ decade: 1940s
 
 recommended: yes
 
-image: /feature-images/Hollow-Triumph-(1948).jpg
+image: /feature-images/Hollow-Triumph-1948.jpg
 
 video: https://www.youtube.com/embed/_RqUd-GoyeM?rel=0&amp;controls=0&amp;showinfo=0
 

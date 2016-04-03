@@ -17,7 +17,7 @@ genre:
 
 decade: 1950s
 recommended: yes
-image: /feature-images/Suddenly-(1954).jpg
+image: /feature-images/Suddenly-1954.jpg
 video: https://www.youtube.com/embed/p9w8dhjwwJc?rel=0&amp;controls=0&amp;showinfo=0
 
 synopsis: Suddenly is one of the least known thrillers from the 50s and still extremely tense and brisk. The tranquility of the small town of "Suddenly" is interrupted when three gangsters trap the U.S. president when passing through the town. An overwhelming performance of Frank Sinatra as a cold-blooded assassin.   

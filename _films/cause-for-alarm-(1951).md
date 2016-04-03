@@ -20,7 +20,7 @@ decade: 1950s
 
 recommended: no
 
-image: /feature-images/Cause-for-Alarm!-(1951).jpg
+image: /feature-images/Cause-for-Alarm!-1951.jpg
 
 video: https://www.youtube.com/embed/t_bNDDM5ABQ?rel=0&amp;controls=0&amp;showinfo=0
 

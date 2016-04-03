@@ -7,7 +7,7 @@ meta-description: Van Gorder, a mystery author, rents a country house in a town 
 
 excerpt: Cornelia Van Gorder, a mystery author, rents a country house in a town terrorized by a faceless killer only known as "The Bat".  She doesn't know that the same house was the scene of some of the Bat's horrifying murders. Soon she must confront her fears and starts investigating the killer's true identity.
 
-title: Watch The Bat
+title: The Bat
 
 permalink: films/The-Bat-1959
 

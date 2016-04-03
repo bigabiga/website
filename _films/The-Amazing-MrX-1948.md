@@ -15,7 +15,7 @@ genre:
 - B-movie
 decade: 1940s
 recommended: no
-image: /feature-images/The-Amazing-Mr.-X-(1948).jpg
+image: /feature-images/The-Amazing-Mr-X-1948.jpg
 video: https://www.youtube.com/embed/BgLgxp2gjCg?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Also known as The Spiritualist, this great thriller B-movie tells the story of a grieving widow that starts hearing her husband's voice calling her through the wind. The stunning cinematography by John Alton makes the gothic, dark atmosphere in this movie unforgettable.
 

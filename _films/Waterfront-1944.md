@@ -12,7 +12,7 @@ genre:
 - War
 decade: 1940s
 recommended: no
-image: /feature-images/Waterfront-(1944).jpg
+image: /feature-images/Waterfront-1944.jpg
 video: https://www.youtube.com/embed/fTsSAvdh3jo?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: A Nazi spy working as an optometrist in San Francisco waterfront district discovers that his code book, containing names of his fellow Nazi agents, has been stolen. Now he will do everything to get it back.
 

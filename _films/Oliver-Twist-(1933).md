@@ -18,7 +18,7 @@ decade: 1930s
 
 recommended: no
 
-image: /feature-images/Oliver-Twist-(1933).PNG
+image: /feature-images/Oliver-Twist-1933.PNG
 
 video: https://www.youtube.com/embed/prnREuwR3ro?rel=0&amp;controls=0&amp;showinfo=0
 

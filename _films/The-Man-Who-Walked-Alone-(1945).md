@@ -15,7 +15,7 @@ genre:
 - Drama
 decade: 1940s
 recommended: no
-image: /feature-images/The-Man-Who-Walked-Alone-(1945).jpg
+image: /feature-images/The-Man-Who-Walked-Alone-1945.jpg
 video: https://www.youtube.com/embed/s18H0kSp1Fk?rel=0&amp;controls=0&amp;showinfo=0
 
 synopsis: In this great comedy-drama B film, a young war hero returns home following a medical discharge. He manages a lift from a young woman on the run from her own wedding, after stealing her fiance's car.

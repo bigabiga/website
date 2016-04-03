@@ -14,7 +14,7 @@ genre:
 
 decade: 1940s
 recommended: no
-image: /feature-images/The-Last-Alarm-(1940).jpg
+image: /feature-images/The-Last-Alarm-1940.jpg
 video: https://www.youtube.com/embed/jFM6lQFnZkc?rel=0&amp;controls=0&amp;showinfo=0
 
 synopsis: The Last Alarm offers a cheesy combination of melodrama, crime and comedy.  J. Farrell McDonald plays A veteran fireman who is forced to retire by the Fire Department but still yearns for action. Luckily, he is soon hired by a young insurance investigator to look into series of arsons.

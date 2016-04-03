@@ -10,35 +10,40 @@
   {% include header.html %}
   {% include nav-bar.html %}
   <div class="main">
+    <div class="top-content">
+      <div class="film-of-the-day">
+        {% for film in site.films %}
+          {% if film.title == "The Bat" %}
+            <div class="film">
+              <div class="film-image" style="background-image: url({{ film.image }})"></div>
+            </div>
+            <div class="description">
+              <div class="banner">Film of the day</div>
+              <div class="title">{{ film.title }}</div>
+              <div class="synopsis"> {{ film.synopsis }} </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
     <div class="content">
       <div class="home-element">
         <div class="element-title">
           <h2>
-            Featured this week
+            Recommended films
           </h2>
         </div>
-        <div class="slider">
-          {% for film in site.films %}
-            {% if film.title == "Watch The Bat" %}
+        <div class="recommended">
+          {% for film in site.films limit: 8 %}
               <a href="{{ film.url }}">
               <div class="film">
-                <img class="film-image" src="{{ film.image }}">
-                <div class="title"><h3> {{ film.title }} </h3></div>
+                <div class="film-image" style="background-image: url({{ film.image }})"></div>
+                <div class="info">
+                  <h3 class="title"> {{ film.title }} </h3>
+                  <h4 class="description"> Description description description </h4>
+                </div>
               </div>
               </a>
-            <a href="{{ film.url }}">
-              <div class="film">
-                <img class="film-image" src="{{ film.image }}">
-                <div class="title"><h3> {{ film.title }} </h3></div>
-              </div>
-            </a>
-            <a href="{{ film.url }}">
-              <div class="film">
-                <img class="film-image" src="{{ film.image }}">
-                <div class="title"><h3> {{ film.title }} </h3></div>
-              </div>
-            </a>
-            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -52,8 +57,10 @@
           {% for genre in site.genres limit: 8 %}
           <a href="{{ genre.url }}">
             <div class="category">
-              <img class="genre-image" src="{{ genre.feature-image }}">
-              <div class="title"><h3> {{ genre.title }} </h3></div>
+              <div class="genre-image" style="background-image: url({{ genre.feature-image }})"></div>
+              <div class="info">
+                <div class="title"><h3> {{ genre.title }} </h3></div>
+              </div>
             </div>
           </a>
           {% endfor %}

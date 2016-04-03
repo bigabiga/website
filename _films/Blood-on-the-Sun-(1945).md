@@ -23,7 +23,7 @@ decade: 1940s
 
 recommended: no
 
-image: /feature-images/Blood-on-the-Sun-(1945).jpg
+image: /feature-images/Blood-on-the-Sun-1945.jpg
 
 
 video: https://www.youtube.com/embed/bVdd6LrUD4s?rel=0&amp;controls=0&amp;showinfo=0

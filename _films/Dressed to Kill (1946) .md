@@ -24,7 +24,7 @@ decade: 1940s
 
 recommended: YES
 
-image: /feature-images/Sherlock-Holmes-Dressed-to-Kill (1946).jpg
+image: /feature-images/Sherlock-Holmes-Dressed-to-Kill-1946.jpg
 
 
 video: https://www.youtube.com/embed/R-N-PAsJ9pU?rel=0&amp;controls=0&amp;showinfo=0
