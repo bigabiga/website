@@ -16,6 +16,7 @@
           {% if film.title == "The Bat" %}
             <div class="film">
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
+              <div class="play-mark"></div>
             </div>
             <div class="description">
               <div class="banner">Film of the day</div>
@@ -35,14 +36,15 @@
         </div>
         <div class="recommended">
           {% for film in site.films limit: 8 %}
-              <a href="{{ film.url }}">
-              <div class="film">
-                <div class="film-image" style="background-image: url({{ film.image }})"></div>
-                <div class="info">
-                  <h3 class="title"> {{ film.title }} </h3>
-                  <h4 class="description"> Description description description </h4>
+              <a class="thumbnail-cont" href="{{ film.url }}">
+                <div class="film">
+                  <div class="film-image" style="background-image: url({{ film.image }})"></div>
+                  <div class="info">
+                    <h3 class="title"> {{ film.title }} </h3>
+                    <h4 class="description"> Description description description </h4>
+                  </div>
+                  <div class="play-mark"></div>
                 </div>
-              </div>
               </a>
           {% endfor %}
         </div>
@@ -55,9 +57,9 @@
         </div>
         <div class="home-categories">
           {% for genre in site.genres limit: 8 %}
-          <a href="{{ genre.url }}">
+          <a class="thumbnail-cont" href="{{ genre.url }}">
             <div class="category">
-              <div class="genre-image" style="background-image: url({{ genre.feature-image }})"></div>
+              <div class="item-image" style="background-image: url({{ genre.feature-image }})"></div>
               <div class="info">
                 <div class="title"><h3> {{ genre.title }} </h3></div>
               </div>

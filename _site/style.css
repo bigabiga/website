@@ -6,7 +6,7 @@
   right: 0;
   padding: 10px;
   color: white;
-  text-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   line-height: 20px; }
   .recommended .film .info .title, .home-categories .category .info .title {
     font-weight: bold;
@@ -88,9 +88,8 @@ body {
         .nav-bar .controls .social svg path {
           fill: #888; }
   .nav-bar .drop-menus .drop-menu {
-    cursor: pointer;
     display: inline-block;
-    padding: 12px 28px 12px 6px; }
+    cursor: pointer; }
     .nav-bar .drop-menus .drop-menu:hover .menu {
       opacity: 1;
       pointer-events: auto; }
@@ -101,7 +100,7 @@ body {
       pointer-events: none;
       z-index: 1000;
       cursor: default;
-      top: 40px;
+      top: 36px;
       left: 0;
       min-width: 190px;
       padding: 10px 0;
@@ -115,24 +114,29 @@ body {
         padding: 0 20px; }
         .nav-bar .drop-menus .drop-menu .menu li:hover {
           background: #ecd6e0; }
-    .nav-bar .drop-menus .drop-menu:before {
-      content: '';
-      position: absolute;
-      top: 17px;
-      right: 13px;
-      width: 6px;
-      height: 6px;
-      background: #888;
-      transform: rotate(45deg); }
-    .nav-bar .drop-menus .drop-menu:after {
-      content: '';
-      position: absolute;
-      top: 15px;
-      right: 13px;
-      width: 6px;
-      height: 6px;
-      background: #eee;
-      transform: rotate(45deg); }
+    .nav-bar .drop-menus .drop-menu .label {
+      display: inline-block;
+      padding: 13px 28px 13px 6px;
+      font-size: 12px;
+      text-transform: uppercase; }
+      .nav-bar .drop-menus .drop-menu .label:before {
+        content: '';
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        width: 6px;
+        height: 6px;
+        background: #888;
+        transform: rotate(45deg); }
+      .nav-bar .drop-menus .drop-menu .label:after {
+        content: '';
+        position: absolute;
+        top: 11px;
+        right: 13px;
+        width: 6px;
+        height: 6px;
+        background: #eee;
+        transform: rotate(45deg); }
 
 .thumbnails {
   padding: 20px; }
@@ -253,10 +257,39 @@ body {
   font-size: 0;
   height: 360px; }
   .film-of-the-day .film {
+    cursor: pointer;
     display: inline-block;
     font-size: 14px;
     width: 50%;
-    height: 100%; }
+    height: 100%;
+    transition: opacity 0.1s ease; }
+    .film-of-the-day .film .play-mark {
+      transition: opacity 0.1s ease;
+      position: absolute;
+      opacity: 0.7;
+      top: 50%;
+      left: 50%;
+      margin-top: -22.95px;
+      margin-left: -27px;
+      width: 54px;
+      height: 43.2px;
+      background: rgba(30, 123, 133, 0.65); }
+    .film-of-the-day .film:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-top: -15.12px;
+      margin-left: -8.1px;
+      border-top: 13.5px solid transparent;
+      border-bottom: 13.5px solid transparent;
+      border-left: 21.6px solid rgba(255, 255, 255, 0.7); }
+    .film-of-the-day .film:hover {
+      opacity: 0.94; }
+      .film-of-the-day .film:hover .play-mark {
+        opacity: 1; }
     .film-of-the-day .film .film-image {
       width: 100%;
       height: 100%;
@@ -266,16 +299,22 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    font-size: 15px;
-    line-height: 20px;
     background: #A46A85;
     color: white;
     padding: 20px;
     padding-top: 80px; }
+    .film-of-the-day .description .banner {
+      font-size: 14px;
+      text-transform: uppercase; }
     .film-of-the-day .description .title {
       font-size: 21px;
       line-height: 28px;
-      margin-bottom: 6px; }
+      margin-bottom: 10px;
+      text-transform: uppercase; }
+    .film-of-the-day .description .synopsis {
+      font-size: 15px;
+      line-height: 20px;
+      max-width: 380px; }
     .film-of-the-day .description .banner {
       background: #863D5F;
       position: absolute;
@@ -285,15 +324,49 @@ body {
       padding: 8px; }
 
 .recommended {
-  font-size: 0; }
-  .recommended .film {
+  font-size: 0;
+  margin-left: -4px;
+  margin-right: -4px; }
+  .recommended .thumbnail-cont {
     display: inline-block;
+    width: 25%;
+    height: 200px; }
+  .recommended .film {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
     font-size: 15px;
-    width: 24%;
-    height: 220px;
     overflow: hidden;
-    margin-right: 1%;
-    margin-bottom: 10px; }
+    transition: opacity 0.1s ease; }
+    .recommended .film .play-mark {
+      transition: opacity 0.1s ease;
+      position: absolute;
+      opacity: 0.7;
+      top: 50%;
+      left: 50%;
+      margin-top: -15.3px;
+      margin-left: -18px;
+      width: 36px;
+      height: 28.8px;
+      background: rgba(30, 123, 133, 0.65); }
+    .recommended .film:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-top: -10.08px;
+      margin-left: -5.4px;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-left: 14.4px solid rgba(255, 255, 255, 0.7); }
+    .recommended .film:hover {
+      opacity: 0.94; }
+      .recommended .film:hover .play-mark {
+        opacity: 1; }
     .recommended .film .film-image {
       width: 100%;
       height: 100%;
@@ -301,16 +374,34 @@ body {
       background-size: cover; }
 
 .home-categories {
-  font-size: 0; }
-  .home-categories .category {
+  font-size: 0;
+  margin-left: -4px;
+  margin-right: -4px; }
+  .home-categories .thumbnail-cont {
     display: inline-block;
-    width: 15.6%;
+    width: 16.6%;
     height: 130px;
-    margin-right: 1%;
-    overflow: hidden;
-    margin-bottom: 20px; }
-    .home-categories .category .genre-image {
+    overflow: hidden; }
+    .home-categories .thumbnail-cont:hover .item-image:after {
+      opacity: 1; }
+  .home-categories .category {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px; }
+    .home-categories .category .item-image {
       width: 100%;
       height: 100%;
       background-position: center center;
       background-size: cover; }
+      .home-categories .category .item-image:after {
+        transition: opacity 0.1s ease;
+        content: '';
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(30, 123, 133, 0.26); }

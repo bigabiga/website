@@ -11,6 +11,7 @@ $light-background: rgba(#70BBC2, 0.5);
 $green-font: #127983;
 $feature-background: #863D5F;
 $padding: 20px;
+$play-green: #1E7B85;
 
 %film-overlay {
   position: absolute;
@@ -19,7 +20,7 @@ $padding: 20px;
   right: 0;
   padding: 10px;
   color: white;
-  text-shadow: 0 0 10px 0 rgba(black, 0.3);
+  text-shadow: 0 0 10px rgba(black, 0.4);
   line-height: 20px;
 
   .title {
@@ -32,7 +33,7 @@ $padding: 20px;
   }
 }
 
-@mixin kavon($size: 6px, $top: 15px, $right: 13px, $color: $nav-text, $background: $nav-background) {
+@mixin kavon($size: 6px, $top: 11px, $right: 13px, $color: $nav-text, $background: $nav-background) {
   &:before {
     content: '';
     position: absolute;
@@ -56,7 +57,7 @@ $padding: 20px;
   }
 }
 
-@mixin dropdown-menu($top: 40px) {
+@mixin dropdown-menu($top: 36px) {
   cursor: pointer;
 
   &:hover {
@@ -95,6 +96,44 @@ $padding: 20px;
   }
 }
 
+@mixin play-mark($width) {
+  transition: opacity 0.1s ease;
+  .play-mark {
+    transition: opacity 0.1s ease;
+    position: absolute;
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5 * $width * 0.85;
+    margin-left: -0.5 * $width;
+    width: $width;
+    height: $width * 0.8;
+    background: rgba($play-green, 0.65)
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -0.28 * $width;
+    margin-left: -0.5 * $width * 0.3;
+    border-top: 0.25 * $width solid transparent;
+    border-bottom: 0.25 * $width solid transparent;
+    border-left: 0.4 * $width solid rgba(white, 0.7);
+  }
+
+  &:hover {
+    opacity: 0.94;
+
+    .play-mark {
+      opacity: 1;
+    }
+  }
+}
+
 body {
   font-family: 'Helvetice', Arial, sans-serif;
   background: #eee;
@@ -110,9 +149,6 @@ body {
 .content {
   padding-left: $padding;
   padding-right: $padding;
-}
-
-.top-content {
 }
 
 .header {
@@ -205,10 +241,16 @@ body {
   }
 
   .drop-menus .drop-menu {
-    @include dropdown-menu;
-    @include kavon;
     display: inline-block;
-    padding: 12px 28px 12px 6px;
+    @include dropdown-menu;
+
+    .label {
+      @include kavon;
+      display: inline-block;
+      padding: 13px 28px 13px 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -325,10 +367,12 @@ body {
   height: 360px;
 
   .film {
+    cursor: pointer;
     display: inline-block;
     font-size: 14px;
     width: 50%;
     height: 100%;
+    @include play-mark(54px);
 
     .film-image {
       width: 100%;
@@ -342,17 +386,27 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    font-size: 15px;
-    line-height: 20px;
     background: #A46A85;
     color: white;
     padding: $padding;
     padding-top: 80px;
 
+    .banner {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
     .title {
       font-size: 21px;
       line-height: 28px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .synopsis {
+      font-size: 15px;
+      line-height: 20px;
+      max-width: 380px;
     }
 
     .banner {
@@ -368,15 +422,24 @@ body {
 
 .recommended {
   font-size: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+
+  .thumbnail-cont {
+    display: inline-block;
+    width: 25%;
+    height: 200px;
+  }
 
   .film {
-    display: inline-block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
     font-size: 15px;
-    width: 24%;
-    height: 220px;
     overflow: hidden;
-    margin-right: 1%;
-    margin-bottom: 10px;
+    @include play-mark(36px);
 
     .film-image {
       width: 100%;
@@ -393,20 +456,46 @@ body {
 
 .home-categories {
   font-size: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+
+  .thumbnail-cont {
+    display: inline-block;
+    width: 16.6%;
+    height: 130px;
+    overflow: hidden;
+
+    &:hover {
+      .item-image:after {
+        opacity: 1;
+      }
+    }
+  }
 
   .category {
-    display: inline-block;
-    width: 15.6%;
-    height: 130px;
-    margin-right: 1%;
-    overflow: hidden;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
 
-    .genre-image {
+    .item-image {
       width: 100%;
       height: 100%;
       background-position: center center;
       background-size: cover;
+
+      &:after {
+        transition: opacity 0.1s ease;
+        content: '';
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba($play-green, 0.26);
+      }
     }
 
     .info {
