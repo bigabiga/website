@@ -405,3 +405,50 @@ body {
         bottom: 0;
         left: 0;
         background-color: rgba(30, 123, 133, 0.26); }
+
+.film-of-the-day .film .play-mark {
+  background: rgba(90, 44, 66, 0.75); }
+
+.recommended .film .play-mark {
+  background: #85526a; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200; }
+
+.element-title {
+  color: #8FCAD0;
+  font-size: 50px;
+  margin-bottom: 20px; }
+
+.recommended .film .info .title, .home-categories .category .info .title {
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.nav-bar .drop-menus .drop-menu .label {
+  font-weight: 500;
+  color: #56434C; }
+
+.recommended .film .info .title, .home-categories .category .info .title {
+  display: inline-block;
+  padding: 7px;
+  margin-left: 50px; }
+
+.recommended .film .info .description, .home-categories .category .info .description {
+  font-size: 0; }
+
+.film-of-the-day .description .title {
+  font-weight: 200;
+  margin-top: 50px;
+  font-size: 45px; }
+
+.film-of-the-day .description .synopsis {
+  margin-top: 40px;
+  font-weight: 200;
+  font-family: 'Martel', serif;
+  font-size: 14px;
+  max-width: 450px; }
+
+.film-of-the-day .description .banner {
+  padding: 15px 70px;
+  font-weight: 500; }

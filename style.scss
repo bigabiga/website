@@ -503,3 +503,74 @@ body {
     }
   }
 }
+
+
+//BAT-CHEN//
+
+.film-of-the-day .film .play-mark {
+  background: rgba(90, 44, 66, 0.75);
+}
+
+.recommended .film .play-mark{
+  background: rgb(133, 82, 106);
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+.element-title {
+  color: #8FCAD0;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.recommended .film .info .title, .home-categories .category .info .title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-bar .drop-menus .drop-menu .label {
+  font-weight: 500;
+  color: #56434C;
+}
+
+
+
+
+
+.recommended .film .info .title, .home-categories .category .info .title {
+  display: inline-block;
+ // border: solid 1px rgba(255, 255, 255, 0.42);
+  padding: 7px;
+  margin-left: 50px;
+}
+
+.recommended .film .info .description, .home-categories .category .info .description {
+  font-size: 0;
+}
+
+.film-of-the-day .description .title{
+  font-weight: 200;
+  // text-align: center;
+  margin-top: 50px;
+  font-size: 45px;
+}
+
+.film-of-the-day .description .synopsis{
+  margin-top: 40px;
+  // margin: 40px auto 20px;
+  font-weight: 200;
+  font-family: 'Martel', serif;
+  font-size: 14px;
+  max-width: 450px;
+}
+
+.film-of-the-day .description .banner{
+  padding: 15px 70px;
+  // margin: 40px 0 0 200px;
+  font-weight: 500;
+}
+
+
