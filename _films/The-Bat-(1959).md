@@ -26,7 +26,7 @@ video: https://www.youtube.com/embed/Btyx4zkgHpg?rel=0&amp;controls=0&amp;showin
 
 synopsis: Cornelia Van Gorder, a mystery author, rents a country house in a town terrorized by a faceless killer only known as "The Bat".  She doesn't know that the same house was the scene of some of the Bat's horrifying murders. Soon she must confront her fears and starts investigating the killer's true identity.
 
-directed by: Crane Wilbur
+director: Crane Wilbur
 
 year: 1959
 

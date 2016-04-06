@@ -26,7 +26,7 @@ video: https://www.youtube.com/embed/XSdeNGCG-Aw?rel=0&amp;controls=0&amp;showin
 
 synopsis: A British Second World War drama that follows a group of civilians who are recruited into the British Army in order to fight in North Africa. In U.S, the movie was released as The Immortal Battalion.
 
-directed by:
+director:
 - Carol Reed
 
 year: 1944

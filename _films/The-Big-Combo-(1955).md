@@ -28,7 +28,7 @@ video: https://www.youtube.com/embed/iIkCXF9Y4ow?rel=0&amp;controls=0&amp;showin
 
 synopsis: This film noir detective classic is considered to be one of the most innovative, stylish movies of the genre. It is also considered as one of the best works of the legendary cinematographer John Alton.  The police Lt. Diamond is ordered to close his investigation of deadly mob boss Mr. Brown because he hasn't been able to collect any firm evidence against him. Lt. Diamond makes one last effort to reveal Brown's crimes by going to Brown's girlfriend.
 
-directed by:
+director:
 - Joseph H. Lewis
 
 year: 1955

@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/Lrzbooqqgxs?rel=0&amp;controls=0&amp;showin
 synopsis: Jack Martin is a gangster who hides from the law. Low in funds, he decides to rob a small bank. However, now not only the FBI and the police are after him, but also the outrageous local mob boss.
 
 
-directed by: Walter Matthau
+director: Walter Matthau
 
 year: 1959
 

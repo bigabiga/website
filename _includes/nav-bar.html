@@ -7,11 +7,11 @@
         </div>
         <ul class="menu" id="genres-menu">
           {% for genre in site.genres limit: 8 %}
-          <li>
-            <a href="{{ genre.url }}">
+          <a href="{{ genre.url }}">
+            <li>
               {{ genre.title }}
-            </a>
-          </li>
+            </li>
+          </a>
           {% endfor %}
         </ul>
       </div>
@@ -22,11 +22,11 @@
 
         <ul class="menu" id="Decades-menu">
           {% for decade in site.decades limit: 8 %}
-          <li>
-            <a href="{{ decade.url }}">
+          <a href="{{ decade.url }}">
+            <li>
               {{ decade.title }}
-            </a>
-          </li>
+            </li>
+          </a>
           {% endfor %}
         </ul>
 

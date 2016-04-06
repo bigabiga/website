@@ -14,11 +14,11 @@ genre:
 - Romance
 decade: 1940s
 recommended: no
-image: /feature-images/I'm-from-Arkansas-1944.jpg
+image: /feature-images/Im-from-Arkansas-1944.jpg
 video: https://www.youtube.com/embed/NCVIU7xxUVU?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: I'm from Arkansas is an extremely entertaining movie, filled with great old-time country music. The small, sleepy town of Pitchfork, Arkansas makes national headlines when Esmeralda the sow gives birth to 18 piglets.  Soon Pitchfork is flooded with visitors.
 
-directed by: Lew Landers
+director: Lew Landers
 year: 1944
 country: USA
 cast:

@@ -25,7 +25,7 @@ video: https://www.youtube.com/embed/prnREuwR3ro?rel=0&amp;controls=0&amp;showin
 
 synopsis: The earliest Hollywood Sound Version of Charles Dickens's novel, this American Pre-Code movie was made on an extremely low budget. It tells the classic story of a young orphan in 1830's London that is abused in a workhouse, then falls into the grips of a gang of criminals.
 
-directed by:
+director:
 - William J. Cowen
 
 year: 1933

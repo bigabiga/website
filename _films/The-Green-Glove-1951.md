@@ -18,7 +18,7 @@ image: /feature-images/The-Green-Glove-1951.jpg
 video: https://www.youtube.com/embed/AAfml8lKMec?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: The Green Glove is a priceless medieval relic, stolen from a French church during World War II. Michael Blake (Glenn Ford) has to find it and bring it back. A worth watching crime movie with a great cast.
 
-directed by: Rudolph Maté
+director: Rudolph Maté
 year: 1951
 country: USA
 cast:

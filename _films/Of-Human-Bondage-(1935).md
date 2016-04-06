@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/cbijwFbAy6s?rel=0&amp;controls=0&amp;showin
 synopsis: Of Human Bondage is a classic, compelling pre-code melodrama about love and obsession, directed by John Cromwell. A young man is attracted to an unfeeling waitress who may eventually destroy them both. Bette Davis larger than life persona makes this film widely considered as the movie that made her a star.
 
 
-directed by: John Cromwell
+director: John Cromwell
 
 year: 1934
 

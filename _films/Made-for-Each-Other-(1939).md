@@ -26,7 +26,7 @@ video: https://www.youtube.com/embed/LcYKLVbBMyg?rel=0&amp;controls=0&amp;showin
 
 synopsis: John and Jane get married after one day of acquaintance. John's mother disapproves of the marriage. The couple struggles to get through their first year of marriage, tormented by money problems and by sickness. Nevertheless, their love never falters.
 
-directed by: John Cromwell
+director: John Cromwell
 
 year: 1939
 

@@ -25,7 +25,7 @@ video: https://www.youtube.com/embed/hP7kRkW0Djk?rel=0&amp;controls=0&amp;showin
 
 synopsis: A cult B-movie that follows the story of a crazy ex-U.S Army major who invents an invisibility formula. He plans to create an army of cold-hearted invisible zombies.
 
-directed by:
+director:
 - Edgar G. Ulmer
 
 year: 1960

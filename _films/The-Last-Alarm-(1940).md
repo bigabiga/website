@@ -19,7 +19,7 @@ video: https://www.youtube.com/embed/jFM6lQFnZkc?rel=0&amp;controls=0&amp;showin
 
 synopsis: The Last Alarm offers a cheesy combination of melodrama, crime and comedy.  J. Farrell McDonald plays A veteran fireman who is forced to retire by the Fire Department but still yearns for action. Luckily, he is soon hired by a young insurance investigator to look into series of arsons.
 
-directed by: William West
+director: William West
 year: 1940
 country: USA
 cast:

@@ -27,7 +27,7 @@ video: https://www.youtube.com/embed/Zz8Lsl5NmtA?rel=0&amp;controls=0&amp;showin
 synopsis: Chuck Scott (stars Robert Cummings) is enchanted by his bose's wife, a true femme-fatale. His involvement with her soon becomes a real-life nightmare. This dark cult-classic film-noir is based on the novel The Black Path of Fear, written by Cornell Woolrich.
 
 
-directed by: Arthur Ripley
+director: Arthur Ripley
 
 year: 1946
 

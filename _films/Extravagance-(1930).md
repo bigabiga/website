@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/Z-S1vBPqm3w?rel=0&amp;controls=0&amp;showin
 synopsis: Alice's mother has impoverished herself to provide Alice with the luxuries of the high society. When Alice gets married she continues to demand the luxury she is used to - a sable coat in particular. Her husband's business, however, is going under and he just can't afford the coat. How far will Alice go in order to achieve her goal?
 
 
-directed by: Phil Rosen
+director: Phil Rosen
 
 
 year: 1930

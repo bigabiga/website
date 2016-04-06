@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/z0fnIBrtGOU?rel=0&amp;controls=0&amp;showin
 synopsis: Also known as Clouds Over Europe, This British spy film tells the story of a British secret service man who suspects that the disappearance of a number of experimental planes is more than just a coincidence.
 
 
-directed by:
+director:
 -  Tim Whelan
 - Arthur B. Woods
 

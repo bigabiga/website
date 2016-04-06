@@ -26,7 +26,7 @@ video: https://www.youtube.com/embed/t_bNDDM5ABQ?rel=0&amp;controls=0&amp;showin
 
 synopsis: This 1951 Film-Noir suspense movie  is based on a short story by Larry Marcus. Mr. Jones is an invalid husband who wrongfully believes his wife Ellen  and his doctor are having an affair and also conspiring to kill him. He describes that suspicion in a letter, which creates a serious concern when he suffers a fatal collapse and die.
 
-directed by:
+director:
 - Tay Garnett
 
 year: 1951

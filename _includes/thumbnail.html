@@ -1,5 +1,9 @@
 <div class="thumbnail" id="{{ film.film-id }}">
-  <a href="{{ film.url }}"> <img class="film-image" src="{{ film.image }}"></a>
+  <a href="{{ film.url }}">
+    <div class="film-image" style="background-image: url({{ film.image }})">
+      <div class="play-mark"></div>
+    </div>
+  </a>
   <div class="film-description">
     <h3 class="title">
       <a href="{{ film.url }}">{{ film.title }}</a>

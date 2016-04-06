@@ -32,7 +32,7 @@ video: https://www.youtube.com/embed/bVdd6LrUD4s?rel=0&amp;controls=0&amp;showin
 synopsis: An American journalist in 1930s Japan decides to expose the government's scheme for world domination.
 
 
-directed by: Frank Lloyd
+director: Frank Lloyd
 
 
 

@@ -31,7 +31,7 @@ video: https://www.youtube.com/embed/qnjUBKfz-yk?rel=0&amp;controls=0&amp;showin
 synopsis: Attack Of The Giant Leeches is a cult low-budget B-movie, a classic example of the 1950s monster movies that were produced in response to the cold war fears. Atomic radiation has mutated the leeches In a leech-infested swamp to a gigantic size. Soon they start to prey on human flesh.
 
 
-directed by: Bernard L. Kowalski
+director: Bernard L. Kowalski
 
 year: 1959
 

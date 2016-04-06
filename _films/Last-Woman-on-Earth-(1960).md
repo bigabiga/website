@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/GS68mYb4I10?rel=0&amp;controls=0&amp;showin
 synopsis: Cult sci-fi B-movie directed by Roger Corman. It tells the story of the only three survivors of a strange apocalypse which has wiped out all human life on earth.
 
 
-directed by:
+director:
 - Roger Corman
 
 year: 1960

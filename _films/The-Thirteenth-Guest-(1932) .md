@@ -31,7 +31,7 @@ synopsis: This old pre-code movie, also known as Lady Beware in the UK, is a som
           Thirteen years ago, during a posh dinner party, the master of the manner has died mysteriously and left all of his estates to the 13th guest whose identity remains unknown. Thirteen years later, the guests are invited back to the mansion and become the target of a masked villain.
 
 
-directed by: Albert Ray
+director: Albert Ray
 
 year: 1932
 

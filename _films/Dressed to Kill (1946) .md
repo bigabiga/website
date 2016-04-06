@@ -33,7 +33,7 @@ video: https://www.youtube.com/embed/R-N-PAsJ9pU?rel=0&amp;controls=0&amp;showin
 synopsis: Also known as Prelude to Murder, Dressed to Kill is another classic Sherlock Holmes movie, the last (but not least) of fourteen films starring Basil Rathbone and Nigel Bruce. Holmes sets out to find out why a trio of murderous villains is desperate to reach three simple, cheap music boxes.
 
 
-directed by: Roy William Neill
+director: Roy William Neill
 
 
 

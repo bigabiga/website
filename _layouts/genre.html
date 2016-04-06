@@ -5,31 +5,30 @@
 </head>
 <body>
     {% include header.html %}
-    {% include nav-bar.html %}
     <div class="inner-nav">
-        <div class="top-content">
+        <div class="content">
             <div class="title">{{ page.title }}</div>
-        </div>
-        <div class="controls">
-            <div class="sort-by">
-                Sort by: Recommended
-                <ul class="menu" id="genres-menu">
-                    <li>
-                        <a href="">
-                            fasfasfafas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            fasfasfafas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            fasfasfafas
-                        </a>
-                    </li>
-                </ul>
+            <div class="controls">
+                <div class="sort-by">
+                    Sort by: Recommended
+                    <ul class="menu" id="genres-menu">
+                        <li>
+                            <a href="">
+                                fasfasfafas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                fasfasfafas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                fasfasfafas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -37,9 +36,9 @@
         <div class="content">
             <div class="thumbnails">
                 {% for film in site.films %}
-                {% if film.genre contains page.title %}
-                {% include thumbnail.html %}
-                {% endif %}
+                    {% if film.genre contains page.title %}
+                        {% include thumbnail.html %}
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

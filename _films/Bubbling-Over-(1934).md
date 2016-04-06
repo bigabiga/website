@@ -32,7 +32,7 @@ video: https://www.youtube.com/embed/121VjkLydh0?rel=0&amp;controls=0&amp;showin
 synopsis: A wonderful all-black short comedy-musical directed by Van Buren. Featuring Ethel Waters with songs such as"Taking Your Time" and "Darkies Don't Dream".
 
 
-directed by: Leigh Jason
+director: Leigh Jason
 
 year: 1934
 

@@ -3,39 +3,24 @@
 
 @import url("reset.css");
 
-$nav-background: #eee;
+$nav-background: #eaeaea;
 $nav-text: #888;
-$light-green: #70BBC2;
 $darker-green: #1E7B85;
-$light-background: rgba(#70BBC2, 0.5);
 $green-font: #127983;
+$padding: 20px;
+
+$light-background: #B0D5D9;
+$light-green: darken($light-background, 10);
+
 $feature-background: #9E5D7B;
 $banner-background: #863D5F;
-$padding: 20px;
+
 $play-green: #1E7B85;
 $play-mark: #5A2C42;
+$text-medium: #555;
+$text-dark: #231F20;
 
-%film-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  color: white;
-  text-shadow: 0 0 10px rgba(black, 0.4);
-  line-height: 20px;
-
-  .title {
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .description {
-    font-size: 13px;
-  }
-}
-
-@mixin kavon($size: 6px, $top: 11px, $right: 13px, $color: $nav-text, $background: $nav-background) {
+@mixin kavon($size: 6px, $top: 13px, $right: 13px, $color: $nav-text, $background: $nav-background) {
   &:before {
     content: '';
     position: absolute;
@@ -59,7 +44,7 @@ $play-mark: #5A2C42;
   }
 }
 
-@mixin dropdown-menu($top: 36px) {
+@mixin dropdown-menu($top: 39px) {
   cursor: pointer;
 
   &:hover {
@@ -136,9 +121,37 @@ $play-mark: #5A2C42;
   }
 }
 
+%film-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 0 10px rgba(black, 0.4);
+  line-height: 20px;
+
+  .title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}
+
+%bold-font {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 body {
-  font-family: 'Helvetice', Arial, sans-serif;
-  background: #eee;
+  //font-family: 'Helvetice', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;font-family: 'Open Sans', sans-serif;
+  background: #eaeaea;
 }
 
 .content,
@@ -166,7 +179,7 @@ body {
 
 .nav-bar {
   background: $nav-background;
-  color: $nav-text;
+  color: $text-dark;
   padding: 0 10px;
   z-index: 100;
 
@@ -250,44 +263,75 @@ body {
       @include kavon;
       display: inline-block;
       padding: 13px 28px 13px 6px;
-      font-size: 12px;
+      font-size: 14px;
       text-transform: uppercase;
     }
   }
 }
 
 .thumbnails {
-  padding: 20px;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: $padding;
+  font-size: 0;
 
   .thumbnail {
     display: inline-block;
-    width: 200px;
-    margin: 10px;
+    width: 25%;
+    padding: 4px 6px 16px 6px;
   }
 
   .film-image {
-    width: 100%;
+    height: 170px;
     display: block;
+    background-size: cover;
+    background-position: center center;
+    @include play-mark(36px);
   }
 
   .film-description {
     width: 100%;
-    padding: 10px;
+    padding: 20px 16px;
+    background: white;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-medium;
+    height: 200px;
+
+    .excerpt {
+      height: 138px;
+      overflow: hidden;
+    }
+
+    .title {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 17px;
+      text-transform: uppercase;
+      color: $green-font;
+      margin-bottom: 10px;
+    }
   }
 }
 
 .inner-nav {
   background: $light-background;
-  padding: 12px 10px;
+  height: 45px;
+
 
   .title {
     color: #048A95;
-    font-size: 22px;
+    padding-left: $padding;
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
   }
 
   .controls {
     position: absolute;
-    top: 9px;
+    top: 8px;
     right: 40px;
 
     .sort-by {
@@ -353,10 +397,11 @@ body {
 }
 
 .element-title {
+  @extend %bold-font;
+  font-size: 22px;
   color: $green-font;
-  text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .home-element {
@@ -390,34 +435,40 @@ body {
     display: inline-block;
     background: $feature-background;
     color: white;
-    padding: $padding;
-    padding-top: 80px;
 
-    .banner {
-      font-size: 14px;
-      text-transform: uppercase;
+    .info {
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0 40px 50px 40px;
     }
 
     .title {
-      font-size: 21px;
+      @extend %bold-font;
+      letter-spacing: 0.03em;
+      font-size: 36px;
       line-height: 28px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
     .synopsis {
       font-size: 15px;
       line-height: 20px;
-      max-width: 380px;
+      max-width: 400px;
     }
 
     .banner {
       background: $banner-background;
+      @extend %bold-font;
       position: absolute;
       top: 0;
       left: 0;
       display: inline-block;
-      padding: 8px;
+      font-size: 18px;
+      padding: 14px 18px;
+      color: rgba(white, 0.8);
     }
   }
 }
@@ -506,14 +557,14 @@ body {
   }
 }
 
-
-//BAT-CHEN//
+/*
+//BAT-CHEN
 
 .film-of-the-day .film .play-mark {
   background: rgba(90, 44, 66, 0.75);
 }
 
-.recommended .film .play-mark{
+.recommended .film .play-mark {
   background: rgb(133, 82, 106);
 }
 
@@ -540,22 +591,18 @@ body {
   color: #56434C;
 }
 
-
-
-
-
 .recommended .film .info .title, .home-categories .category .info .title {
   //display: inline-block;
- // border: solid 1px rgba(255, 255, 255, 0.42);
- // padding: 7px;
- // margin-left: 50px;
+  // border: solid 1px rgba(255, 255, 255, 0.42);
+  // padding: 7px;
+  // margin-left: 50px;
 }
 
 .recommended .film .info .description, .home-categories .category .info .description {
   font-size: 13px;
 }
 
-.film-of-the-day .description .title{
+.film-of-the-day .description .title {
   font-weight: 200;
   // text-align: center;
   margin-top: 80px;
@@ -564,7 +611,7 @@ body {
   margin-left: 55px;
 }
 
-.film-of-the-day .description .synopsis{
+.film-of-the-day .description .synopsis {
   // margin: 40px auto 20px;
   margin-top: 30px;
   margin-left: 55px;
@@ -574,7 +621,7 @@ body {
   max-width: 450px;
 }
 
-.film-of-the-day .description .banner{
+.film-of-the-day .description .banner {
   padding: 15px 70px;
   // margin: 40px 0 0 200px;
   font-weight: 400;
@@ -583,4 +630,4 @@ body {
 
 }
 
-
+*/

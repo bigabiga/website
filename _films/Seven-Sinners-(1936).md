@@ -31,7 +31,7 @@ video: https://www.youtube.com/embed/B_SNL8yIW40?rel=0&amp;controls=0&amp;showin
 synopsis: British thriller film directed by Albert de Courville. American detective and his sidekick are invited to Britain in order to take on a group of international criminals.
 
 
-directed by: Albert de Courville
+director: Albert de Courville
 
 year: 1936
 

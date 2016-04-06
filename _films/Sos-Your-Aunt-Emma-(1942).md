@@ -30,7 +30,7 @@ video: https://www.youtube.com/embed/MYTeRiEKSEY?rel=0&amp;controls=0&amp;showin
 synopsis: Aunt Emma is an old spinster, falsely accused of being the infamous murderer "Ma Parker". The movie is also known as "Meet the Mob".
 
 
-directed by: Jean Yarbrough
+director: Jean Yarbrough
 
 year: 1942
 
