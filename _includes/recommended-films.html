@@ -1,0 +1,22 @@
+<div class="home-element">
+  <div class="element-title">
+
+    <h2>
+      Recommended films
+    </h2>
+  </div>
+  <div class="recommended">
+    {% for film in site.films limit: 8 %}
+    <a class="thumbnail-cont" href="{{ film.url }}">
+      <div class="film">
+        <div class="film-image" style="background-image: url({{ film.image }})"></div>
+        <div class="info">
+          <h3 class="title"> {{ film.title }} </h3>
+          <h4 class="description"> Description description description </h4>
+        </div>
+        <div class="play-mark"></div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>

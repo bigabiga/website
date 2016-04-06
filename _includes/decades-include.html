@@ -1,0 +1,21 @@
+
+<div class="home-element">
+  <div class="element-title">
+    <h2>
+      Films by decade
+    </h2>
+  </div>
+  <div class="home-categories">
+    {% for decade in site.decades limit: 8 %}
+    <a class="thumbnail-cont" href="{{ decade.url }}">
+      <div class="category">
+        <div class="item-image" style="background-image: url({{ decade.feature-image }})"></div>
+        <div class="info">
+          <div class="title"><h3> {{ decade.title }} </h3></div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+</div>

@@ -4,3 +4,6 @@ collections:
 
   films:
     output: true
+
+  decades:
+    output: true

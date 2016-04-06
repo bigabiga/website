@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include basic-head.html %}
+</head>
+<body>
+    {% include header.html %}
+    {% include nav-bar.html %}
+
+    <div class="main">
+        <div class="content">
+            <div class="thumbnails">
+                {% for film in site.films %}
+                {% if film.decade contains page.title %}
+                {% include thumbnail.html %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    {% include footer.html %}
+</footer>
+</html>
+

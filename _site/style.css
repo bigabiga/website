@@ -113,7 +113,7 @@ body {
         cursor: pointer;
         padding: 0 20px; }
         .nav-bar .drop-menus .drop-menu .menu li:hover {
-          background: #ecd6e0; }
+          background: #fefcfd; }
     .nav-bar .drop-menus .drop-menu .label {
       display: inline-block;
       padding: 13px 28px 13px 6px;
@@ -192,7 +192,7 @@ body {
           cursor: pointer;
           padding: 0 20px; }
           .inner-nav .controls .sort-by .menu li:hover {
-            background: #ecd6e0; }
+            background: #fefcfd; }
       .inner-nav .controls .sort-by:before {
         content: '';
         position: absolute;
@@ -266,14 +266,14 @@ body {
     .film-of-the-day .film .play-mark {
       transition: opacity 0.1s ease;
       position: absolute;
-      opacity: 0.7;
+      opacity: 0.75;
       top: 50%;
       left: 50%;
       margin-top: -22.95px;
       margin-left: -27px;
       width: 54px;
       height: 43.2px;
-      background: rgba(30, 123, 133, 0.65); }
+      background: rgba(90, 44, 66, 0.9); }
     .film-of-the-day .film:after {
       content: '';
       position: absolute;
@@ -299,7 +299,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #A46A85;
+    background: #9E5D7B;
     color: white;
     padding: 20px;
     padding-top: 80px; }
@@ -343,14 +343,14 @@ body {
     .recommended .film .play-mark {
       transition: opacity 0.1s ease;
       position: absolute;
-      opacity: 0.7;
+      opacity: 0.75;
       top: 50%;
       left: 50%;
       margin-top: -15.3px;
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: rgba(30, 123, 133, 0.65); }
+      background: rgba(90, 44, 66, 0.9); }
     .recommended .film:after {
       content: '';
       position: absolute;
@@ -417,38 +417,39 @@ body {
   font-weight: 200; }
 
 .element-title {
-  color: #8FCAD0;
-  font-size: 50px;
-  margin-bottom: 20px; }
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: #80B2BB; }
 
 .recommended .film .info .title, .home-categories .category .info .title {
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase; }
 
 .nav-bar .drop-menus .drop-menu .label {
   font-weight: 500;
   color: #56434C; }
 
-.recommended .film .info .title, .home-categories .category .info .title {
-  display: inline-block;
-  padding: 7px;
-  margin-left: 50px; }
-
 .recommended .film .info .description, .home-categories .category .info .description {
-  font-size: 0; }
+  font-size: 13px; }
 
 .film-of-the-day .description .title {
   font-weight: 200;
-  margin-top: 50px;
-  font-size: 45px; }
+  margin-top: 80px;
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-left: 55px; }
 
 .film-of-the-day .description .synopsis {
-  margin-top: 40px;
-  font-weight: 200;
-  font-family: 'Martel', serif;
-  font-size: 14px;
+  margin-top: 30px;
+  margin-left: 55px;
+  font-weight: 300;
+  font-size: 16px;
   max-width: 450px; }
 
 .film-of-the-day .description .banner {
   padding: 15px 70px;
-  font-weight: 500; }
+  font-weight: 400;
+  color: #a7d2d6;
+  font-size: 22px; }

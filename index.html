@@ -20,56 +20,31 @@
             </div>
             <div class="description">
               <div class="banner">Film of the day</div>
-              <div class="title">{{ film.title }}</div>
-              <div class="synopsis"> {{ film.synopsis }} </div>
+              <div class="info">
+                <div class="title">{{ film.title }}</div>
+                <div class="synopsis"> {{ film.synopsis }} </div>
+              </div>
             </div>
           {% endif %}
         {% endfor %}
       </div>
     </div>
     <div class="content">
-      <div class="home-element">
-        <div class="element-title">
-          <h2>
-            Recommended films
-          </h2>
-        </div>
-        <div class="recommended">
-          {% for film in site.films limit: 8 %}
-              <a class="thumbnail-cont" href="{{ film.url }}">
-                <div class="film">
-                  <div class="film-image" style="background-image: url({{ film.image }})"></div>
-                  <div class="info">
-                    <h3 class="title"> {{ film.title }} </h3>
-                    <h4 class="description"> Description description description </h4>
-                  </div>
-                  <div class="play-mark"></div>
-                </div>
-              </a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="home-element">
-        <div class="element-title">
-          <h2>
-            Films by genre
-          </h2>
-        </div>
-        <div class="home-categories">
-          {% for genre in site.genres limit: 8 %}
-          <a class="thumbnail-cont" href="{{ genre.url }}">
-            <div class="category">
-              <div class="item-image" style="background-image: url({{ genre.feature-image }})"></div>
-              <div class="info">
-                <div class="title"><h3> {{ genre.title }} </h3></div>
-              </div>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-      </div>
+
+      {% include recommended-films.html %}
+
+
+      {% include films-by-genre.html %}
+
+
+      {% include decades-include.html %}
+
+
+
     </div>
   </div>
+
+
 </body>
 <footer>
   {% include footer.html %}

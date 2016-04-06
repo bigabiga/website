@@ -19,6 +19,17 @@
         <div class="label">
           Decades
         </div>
+
+        <ul class="menu" id="Decades-menu">
+          {% for decade in site.decades limit: 8 %}
+          <li>
+            <a href="{{ decade.url }}">
+              {{ decade.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+
       </div>
       <div class="drop-menu">
         <div class="label">
