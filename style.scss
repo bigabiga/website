@@ -12,7 +12,7 @@ $padding: 26px;
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
-$feature-background: #A76583;
+$feature-background: #AF6E8C;
 $banner-background: #8C4465;
 
 $play-green: #1E7B85;
@@ -21,7 +21,7 @@ $text-medium: #555;
 $text-dark: #231F20;
 $film-padding: 3px;
 
-@mixin kavon($size: 6px, $top: 13px, $right: 13px, $color: $nav-text, $background: $nav-background) {
+@mixin kavon($size: 6px, $top: 13px, $right: 13px, $color: #794960, $background: $nav-background) {
   &:before {
     content: '';
     position: absolute;
@@ -97,7 +97,7 @@ $film-padding: 3px;
     margin-left: -0.5 * $width;
     width: $width;
     height: $width * 0.8;
-    background: rgba($play-mark, 1);
+    background: #64A7A0;
     border-radius: 2px;
   }
 
@@ -146,14 +146,16 @@ $film-padding: 3px;
 }
 
 %bold-font {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
+  //font-family: pt-sans, sans-serif;
+  //font-family: abel, sans-serif;
+  font-family: tenor-sans, sans-serif; //letter-spacing: -0.02em;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 body {
   //font-family: 'Helvetice', Arial, sans-serif;
-  font-family: 'Open Sans', sans-serif;font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #eaeaea;
 }
 
@@ -284,7 +286,7 @@ body {
           height: 18px;
 
           path {
-            fill: $nav-text;
+            fill: #794960;
           }
         }
       }
@@ -302,7 +304,7 @@ body {
         height: 18px;
 
         path {
-          fill: $nav-text;
+          fill: #794960;
         }
       }
     }
@@ -315,9 +317,12 @@ body {
     .label {
       @include kavon;
       display: inline-block;
-      padding: 13px 28px 13px 6px;
+      padding: 13px 28px 14px 6px;
       font-size: 13px;
       text-transform: uppercase;
+      color: #794960;
+      font-family: tenor-sans, sans-serif;
+      letter-spacing: -0.02em;
     }
   }
 }
@@ -447,7 +452,7 @@ body {
   position: absolute;
   top: 0;
   left: 63%;
-  width: 24%;
+  width: 27%;
 
   .side-title {
     @extend %bold-font;
@@ -488,15 +493,14 @@ body {
 
 .element-title {
   @extend %bold-font;
-  font-size: 22px;
-  color: $green-font;
-  line-height: 30px;
-  margin-bottom: 6px;
+  font-size: 28px;
+  color: #7CB3AD;
+  margin-bottom: 10px;
+  letter-spacing: -0.04em;
 }
 
 .home-element {
-  margin-top: 14px;
-  padding-top: 10px;
+  margin-top: 28px;
 }
 
 .film-of-the-day {
@@ -537,18 +541,29 @@ body {
 
     .title {
       @extend %bold-font;
-      letter-spacing: 0.03em;
-      font-size: 36px;
+      //letter-spacing: 0.03em;
+      font-size: 40px;
       line-height: 28px;
       margin-bottom: 18px;
       color: white;
+
+      span.year {
+        color: darken($feature-background, 26);
+      }
     }
 
     .synopsis {
       font-size: 13px;
-      color: lighten($feature-background, 30);
+      color: lighten($feature-background, 26);
       line-height: 21px;
       max-width: 400px;
+    }
+
+    .banner-2 {
+      @extend %bold-font;
+      color: lighten($feature-background, 26);
+      font-size: 21px;
+      margin-bottom: 20px;
     }
 
     .banner {
@@ -558,6 +573,7 @@ body {
       top: 0;
       left: 0;
       display: inline-block;
+      display: none;
       font-size: 18px;
       padding: 14px 18px;
       color: rgba(white, 0.8);
@@ -567,8 +583,7 @@ body {
 
 .recommended {
   font-size: 0;
-  margin-left: -1 * $film-padding;
-  margin-right: -1 * $film-padding;
+  margin: -1 * $film-padding;
 
   .thumbnail-cont {
     display: inline-block;
@@ -601,13 +616,12 @@ body {
 
 .home-categories {
   font-size: 0;
-  margin-left: -1 * $film-padding;
-  margin-right: -1 * $film-padding;
+  margin: -1 * $film-padding;
 
   .thumbnail-cont {
     display: inline-block;
-    width: 16.6%;
-    height: 9.375vw;
+    width: 16.6666%;
+    height: 13.5vw;
     overflow: hidden;
 
     &:hover {
@@ -639,12 +653,78 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(white, 0.08);
+        background-color: rgba($play-green, 0.25);
       }
     }
 
     .info {
       @extend %film-overlay;
+    }
+  }
+}
+
+.footer {
+  background: #ddd;
+  margin-top: 40px;
+
+  .content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .left-cont {
+    font-size: 14px;
+    line-height: 22px;
+
+    .links {
+      a {
+        color: $banner-background;
+        margin-right: 8px;
+        cursor: pointer;
+
+        &:hover {
+          color: darken($banner-background, 4);
+          transition: color 0.1s ease;
+        }
+      }
+    }
+
+    .info {
+      span {
+        margin-right: 8px;
+        color: #999;
+      }
+    }
+  }
+
+  .right-cont {
+    position: absolute;
+    top: 0;
+    right: $padding;
+    height: 100%;
+
+    .icon {
+      display: inline-block;
+      padding: 6px;
+      top: 50%;
+      transform: translate(0, -50%);
+      cursor: pointer;
+
+      &:hover {
+        svg path {
+          fill: darken($banner-background, 4);
+        }
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+
+        path {
+          fill: $banner-background;
+          transition: fill 0.1s ease;
+        }
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
     <div class="top-content">
       <div class="film-of-the-day">
         {% for film in site.films %}
-          {% if film.title == "The Bat" %}
+          {% if film.title == "A Life at Stake" %}
             <div class="film">
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
               <div class="play-mark"></div>
@@ -21,7 +21,8 @@
             <div class="description">
               <div class="banner">Film of the day</div>
               <div class="info">
-                <div class="title">{{ film.title }}</div>
+                <div class="banner-2">Film of the day</div>
+                <div class="title">{{ film.title }} <span class="year">{{ film.year }}</span></div>
                 <div class="synopsis"> {{ film.synopsis }} </div>
               </div>
             </div>

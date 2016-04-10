@@ -15,13 +15,12 @@
   .right-bar .film .info .description, .recommended .film .info .description, .home-categories .category .info .description {
     font-size: 13px; }
 
-.film-cont .info h2, .right-bar .side-title, .element-title, .film-of-the-day .description .title, .film-of-the-day .description .banner {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
+.film-cont .info h2, .right-bar .side-title, .element-title, .film-of-the-day .description .title, .film-of-the-day .description .banner-2, .film-of-the-day .description .banner {
+  font-family: tenor-sans, sans-serif;
+  font-weight: 400;
   text-transform: uppercase; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   background: #eaeaea; }
 
@@ -116,7 +115,7 @@ body {
           width: 18px;
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
-            fill: #888; }
+            fill: #794960; }
     .nav-bar .controls .social {
       display: inline-block;
       margin: 0 2px;
@@ -127,7 +126,7 @@ body {
         width: 18px;
         height: 18px; }
         .nav-bar .controls .social svg path {
-          fill: #888; }
+          fill: #794960; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
     cursor: pointer; }
@@ -157,9 +156,12 @@ body {
           background: #ddeeec; }
     .nav-bar .drop-menus .drop-menu .label {
       display: inline-block;
-      padding: 13px 28px 13px 6px;
+      padding: 13px 28px 14px 6px;
       font-size: 13px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #794960;
+      font-family: tenor-sans, sans-serif;
+      letter-spacing: -0.02em; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
@@ -167,7 +169,7 @@ body {
         right: 13px;
         width: 6px;
         height: 6px;
-        background: #888;
+        background: #794960;
         transform: rotate(45deg); }
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
@@ -204,7 +206,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #8c4465;
+      background: #64A7A0;
       border-radius: 2px; }
     .thumbnails .film-image:after {
       content: '';
@@ -337,7 +339,7 @@ body {
   position: absolute;
   top: 0;
   left: 63%;
-  width: 24%; }
+  width: 27%; }
   .right-bar .side-title {
     color: #669E99;
     font-size: 18px;
@@ -357,7 +359,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #8c4465;
+      background: #64A7A0;
       border-radius: 2px; }
     .right-bar .film:after {
       content: '';
@@ -391,14 +393,13 @@ body {
   min-height: 800px; }
 
 .element-title {
-  font-size: 22px;
-  color: #669E99;
-  line-height: 30px;
-  margin-bottom: 6px; }
+  font-size: 28px;
+  color: #7CB3AD;
+  margin-bottom: 10px;
+  letter-spacing: -0.04em; }
 
 .home-element {
-  margin-top: 14px;
-  padding-top: 10px; }
+  margin-top: 28px; }
 
 .film-of-the-day {
   font-size: 0;
@@ -421,7 +422,7 @@ body {
       margin-left: -27px;
       width: 54px;
       height: 43.2px;
-      background: #8c4465;
+      background: #64A7A0;
       border-radius: 2px; }
     .film-of-the-day .film:after {
       content: '';
@@ -448,7 +449,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #A76583; }
+    background: #AF6E8C; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -457,30 +458,35 @@ body {
       right: 0;
       padding: 0 40px 50px 40px; }
     .film-of-the-day .description .title {
-      letter-spacing: 0.03em;
-      font-size: 36px;
+      font-size: 40px;
       line-height: 28px;
       margin-bottom: 18px;
       color: white; }
+      .film-of-the-day .description .title span.year {
+        color: #62364b; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #dfc6d1;
+      color: #dec3d0;
       line-height: 21px;
       max-width: 400px; }
+    .film-of-the-day .description .banner-2 {
+      color: #dec3d0;
+      font-size: 21px;
+      margin-bottom: 20px; }
     .film-of-the-day .description .banner {
       background: #8C4465;
       position: absolute;
       top: 0;
       left: 0;
       display: inline-block;
+      display: none;
       font-size: 18px;
       padding: 14px 18px;
       color: rgba(255, 255, 255, 0.8); }
 
 .recommended {
   font-size: 0;
-  margin-left: -3px;
-  margin-right: -3px; }
+  margin: -3px; }
   .recommended .thumbnail-cont {
     display: inline-block;
     width: 25%;
@@ -504,7 +510,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #8c4465;
+      background: #64A7A0;
       border-radius: 2px; }
     .recommended .film:after {
       content: '';
@@ -530,12 +536,11 @@ body {
 
 .home-categories {
   font-size: 0;
-  margin-left: -3px;
-  margin-right: -3px; }
+  margin: -3px; }
   .home-categories .thumbnail-cont {
     display: inline-block;
-    width: 16.6%;
-    height: 9.375vw;
+    width: 16.6666%;
+    height: 13.5vw;
     overflow: hidden; }
     .home-categories .thumbnail-cont:hover .item-image:after {
       opacity: 1; }
@@ -559,4 +564,43 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.08); }
+        background-color: rgba(30, 123, 133, 0.25); }
+
+.footer {
+  background: #ddd;
+  margin-top: 40px; }
+  .footer .content {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+  .footer .left-cont {
+    font-size: 14px;
+    line-height: 22px; }
+    .footer .left-cont .links a {
+      color: #8C4465;
+      margin-right: 8px;
+      cursor: pointer; }
+      .footer .left-cont .links a:hover {
+        color: #7e3d5b;
+        transition: color 0.1s ease; }
+    .footer .left-cont .info span {
+      margin-right: 8px;
+      color: #999; }
+  .footer .right-cont {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    height: 100%; }
+    .footer .right-cont .icon {
+      display: inline-block;
+      padding: 6px;
+      top: 50%;
+      transform: translate(0, -50%);
+      cursor: pointer; }
+      .footer .right-cont .icon:hover svg path {
+        fill: #7e3d5b; }
+      .footer .right-cont .icon svg {
+        width: 30px;
+        height: 30px; }
+        .footer .right-cont .icon svg path {
+          fill: #8C4465;
+          transition: fill 0.1s ease; }

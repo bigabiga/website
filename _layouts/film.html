@@ -17,21 +17,16 @@
 <body>
 {% include header.html %}
 {% include nav-bar.html %}
-<div class="main">
   <div class="top-content">
     <div class="left-content">
       <div class="film-cont">
 
-
         <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-          <img class="cover video" src="{{ page.image }}" width="647" style="cursor:pointer" /></div><div id="thevideo" style="display:none">
-
-        <iframe src="{{ page.video }}autoplay=1;" frameborder="0" allowfullscreen></iframe>
-
-      </div>
-
-
-
+          <img class="cover video" src="{{ page.image }}" width="647" style="cursor:pointer" />
+        </div>
+        <div id="thevideo" style="display:none">
+          <iframe src="{{ page.video }}autoplay=1;" frameborder="0" allowfullscreen></iframe>
+        </div>
 
         <div class="info">
           <h2>{{ page.title }}</h2>
@@ -44,13 +39,12 @@
       <div class="panel"></div>
       <div class="panel"></div>
     </div>
-  </div>
 
-  <div class="right-bar">
-    <div class="side-title">
-      Related Films
-    </div>
-    {% for film in site.films limit:3 %}
+    <div class="right-bar">
+      <div class="side-title">
+        Related Films
+      </div>
+      {% for film in site.films limit:3 %}
       <div class="film">
         <div class="image" style="background-image: url({{ film.image }})"></div>
         <div class="info">
@@ -59,9 +53,10 @@
         </div>
         <div class="play-mark"></div>
       </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
+
 </body>
 <footer>
   {% include footer.html %}
