@@ -98,7 +98,7 @@ $film-padding: 3px;
     width: $width;
     height: $width * 0.8;
     background: #64A7A0;
-    border-radius: 2px;
+    //border-radius: 2px;
   }
 
   &:after {
@@ -135,9 +135,12 @@ $film-padding: 3px;
   line-height: 20px;
 
   .title {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    //font-family: 'Open Sans Condensed', sans-serif;
+    font-family: tenor-sans, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
   }
 
   .description {
@@ -156,6 +159,7 @@ $film-padding: 3px;
 body {
   //font-family: 'Helvetice', Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
+  //font-family: tenor-sans, sans-serif;
   background: #eaeaea;
 }
 
@@ -194,7 +198,7 @@ body {
   color: $text-dark;
   padding: 0 20px;
   z-index: 100;
-  height: 39px;
+  height: 40px;
 
   .controls {
     position: absolute;
@@ -207,7 +211,7 @@ body {
 
       input.search-input {
         width: 39px;
-        height: 39px;
+        height: 40px;
         //padding: 0 8px 0  26px;
         padding: 4px 0;
         color: transparent;
@@ -318,11 +322,11 @@ body {
       @include kavon;
       display: inline-block;
       padding: 13px 28px 14px 6px;
-      font-size: 13px;
-      text-transform: uppercase;
-      color: #794960;
-      font-family: tenor-sans, sans-serif;
-      letter-spacing: -0.02em;
+      font-size: 14px;
+      //text-transform: uppercase;
+      color: #98667E;
+      //font-family: tenor-sans, sans-serif;
+      //letter-spacing: -0.02em;
     }
   }
 }
@@ -494,13 +498,13 @@ body {
 .element-title {
   @extend %bold-font;
   font-size: 28px;
-  color: #7CB3AD;
+  color: #6FB3AD;
   margin-bottom: 10px;
   letter-spacing: -0.04em;
 }
 
 .home-element {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .film-of-the-day {
@@ -542,7 +546,7 @@ body {
     .title {
       @extend %bold-font;
       //letter-spacing: 0.03em;
-      font-size: 40px;
+      font-size: 38px;
       line-height: 28px;
       margin-bottom: 18px;
       color: white;
@@ -664,12 +668,12 @@ body {
 }
 
 .footer {
-  background: #ddd;
+  background: #bbb;
   margin-top: 40px;
 
   .content {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .left-cont {
@@ -678,7 +682,7 @@ body {
 
     .links {
       a {
-        color: $banner-background;
+        color: white;
         margin-right: 8px;
         cursor: pointer;
 
@@ -692,7 +696,7 @@ body {
     .info {
       span {
         margin-right: 8px;
-        color: #999;
+        color: white;
       }
     }
   }
@@ -700,19 +704,22 @@ body {
   .right-cont {
     position: absolute;
     top: 0;
-    right: $padding;
+    right: 0;
     height: 100%;
+    background: $feature-background;
+    padding-left: $padding;
+    padding-right: $padding;
 
     .icon {
       display: inline-block;
-      padding: 6px;
+      padding: 6px 8px;
       top: 50%;
       transform: translate(0, -50%);
       cursor: pointer;
 
       &:hover {
         svg path {
-          fill: darken($banner-background, 4);
+          fill: darken($banner-background, 7);
         }
       }
 
@@ -721,7 +728,7 @@ body {
         height: 30px;
 
         path {
-          fill: $banner-background;
+          fill: white;
           transition: fill 0.1s ease;
         }
       }

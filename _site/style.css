@@ -9,9 +9,11 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   line-height: 20px; }
   .right-bar .film .info .title, .recommended .film .info .title, .home-categories .category .info .title {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 18px; }
+    font-family: tenor-sans, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px; }
   .right-bar .film .info .description, .recommended .film .info .description, .home-categories .category .info .description {
     font-size: 13px; }
 
@@ -54,7 +56,7 @@ body {
   color: #231F20;
   padding: 0 20px;
   z-index: 100;
-  height: 39px; }
+  height: 40px; }
   .nav-bar .controls {
     position: absolute;
     display: block;
@@ -64,7 +66,7 @@ body {
       display: inline-block; }
       .nav-bar .controls .search input.search-input {
         width: 39px;
-        height: 39px;
+        height: 40px;
         padding: 4px 0;
         color: transparent;
         font-size: 14px;
@@ -157,11 +159,8 @@ body {
     .nav-bar .drop-menus .drop-menu .label {
       display: inline-block;
       padding: 13px 28px 14px 6px;
-      font-size: 13px;
-      text-transform: uppercase;
-      color: #794960;
-      font-family: tenor-sans, sans-serif;
-      letter-spacing: -0.02em; }
+      font-size: 14px;
+      color: #98667E; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
@@ -206,8 +205,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #64A7A0;
-      border-radius: 2px; }
+      background: #64A7A0; }
     .thumbnails .film-image:after {
       content: '';
       position: absolute;
@@ -359,8 +357,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #64A7A0;
-      border-radius: 2px; }
+      background: #64A7A0; }
     .right-bar .film:after {
       content: '';
       position: absolute;
@@ -394,12 +391,12 @@ body {
 
 .element-title {
   font-size: 28px;
-  color: #7CB3AD;
+  color: #6FB3AD;
   margin-bottom: 10px;
   letter-spacing: -0.04em; }
 
 .home-element {
-  margin-top: 28px; }
+  margin-top: 30px; }
 
 .film-of-the-day {
   font-size: 0;
@@ -422,8 +419,7 @@ body {
       margin-left: -27px;
       width: 54px;
       height: 43.2px;
-      background: #64A7A0;
-      border-radius: 2px; }
+      background: #64A7A0; }
     .film-of-the-day .film:after {
       content: '';
       position: absolute;
@@ -458,7 +454,7 @@ body {
       right: 0;
       padding: 0 40px 50px 40px; }
     .film-of-the-day .description .title {
-      font-size: 40px;
+      font-size: 38px;
       line-height: 28px;
       margin-bottom: 18px;
       color: white; }
@@ -510,8 +506,7 @@ body {
       margin-left: -18px;
       width: 36px;
       height: 28.8px;
-      background: #64A7A0;
-      border-radius: 2px; }
+      background: #64A7A0; }
     .recommended .film:after {
       content: '';
       position: absolute;
@@ -567,16 +562,16 @@ body {
         background-color: rgba(30, 123, 133, 0.25); }
 
 .footer {
-  background: #ddd;
+  background: #bbb;
   margin-top: 40px; }
   .footer .content {
-    padding-top: 24px;
-    padding-bottom: 24px; }
+    padding-top: 22px;
+    padding-bottom: 22px; }
   .footer .left-cont {
     font-size: 14px;
     line-height: 22px; }
     .footer .left-cont .links a {
-      color: #8C4465;
+      color: white;
       margin-right: 8px;
       cursor: pointer; }
       .footer .left-cont .links a:hover {
@@ -584,23 +579,26 @@ body {
         transition: color 0.1s ease; }
     .footer .left-cont .info span {
       margin-right: 8px;
-      color: #999; }
+      color: white; }
   .footer .right-cont {
     position: absolute;
     top: 0;
-    right: 26px;
-    height: 100%; }
+    right: 0;
+    height: 100%;
+    background: #AF6E8C;
+    padding-left: 26px;
+    padding-right: 26px; }
     .footer .right-cont .icon {
       display: inline-block;
-      padding: 6px;
+      padding: 6px 8px;
       top: 50%;
       transform: translate(0, -50%);
       cursor: pointer; }
       .footer .right-cont .icon:hover svg path {
-        fill: #7e3d5b; }
+        fill: #743854; }
       .footer .right-cont .icon svg {
         width: 30px;
         height: 30px; }
         .footer .right-cont .icon svg path {
-          fill: #8C4465;
+          fill: white;
           transition: fill 0.1s ease; }
