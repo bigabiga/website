@@ -17,11 +17,11 @@ $banner-background: #8C4465;
 
 $play-green: #1E7B85;
 $play-mark: $banner-background;
-$text-medium: #555;
+$text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 3px;
 
-@mixin kavon($size: 6px, $top: 13px, $right: 13px, $color: #794960, $background: $nav-background) {
+@mixin kavon($size: 6px, $top: 14px, $right: 14px, $color: #98667E, $background: $nav-background) {
   &:before {
     content: '';
     position: absolute;
@@ -170,6 +170,12 @@ body {
   margin-right: auto;
 }
 
+.narrow-content {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content {
   padding-left: $padding;
   padding-right: $padding;
@@ -203,8 +209,8 @@ body {
   .controls {
     position: absolute;
     display: block;
-    top: 0px;
-    right: 30px;
+    top: 0;
+    right: 0;
 
     .search {
       display: inline-block;
@@ -321,7 +327,7 @@ body {
     .label {
       @include kavon;
       display: inline-block;
-      padding: 13px 28px 14px 6px;
+      padding: 13px 28px 15px 6px;
       font-size: 14px;
       //text-transform: uppercase;
       color: #98667E;
@@ -334,13 +340,13 @@ body {
 .thumbnails {
   margin-left: -4px;
   margin-right: -4px;
-  padding: $padding;
+  padding: 20px $padding 0 $padding;
   font-size: 0;
 
   .thumbnail {
     display: inline-block;
     width: 25%;
-    padding: 4px 6px 16px 6px;
+    padding: 4px 6px 20px 6px;
   }
 
   .film-image {
@@ -355,18 +361,18 @@ body {
     width: 100%;
     padding: 20px 16px;
     background: white;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 18px;
     color: $text-medium;
-    height: 200px;
+    height: 196px;
 
     .excerpt {
-      height: 138px;
+      height: 128px;
       overflow: hidden;
     }
 
     .title {
-      font-family: 'Open Sans Condensed', sans-serif;
+      @extend %bold-font;
       font-weight: bold;
       font-size: 17px;
       text-transform: uppercase;
@@ -377,17 +383,16 @@ body {
 }
 
 .inner-nav {
-  background: $light-background;
+  background: lighten($feature-background, 8);
   height: 45px;
 
 
   .title {
-    color: darken($green-font, 10);
+    color: darken($feature-background, 20);
     padding-left: $padding;
     font-size: 20px;
     line-height: 45px;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
+    @extend %bold-font;
     font-weight: bold;
   }
 
@@ -398,13 +403,13 @@ body {
 
     .sort-by {
       @include dropdown-menu(27px);
-      @include kavon(7px, 6px, 10px, darken($green-font, 16), $light-green);
-      height: 27px;
+      @include kavon(8px, 6px, 10px, darken($feature-background, 24), lighten($feature-background, 8));
+      height: 29px;
       font-size: 14px;
       line-height: 27px;
-      background: $light-green;
-      color: darken($green-font, 16);
-      padding: 0 26px 0  8px;
+      //background: darken($feature-background, 0);
+      color: darken($feature-background, 24);
+      padding: 0 28px 0  10px;
 
       .menu {
         left: auto;
@@ -415,7 +420,7 @@ body {
 }
 
 .left-content {
-  width: 62%;
+  width: 70%;
 }
 
 .film-cont {
@@ -423,19 +428,19 @@ body {
   display: inline-block;
   margin-bottom: 10px;
 
-  iframe {
-
-  }
-
   .info {
     padding: $padding;
 
     h2 {
       @extend %bold-font;
-      color: $green-font;
-      font-size: 24px;
+      color: #AF6E8C;
+      font-size: 28px;
       font-weight: bold;
       margin-bottom: 14px;
+
+      .year {
+        color: lighten(#AF6E8C, 22);
+      }
     }
 
     h3 {
@@ -450,36 +455,61 @@ body {
       margin-bottom: 16px;
     }
   }
+
+  .video-cover {
+    width: 100%;
+    height: 27vw;
+    background-size: cover;
+    background-position: center center;
+    @include play-mark(54px);
+    cursor: pointer;
+  }
 }
 
 .right-bar {
   position: absolute;
   top: 0;
-  left: 63%;
-  width: 27%;
+  left: 70%;
+  width: 30%;
+  padding: 0 0 0 15px;
 
   .side-title {
     @extend %bold-font;
-    color: $green-font;
-    font-size: 18px;
-    margin-bottom: 12px;
+    color: #777;
+    font-size: 20px;
+    padding: 13px 10px;
+    margin: 0 3px -3px 3px;
+    background: white;
+  }
+
+  font-size: 0;
+  //margin: -1 * $film-padding;
+
+  .thumbnail-cont {
+    display: inline-block;
+    width: 100%;
+    height: 160px;
   }
 
   .film {
+    position: absolute;
+    top: $film-padding;
+    bottom: $film-padding;
+    left: $film-padding;
+    right: $film-padding;
+    font-size: 15px;
+    overflow: hidden;
     @include play-mark(36px);
-    width: 100%;
-    height: 180px;
-    margin-bottom: 10px;
+
+    .film-image {
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+    }
 
     .info {
       @extend %film-overlay;
-    }
-
-    .image {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
     }
   }
 }
@@ -668,7 +698,7 @@ body {
 }
 
 .footer {
-  background: #bbb;
+  background: #aaa;
   margin-top: 40px;
 
   .content {

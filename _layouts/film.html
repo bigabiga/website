@@ -17,19 +17,19 @@
 <body>
 {% include header.html %}
 {% include nav-bar.html %}
-  <div class="top-content">
+  <div class="narrow-content">
     <div class="left-content">
       <div class="film-cont">
 
-        <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-          <img class="cover video" src="{{ page.image }}" width="647" style="cursor:pointer" />
+        <div class="video-cover" style="background-image: url({{ page.image }})" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+          <div class="play-mark"></div>
         </div>
         <div id="thevideo" style="display:none">
           <iframe src="{{ page.video }}autoplay=1;" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="info">
-          <h2>{{ page.title }}</h2>
+          <h2>{{ page.title }} <span class="year">{{ page.year }}</span></h2>
           <h3>{{ page.genre }}</h3>
           <div class="details">
             <p><span class="detail-type">Synopsis: </span>{{ page.synopsis }}</p>
@@ -45,14 +45,16 @@
         Related Films
       </div>
       {% for film in site.films limit:3 %}
-      <div class="film">
-        <div class="image" style="background-image: url({{ film.image }})"></div>
-        <div class="info">
-          <div class="title">{{ film.title }} ({{ film.year }})</div>
-          <div class="description">{{ film.director }}, {{ film.country }}</div>
+      <a class="thumbnail-cont" href="{{ film.url }}">
+        <div class="film">
+          <div class="film-image" style="background-image: url({{ film.image }})"></div>
+          <div class="info">
+            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+          </div>
+          <div class="play-mark"></div>
         </div>
-        <div class="play-mark"></div>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>
