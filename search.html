@@ -4,27 +4,49 @@
 <html lang="en">
 <head>
   {% include basic-head.html %}
-  <script>
-    var a = location.href;
-    var b = a.substring(a.indexOf("?")+1);
-
-    function toggle_visibility() {
-      var e = document.getElementById(b);
-      e.style.display = 'none';
-    }
-  </script>
 </head>
-<body onload="toggle_visibility()">
+<body>
 {% include header.html %}
 {% include nav-bar.html %}
-<div class="main">
-  <div class="inner-nav">
-    <div class="title">Search</div>
+<div class="inner-nav">
+  <div class="content">
+    <div class="title">Search results for "string"</div>
+    <div class="controls">
+      <div class="sort-by">
+        Sort by: Recommended
+        <ul class="menu" id="genres-menu">
+          <li>
+            <a href="">
+              Recommended
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Alphabetical
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Year
+            </a>
+          </li>
+          <li>
+            <a href="">
+              User rating
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="thumbnails">
-    {% for film in site.films %}
-    {% include thumbnail.html %}
-    {% endfor %}
+</div>
+<div class="main">
+  <div class="content">
+    <div class="thumbnails">
+      {% for film in site.films %}
+      {% include thumbnail.html %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 </body>
