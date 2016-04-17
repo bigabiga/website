@@ -1,45 +1,4 @@
 @import url("reset.css");
-/*
-@mixin play-mark($width) {
-  transition: opacity 0.1s ease;
-
-  .play-mark {
-    transition: opacity 0.1s ease;
-    position: absolute;
-    opacity: .75;
-    top: 50%;
-    left: 50%;
-    margin-top: -0.5 * $width * 0.85;
-    margin-left: -0.5 * $width;
-    width: $width;
-    height: $width * 0.8;
-    background: #64A7A0;
-    //border-radius: 2px;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-top: -0.26 * $width;
-    margin-left: -0.5 * $width * 0.3;
-    border-top: 0.23 * $width solid transparent;
-    border-bottom: 0.23 * $width solid transparent;
-    border-left: 0.37 * $width solid rgba(white, 0.7);
-  }
-
-  &:hover {
-    opacity: 0.94;
-
-    .play-mark {
-      opacity: 1;
-    }
-  }
-}
-*/
 .right-bar .film .info, .recommended .film .info, .home-categories .category .info {
   position: absolute;
   bottom: 0;
@@ -52,15 +11,14 @@
   .right-bar .film .info .title, .recommended .film .info .title, .home-categories .category .info .title {
     font-family: tenor-sans, sans-serif;
     letter-spacing: -0.02em;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 14px; }
+    text-transform: none;
+    font-size: 16px; }
   .right-bar .film .info .description, .recommended .film .info .description, .home-categories .category .info .description {
-    font-size: 13px; }
+    font-size: 13px;
+    opacity: 0.7; }
 
-.thumbnails .film-description .title, .inner-nav .title, .film-cont .info h2, .right-bar .side-title, .element-title, .film-of-the-day .description .title, .film-of-the-day .description .banner-2, .film-of-the-day .description .banner {
+.thumbnails .film-description .title, .inner-nav .title, .film-cont .info h2, .right-bar .side-title, .element-title, .film-of-the-day .description .title, .film-of-the-day .description .banner-2 {
   font-family: tenor-sans, sans-serif;
-  font-weight: 400;
   text-transform: uppercase; }
 
 body {
@@ -252,23 +210,34 @@ body {
       width: 43.2px;
       height: 43.2px;
       background: #64A7A0;
-      border-radius: 80px; }
+      border-radius: 80px;
+      z-index: 10; }
+      .thumbnails .film-image .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -10.08px;
+        margin-left: -6.3px;
+        border-top: 10.8px solid transparent;
+        border-bottom: 10.8px solid transparent;
+        border-left: 16.56px solid white; }
     .thumbnails .film-image:after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      margin-top: -10.08px;
-      margin-left: -6.3px;
-      border-top: 10.8px solid transparent;
-      border-bottom: 10.8px solid transparent;
-      border-left: 16.56px solid rgba(255, 255, 255, 0.5); }
-    .thumbnails .film-image:hover {
-      opacity: 0.94; }
-      .thumbnails .film-image:hover .play-mark {
-        opacity: 0.8; }
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .thumbnails .film-image:hover:after {
+      opacity: 0.04; }
+    .thumbnails .film-image:hover .play-mark {
+      opacity: 0.8; }
   .thumbnails .film-description {
     width: 100%;
     padding: 20px 16px;
@@ -281,7 +250,6 @@ body {
       height: 128px;
       overflow: hidden; }
     .thumbnails .film-description .title {
-      font-weight: bold;
       font-size: 17px;
       text-transform: uppercase;
       color: #669E99;
@@ -294,7 +262,9 @@ body {
     color: #7a3f5a;
     font-size: 20px;
     line-height: 60px;
-    font-weight: bold; }
+    text-transform: none; }
+    .inner-nav .title .category {
+      color: rgba(122, 63, 90, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -413,20 +383,35 @@ body {
   .film-cont .info {
     padding: 26px; }
     .film-cont .info h2 {
-      color: #AF6E8C;
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 14px; }
+      text-transform: none;
+      color: #A86182;
+      font-size: 32px;
+      margin-bottom: 12px; }
       .film-cont .info h2 .year {
-        color: #d7b6c5; }
+        color: #d0a9bb; }
     .film-cont .info h3 {
-      margin-bottom: 14px; }
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: #c596ac; }
+      .film-cont .info h3 span {
+        margin-right: 6px; }
+      .film-cont .info h3 .icon {
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        margin-top: -4px; }
+        .film-cont .info h3 .icon svg {
+          width: 100%;
+          height: 100%; }
     .film-cont .info .details {
       width: 100%;
-      color: #666;
+      color: #846071;
       font-size: 14px;
-      line-height: 19px;
-      margin-bottom: 16px; }
+      line-height: 19px; }
+      .film-cont .info .details p {
+        margin-bottom: 12px; }
+      .film-cont .info .details .imdb-link {
+        color: #669E99; }
   .film-cont .video-cover {
     width: 100%;
     height: 27vw;
@@ -445,23 +430,34 @@ body {
       width: 64.8px;
       height: 64.8px;
       background: #64A7A0;
-      border-radius: 80px; }
+      border-radius: 80px;
+      z-index: 10; }
+      .film-cont .video-cover .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -15.12px;
+        margin-left: -9.45px;
+        border-top: 16.2px solid transparent;
+        border-bottom: 16.2px solid transparent;
+        border-left: 24.84px solid white; }
     .film-cont .video-cover:after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      margin-top: -15.12px;
-      margin-left: -9.45px;
-      border-top: 16.2px solid transparent;
-      border-bottom: 16.2px solid transparent;
-      border-left: 24.84px solid rgba(255, 255, 255, 0.5); }
-    .film-cont .video-cover:hover {
-      opacity: 0.94; }
-      .film-cont .video-cover:hover .play-mark {
-        opacity: 0.8; }
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .film-cont .video-cover:hover:after {
+      opacity: 0.04; }
+    .film-cont .video-cover:hover .play-mark {
+      opacity: 0.8; }
 
 .right-bar {
   position: absolute;
@@ -500,23 +496,34 @@ body {
       width: 43.2px;
       height: 43.2px;
       background: #64A7A0;
-      border-radius: 80px; }
+      border-radius: 80px;
+      z-index: 10; }
+      .right-bar .film .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -10.08px;
+        margin-left: -6.3px;
+        border-top: 10.8px solid transparent;
+        border-bottom: 10.8px solid transparent;
+        border-left: 16.56px solid white; }
     .right-bar .film:after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      margin-top: -10.08px;
-      margin-left: -6.3px;
-      border-top: 10.8px solid transparent;
-      border-bottom: 10.8px solid transparent;
-      border-left: 16.56px solid rgba(255, 255, 255, 0.5); }
-    .right-bar .film:hover {
-      opacity: 0.94; }
-      .right-bar .film:hover .play-mark {
-        opacity: 0.8; }
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .right-bar .film:hover:after {
+      opacity: 0.04; }
+    .right-bar .film:hover .play-mark {
+      opacity: 0.8; }
     .right-bar .film .film-image {
       width: 100%;
       height: 100%;
@@ -533,7 +540,7 @@ body {
   min-height: 800px; }
 
 .element-title {
-  font-size: 28px;
+  font-size: 27px;
   color: #6FB3AD;
   margin-bottom: 10px;
   letter-spacing: -0.04em; }
@@ -563,23 +570,34 @@ body {
       width: 64.8px;
       height: 64.8px;
       background: #64A7A0;
-      border-radius: 80px; }
+      border-radius: 80px;
+      z-index: 10; }
+      .film-of-the-day .film .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -15.12px;
+        margin-left: -9.45px;
+        border-top: 16.2px solid transparent;
+        border-bottom: 16.2px solid transparent;
+        border-left: 24.84px solid white; }
     .film-of-the-day .film:after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      margin-top: -15.12px;
-      margin-left: -9.45px;
-      border-top: 16.2px solid transparent;
-      border-bottom: 16.2px solid transparent;
-      border-left: 24.84px solid rgba(255, 255, 255, 0.5); }
-    .film-of-the-day .film:hover {
-      opacity: 0.94; }
-      .film-of-the-day .film:hover .play-mark {
-        opacity: 0.8; }
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .film-of-the-day .film:hover:after {
+      opacity: 0.04; }
+    .film-of-the-day .film:hover .play-mark {
+      opacity: 0.8; }
     .film-of-the-day .film .film-image {
       width: 100%;
       height: 100%;
@@ -598,9 +616,10 @@ body {
       right: 0;
       padding: 0 40px 50px 40px; }
     .film-of-the-day .description .title {
-      font-size: 38px;
-      line-height: 28px;
-      margin-bottom: 18px;
+      text-transform: none;
+      font-size: 39px;
+      line-height: 45px;
+      margin-bottom: 12px;
       color: white; }
       .film-of-the-day .description .title span.year {
         color: #66354b; }
@@ -612,17 +631,7 @@ body {
     .film-of-the-day .description .banner-2 {
       color: #e0c3d1;
       font-size: 21px;
-      margin-bottom: 20px; }
-    .film-of-the-day .description .banner {
-      background: #8C4465;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      display: none;
-      font-size: 18px;
-      padding: 14px 18px;
-      color: rgba(255, 255, 255, 0.8); }
+      margin-bottom: 14px; }
 
 .recommended {
   font-size: 0;
@@ -651,23 +660,34 @@ body {
       width: 43.2px;
       height: 43.2px;
       background: #64A7A0;
-      border-radius: 80px; }
+      border-radius: 80px;
+      z-index: 10; }
+      .recommended .film .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -10.08px;
+        margin-left: -6.3px;
+        border-top: 10.8px solid transparent;
+        border-bottom: 10.8px solid transparent;
+        border-left: 16.56px solid white; }
     .recommended .film:after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      margin-top: -10.08px;
-      margin-left: -6.3px;
-      border-top: 10.8px solid transparent;
-      border-bottom: 10.8px solid transparent;
-      border-left: 16.56px solid rgba(255, 255, 255, 0.5); }
-    .recommended .film:hover {
-      opacity: 0.94; }
-      .recommended .film:hover .play-mark {
-        opacity: 0.8; }
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .recommended .film:hover:after {
+      opacity: 0.04; }
+    .recommended .film:hover .play-mark {
+      opacity: 0.8; }
     .recommended .film .film-image {
       width: 100%;
       height: 100%;
@@ -705,6 +725,26 @@ body {
         bottom: 0;
         left: 0;
         background-color: rgba(30, 123, 133, 0.3); }
+
+.about-cont {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 30px 26px;
+  min-height: 450px;
+  margin-bottom: 250px; }
+  .about-cont h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #3d615e;
+    margin-bottom: 18px;
+    font-family: tenor-sans, sans-serif; }
+  .about-cont p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #3d615e;
+    margin-bottom: 16px; }
 
 .footer {
   background: #aaa;
