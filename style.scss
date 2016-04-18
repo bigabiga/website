@@ -13,7 +13,7 @@ $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
 //$feature-background: #B7698D;
-$feature-background: #42928B;
+$feature-background: #499C95;
 $banner-background: #8C4465;
 
 $play-green: #1E7B85;
@@ -408,7 +408,7 @@ body {
 }
 
 .inner-nav {
-  background: #A7D2CE;
+  background: lighten($feature-background, 26);
   $inner-nav-height: 56px;
   height: $inner-nav-height;
 
@@ -432,7 +432,7 @@ body {
     .sort-by {
       display: inline-block;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 20px, 12px, darken($feature-background, 24), #A7D2CE);
+      @include kavon(7px, 20px, 12px, darken($feature-background, 24), lighten($feature-background, 26));
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
@@ -521,7 +521,7 @@ body {
           height: 18px;
 
           path {
-            fill: #794960;
+            fill: darken($feature-background, 24);
           }
         }
       }
@@ -675,7 +675,7 @@ body {
 .element-title {
   @extend %bold-font;
   font-size: 27px;
-  color: #6FB3AD;
+  color: lighten($feature-background, 4);
   margin-bottom: 10px;
   letter-spacing: -0.04em;
 }

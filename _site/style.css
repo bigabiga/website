@@ -129,7 +129,7 @@ body {
           width: 18px;
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
-            fill: #295a55; }
+            fill: #2f6460; }
     .nav-bar .controls .social {
       display: inline-block;
       margin: 0 2px;
@@ -140,7 +140,7 @@ body {
         width: 18px;
         height: 18px; }
         .nav-bar .controls .social svg path {
-          fill: #295a55; }
+          fill: #2f6460; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
     cursor: pointer; }
@@ -173,7 +173,7 @@ body {
       padding: 13px 28px 15px 6px;
       font-size: 13px;
       text-transform: uppercase;
-      color: #295a55; }
+      color: #2f6460; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
@@ -181,7 +181,7 @@ body {
         right: 14px;
         width: 6px;
         height: 6px;
-        background: #295a55;
+        background: #2f6460;
         transform: rotate(45deg); }
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
@@ -265,15 +265,15 @@ body {
       margin-bottom: 10px; }
 
 .inner-nav {
-  background: #A7D2CE;
+  background: #9ad0cb;
   height: 56px; }
   .inner-nav .title {
-    color: #224c48;
+    color: #285753;
     font-size: 20px;
     line-height: 56px;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(34, 76, 72, 0.5); }
+      color: rgba(40, 87, 83, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -284,7 +284,7 @@ body {
       height: 56px;
       font-size: 14px;
       line-height: 56px;
-      color: #1c3e3b;
+      color: #224945;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -317,7 +317,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #1c3e3b;
+        background: #224945;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -326,7 +326,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #A7D2CE;
+        background: #9ad0cb;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by .menu {
         left: auto;
@@ -344,18 +344,18 @@ body {
         color: #231F20;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #1c3e3b;
+          color: #224945;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #1c3e3b;
+          color: #224945;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #1c3e3b;
+          color: #224945;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #1c3e3b;
+          color: #224945;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus {
           background: #bbdcd9; }
@@ -380,7 +380,7 @@ body {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: #794960; }
+            fill: #224945; }
 
 .left-content {
   width: 68%; }
@@ -393,15 +393,15 @@ body {
     padding: 34px 30px; }
     .film-cont .info h2 {
       text-transform: none;
-      color: #295a55;
+      color: #2f6460;
       font-size: 34px;
       margin-bottom: 14px; }
       .film-cont .info h2 .year {
-        color: #4daba2; }
+        color: #58b1a9; }
     .film-cont .info h3 {
       margin-bottom: 10px;
       font-size: 13px;
-      color: #48a098; }
+      color: #50aaa2; }
       .film-cont .info h3 span {
         margin-right: 6px; }
       .film-cont .info h3.more-info {
@@ -415,10 +415,10 @@ body {
           width: 100%;
           height: 100%; }
           .film-cont .info h3 .icon svg path {
-            fill: #48a098; }
+            fill: #50aaa2; }
     .film-cont .info .details {
       width: 100%;
-      color: #295a55;
+      color: #2f6460;
       font-size: 13px;
       line-height: 19px; }
       .film-cont .info .details p {
@@ -556,7 +556,7 @@ body {
 
 .element-title {
   font-size: 27px;
-  color: #6FB3AD;
+  color: #50aaa2;
   margin-bottom: 10px;
   letter-spacing: -0.04em; }
 
@@ -624,7 +624,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #42928B; }
+    background: #499C95; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -635,7 +635,7 @@ body {
     .film-of-the-day .description h3 {
       margin-bottom: 8px;
       font-size: 13px;
-      color: #a9d8d4;
+      color: #b6ddd9;
       display: inline-block; }
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
@@ -650,7 +650,7 @@ body {
           width: 100%;
           height: 100%; }
           .film-of-the-day .description h3 .icon svg path {
-            fill: #bee2df; }
+            fill: #cbe6e4; }
     .film-of-the-day .description .title {
       text-transform: none;
       font-size: 39px;
@@ -658,14 +658,14 @@ body {
       margin-bottom: 14px;
       color: white; }
       .film-of-the-day .description .title span.year {
-        color: #1c3e3b; }
+        color: #224945; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #a9d8d4;
+      color: #b6ddd9;
       line-height: 21px;
       max-width: 600px; }
     .film-of-the-day .description .banner-2 {
-      color: #8dccc6;
+      color: #9ad0cb;
       font-size: 21px;
       margin-bottom: 12px; }
 
@@ -838,7 +838,7 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    background: #42928B;
+    background: #499C95;
     padding-left: 26px;
     padding-right: 26px; }
     .footer .right-cont .icon {
