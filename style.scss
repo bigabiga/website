@@ -147,14 +147,15 @@ $film-padding: 3px;
   padding: 10px;
   color: white;
   text-shadow: 0 0 10px rgba(black, 0.4);
-  line-height: 20px;
+  line-height: 18px;
 
   .title {
     //font-family: 'Open Sans Condensed', sans-serif;
-    font-family: tenor-sans, sans-serif;
-    letter-spacing: -0.02em;
+    //font-family: tenor-sans, sans-serif;
+    //letter-spacing: -0.02em;
     text-transform: none;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 13px;
   }
 
   .description {
@@ -218,8 +219,8 @@ body {
     vertical-align: bottom;
     margin-bottom: 23px;
     font-family: tenor-sans, sans-serif;
-    color: #bbb;
-    text-transform: uppercase;
+    color: #A7D2CE;
+    //text-transform: uppercase;
     margin-left: 1px;
   }
 }
@@ -408,7 +409,7 @@ body {
 
 .inner-nav {
   background: #A7D2CE;
-  $inner-nav-height: 60px;
+  $inner-nav-height: 56px;
   height: $inner-nav-height;
 
   .title {
@@ -431,7 +432,7 @@ body {
     .sort-by {
       display: inline-block;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 22px, 12px, darken($feature-background, 24), #A7D2CE);
+      @include kavon(7px, 20px, 12px, darken($feature-background, 24), #A7D2CE);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
@@ -511,7 +512,7 @@ body {
 
       .icon {
         position: absolute;
-        top: 22px;
+        top: 20px;
         left: 7px;
         pointer-events: none;
 
@@ -538,14 +539,14 @@ body {
   margin-bottom: 10px;
 
   .info {
-    padding: 30px $padding;
+    padding: 34px 30px;
 
     h2 {
       @extend %bold-font;
       text-transform: none;
       color: #A86182;
-      font-size: 32px;
-      margin-bottom: 12px;
+      font-size: 34px;
+      margin-bottom: 14px;
 
       .year {
         color: lighten(#A86182, 22);
@@ -562,7 +563,7 @@ body {
       }
 
       &.more-info {
-        margin-bottom: 18px;
+        margin-bottom: 20px;
       }
 
       .icon {
@@ -723,7 +724,6 @@ body {
 
       &.more-info {
         margin-bottom: 18px;
-        margin-left: 12px;
       }
 
       .icon {
@@ -852,6 +852,11 @@ body {
 
     .info {
       @extend %film-overlay;
+
+      .title {
+        //font-size: 16px;
+        //font-family: tenor-sans, sans-serif;
+      }
     }
   }
 }

@@ -7,12 +7,11 @@
   padding: 10px;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  line-height: 20px; }
+  line-height: 18px; }
   .right-bar .film .info .title, .recommended .film .info .title, .home-categories .category .info .title {
-    font-family: tenor-sans, sans-serif;
-    letter-spacing: -0.02em;
     text-transform: none;
-    font-size: 16px; }
+    font-weight: 600;
+    font-size: 13px; }
   .right-bar .film .info .description, .recommended .film .info .description, .home-categories .category .info .description {
     font-size: 13px;
     opacity: 0.7; }
@@ -60,8 +59,7 @@ body {
     vertical-align: bottom;
     margin-bottom: 23px;
     font-family: tenor-sans, sans-serif;
-    color: #bbb;
-    text-transform: uppercase;
+    color: #A7D2CE;
     margin-left: 1px; }
 
 .nav-bar {
@@ -266,11 +264,11 @@ body {
 
 .inner-nav {
   background: #A7D2CE;
-  height: 60px; }
+  height: 56px; }
   .inner-nav .title {
     color: #7a3f5a;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 56px;
     text-transform: none; }
     .inner-nav .title .category {
       color: rgba(122, 63, 90, 0.5); }
@@ -281,9 +279,9 @@ body {
     .inner-nav .controls .sort-by {
       display: inline-block;
       cursor: pointer;
-      height: 60px;
+      height: 56px;
       font-size: 14px;
-      line-height: 60px;
+      line-height: 56px;
       color: #6d3850;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
@@ -296,7 +294,7 @@ body {
         pointer-events: none;
         z-index: 1000;
         cursor: default;
-        top: 60px;
+        top: 56px;
         left: 0;
         min-width: 190px;
         padding: 10px 0;
@@ -313,7 +311,7 @@ body {
       .inner-nav .controls .sort-by:before {
         content: '';
         position: absolute;
-        top: 24px;
+        top: 22px;
         right: 12px;
         width: 7px;
         height: 7px;
@@ -322,7 +320,7 @@ body {
       .inner-nav .controls .sort-by:after {
         content: '';
         position: absolute;
-        top: 22px;
+        top: 20px;
         right: 12px;
         width: 7px;
         height: 7px;
@@ -336,7 +334,7 @@ body {
       top: 0;
       right: 0; }
       .inner-nav .controls .search .search-input {
-        height: 60px;
+        height: 56px;
         font-size: 14px;
         background: transparent;
         width: 180px;
@@ -373,7 +371,7 @@ body {
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
-        top: 22px;
+        top: 20px;
         left: 7px;
         pointer-events: none; }
         .inner-nav .controls .search .icon svg {
@@ -390,12 +388,12 @@ body {
   display: inline-block;
   margin-bottom: 10px; }
   .film-cont .info {
-    padding: 30px 26px; }
+    padding: 34px 30px; }
     .film-cont .info h2 {
       text-transform: none;
       color: #A86182;
-      font-size: 32px;
-      margin-bottom: 12px; }
+      font-size: 34px;
+      margin-bottom: 14px; }
       .film-cont .info h2 .year {
         color: #d0a9bb; }
     .film-cont .info h3 {
@@ -405,7 +403,7 @@ body {
       .film-cont .info h3 span {
         margin-right: 6px; }
       .film-cont .info h3.more-info {
-        margin-bottom: 18px; }
+        margin-bottom: 20px; }
       .film-cont .info h3 .icon {
         width: 19px;
         height: 19px;
@@ -634,8 +632,7 @@ body {
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
       .film-of-the-day .description h3.more-info {
-        margin-bottom: 18px;
-        margin-left: 12px; }
+        margin-bottom: 18px; }
       .film-of-the-day .description h3 .icon {
         width: 19px;
         height: 19px;
