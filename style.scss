@@ -21,7 +21,7 @@ $text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 3px;
 
-@mixin kavon($size: 6px, $top: 14px, $right: 14px, $color: #98667E, $background: $nav-background) {
+@mixin kavon($size: 6px, $top: 13px, $right: 14px, $color: #98667E, $background: $nav-background) {
   &:before {
     content: '';
     position: absolute;
@@ -354,8 +354,8 @@ body {
       @include kavon;
       display: inline-block;
       padding: 13px 28px 15px 6px;
-      font-size: 14px;
-      //text-transform: uppercase;
+      font-size: 13px;
+      text-transform: uppercase;
       color: #98667E;
       //font-family: tenor-sans, sans-serif;
       //letter-spacing: -0.02em;

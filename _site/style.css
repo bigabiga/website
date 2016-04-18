@@ -170,12 +170,13 @@ body {
     .nav-bar .drop-menus .drop-menu .label {
       display: inline-block;
       padding: 13px 28px 15px 6px;
-      font-size: 14px;
+      font-size: 13px;
+      text-transform: uppercase;
       color: #98667E; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
-        top: 16px;
+        top: 15px;
         right: 14px;
         width: 6px;
         height: 6px;
@@ -184,7 +185,7 @@ body {
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
         position: absolute;
-        top: 14px;
+        top: 13px;
         right: 14px;
         width: 6px;
         height: 6px;
