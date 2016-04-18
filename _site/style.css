@@ -792,6 +792,9 @@ body {
     .footer .left-cont .info span {
       margin-right: 8px;
       color: white; }
+    .footer .left-cont .info a:hover {
+      color: #7e3d5b;
+      transition: color 0.1s ease; }
   .footer .right-cont {
     position: absolute;
     top: 0;
