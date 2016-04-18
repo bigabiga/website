@@ -825,13 +825,13 @@ body {
       margin-right: 8px;
       cursor: pointer; }
       .footer .left-cont .links a:hover {
-        color: #7e3d5b;
+        color: #285753;
         transition: color 0.1s ease; }
     .footer .left-cont .info span {
       margin-right: 8px;
       color: white; }
     .footer .left-cont .info a:hover {
-      color: #7e3d5b;
+      color: #285753;
       transition: color 0.1s ease; }
   .footer .right-cont {
     position: absolute;
@@ -848,7 +848,7 @@ body {
       transform: translate(0, -50%);
       cursor: pointer; }
       .footer .right-cont .icon:hover svg path {
-        fill: #743854; }
+        fill: #285753; }
       .footer .right-cont .icon svg {
         width: 30px;
         height: 30px; }

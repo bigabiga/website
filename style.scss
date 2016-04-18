@@ -962,7 +962,7 @@ body {
         cursor: pointer;
 
         &:hover {
-          color: darken($banner-background, 4);
+          color: darken($feature-background, 20);
           transition: color 0.1s ease;
         }
       }
@@ -975,7 +975,7 @@ body {
       }
 
       a:hover {
-        color: darken($banner-background, 4);
+        color: darken($feature-background, 20);
         transition: color 0.1s ease;
       }
     }
@@ -999,7 +999,7 @@ body {
 
       &:hover {
         svg path {
-          fill: darken($banner-background, 7);
+          fill: darken($feature-background, 20);
         }
       }
 
