@@ -746,6 +746,33 @@ body {
     color: #3d615e;
     margin-bottom: 16px; }
 
+.contact-form {
+  font-size: 14px; }
+  .contact-form label {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #3d615e; }
+  .contact-form input, .contact-form textarea {
+    display: block;
+    border: none;
+    background: #daecea;
+    padding: 6px 8px;
+    width: 100%;
+    color: #444;
+    margin-bottom: 12px;
+    margin-top: 4px; }
+  .contact-form input[type="submit"] {
+    min-width: 120px;
+    width: auto;
+    background: #669E99;
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer; }
+    .contact-form input[type="submit"]:hover {
+      background: #51807c; }
+
 .footer {
   background: #aaa;
   margin-top: 40px; }
