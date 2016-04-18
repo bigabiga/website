@@ -89,7 +89,7 @@ $film-padding: 3px;
   .play-mark {
     transition: opacity 0.1s ease;
     position: absolute;
-    opacity: .6;
+    opacity: 0;
     top: 50%;
     left: 50%;
     margin-top: -0.5 * $width * 1.2;
@@ -601,6 +601,10 @@ body {
     background-position: center center;
     @include play-mark(54px);
     cursor: pointer;
+
+    .play-mark {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -687,6 +691,10 @@ body {
     width: 50%;
     height: 100%;
     @include play-mark(54px);
+
+    .play-mark {
+      opacity: 0.6;
+    }
 
     .film-image {
       width: 100%;
