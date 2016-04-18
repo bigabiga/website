@@ -54,6 +54,15 @@ body {
     background-repeat: no-repeat;
     width: 370px;
     height: 90px; }
+  .header .tagline {
+    display: inline-block;
+    font-size: 17px;
+    vertical-align: bottom;
+    margin-bottom: 23px;
+    font-family: tenor-sans, sans-serif;
+    color: #bbb;
+    text-transform: uppercase;
+    margin-left: 1px; }
 
 .nav-bar {
   background: #eaeaea;
@@ -250,8 +259,8 @@ body {
       height: 128px;
       overflow: hidden; }
     .thumbnails .film-description .title {
-      font-size: 17px;
-      text-transform: uppercase;
+      font-size: 20px;
+      text-transform: none;
       color: #669E99;
       margin-bottom: 10px; }
 
@@ -381,7 +390,7 @@ body {
   display: inline-block;
   margin-bottom: 10px; }
   .film-cont .info {
-    padding: 26px; }
+    padding: 30px 26px; }
     .film-cont .info h2 {
       text-transform: none;
       color: #A86182;
@@ -390,11 +399,13 @@ body {
       .film-cont .info h2 .year {
         color: #d0a9bb; }
     .film-cont .info h3 {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-size: 13px;
       color: #c596ac; }
       .film-cont .info h3 span {
         margin-right: 6px; }
+      .film-cont .info h3.more-info {
+        margin-bottom: 18px; }
       .film-cont .info h3 .icon {
         width: 19px;
         height: 19px;
@@ -615,11 +626,31 @@ body {
       left: 0;
       right: 0;
       padding: 0 40px 50px 40px; }
+    .film-of-the-day .description h3 {
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #e0c3d1;
+      display: inline-block; }
+      .film-of-the-day .description h3 span {
+        margin-right: 6px; }
+      .film-of-the-day .description h3.more-info {
+        margin-bottom: 18px;
+        margin-left: 12px; }
+      .film-of-the-day .description h3 .icon {
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        margin-top: -4px; }
+        .film-of-the-day .description h3 .icon svg {
+          width: 100%;
+          height: 100%; }
+          .film-of-the-day .description h3 .icon svg path {
+            fill: #f9f2f5; }
     .film-of-the-day .description .title {
       text-transform: none;
       font-size: 39px;
       line-height: 45px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       color: white; }
       .film-of-the-day .description .title span.year {
         color: #66354b; }
@@ -627,7 +658,7 @@ body {
       font-size: 13px;
       color: #e0c3d1;
       line-height: 21px;
-      max-width: 400px; }
+      max-width: 600px; }
     .film-of-the-day .description .banner-2 {
       color: #e0c3d1;
       font-size: 21px;
@@ -724,10 +755,10 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(30, 123, 133, 0.3); }
+        background-color: rgba(30, 123, 133, 0.27); }
 
 .about-cont {
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   background: white;
