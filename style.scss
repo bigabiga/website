@@ -12,11 +12,10 @@ $padding: 26px;
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
-$feature-background: #B36C8D;
+$feature-background: #B7658B;
 $banner-background: #8C4465;
 
 $play-green: #1E7B85;
-$play-mark: $banner-background;
 $text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 3px;
@@ -215,12 +214,12 @@ body {
 
   .tagline {
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     vertical-align: bottom;
     margin-bottom: 23px;
     font-family: tenor-sans, sans-serif;
-    color: #A7D2CE;
-    //text-transform: uppercase;
+    color: #b5b5b5;
+    text-transform: uppercase;
     margin-left: 1px;
   }
 }
@@ -862,7 +861,7 @@ body {
 }
 
 .about-cont {
-  max-width: 700px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
   background: white;
@@ -880,7 +879,7 @@ body {
 
   p {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 23px;
     color: darken($green-font, 20);
     margin-bottom: 16px;
 
