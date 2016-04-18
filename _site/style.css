@@ -129,7 +129,7 @@ body {
           width: 18px;
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
-            fill: #794960; }
+            fill: #295a55; }
     .nav-bar .controls .social {
       display: inline-block;
       margin: 0 2px;
@@ -140,7 +140,7 @@ body {
         width: 18px;
         height: 18px; }
         .nav-bar .controls .social svg path {
-          fill: #794960; }
+          fill: #295a55; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
     cursor: pointer; }
@@ -173,7 +173,7 @@ body {
       padding: 13px 28px 15px 6px;
       font-size: 13px;
       text-transform: uppercase;
-      color: #98667E; }
+      color: #295a55; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
@@ -181,7 +181,7 @@ body {
         right: 14px;
         width: 6px;
         height: 6px;
-        background: #98667E;
+        background: #295a55;
         transform: rotate(45deg); }
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
@@ -268,12 +268,12 @@ body {
   background: #A7D2CE;
   height: 56px; }
   .inner-nav .title {
-    color: #204744;
+    color: #224c48;
     font-size: 20px;
     line-height: 56px;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(32, 71, 68, 0.5); }
+      color: rgba(34, 76, 72, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -284,7 +284,7 @@ body {
       height: 56px;
       font-size: 14px;
       line-height: 56px;
-      color: #193936;
+      color: #1c3e3b;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -317,7 +317,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #193936;
+        background: #1c3e3b;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -344,18 +344,18 @@ body {
         color: #231F20;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #193936;
+          color: #1c3e3b;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #193936;
+          color: #1c3e3b;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #193936;
+          color: #1c3e3b;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #193936;
+          color: #1c3e3b;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus {
           background: #bbdcd9; }
@@ -393,15 +393,15 @@ body {
     padding: 34px 30px; }
     .film-cont .info h2 {
       text-transform: none;
-      color: #A86182;
+      color: #295a55;
       font-size: 34px;
       margin-bottom: 14px; }
       .film-cont .info h2 .year {
-        color: #d0a9bb; }
+        color: #4daba2; }
     .film-cont .info h3 {
       margin-bottom: 10px;
       font-size: 13px;
-      color: #c596ac; }
+      color: #48a098; }
       .film-cont .info h3 span {
         margin-right: 6px; }
       .film-cont .info h3.more-info {
@@ -414,10 +414,12 @@ body {
         .film-cont .info h3 .icon svg {
           width: 100%;
           height: 100%; }
+          .film-cont .info h3 .icon svg path {
+            fill: #48a098; }
     .film-cont .info .details {
       width: 100%;
-      color: #846071;
-      font-size: 14px;
+      color: #295a55;
+      font-size: 13px;
       line-height: 19px; }
       .film-cont .info .details p {
         margin-bottom: 12px; }
@@ -622,7 +624,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #3F8E87; }
+    background: #42928B; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -631,9 +633,9 @@ body {
       right: 0;
       padding: 0 40px 50px 40px; }
     .film-of-the-day .description h3 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-size: 13px;
-      color: #96d0cb;
+      color: #a9d8d4;
       display: inline-block; }
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
@@ -648,24 +650,24 @@ body {
           width: 100%;
           height: 100%; }
           .film-of-the-day .description h3 .icon svg path {
-            fill: #b9e0dd; }
+            fill: #bee2df; }
     .film-of-the-day .description .title {
       text-transform: none;
       font-size: 39px;
       line-height: 45px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       color: white; }
       .film-of-the-day .description .title span.year {
-        color: #193936; }
+        color: #1c3e3b; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #96d0cb;
+      color: #a9d8d4;
       line-height: 21px;
       max-width: 600px; }
     .film-of-the-day .description .banner-2 {
-      color: #88cac4;
+      color: #8dccc6;
       font-size: 21px;
-      margin-bottom: 14px; }
+      margin-bottom: 12px; }
 
 .recommended {
   font-size: 0;
@@ -774,7 +776,9 @@ body {
     color: #3d615e;
     margin-bottom: 18px;
     font-family: tenor-sans, sans-serif; }
-  .about-cont p {
+  .about-cont h3 {
+    text-transform: uppercase; }
+  .about-cont p, .about-cont h3 {
     font-size: 14px;
     line-height: 23px;
     color: #3d615e;
@@ -834,7 +838,7 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    background: #3F8E87;
+    background: #42928B;
     padding-left: 26px;
     padding-right: 26px; }
     .footer .right-cont .icon {
