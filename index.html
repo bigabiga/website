@@ -14,10 +14,10 @@
       <div class="film-of-the-day">
         {% for film in site.films %}
           {% if film.title == "A Life at Stake" %}
-            <div class="film">
+            <a href="{{ film.url }}"><div class="film">
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
               <div class="play-mark"></div>
-            </div>
+            </div></a>
             <div class="description">
               <div class="banner">Film of the day</div>
               <div class="info">
