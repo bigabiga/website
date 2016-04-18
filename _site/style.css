@@ -268,12 +268,12 @@ body {
   background: #A7D2CE;
   height: 56px; }
   .inner-nav .title {
-    color: #7c3a59;
+    color: #7e3c5a;
     font-size: 20px;
     line-height: 56px;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(124, 58, 89, 0.5); }
+      color: rgba(126, 60, 90, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -284,7 +284,7 @@ body {
       height: 56px;
       font-size: 14px;
       line-height: 56px;
-      color: #6e334f;
+      color: #703651;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -317,7 +317,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #6e334f;
+        background: #703651;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -344,18 +344,18 @@ body {
         color: #231F20;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #6e334f;
+          color: #703651;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #6e334f;
+          color: #703651;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #6e334f;
+          color: #703651;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #6e334f;
+          color: #703651;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus {
           background: #bbdcd9; }
@@ -618,7 +618,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #B7658B; }
+    background: #B7698D; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -629,7 +629,7 @@ body {
     .film-of-the-day .description h3 {
       margin-bottom: 10px;
       font-size: 13px;
-      color: #e1bfcf;
+      color: #e2c3d1;
       display: inline-block; }
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
@@ -644,7 +644,7 @@ body {
           width: 100%;
           height: 100%; }
           .film-of-the-day .description h3 .icon svg path {
-            fill: #f8f0f4; }
+            fill: #f9f3f6; }
     .film-of-the-day .description .title {
       text-transform: none;
       font-size: 39px;
@@ -652,14 +652,14 @@ body {
       margin-bottom: 16px;
       color: white; }
       .film-of-the-day .description .title span.year {
-        color: #67304a; }
+        color: #69324c; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #e1bfcf;
+      color: #e2c3d1;
       line-height: 21px;
       max-width: 600px; }
     .film-of-the-day .description .banner-2 {
-      color: #e1bfcf;
+      color: #e2c3d1;
       font-size: 21px;
       margin-bottom: 14px; }
 
@@ -830,7 +830,7 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    background: #B7658B;
+    background: #B7698D;
     padding-left: 26px;
     padding-right: 26px; }
     .footer .right-cont .icon {
