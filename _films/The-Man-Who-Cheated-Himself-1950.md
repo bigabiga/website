@@ -6,7 +6,7 @@ meta-description:  Watch The Man Who Cheated Himself (1950), a classic crime fil
 excerpt: The Man Who Cheated Himself (1950) is a crime film noir about Ed, a homicide detective who witnessed his girlfriend kill her husband. The good news is that Ed himself is assigned to investigate the case. The bad news is that his hotshot younger brother is assigned to the case with him.
 
 title: The Man Who Cheated Himself
-runtime: 1h 21min
+runtime: 81
 permalink: films/The-Man-Who-Cheated-Himself-1950
 
 genre:

@@ -19,6 +19,8 @@ decade: 1960s
 
 recommended: no
 
+runtime: 58
+
 image: /feature-images/The-Amazing-Transparent-Man-1960.jpg
 
 video: https://www.youtube.com/embed/hP7kRkW0Djk?rel=0&amp;controls=0&amp;showinfo=0

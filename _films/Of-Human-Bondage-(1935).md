@@ -22,6 +22,8 @@ decade: 1930s
 
 recommended: yes
 
+runtime: 83
+
 image: /feature-images/Bette-Davis-Leslie-Howard-in-Of-Human-Bondage.jpg
 
 video: https://www.youtube.com/embed/cbijwFbAy6s?rel=0&amp;controls=0&amp;showinfo=0

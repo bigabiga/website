@@ -19,6 +19,8 @@ decade: 1950s
 
 recommended: no
 
+runtime: 78
+
 image: /feature-images/Life-at-Stake.png
 
 video: https://www.youtube.com/embed/G8Qhi1sUpPw?rel=0&amp;controls=0&amp;showinfo=0

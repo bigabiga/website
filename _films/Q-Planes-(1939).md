@@ -21,6 +21,8 @@ decade: 1930s
 
 recommended: no
 
+runtime: 82
+
 image: /feature-images/q-planes.png
 
 

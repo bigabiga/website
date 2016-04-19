@@ -24,6 +24,8 @@ decade: 1930s
 
 recommended: no
 
+runtime: 20
+
 image: /feature-images/Ethel-Waters-Bubbling-Over-1934.jpeg
 
 video: https://www.youtube.com/embed/121VjkLydh0?rel=0&amp;controls=0&amp;showinfo=0

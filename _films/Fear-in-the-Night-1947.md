@@ -8,7 +8,7 @@ meta-description: Fear in the Night (1947) is an intriguing low-budget film noir
 excerpt: An intriguing low-budget film noir about a nightmare that turns out, or becomes true. A man dreams he committed murder with an unknown woman in a strange, mirrored room.  Probably only a dream... but he finds real bruises and physical objects from his so called dream. The movie is based on the story "And So to Death" by Cornell Woolrich.
 
 title: Fear in the Night
-runtime:  1h 12min
+runtime: 72
 permalink: films/Fear-in-the-Night-1947
 genre:
 - Crime

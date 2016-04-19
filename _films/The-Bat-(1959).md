@@ -20,6 +20,8 @@ decade: 1950s
 
 recommended: no
 
+runtime: 80
+
 image: /feature-images/the-bat.jpg
 
 video: https://www.youtube.com/embed/Btyx4zkgHpg?rel=0&amp;controls=0&amp;showinfo=0

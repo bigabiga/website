@@ -7,7 +7,7 @@ meta-description: Also known as The Spiritualist, this great thriller tells the 
 excerpt: Also known as The Spiritualist, this great thriller B-movie tells the story of a grieving widow that starts hearing her husband's voice calling her through the wind. The stunning cinematography by John Alton makes the gothic, dark atmosphere in this movie unforgettable.
 
 title: The Amazing Mr. X
-runtime:  1h 18min
+runtime: 78
 permalink: films/The-Amazing-Mr-X-1948
 genre:
 - Film Noir

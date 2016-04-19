@@ -22,6 +22,8 @@ decade: 1930s
 
 recommended: no
 
+runtime: 67
+
 image: /feature-images/seven-sinners.png
 
 

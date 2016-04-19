@@ -6,7 +6,7 @@ meta-description:  classic film-noir movies at La Filmothèque.
 excerpt: This little-known film noir was directed and produced by W. Lee Wilder, Billy Wilder's probably less-talented brother. A scheming fortune hunter seduces a sick, wealthy widow to marry him, knowing that she has only a year to live. When his newlywed wife starts to recover, he decides to alter his plans.
 
 title: The Big Bluff
-runtime: 1h 10min
+runtime: 70
 permalink: films/The-Big-Bluff-1955
 genre:
 - Crime

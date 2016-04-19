@@ -22,6 +22,8 @@ decade: 1950s
 
 recommended: no
 
+runtime: 65
+
 image: /feature-images/Gangster-Story-1959.jpg
 
 video: https://www.youtube.com/embed/Lrzbooqqgxs?rel=0&amp;controls=0&amp;showinfo=0

@@ -22,6 +22,8 @@ decade: 1940s
 
 recommended: no
 
+runtime: 62
+
 image: /feature-images/Sos-Your-Aunt-Emma-1942.jpg
 
 video: https://www.youtube.com/embed/MYTeRiEKSEY?rel=0&amp;controls=0&amp;showinfo=0

@@ -7,7 +7,7 @@ meta-description:  Indestructible Man is a cult, independently produced B-movie,
 excerpt: Indestructible Man is a cult, independently produced B-movie, a true low budget guilty pleasure.  An executed criminal vows to come back and revenge on his former, unloyal partners. Unfortunately, scientific experiments bring him back to life, now completely indestructible.
 
 title: Indestructible Man
-runtime:  1h 12min
+runtime: 72
 permalink: films/Indestructible-Man-1956
 genre:
 - B-movie

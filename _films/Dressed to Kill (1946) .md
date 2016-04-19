@@ -22,7 +22,9 @@ genre:
 
 decade: 1940s
 
-recommended: YES
+recommended: yes
+
+runtime: 76
 
 image: /feature-images/Sherlock-Holmes-Dressed-to-Kill-1946.jpg
 

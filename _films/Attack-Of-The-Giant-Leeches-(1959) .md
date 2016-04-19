@@ -23,6 +23,8 @@ decade: 1950s
 
 recommended: yes
 
+runtime: 62
+
 image: /feature-images/Attack-Of-The-Giant-Leeches-1959.jpg
 
 video: https://www.youtube.com/embed/qnjUBKfz-yk?rel=0&amp;controls=0&amp;showinfo=0

@@ -20,6 +20,8 @@ decade: 1950s
 
 recommended: no
 
+runtime: 89
+
 image: /feature-images/The-Great-St-Louis-Bank-Robbery-1959.jpg
 
 video: https://www.youtube.com/embed/8COkakAg4eI?rel=0&amp;showinfo=0

@@ -7,7 +7,7 @@ meta-description:  Time Table (1956) is a forgotten crime film-noir directed and
 excerpt: This forgotten crime film-noir directed and starring by Mark Stevens is a well-plotted and acted movie about an almost-perfect crime. An insurance investigator finds his daily life unbearably boring and decides to become a criminal. He plans a flawless train robbery. However, he soon discovers that there is no such thing as the perfect crime.
 
 title: Time Table
-runtime: 1h 19min
+runtime: 79
 permalink: films/Watch-Time-Table-1956
 genre:
 - Crime

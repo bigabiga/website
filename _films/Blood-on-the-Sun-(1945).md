@@ -23,6 +23,8 @@ decade: 1940s
 
 recommended: no
 
+runtime: 98
+
 image: /feature-images/Blood-on-the-Sun-1945.jpg
 
 

@@ -17,6 +17,7 @@ genre:
 
 decade: 1950s
 recommended: yes
+runtime: 75
 image: /feature-images/Suddenly-1954.jpg
 video: https://www.youtube.com/embed/p9w8dhjwwJc?rel=0&amp;controls=0&amp;showinfo=0
 

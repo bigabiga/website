@@ -14,6 +14,7 @@ genre:
 
 decade: 1940s
 recommended: no
+runtime: 61
 image: /feature-images/The-Last-Alarm-1940.jpg
 video: https://www.youtube.com/embed/jFM6lQFnZkc?rel=0&amp;controls=0&amp;showinfo=0
 

@@ -19,6 +19,8 @@ decade: 1940s
 
 recommended: yes
 
+runtime: 86
+
 image: /feature-images/The-Chase-1946.jpg
 
 video: https://www.youtube.com/embed/Zz8Lsl5NmtA?rel=0&amp;controls=0&amp;showinfo=0

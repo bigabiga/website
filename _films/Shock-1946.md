@@ -6,7 +6,7 @@ meta-description:  Watch Shock (1946) old film noir starring Vincent Price in on
 
 excerpt: Vincent Price in an excellent performance, one of the first major parts in his career, as psychiatrist Dr. Cross. Dr. Cross murders his wife and hopes to keep it a secret. However, the murder was observed  by Janet Stewart, his next-door neighbor. Janet falls into a state of shock and "treated" by Dr. Cross himself. Will she wake up from the coma and recognize the killer?
 title: Shock
-runtime: 1h 10min
+runtime: 70
 permalink: films/Watch-Shock-1946
 genre:
 - Film Noir
