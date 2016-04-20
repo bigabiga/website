@@ -3,7 +3,7 @@
 
 @import url("reset.css");
 
-$nav-background: #eaeaea;
+$nav-background: #e6e6e6;
 $nav-text: #888;
 $darker-green: #1E7B85;
 $green-font: #669E99;
@@ -17,6 +17,8 @@ $light-green: darken($light-background, 10);
 //$feature-background: #5F313E;
 $feature-background: #693C4D;
 $banner-background: #8C4465;
+
+$logo-green: #A7D2CE;
 
 $play-green: #1E7B85;
 $text-medium: #666;
@@ -212,7 +214,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 370px;
-    height: 90px;
+    height: 82px;
   }
 
   .tagline {
@@ -410,19 +412,21 @@ body {
 }
 
 .inner-nav {
-  background: #A7D2CE;
   $inner-nav-height: 56px;
+  $content-color: darken($logo-green, 46);
+
+  background: $logo-green;
   height: $inner-nav-height;
 
   .title {
-    color: darken($feature-background, 20);
+    color: $content-color;
     font-size: 20px;
     line-height: $inner-nav-height;
     @extend %bold-font;
     text-transform: none;
 
     .category {
-      color: rgba(darken($feature-background, 20), 0.5);
+      color: rgba($content-color, 0.5);
     }
   }
 
@@ -434,11 +438,11 @@ body {
     .sort-by {
       display: inline-block;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 20px, 12px, darken($feature-background, 24), #A7D2CE);
+      @include kavon(7px, 20px, 12px, $content-color, #A7D2CE);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
-      color: darken($feature-background, 24);
+      color: $content-color;
       padding: 0 28px 0  10px;
 
       .menu {
@@ -466,47 +470,47 @@ body {
         }
 
         &::-webkit-input-placeholder {
-          color: rgba(darken($feature-background, 24), 1);
+          color: rgba($content-color, 1);
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           /* Firefox 18- */
-          color: rgba(darken($feature-background, 24), 1);
+          color: rgba($content-color, 1);
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           /* Firefox 19+ */
-          color: rgba(darken($feature-background, 24), 1);
+          color: rgba($content-color, 1);
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
-          color: rgba(darken($feature-background, 24), 1);
+          color: rgba($content-color, 1);
           transition: color 0.1s ease;
         }
 
         &:hover,
         &:focus {
-          background: lighten(#A7D2CE, 6);
+          background: lighten($logo-green, 6);
           &::-webkit-input-placeholder {
-            color: $green-font;
+            color: lighten($content-color, 20);
             transition: color 0.1s ease;
           }
 
           &:-moz-placeholder {
-            color: $green-font;
+            color: lighten($content-color, 20);
             transition: color 0.1s ease;
           }
 
           &::-moz-placeholder {
-            color: $green-font;
+            color: lighten($content-color, 20);
             transition: color 0.1s ease;
           }
 
           &:-ms-input-placeholder {
-            color: $green-font;
+            color: lighten($content-color, 20);
             transition: color 0.1s ease;
           }
         }
@@ -523,7 +527,7 @@ body {
           height: 18px;
 
           path {
-            fill: darken($feature-background, 24);
+            fill: $content-color;
           }
         }
       }
@@ -546,7 +550,7 @@ body {
     h2 {
       @extend %bold-font;
       text-transform: none;
-      color: darken($feature-background, 16);
+      color: $feature-background;
       font-size: 34px;
       margin-bottom: 22px;
 
@@ -587,7 +591,7 @@ body {
 
     .details {
       width: 100%;
-      color: darken($feature-background, 16);
+      color: darken($feature-background, 8);
       font-size: 13px;
       line-height: 19px;
 
@@ -677,7 +681,7 @@ body {
 .element-title {
   @extend %bold-font;
   font-size: 27px;
-  color: lighten($feature-background, 4);
+  color: lighten($feature-background, 26);
   margin-bottom: 10px;
   letter-spacing: -0.04em;
 }
@@ -715,7 +719,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: $feature-background;
+    background: lighten($feature-background, 1);
 
     .info {
       position: absolute;
@@ -762,11 +766,10 @@ body {
     .title {
       @extend %bold-font;
       text-transform: none;
-      //letter-spacing: 0.03em;
       font-size: 39px;
       line-height: 45px;
       margin-bottom: 22px;
-      color: lighten($feature-background, 64);
+      color: lighten($feature-background, 60);
 
       span.year {
         color: darken($feature-background, 24);
@@ -775,7 +778,7 @@ body {
 
     .synopsis {
       font-size: 13px;
-      color: lighten($feature-background, 64);
+      color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
     }
@@ -861,7 +864,7 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba($play-green, 0.27);
+        background-color: rgba($play-green, 0.3);
       }
     }
 
@@ -871,6 +874,7 @@ body {
       .title {
         //font-size: 16px;
         //font-family: tenor-sans, sans-serif;
+        //font-weight: normal;
       }
     }
   }
@@ -989,7 +993,7 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    background: $feature-background;
+    background: lighten($feature-background, 1);
     padding-left: $padding;
     padding-right: $padding;
 

@@ -22,7 +22,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #eaeaea; }
+  background: #e6e6e6; }
 
 .content,
 .top-content {
@@ -52,7 +52,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 370px;
-    height: 90px; }
+    height: 82px; }
   .header .tagline {
     display: inline-block;
     font-size: 15px;
@@ -64,7 +64,7 @@ body {
     margin-left: 1px; }
 
 .nav-bar {
-  background: #eaeaea;
+  background: #e6e6e6;
   color: #231F20;
   padding: 0 20px;
   z-index: 100;
@@ -190,7 +190,7 @@ body {
         right: 14px;
         width: 6px;
         height: 6px;
-        background: #eaeaea;
+        background: #e6e6e6;
         transform: rotate(45deg); }
 
 .thumbnails {
@@ -268,12 +268,12 @@ body {
   background: #A7D2CE;
   height: 56px; }
   .inner-nav .title {
-    color: #28171d;
+    color: #305e5a;
     font-size: 20px;
     line-height: 56px;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(40, 23, 29, 0.5); }
+      color: rgba(48, 94, 90, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -284,7 +284,7 @@ body {
       height: 56px;
       font-size: 14px;
       line-height: 56px;
-      color: #1b0f14;
+      color: #305e5a;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -317,7 +317,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #1b0f14;
+        background: #305e5a;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -344,32 +344,32 @@ body {
         color: #231F20;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #1b0f14;
+          color: #305e5a;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #1b0f14;
+          color: #305e5a;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #1b0f14;
+          color: #305e5a;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #1b0f14;
+          color: #305e5a;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus {
           background: #bbdcd9; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder {
-            color: #669E99;
+            color: #53a29a;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder {
-            color: #669E99;
+            color: #53a29a;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder {
-            color: #669E99;
+            color: #53a29a;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder {
-            color: #669E99;
+            color: #53a29a;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
@@ -380,7 +380,7 @@ body {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: #1b0f14; }
+            fill: #305e5a; }
 
 .left-content {
   width: 68%; }
@@ -393,7 +393,7 @@ body {
     padding: 34px 30px; }
     .film-cont .info h2 {
       text-transform: none;
-      color: #351e27;
+      color: #693C4D;
       font-size: 34px;
       margin-bottom: 22px; }
       .film-cont .info h2 .year {
@@ -418,7 +418,7 @@ body {
             fill: #a7647d; }
     .film-cont .info .details {
       width: 100%;
-      color: #351e27;
+      color: #4f2d3a;
       font-size: 13px;
       line-height: 19px; }
       .film-cont .info .details p {
@@ -556,7 +556,7 @@ body {
 
 .element-title {
   font-size: 27px;
-  color: #764357;
+  color: #b2788e;
   margin-bottom: 10px;
   letter-spacing: -0.04em; }
 
@@ -624,7 +624,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #693C4D; }
+    background: #6c3e4f; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -654,12 +654,12 @@ body {
       font-size: 39px;
       line-height: 45px;
       margin-bottom: 22px;
-      color: #f8f3f5; }
+      color: #f1e6ea; }
       .film-of-the-day .description .title span.year {
         color: #1b0f14; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #f8f3f5;
+      color: #e9d9df;
       line-height: 21px;
       max-width: 600px; }
     .film-of-the-day .description .banner-2 {
@@ -758,7 +758,7 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(30, 123, 133, 0.27); }
+        background-color: rgba(30, 123, 133, 0.3); }
 
 .about-cont {
   max-width: 680px;
@@ -836,7 +836,7 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    background: #693C4D;
+    background: #6c3e4f;
     padding-left: 26px;
     padding-right: 26px; }
     .footer .right-cont .icon {
