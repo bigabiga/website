@@ -31,10 +31,89 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script type="text/javascript">
 
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+  }
+  //-->
+</script>
+
+<script type="text/javascript">
+  /**
+   * jQuery.fn.sortElements
+   * --------------
+   * @param Function comparator:
+   *   Exactly the same behaviour as [1,2,3].sort(comparator)
+   *
+   * @param Function getSortable
+   *   A function that should return the element that is
+   *   to be sorted. The comparator will run on the
+   *   current collection, but you may want the actual
+   *   resulting sort to occur on a parent or another
+   *   associated element.
+   *
+   *   E.g. $('td').sortElements(comparator, function(){
+ *      return this.parentNode;
+ *   })
+   *
+   *   The <td>'s parent (<tr>) will be sorted instead
+   *   of the <td> itself.
+   */
+
+  jQuery.fn.sortElements = (function(){
+
+    var sort = [].sort;
+
+    return function(comparator, getSortable) {
+
+      getSortable = getSortable || function(){return this;};
+
+      var placements = this.map(function(){
+
+        var sortElement = getSortable.call(this),
+            parentNode = sortElement.parentNode,
+
+        // Since the element itself will change position, we have
+        // to have some way of storing its original position in
+        // the DOM. The easiest way is to have a 'flag' node:
+            nextSibling = parentNode.insertBefore(
+                document.createTextNode(''),
+                sortElement.nextSibling
+            );
+
+        return function() {
+
+          if (parentNode === this) {
+            throw new Error(
+                "You can't sort elements if any one is a descendant of another."
+            );
+          }
+
+          // Insert before flag:
+          parentNode.insertBefore(this, nextSibling);
+          // Remove flag:
+          parentNode.removeChild(nextSibling);
+
+        };
+
+      });
+
+      return sort.call(this, comparator).each(function(i){
+        placements[i].call(getSortable.call(this));
+      });
+
+    };
+
+  })();
 </script>
 </head>
 <body>
@@ -242,7 +321,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1934">
   <a href="/films/Bubbling-Over-1934">
     <div class="film-image" style="background-image: url(/feature-images/Ethel-Waters-Bubbling-Over-1934.jpeg)">
       <div class="play-mark"></div>
@@ -270,7 +349,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1930">
   <a href="/films/Extravagance-1930">
     <div class="film-image" style="background-image: url(/feature-images/Extravagance-1930.jpg)">
       <div class="play-mark"></div>
@@ -298,7 +377,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1931">
   <a href="/films/Watch-Indiscreet-1931">
     <div class="film-image" style="background-image: url(/feature-images/Indiscreet-1931-Gloria-Swanson.jpg)">
       <div class="play-mark"></div>
@@ -316,7 +395,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1939">
   <a href="/films/Jamaica-Inn-Alfred-Hitchcock-1939">
     <div class="film-image" style="background-image: url(/feature-images/Jamaica-Inn-1939.jpg)">
       <div class="play-mark"></div>
@@ -340,7 +419,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1939">
   <a href="/films/Made-for-Each-Other-1939">
     <div class="film-image" style="background-image: url(/feature-images/Made-for-Each-Other-1939.jpg)">
       <div class="play-mark"></div>
@@ -358,7 +437,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1934">
   <a href="/films/Watch-Of-Human-Bondage-1935">
     <div class="film-image" style="background-image: url(/feature-images/Bette-Davis-Leslie-Howard-in-Of-Human-Bondage.jpg)">
       <div class="play-mark"></div>
@@ -376,7 +455,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1933">
   <a href="/films/Watch-Oliver-Twist-1933">
     <div class="film-image" style="background-image: url(/feature-images/Oliver-Twist-1933.PNG)">
       <div class="play-mark"></div>
@@ -398,7 +477,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1939">
   <a href="/films/Watch-Q-Planes-1939">
     <div class="film-image" style="background-image: url(/feature-images/q-planes.png)">
       <div class="play-mark"></div>
@@ -418,7 +497,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1936">
   <a href="/films/Sabotage-1936-Alfred-Hitchcock">
     <div class="film-image" style="background-image: url(/feature-images/Sabotage-1936.jpg)">
       <div class="play-mark"></div>
@@ -436,7 +515,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1936">
   <a href="/films/Seven-Sinners-1936">
     <div class="film-image" style="background-image: url(/feature-images/seven-sinners.png)">
       <div class="play-mark"></div>
@@ -502,7 +581,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1932">
   <a href="/films/The-Thirteenth-Guest-1932">
     <div class="film-image" style="background-image: url(/feature-images/The-Thirteenth-Guest-1932.png)">
       <div class="play-mark"></div>

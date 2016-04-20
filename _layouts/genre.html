@@ -55,6 +55,38 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    var search = String(location.search);
+    var m;
+    if (m = search.match(/sort=(\w+)/)) {
+      switch (m) {
+        case 'title':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a).find('.title a');
+            var $b = $(b).find('.title a');
+            var contentA = parseInt($a.text());
+            var contentB = parseInt($b.text());
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'year':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a);
+            var $b = $(b);
+            var contentA = parseInt($a.attr('data-year'));
+            var contentB = parseInt($b.attr('data-year'));
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'ganre':
+        ​
+      break
+      }
+    }
+  </script>
 </body>
 <footer>
   {% include footer.html %}

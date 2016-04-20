@@ -13,7 +13,9 @@ $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
 //$feature-background: #B7698D;
-$feature-background: #499C95;
+//$feature-background: #499C95;
+//$feature-background: #5F313E;
+$feature-background: #693C4D;
 $banner-background: #8C4465;
 
 $play-green: #1E7B85;
@@ -401,14 +403,14 @@ body {
       @extend %bold-font;
       font-size: 20px;
       text-transform: none;
-      color: $green-font;
+      color: $feature-background;
       margin-bottom: 10px;
     }
   }
 }
 
 .inner-nav {
-  background: lighten($feature-background, 26);
+  background: #A7D2CE;
   $inner-nav-height: 56px;
   height: $inner-nav-height;
 
@@ -432,7 +434,7 @@ body {
     .sort-by {
       display: inline-block;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 20px, 12px, darken($feature-background, 24), lighten($feature-background, 26));
+      @include kavon(7px, 20px, 12px, darken($feature-background, 24), #A7D2CE);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
@@ -546,24 +548,24 @@ body {
       text-transform: none;
       color: darken($feature-background, 16);
       font-size: 34px;
-      margin-bottom: 14px;
+      margin-bottom: 22px;
 
       .year {
-        color: lighten($feature-background, 7);
+        color: lighten($feature-background, 30);
       }
     }
 
     h3 {
       margin-bottom: 10px;
       font-size: 13px;
-      color: lighten($feature-background, 4);
+      color: lighten($feature-background, 20);
 
       span {
         margin-right: 6px;
       }
 
       &.more-info {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
 
       .icon {
@@ -577,7 +579,7 @@ body {
           height: 100%;
 
           path {
-            fill: lighten($feature-background, 4);
+            fill: lighten($feature-background, 20);
           }
         }
       }
@@ -608,7 +610,7 @@ body {
     cursor: pointer;
 
     .play-mark {
-      opacity: 0.6;
+      opacity: 0.8;
     }
   }
 }
@@ -698,7 +700,7 @@ body {
     @include play-mark(54px);
 
     .play-mark {
-      opacity: 0.6;
+      opacity: 0.8;
     }
 
     .film-image {
@@ -721,11 +723,12 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 40px 50px 40px;
+      padding: 0 30px 50px 30px;
     }
 
     h3 {
-      margin-bottom: 8px;
+      //margin-bottom: 8px;
+      line-height: 21px;
       font-size: 13px;
       color: lighten($feature-background, 34);
       display: inline-block;
@@ -735,7 +738,7 @@ body {
       }
 
       &.more-info {
-        margin-bottom: 18px;
+        //margin-bottom: 18px;
       }
 
       .icon {
@@ -762,8 +765,8 @@ body {
       //letter-spacing: 0.03em;
       font-size: 39px;
       line-height: 45px;
-      margin-bottom: 14px;
-      color: white;
+      margin-bottom: 22px;
+      color: lighten($feature-background, 64);
 
       span.year {
         color: darken($feature-background, 24);
@@ -772,7 +775,7 @@ body {
 
     .synopsis {
       font-size: 13px;
-      color: lighten($feature-background, 34);
+      color: lighten($feature-background, 64);
       line-height: 21px;
       max-width: 600px;
     }
@@ -781,7 +784,7 @@ body {
       @extend %bold-font;
       color: lighten($feature-background, 26);
       font-size: 21px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
   }
 }

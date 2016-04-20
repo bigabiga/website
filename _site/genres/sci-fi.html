@@ -31,10 +31,89 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script type="text/javascript">
 
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+  }
+  //-->
+</script>
+
+<script type="text/javascript">
+  /**
+   * jQuery.fn.sortElements
+   * --------------
+   * @param Function comparator:
+   *   Exactly the same behaviour as [1,2,3].sort(comparator)
+   *
+   * @param Function getSortable
+   *   A function that should return the element that is
+   *   to be sorted. The comparator will run on the
+   *   current collection, but you may want the actual
+   *   resulting sort to occur on a parent or another
+   *   associated element.
+   *
+   *   E.g. $('td').sortElements(comparator, function(){
+ *      return this.parentNode;
+ *   })
+   *
+   *   The <td>'s parent (<tr>) will be sorted instead
+   *   of the <td> itself.
+   */
+
+  jQuery.fn.sortElements = (function(){
+
+    var sort = [].sort;
+
+    return function(comparator, getSortable) {
+
+      getSortable = getSortable || function(){return this;};
+
+      var placements = this.map(function(){
+
+        var sortElement = getSortable.call(this),
+            parentNode = sortElement.parentNode,
+
+        // Since the element itself will change position, we have
+        // to have some way of storing its original position in
+        // the DOM. The easiest way is to have a 'flag' node:
+            nextSibling = parentNode.insertBefore(
+                document.createTextNode(''),
+                sortElement.nextSibling
+            );
+
+        return function() {
+
+          if (parentNode === this) {
+            throw new Error(
+                "You can't sort elements if any one is a descendant of another."
+            );
+          }
+
+          // Insert before flag:
+          parentNode.insertBefore(this, nextSibling);
+          // Remove flag:
+          parentNode.removeChild(nextSibling);
+
+        };
+
+      });
+
+      return sort.call(this, comparator).each(function(i){
+        placements[i].call(getSortable.call(this));
+      });
+
+    };
+
+  })();
 </script>
 </head>
 <body>
@@ -234,7 +313,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1959">
   <a href="/films/Attack-Of-The-Giant-Leeches-1959">
     <div class="film-image" style="background-image: url(/feature-images/Attack-Of-The-Giant-Leeches-1959.jpg)">
       <div class="play-mark"></div>
@@ -280,7 +359,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1956">
   <a href="/films/Indestructible-Man-1956">
     <div class="film-image" style="background-image: url(/feature-images/Indestructible_Man_1956.jpg)">
       <div class="play-mark"></div>
@@ -304,7 +383,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1960">
   <a href="/films/Last-Woman-on-Earth-1960">
     <div class="film-image" style="background-image: url(/feature-images/Last-Woman-on-Earth-1960.jpg)">
       <div class="play-mark"></div>
@@ -354,7 +433,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1960">
   <a href="/films/The-Amazing-Transparent-Man-1960">
     <div class="film-image" style="background-image: url(/feature-images/The-Amazing-Transparent-Man-1960.jpg)">
       <div class="play-mark"></div>
@@ -402,7 +481,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1954">
   <a href="/films/The-Snow-Creature-1954">
     <div class="film-image" style="background-image: url(/feature-images/The-Snow-Creature-1954.jpg)">
       <div class="play-mark"></div>
@@ -442,6 +521,38 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    var search = String(location.search);
+    var m;
+    if (m = search.match(/sort=(\w+)/)) {
+      switch (m) {
+        case 'title':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a).find('.title a');
+            var $b = $(b).find('.title a');
+            var contentA = parseInt($a.text());
+            var contentB = parseInt($b.text());
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'year':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a);
+            var $b = $(b);
+            var contentA = parseInt($a.attr('data-year'));
+            var contentB = parseInt($b.attr('data-year'));
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'ganre':
+        ​
+      break
+      }
+    }
+  </script>
 </body>
 <footer>
   <div class="footer">

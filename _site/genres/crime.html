@@ -31,10 +31,89 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script type="text/javascript">
 
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+  }
+  //-->
+</script>
+
+<script type="text/javascript">
+  /**
+   * jQuery.fn.sortElements
+   * --------------
+   * @param Function comparator:
+   *   Exactly the same behaviour as [1,2,3].sort(comparator)
+   *
+   * @param Function getSortable
+   *   A function that should return the element that is
+   *   to be sorted. The comparator will run on the
+   *   current collection, but you may want the actual
+   *   resulting sort to occur on a parent or another
+   *   associated element.
+   *
+   *   E.g. $('td').sortElements(comparator, function(){
+ *      return this.parentNode;
+ *   })
+   *
+   *   The <td>'s parent (<tr>) will be sorted instead
+   *   of the <td> itself.
+   */
+
+  jQuery.fn.sortElements = (function(){
+
+    var sort = [].sort;
+
+    return function(comparator, getSortable) {
+
+      getSortable = getSortable || function(){return this;};
+
+      var placements = this.map(function(){
+
+        var sortElement = getSortable.call(this),
+            parentNode = sortElement.parentNode,
+
+        // Since the element itself will change position, we have
+        // to have some way of storing its original position in
+        // the DOM. The easiest way is to have a 'flag' node:
+            nextSibling = parentNode.insertBefore(
+                document.createTextNode(''),
+                sortElement.nextSibling
+            );
+
+        return function() {
+
+          if (parentNode === this) {
+            throw new Error(
+                "You can't sort elements if any one is a descendant of another."
+            );
+          }
+
+          // Insert before flag:
+          parentNode.insertBefore(this, nextSibling);
+          // Remove flag:
+          parentNode.removeChild(nextSibling);
+
+        };
+
+      });
+
+      return sort.call(this, comparator).each(function(i){
+        placements[i].call(getSortable.call(this));
+      });
+
+    };
+
+  })();
 </script>
 </head>
 <body>
@@ -244,7 +323,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Dick-Tracy-meets-Gruesome-1947">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_Meets_Gruesome_1947.JPG)">
       <div class="play-mark"></div>
@@ -262,7 +341,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1946">
   <a href="/films/Dick-Tracy-vs-Cueball-1946">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_vs_Cueball_1946.jpg)">
       <div class="play-mark"></div>
@@ -280,7 +359,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1945">
   <a href="/films/Dick-Tracy-1945">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_1945.jpg)">
       <div class="play-mark"></div>
@@ -298,7 +377,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Dick-Tracys-Dilemma-1947">
     <div class="film-image" style="background-image: url(/feature-images/Dick-Tracys-Dilemma-1947.jpg)">
       <div class="play-mark"></div>
@@ -320,7 +399,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Fear-in-the-Night-1947">
     <div class="film-image" style="background-image: url(/feature-images/Fear-in-the-Night-1947.jpg)">
       <div class="play-mark"></div>
@@ -338,7 +417,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1959">
   <a href="/films/Watch-Gangster-Story-1959">
     <div class="film-image" style="background-image: url(/feature-images/Gangster-Story-1959.jpg)">
       <div class="play-mark"></div>
@@ -356,7 +435,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1948">
   <a href="/films/He-Walked-by-Night-1948">
     <div class="film-image" style="background-image: url(/feature-images/He_Walked_by_Night_1948.jpg)">
       <div class="play-mark"></div>
@@ -380,7 +459,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1939">
   <a href="/films/Jamaica-Inn-Alfred-Hitchcock-1939">
     <div class="film-image" style="background-image: url(/feature-images/Jamaica-Inn-1939.jpg)">
       <div class="play-mark"></div>
@@ -410,7 +489,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Parole-Inc-1948">
     <div class="film-image" style="background-image: url(/feature-images/Parole-Inc-1948.jpg)">
       <div class="play-mark"></div>
@@ -428,7 +507,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1949">
   <a href="/films/Port-of-New-York-1949">
     <div class="film-image" style="background-image: url(/feature-images/Port-of-New-York-1949.jpg)">
       <div class="play-mark"></div>
@@ -452,7 +531,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1936">
   <a href="/films/Seven-Sinners-1936">
     <div class="film-image" style="background-image: url(/feature-images/seven-sinners.png)">
       <div class="play-mark"></div>
@@ -472,7 +551,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Shed-No-Tears-1948">
     <div class="film-image" style="background-image: url(/feature-images/Shed-No-Tears-1948.jpg)">
       <div class="play-mark"></div>
@@ -492,7 +571,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1942">
   <a href="/films/Watch-Sos-Your-Aunt-Emma!-1942">
     <div class="film-image" style="background-image: url(/feature-images/Sos-Your-Aunt-Emma-1942.jpg)">
       <div class="play-mark"></div>
@@ -510,7 +589,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1954">
   <a href="/films/Watch-Suddenly-1954">
     <div class="film-image" style="background-image: url(/feature-images/Suddenly-1954.jpg)">
       <div class="play-mark"></div>
@@ -534,7 +613,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1955">
   <a href="/films/The-Big-Bluff-1955">
     <div class="film-image" style="background-image: url(/feature-images/The-Big-Bluff-1955.jpg)">
       <div class="play-mark"></div>
@@ -552,7 +631,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1955">
   <a href="/films/Watch-The-Big-Combo-1955">
     <div class="film-image" style="background-image: url(/feature-images/The-Big-Combo-1955.jpg)">
       <div class="play-mark"></div>
@@ -582,7 +661,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1951">
   <a href="/films/The-Green-Glove-1951">
     <div class="film-image" style="background-image: url(/feature-images/The-Green-Glove-1951.jpg)">
       <div class="play-mark"></div>
@@ -600,7 +679,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1940">
   <a href="/films/The-Last-Alarm-1940">
     <div class="film-image" style="background-image: url(/feature-images/The-Last-Alarm-1940.jpg)">
       <div class="play-mark"></div>
@@ -618,7 +697,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1950">
   <a href="/films/The-Man-Who-Cheated-Himself-1950">
     <div class="film-image" style="background-image: url(/feature-images/The-Man-Who-Cheated-Himself-1950.jpg)">
       <div class="play-mark"></div>
@@ -640,7 +719,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Watch-The-Scar-1948">
     <div class="film-image" style="background-image: url(/feature-images/Hollow-Triumph-1948.jpg)">
       <div class="play-mark"></div>
@@ -660,7 +739,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1959">
   <a href="/films/The-St-Louis-Bank-Robbery-1959">
     <div class="film-image" style="background-image: url(/feature-images/The-Great-St-Louis-Bank-Robbery-1959.jpg)">
       <div class="play-mark"></div>
@@ -686,7 +765,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1956">
   <a href="/films/Watch-Time-Table-1956">
     <div class="film-image" style="background-image: url(/feature-images/TimeTable-1956.png)">
       <div class="play-mark"></div>
@@ -706,7 +785,7 @@
           
         
           
-            <div class="thumbnail" id="">
+            <div class="thumbnail" id="" data-year="1951">
   <a href="/films/Cause-for-Alarm-1951">
     <div class="film-image" style="background-image: url(/feature-images/Cause-for-Alarm!-1951.jpg)">
       <div class="play-mark"></div>
@@ -730,6 +809,38 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    var search = String(location.search);
+    var m;
+    if (m = search.match(/sort=(\w+)/)) {
+      switch (m) {
+        case 'title':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a).find('.title a');
+            var $b = $(b).find('.title a');
+            var contentA = parseInt($a.text());
+            var contentB = parseInt($b.text());
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'year':
+          $('.thumbnail').sortElements(function(a, b) {
+            var $a = $(a);
+            var $b = $(b);
+            var contentA = parseInt($a.attr('data-year'));
+            var contentB = parseInt($b.attr('data-year'));
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+          });
+          break;
+​
+        case 'ganre':
+        ​
+      break
+      }
+    }
+  </script>
 </body>
 <footer>
   <div class="footer">

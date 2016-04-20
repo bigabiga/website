@@ -31,10 +31,89 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script type="text/javascript">
 
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+  }
+  //-->
+</script>
+
+<script type="text/javascript">
+  /**
+   * jQuery.fn.sortElements
+   * --------------
+   * @param Function comparator:
+   *   Exactly the same behaviour as [1,2,3].sort(comparator)
+   *
+   * @param Function getSortable
+   *   A function that should return the element that is
+   *   to be sorted. The comparator will run on the
+   *   current collection, but you may want the actual
+   *   resulting sort to occur on a parent or another
+   *   associated element.
+   *
+   *   E.g. $('td').sortElements(comparator, function(){
+ *      return this.parentNode;
+ *   })
+   *
+   *   The <td>'s parent (<tr>) will be sorted instead
+   *   of the <td> itself.
+   */
+
+  jQuery.fn.sortElements = (function(){
+
+    var sort = [].sort;
+
+    return function(comparator, getSortable) {
+
+      getSortable = getSortable || function(){return this;};
+
+      var placements = this.map(function(){
+
+        var sortElement = getSortable.call(this),
+            parentNode = sortElement.parentNode,
+
+        // Since the element itself will change position, we have
+        // to have some way of storing its original position in
+        // the DOM. The easiest way is to have a 'flag' node:
+            nextSibling = parentNode.insertBefore(
+                document.createTextNode(''),
+                sortElement.nextSibling
+            );
+
+        return function() {
+
+          if (parentNode === this) {
+            throw new Error(
+                "You can't sort elements if any one is a descendant of another."
+            );
+          }
+
+          // Insert before flag:
+          parentNode.insertBefore(this, nextSibling);
+          // Remove flag:
+          parentNode.removeChild(nextSibling);
+
+        };
+
+      });
+
+      return sort.call(this, comparator).each(function(i){
+        placements[i].call(getSortable.call(this));
+      });
+
+    };
+
+  })();
 </script>
 </head>
 <body>
@@ -238,7 +317,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Between-Showers-1914">
     <div class="film-image" style="background-image: url(/feature-images/film-Between-Showers-1914.jpg)">
       <div class="play-mark"></div>
@@ -286,7 +365,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Kid-Auto-Races-At-Venice-1914">
     <div class="film-image" style="background-image: url(/feature-images/Kid-Auto-Races-At-Venice-1914.jpg)">
       <div class="play-mark"></div>
@@ -306,7 +385,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Laughing-Gas-1914-Chaplin">
     <div class="film-image" style="background-image: url(/feature-images/Laughing-Gas-1914.jpg)">
       <div class="play-mark"></div>
@@ -336,7 +415,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Recreation-1914-Charlie-Chaplin">
     <div class="film-image" style="background-image: url(/feature-images/Recreation-1914.jpg)">
       <div class="play-mark"></div>
@@ -358,7 +437,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1915">
   <a href="/films/Shanghaied-1915">
     <div class="film-image" style="background-image: url(/feature-images/Shanghaied-1915.jpg)">
       <div class="play-mark"></div>
@@ -398,7 +477,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1917">
   <a href="/films/The-Cure-1917">
     <div class="film-image" style="background-image: url(/feature-images/The-Cure-1917.jpg)">
       <div class="play-mark"></div>
@@ -416,7 +495,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/The-Face-on-the-Bar-Room-Floor-1914">
     <div class="film-image" style="background-image: url(/feature-images/The-Face-on-the-Barroom-Floor-1914.jpg)">
       <div class="play-mark"></div>
@@ -434,7 +513,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1916">
   <a href="/films/The-Fireman-1916">
     <div class="film-image" style="background-image: url(/feature-images/The-Fireman-1916.jpg)">
       <div class="play-mark"></div>
@@ -452,7 +531,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/The-Floorwalker-1916">
     <div class="film-image" style="background-image: url(/feature-images/The-Floorwalker-1916.webm.jpg)">
       <div class="play-mark"></div>
@@ -478,7 +557,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Chaplin-The-Masquerader-1914">
     <div class="film-image" style="background-image: url(/feature-images/The-Masquerader-1914.jpg)">
       <div class="play-mark"></div>
@@ -504,7 +583,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1916">
   <a href="/films/The-Vagabond-1916">
     <div class="film-image" style="background-image: url(/feature-images/The-Vagabond-1916.jpg)">
       <div class="play-mark"></div>
@@ -524,7 +603,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/Tillies-Punctured-Romance-1914">
     <div class="film-image" style="background-image: url(/feature-images/Tillies-Punctured-Romance-1914.jpg)">
       <div class="play-mark"></div>
@@ -548,7 +627,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1916">
   <a href="/films/Police-1916-Charlie-Chaplin">
     <div class="film-image" style="background-image: url(/feature-images/Police-1916.jpg)">
       <div class="play-mark"></div>
@@ -566,7 +645,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1914">
   <a href="/films/The-Knockout-1914">
     <div class="film-image" style="background-image: url(/feature-images/The-Knockout-1914.webm.jpg)">
       <div class="play-mark"></div>

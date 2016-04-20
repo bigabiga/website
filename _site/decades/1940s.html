@@ -31,10 +31,89 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/style.css">
 <script type="text/javascript">
 
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+  }
+  //-->
+</script>
+
+<script type="text/javascript">
+  /**
+   * jQuery.fn.sortElements
+   * --------------
+   * @param Function comparator:
+   *   Exactly the same behaviour as [1,2,3].sort(comparator)
+   *
+   * @param Function getSortable
+   *   A function that should return the element that is
+   *   to be sorted. The comparator will run on the
+   *   current collection, but you may want the actual
+   *   resulting sort to occur on a parent or another
+   *   associated element.
+   *
+   *   E.g. $('td').sortElements(comparator, function(){
+ *      return this.parentNode;
+ *   })
+   *
+   *   The <td>'s parent (<tr>) will be sorted instead
+   *   of the <td> itself.
+   */
+
+  jQuery.fn.sortElements = (function(){
+
+    var sort = [].sort;
+
+    return function(comparator, getSortable) {
+
+      getSortable = getSortable || function(){return this;};
+
+      var placements = this.map(function(){
+
+        var sortElement = getSortable.call(this),
+            parentNode = sortElement.parentNode,
+
+        // Since the element itself will change position, we have
+        // to have some way of storing its original position in
+        // the DOM. The easiest way is to have a 'flag' node:
+            nextSibling = parentNode.insertBefore(
+                document.createTextNode(''),
+                sortElement.nextSibling
+            );
+
+        return function() {
+
+          if (parentNode === this) {
+            throw new Error(
+                "You can't sort elements if any one is a descendant of another."
+            );
+          }
+
+          // Insert before flag:
+          parentNode.insertBefore(this, nextSibling);
+          // Remove flag:
+          parentNode.removeChild(nextSibling);
+
+        };
+
+      });
+
+      return sort.call(this, comparator).each(function(i){
+        placements[i].call(getSortable.call(this));
+      });
+
+    };
+
+  })();
 </script>
 </head>
 <body>
@@ -236,7 +315,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1946">
   <a href="/films/Behind-Green-Lights-1946">
     <div class="film-image" style="background-image: url(/feature-images/Behind-Green-Lights-1946.jpg)">
       <div class="play-mark"></div>
@@ -256,7 +335,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1945">
   <a href="/films/Watch-Blood-on-the-Sun-1945">
     <div class="film-image" style="background-image: url(/feature-images/Blood-on-the-Sun-1945.jpg)">
       <div class="play-mark"></div>
@@ -276,7 +355,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Dick-Tracy-meets-Gruesome-1947">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_Meets_Gruesome_1947.JPG)">
       <div class="play-mark"></div>
@@ -294,7 +373,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1946">
   <a href="/films/Dick-Tracy-vs-Cueball-1946">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_vs_Cueball_1946.jpg)">
       <div class="play-mark"></div>
@@ -312,7 +391,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1945">
   <a href="/films/Dick-Tracy-1945">
     <div class="film-image" style="background-image: url(/feature-images/Dick_Tracy_1945.jpg)">
       <div class="play-mark"></div>
@@ -330,7 +409,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Dick-Tracys-Dilemma-1947">
     <div class="film-image" style="background-image: url(/feature-images/Dick-Tracys-Dilemma-1947.jpg)">
       <div class="play-mark"></div>
@@ -348,7 +427,7 @@
                 
                 
                 
-                <div class="thumbnail" id="dressed-to-kill">
+                <div class="thumbnail" id="dressed-to-kill" data-year="1946">
   <a href="/films/Watch-Dressed-to-Kill-1946">
     <div class="film-image" style="background-image: url(/feature-images/Sherlock-Holmes-Dressed-to-Kill-1946.jpg)">
       <div class="play-mark"></div>
@@ -368,7 +447,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1947">
   <a href="/films/Fear-in-the-Night-1947">
     <div class="film-image" style="background-image: url(/feature-images/Fear-in-the-Night-1947.jpg)">
       <div class="play-mark"></div>
@@ -388,7 +467,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1948">
   <a href="/films/He-Walked-by-Night-1948">
     <div class="film-image" style="background-image: url(/feature-images/He_Walked_by_Night_1948.jpg)">
       <div class="play-mark"></div>
@@ -406,7 +485,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1944">
   <a href="/films/I'm-from-Arkansas-1944">
     <div class="film-image" style="background-image: url(/feature-images/Im-from-Arkansas-1944.jpg)">
       <div class="play-mark"></div>
@@ -442,7 +521,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Parole-Inc-1948">
     <div class="film-image" style="background-image: url(/feature-images/Parole-Inc-1948.jpg)">
       <div class="play-mark"></div>
@@ -460,7 +539,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1949">
   <a href="/films/Port-of-New-York-1949">
     <div class="film-image" style="background-image: url(/feature-images/Port-of-New-York-1949.jpg)">
       <div class="play-mark"></div>
@@ -488,7 +567,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Shed-No-Tears-1948">
     <div class="film-image" style="background-image: url(/feature-images/Shed-No-Tears-1948.jpg)">
       <div class="play-mark"></div>
@@ -506,7 +585,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1946">
   <a href="/films/Watch-Shock-1946">
     <div class="film-image" style="background-image: url(/feature-images/Shock-1946.jpg)">
       <div class="play-mark"></div>
@@ -524,7 +603,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1942">
   <a href="/films/Watch-Sos-Your-Aunt-Emma!-1942">
     <div class="film-image" style="background-image: url(/feature-images/Sos-Your-Aunt-Emma-1942.jpg)">
       <div class="play-mark"></div>
@@ -544,7 +623,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1948">
   <a href="/films/The-Amazing-Mr-X-1948">
     <div class="film-image" style="background-image: url(/feature-images/The-Amazing-Mr-X-1948.jpg)">
       <div class="play-mark"></div>
@@ -570,7 +649,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1941">
   <a href="/films/The-Charlie-Chaplin-Festival-1941">
     <div class="film-image" style="background-image: url(/feature-images/The-Charlie-Chaplin-Festival-1938.jpg)">
       <div class="play-mark"></div>
@@ -588,7 +667,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1946">
   <a href="/films/Watch-The-Chase-1946">
     <div class="film-image" style="background-image: url(/feature-images/The-Chase-1946.jpg)">
       <div class="play-mark"></div>
@@ -616,7 +695,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1940">
   <a href="/films/The-Last-Alarm-1940">
     <div class="film-image" style="background-image: url(/feature-images/The-Last-Alarm-1940.jpg)">
       <div class="play-mark"></div>
@@ -636,7 +715,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1945">
   <a href="/films/Watch-The-Man-Who-Walked-Alone-1945">
     <div class="film-image" style="background-image: url(/feature-images/The-Man-Who-Walked-Alone-1945.jpg)">
       <div class="play-mark"></div>
@@ -656,7 +735,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1948">
   <a href="/films/Watch-The-Scar-1948">
     <div class="film-image" style="background-image: url(/feature-images/Hollow-Triumph-1948.jpg)">
       <div class="play-mark"></div>
@@ -682,7 +761,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1944">
   <a href="/films/Watch-The-Way-Ahead-1944">
     <div class="film-image" style="background-image: url(/feature-images/The-Way-Ahead-1944.jpg)">
       <div class="play-mark"></div>
@@ -704,7 +783,7 @@
                 
                 
                 
-                <div class="thumbnail" id="">
+                <div class="thumbnail" id="" data-year="1944">
   <a href="/films/Watch-Online-Waterfront-1944">
     <div class="film-image" style="background-image: url(/feature-images/Waterfront-1944.jpg)">
       <div class="play-mark"></div>
