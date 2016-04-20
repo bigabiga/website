@@ -567,8 +567,7 @@ body {
 
 .film-of-the-day {
   font-size: 0;
-  height: 27vw;
-  max-height: 370px; }
+  height: 27vw; }
   .film-of-the-day .film {
     cursor: pointer;
     display: inline-block;
