@@ -217,15 +217,20 @@ body {
     height: 82px;
   }
 
-  .tagline {
-    display: inline-block;
+  .info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 15px;
     vertical-align: bottom;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
     font-family: tenor-sans, sans-serif;
-    color: #b5b5b5;
-    text-transform: uppercase;
-    margin-left: 1px;
+    color: #aaa;
+    //text-transform: uppercase;
+
+    a {
+      color: darken($logo-green, 18);
+    }
   }
 }
 

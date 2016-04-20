@@ -53,15 +53,17 @@ body {
     background-repeat: no-repeat;
     width: 370px;
     height: 82px; }
-  .header .tagline {
-    display: inline-block;
+  .header .info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 15px;
     vertical-align: bottom;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
     font-family: tenor-sans, sans-serif;
-    color: #b5b5b5;
-    text-transform: uppercase;
-    margin-left: 1px; }
+    color: #aaa; }
+    .header .info a {
+      color: #6ab3ac; }
 
 .nav-bar {
   background: #e6e6e6;
