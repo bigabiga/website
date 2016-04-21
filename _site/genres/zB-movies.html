@@ -539,35 +539,51 @@
   </div>
 
   <script type="text/javascript">
+    function ascending(a, b) {
+      return (a < b) ? -1 : (a > b) ? 1 : 0;
+    }
+
+    var $thumbnail = $('.thumbnail');
     var search = String(location.search);
     var m;
+
+    if (m = search.match(/search=(\w+)/)) {
+      var query = m[1].toLowerCase();
+      $thumbnail.each(function() {
+        var $this = $(this);
+        var title = $this.find('.title a').text();
+        if (title.toLowerCase().indexOf(query) === -1) {
+          $this.hide();
+        } else {
+          $this.show();
+        }
+      });
+    }
+
     if (m = search.match(/sort=(\w+)/)) {
-      switch (m) {
+      switch (m[1]) {
         case 'title':
-          $('.thumbnail').sortElements(function(a, b) {
+          $thumbnail.sortElements(function(a, b) {
             var $a = $(a).find('.title a');
             var $b = $(b).find('.title a');
-            var contentA = parseInt($a.text());
-            var contentB = parseInt($b.text());
-            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+            var contentA = $a.text();
+            var contentB = $b.text();
+            return ascending(contentA, contentB);
           });
           break;
-​
+
         case 'year':
-          $('.thumbnail').sortElements(function(a, b) {
+          $thumbnail.sortElements(function(a, b) {
             var $a = $(a);
             var $b = $(b);
             var contentA = parseInt($a.attr('data-year'));
             var contentB = parseInt($b.attr('data-year'));
-            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+            return ascending(contentA, contentB);
           });
           break;
-​
-        case 'ganre':
-        ​
-      break
       }
     }
+
   </script>
 </body>
 <footer>
