@@ -9,4 +9,4 @@ collections:
     output: true
 
 
-gems:
+permalink: pretty
