@@ -394,12 +394,38 @@ body {
 
   .film-description {
     width: 100%;
-    padding: 20px 16px;
+    padding: 16px 16px;
     background: white;
     font-size: 13px;
     line-height: 18px;
     color: $text-medium;
-    height: 196px;
+    height: 222px;
+
+    h3.basic-info {
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: lighten($feature-background, 38);
+
+      span {
+        margin-right: 6px;
+      }
+
+      .icon {
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        margin-top: -1px;
+
+        svg {
+          width: 100%;
+          height: 100%;
+
+          path {
+            fill: lighten($feature-background, 38);
+          }
+        }
+      }
+    }
 
     .excerpt {
       height: 128px;
@@ -408,10 +434,11 @@ body {
 
     .title {
       @extend %bold-font;
-      font-size: 20px;
+      font-size: 21px;
       text-transform: none;
       color: $feature-background;
       margin-bottom: 10px;
+      line-height: 25px;
     }
   }
 }
@@ -776,7 +803,7 @@ body {
       color: lighten($feature-background, 60);
 
       span.year {
-        color: darken($feature-background, 24);
+        color: darken($feature-background, 30);
       }
     }
 
