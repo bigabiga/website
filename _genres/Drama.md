@@ -1,5 +1,5 @@
 ---
-feature-image: /feature-images/The-Way-Ahead-1944.jpg
+feature-image: /feature-images/Bette-Davis-Leslie-Howard-in-Of-Human-Bondage.jpg
 title: Drama
 layout: genre
 ---

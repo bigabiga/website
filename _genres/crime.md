@@ -1,5 +1,5 @@
 ---
-feature-image: /feature-images/The-Great-St-Louis-Bank-Robbery-1959.jpg
+feature-image: /feature-images/M-1931.jpg
 title: Crime
 layout: genre
 ---
