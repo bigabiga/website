@@ -123,6 +123,38 @@
 
   })();
 </script>
+
+<script type="text/javascript">
+  $.fn.pressEnter = function(fn) {
+
+    return this.each(function() {
+      $(this).bind('enterPress', fn);
+      $(this).keyup(function(e){
+        if(e.keyCode == 13)
+        {
+          $(this).trigger("enterPress");
+        }
+      })
+    });
+  };
+</script>
+
+<script type="text/javascript">
+  function replaceUrlParam(url, paramName, paramValue){
+    var pattern = new RegExp('\\b('+paramName+'=).*?(&|$)')
+    if(url.search(pattern)>=0){
+      return url.replace(pattern,'$1' + paramValue + '$2');
+    }
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
+  }
+</script>
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+    var match = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  }
+</script>
   <!-- Update your html tag to include the itemscope and itemtype attributes. -->
   <!-- Place this data between the <head> tags of your website -->
   <title>The Face on the Bar Room Floor(1914) - La Filmothèque</title>
@@ -299,7 +331,7 @@
 
     <div id="asdasd" class="controls">
       <div class="search">
-        <input class="search-input" type="text" placeholder="Search">
+        <input class="search-input" id="global-search" type="text" placeholder="Search">
         <div class="icon">
           <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <title>search</title> <desc>Created with Sketch.</desc> <defs></defs> <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="search" sketch:type="MSArtboardGroup" fill="#000000"> <path d="M215.982742,193.664813 L204.079847,193.664813 L199.616844,189.201227 C214.495464,172.834746 223.422635,150.516817 223.422635,126.711026 C223.422052,73.1479962 180.274056,30 126.711026,30 C73.1479962,30 30,73.1479962 30,126.711026 C30,180.274056 73.1479962,223.422052 126.711026,223.422052 C150.516817,223.422052 172.834746,214.49488 189.201227,199.616261 L193.664813,204.079263 L193.664813,215.982159 L268.05791,290.375839 L290.375839,268.05791 L215.982742,193.664813 L215.982742,193.664813 Z M126.711026,193.664813 C89.5144775,193.664813 59.7572387,163.907574 59.7572387,126.711026 C59.7572387,89.5144775 89.5144775,59.7572387 126.711026,59.7572387 C163.907574,59.7572387 193.664813,89.5144775 193.664813,126.711026 C193.664813,163.907574 163.907574,193.664813 126.711026,193.664813 L126.711026,193.664813 Z" id="Shape" sketch:type="MSShapeGroup"></path> </g> </g></svg>
         </div>
@@ -307,6 +339,13 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $("#global-search").pressEnter(function() {
+    var url = "/search/?sort=year&search=" + $("#global-search").val();
+    window.open(url);
+  });
+</script>
   <div class="narrow-content">
     <div class="left-content">
       <div class="film-cont">
@@ -388,34 +427,34 @@
         Related Films
       </div>
       
-      <a class="thumbnail-cont" href="/films/Manos-the-hands-of-fate-1966/">
+      <a class="thumbnail-cont" href="/films/Behind-Green-Lights-1946">
         <div class="film">
-          <div class="film-image" style="background-image: url(/feature-images/Manos-The-Hands-of-Fate-1966.jpg)"></div>
+          <div class="film-image" style="background-image: url(/feature-images/Behind-Green-Lights-1946.jpg)"></div>
           <div class="info">
-            <h3 class="title"> Manos&#58;  The Hands of Fate (1966) </h3>
-            <h4 class="description"> Harold P. Warren, USA </h4>
+            <h3 class="title"> Behind Green Lights (1946) </h3>
+            <h4 class="description"> Otto Brower, USA </h4>
           </div>
           <div class="play-mark"></div>
         </div>
       </a>
       
-      <a class="thumbnail-cont" href="/films/A-Life-at-Stake-1954">
+      <a class="thumbnail-cont" href="/films/Fear-in-the-Night-1947">
         <div class="film">
-          <div class="film-image" style="background-image: url(/feature-images/Life-at-Stake.png)"></div>
+          <div class="film-image" style="background-image: url(/feature-images/Fear-in-the-Night-1947.jpg)"></div>
           <div class="info">
-            <h3 class="title"> A Life at Stake (1954) </h3>
-            <h4 class="description"> Paul Guilfoyle, USA </h4>
+            <h3 class="title"> Fear in the Night (1947) </h3>
+            <h4 class="description"> Maxwell Shane, USA </h4>
           </div>
           <div class="play-mark"></div>
         </div>
       </a>
       
-      <a class="thumbnail-cont" href="/films/Attack-Of-The-Giant-Leeches-1959">
+      <a class="thumbnail-cont" href="/films/He-Walked-by-Night-1948">
         <div class="film">
-          <div class="film-image" style="background-image: url(/feature-images/Attack-Of-The-Giant-Leeches-1959.jpg)"></div>
+          <div class="film-image" style="background-image: url(/feature-images/He_Walked_by_Night_1948.jpg)"></div>
           <div class="info">
-            <h3 class="title"> Attack Of The Giant Leeches (1959) </h3>
-            <h4 class="description"> Bernard L. Kowalski, USA </h4>
+            <h3 class="title"> He Walked by Night (1948) </h3>
+            <h4 class="description"> Alfred L. Werker, USA </h4>
           </div>
           <div class="play-mark"></div>
         </div>

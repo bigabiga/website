@@ -112,3 +112,35 @@
 
   })();
 </script>
+
+<script type="text/javascript">
+  $.fn.pressEnter = function(fn) {
+
+    return this.each(function() {
+      $(this).bind('enterPress', fn);
+      $(this).keyup(function(e){
+        if(e.keyCode == 13)
+        {
+          $(this).trigger("enterPress");
+        }
+      })
+    });
+  };
+</script>
+
+<script type="text/javascript">
+  function replaceUrlParam(url, paramName, paramValue){
+    var pattern = new RegExp('\\b('+paramName+'=).*?(&|$)')
+    if(url.search(pattern)>=0){
+      return url.replace(pattern,'$1' + paramValue + '$2');
+    }
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
+  }
+</script>
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+    var match = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  }
+</script>
