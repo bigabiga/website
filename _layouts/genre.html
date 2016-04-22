@@ -19,7 +19,7 @@
               </div>
               <div class="sort-by">
                     <span>Sort by:</span>
-                    <span id="sortBy"></span>
+                    <span id="sortBy">---</span>
                     <ul class="menu" id="genres-menu">
                         <li onclick="updateSort('Recommended')">
                           Recommended
@@ -124,29 +124,31 @@
     //Indicating the sort in the sort dropdown:
     var sort = getParameterByName('sort');
     document.getElementById("sortBy").textContent = sort;
-
   </script>
 
   <script type="text/javascript">
+    var remover = $('#removeSearch');
+    //show the search remover only when there is something in the input:
     $('#categorySearch').on('input', function() {
       if($(this).val() != "") {
         $(this).addClass("full");
-        $('#removeSearch').show();
+        remover.show();
       }
       else {
         $(this).removeClass("full");
-        $('#removeSearch').hide();
+        remover.hide();
       }
     });
 
+    //same thing do it on page load:
     $(function() {
       if($('#categorySearch').val() != "") {
         $('#categorySearch').addClass("full");
-        $('#removeSearch').show();
+        remover.show();
       }
       else {
         $('#categorySearch').removeClass("full");
-        $('#removeSearch').hide();
+        remover.hide();
       }
     });
   </script>

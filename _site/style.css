@@ -79,49 +79,46 @@ body {
     .nav-bar .controls .search {
       display: inline-block; }
       .nav-bar .controls .search input.search-input {
-        width: 39px;
+        width: 90px;
         height: 40px;
-        padding: 4px 0;
-        color: transparent;
+        padding: 4px 8px 4px 32px;
+        color: #231F20;
         font-size: 14px;
         background: none;
-        margin: 0px;
-        transition: width 0.2s ease, background 0.2s ease, padding 0.2s ease;
+        margin: 0;
+        transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s; }
-        .nav-bar .controls .search input.search-input:hover, .nav-bar .controls .search input.search-input:focus {
-          background: #dadada;
-          width: 200px;
-          padding: 4px 8px 4px 32px;
-          color: #231F20;
-          transition-delay: 0s; }
-          .nav-bar .controls .search input.search-input:hover::-webkit-input-placeholder, .nav-bar .controls .search input.search-input:focus::-webkit-input-placeholder {
-            color: rgba(35, 31, 32, 0.3);
-            transition: color 0.2s 0.1s ease; }
-          .nav-bar .controls .search input.search-input:hover:-moz-placeholder, .nav-bar .controls .search input.search-input:focus:-moz-placeholder {
-            /* Firefox 18- */
-            color: rgba(35, 31, 32, 0.3);
-            transition: color 0.2s 0.1s ease; }
-          .nav-bar .controls .search input.search-input:hover::-moz-placeholder, .nav-bar .controls .search input.search-input:focus::-moz-placeholder {
-            /* Firefox 19+ */
-            color: rgba(35, 31, 32, 0.3);
-            transition: color 0.2s 0.1s ease; }
-          .nav-bar .controls .search input.search-input:hover:-ms-input-placeholder, .nav-bar .controls .search input.search-input:focus:-ms-input-placeholder {
-            color: rgba(35, 31, 32, 0.3);
-            transition: color 0.2s 0.1s ease; }
         .nav-bar .controls .search input.search-input::-webkit-input-placeholder {
-          color: rgba(35, 31, 32, 0);
+          color: #231F20;
+          font-size: 13px;
+          text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-moz-placeholder {
-          /* Firefox 18- */
-          color: rgba(255, 255, 255, 0);
+          color: #231F20;
+          font-size: 13px;
+          text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input::-moz-placeholder {
-          /* Firefox 19+ */
-          color: rgba(255, 255, 255, 0);
+          color: #231F20;
+          font-size: 13px;
+          text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-ms-input-placeholder {
-          color: rgba(255, 255, 255, 0);
+          color: #231F20;
+          font-size: 13px;
+          text-transform: uppercase;
           transition: color 0.1s ease; }
+        .nav-bar .controls .search input.search-input:hover, .nav-bar .controls .search input.search-input:focus {
+          background: #d6d6d6;
+          width: 200px; }
+          .nav-bar .controls .search input.search-input:hover::-webkit-input-placeholder, .nav-bar .controls .search input.search-input:focus::-webkit-input-placeholder {
+            color: #888; }
+          .nav-bar .controls .search input.search-input:hover:-moz-placeholder, .nav-bar .controls .search input.search-input:focus:-moz-placeholder {
+            color: #888; }
+          .nav-bar .controls .search input.search-input:hover::-moz-placeholder, .nav-bar .controls .search input.search-input:focus::-moz-placeholder {
+            color: #888; }
+          .nav-bar .controls .search input.search-input:hover:-ms-input-placeholder, .nav-bar .controls .search input.search-input:focus:-ms-input-placeholder {
+            color: #888; }
       .nav-bar .controls .search .icon {
         position: absolute;
         top: 11px;
