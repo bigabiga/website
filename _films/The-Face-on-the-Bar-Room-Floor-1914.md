@@ -14,6 +14,8 @@ genre:
 silent: yes
 decade: 1910s
 recommended: no
+editors-rating: 3
+
 image: /feature-images/The-Face-on-the-Barroom-Floor-1914.jpg
 video: https://www.youtube.com/embed/TqBq--bWwMs?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: A Keystone Studios Chaplin short film, Based on Hugh Antoine D'Arcy's poem of the same name. Charlie plays a painter that lost the woman he loves to a rich man. Afterward, he drinks more and more at the bar and draws her portrait on the barroom floor.    

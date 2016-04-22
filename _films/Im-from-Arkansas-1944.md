@@ -14,6 +14,7 @@ genre:
 - Romance
 decade: 1940s
 recommended: no
+editors-rating: 2
 runtime: 70
 image: /feature-images/Im-from-Arkansas-1944.jpg
 video: https://www.youtube.com/embed/NCVIU7xxUVU?rel=0&amp;controls=0&amp;showinfo=0

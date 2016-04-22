@@ -10,6 +10,7 @@ genre:
 silent:
 decade: 1960s
 recommended: no
+editors-rating: 2
 image:  /feature-images/Manos-The-Hands-of-Fate-1966.jpg
 video: https://www.youtube.com/embed/Y-3Q7jP3ys4?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: A family gets lost on the road and stumbles upon a hidden, underground, devil-worshiping cult led by the fearsome Master and his servant Torgo.

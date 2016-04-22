@@ -15,6 +15,7 @@ genre:
 silent: yes
 decade: 1910s
 recommended: no
+editors-rating: 3
 image: /feature-images/film-Between-Showers-1914.jpg
 video: https://www.youtube.com/embed/4qqmDiep3eY?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Between Showers is Chaplin's fourth short film and an important stage in the evolution of the tramp. Charlie and a rival tramp compete over the heart of a young lady. Both of them try to help her cross the street and fight over an umbrella that the rival stole earlier from a policeman.

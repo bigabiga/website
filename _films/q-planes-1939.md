@@ -20,6 +20,7 @@ genre:
 decade: 1930s
 
 recommended: no
+editors-rating: 3
 
 runtime: 82
 

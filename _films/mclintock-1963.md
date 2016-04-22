@@ -12,6 +12,7 @@ genre:
 silent: no
 decade: 1960s
 recommended: yes
+editors-rating: 4
 image:  /feature-images/McLintock!-1963.jpg
 video: https://www.youtube.com/embed/50GBci6ToVA?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Cattle baron George Washington McLintock fights his wife, his daughter, and political land-grabbers, finally "taming" them all in this Western comedy with Taming of the Shrew overtones.

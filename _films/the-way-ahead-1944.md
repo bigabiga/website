@@ -18,6 +18,8 @@ genre:
 decade: 1940s
 
 recommended: no
+editors-rating: 3.5
+
 
 runtime: 91
 

@@ -17,6 +17,7 @@ genre:
 silent: yes
 decade: 1910s
 recommended: yes
+editors-rating: 4
 image: /feature-images/Shanghaied-1915.jpg
 video: https://www.youtube.com/embed/oDBabrxB86c?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Another great slapstick comedy made by Essanay Studios. directed, written and edited by Charlie Chaplin. A shipowner intends to scuttle his own ship and its contents in order to get some insurance money. The Tramp, totally unaware of its malicious plans, falls in love with his daughter (Edna Purviance) and gets mixed up in recruiting sailors for the  ship.

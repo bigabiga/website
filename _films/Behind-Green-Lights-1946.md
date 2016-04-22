@@ -14,6 +14,7 @@ genre:
 - Mystery
 decade: 1940s
 recommended: no
+editors-rating: 3
 image: /feature-images/Behind-Green-Lights-1946.jpg
 video: https://www.youtube.com/embed/57WJyfE_8EE?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: This B crime drama takes place during a single night in a midwestern city. Police lieutenant investigates the murder of a local detective after the victim is found in an abandoned car.

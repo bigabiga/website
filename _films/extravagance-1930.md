@@ -22,6 +22,8 @@ decade: 1930s
 
 recommended: no
 
+editors-rating: 3
+
 runtime: 71
 
 image: /feature-images/Extravagance-1930.jpg

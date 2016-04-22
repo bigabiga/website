@@ -12,6 +12,9 @@ genre:
 - War
 decade: 1940s
 recommended: no
+editors-rating: 2.5
+
+
 runtime: 68
 image: /feature-images/Waterfront-1944.jpg
 video: https://www.youtube.com/embed/fTsSAvdh3jo?rel=0&amp;controls=0&amp;showinfo=0

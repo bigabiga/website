@@ -19,6 +19,8 @@ decade: 1950s
 
 recommended: no
 
+editors-rating: 3
+
 runtime: 78
 
 image: /feature-images/Life-at-Stake.png

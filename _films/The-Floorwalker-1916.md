@@ -17,6 +17,8 @@ genre:
 silent: yes
 decade: 1910s
 recommended: yes
+editors-rating: 4
+
 image: /feature-images/The-Floorwalker-1916.webm.jpg
 video: https://www.youtube.com/embed/skat6B03FHQ?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: The floorwalker is Chaplin's first Mutual Film Corporation film. Chaplin stars in his traditional Tramp persona, as a customer who creates havoc in a department store and becomes accidentally entangled in a scheme of the store manager and the store's floorwalker.

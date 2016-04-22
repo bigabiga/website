@@ -14,6 +14,7 @@ genre:
 - Film Noir
 decade: 1940s
 recommended: no
+editors-rating: 3
 image: /feature-images/Shed-No-Tears-1948.jpg
 video: https://www.youtube.com/embed/5Gbz2v9kQdU?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: June Vincent as Edna, a devious femme fatale who convinces her husband to fake his own death in order to get $50,000 from his insurance company and live a life of luxury. Unfortunately for her husband, her real plan is to live a life of luxury with her lover. A classic B noir with great acting and a well-written story.

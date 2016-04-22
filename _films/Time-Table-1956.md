@@ -15,6 +15,8 @@ genre:
 - Film-Noir
 decade: 1950s
 recommended: yes
+editors-rating: 3.5
+
 image: /feature-images/TimeTable-1956.png
 video: https://www.youtube.com/embed/4Vj_lMvczow?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: This forgotten crime film-noir directed and starring by Mark Stevens is a well-plotted and acted movie about an almost-perfect crime. An insurance investigator finds his daily life unbearably boring and decides to become a criminal. He plans a flawless train robbery. However, he soon discovers that there is no such thing as the perfect crime.

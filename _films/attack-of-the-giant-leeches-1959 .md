@@ -23,6 +23,8 @@ decade: 1950s
 
 recommended: yes
 
+editors-rating: 2.5
+
 runtime: 62
 
 image: /feature-images/Attack-Of-The-Giant-Leeches-1959.jpg

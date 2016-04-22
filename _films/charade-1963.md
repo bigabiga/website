@@ -11,6 +11,7 @@ genre:
 silent: no
 decade: 1960s
 recommended: yes
+editors-rating: 4
 image:  /feature-images/Charade-1963.jpg
 video: https://www.youtube.com/embed/sNlp4qpYh5o?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Romance and suspense ensue in Paris as a woman is pursued by several men who want a fortune her murdered husband had stolen. Who can she trust?

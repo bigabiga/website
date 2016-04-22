@@ -15,6 +15,7 @@ genre:
 silent: yes
 decade: 1910s
 recommended: yes
+editors-rating: 4
 image: /feature-images/Police-1916.jpg
 video: https://www.youtube.com/embed/u0IU8uQniX8?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Police is Chaplin's 14th film with Essanay Studios. It is one of his best Essanay's shorts, managing to tell a coherent story with strong elements of social commentary. Charlie is an ex-convict who finds life on the outside too hard to bear, can't find a decent job (or any job at all) and then decides to burglarize a house with another ex-convict.

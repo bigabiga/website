@@ -19,6 +19,8 @@ genre:
 decade: 1950s
 
 recommended: no
+editors-rating: 3
+
 
 runtime: 89
 

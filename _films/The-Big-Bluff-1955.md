@@ -14,6 +14,7 @@ genre:
 - Film Noir
 decade: 1950s
 recommended: yes
+editors-rating: 3
 image: /feature-images/The-Big-Bluff-1955.jpg
 video: https://www.youtube.com/embed/YUu6t-QRbOQ?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: This little-known film noir was directed and produced by W. Lee Wilder, Billy Wilder's probably less-talented brother. A scheming fortune hunter seduces a sick, wealthy widow to marry him, knowing that she has only a year to live. When his newlywed wife starts to recover, he decides to alter his plans.

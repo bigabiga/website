@@ -15,6 +15,8 @@ genre:
 - Drama
 decade: 1940s
 recommended: no
+editors-rating: 2.5
+
 runtime: 70
 image: /feature-images/The-Man-Who-Walked-Alone-1945.jpg
 video: https://www.youtube.com/embed/s18H0kSp1Fk?rel=0&amp;controls=0&amp;showinfo=0

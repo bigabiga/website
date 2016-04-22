@@ -21,6 +21,8 @@ genre:
 decade: 1940s
 
 recommended: no
+editors-rating: 3
+
 
 runtime: 62
 

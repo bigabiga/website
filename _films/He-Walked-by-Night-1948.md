@@ -13,6 +13,7 @@ genre:
 - Thriller
 decade: 1940s
 recommended: yes
+editors-rating: 4
 image: /feature-images/He_Walked_by_Night_1948.jpg
 video: https://www.youtube.com/embed/U5F_yAXCYqo?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: He Walked By Night is a turning point in the film-noir detective movie genre, offering a more realistic look at police procedures. Shot in an innovative semidocumentary style by the acclaimed cinematographer John Alton. The film follows police on the hunt for an extremely clever criminal who kills a cup and commits a series of robberies. The realistic technique used in this movie influenced Jack Webb's 1940s radio show Dragnet.

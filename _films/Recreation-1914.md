@@ -17,6 +17,8 @@ genre:
 silent: yes
 decade: 1910s
 recommended: no
+editors-rating: 3
+
 image: /feature-images/Recreation-1914.jpg
 video: https://www.youtube.com/embed/IOs_SagSh0M?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Charlie Chaplin - &quot;All I need to make a comedy is a park, a policeman, and a pretty girl.&quot; In this short silent comedy, the Tramp is contemplating suicide, until a beautiful girl passes by and he changes his mind.

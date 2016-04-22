@@ -16,6 +16,7 @@ genre:
 silent: yes
 decade: 1910s
 recommended: yes
+editors-rating: 4
 image: /feature-images/Laughing-Gas-1914.jpg
 video: https://www.youtube.com/embed/Fb1kCInacbk?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Another short Keystone film, one of the first movies Charlie Chaplin directed himself. It is an entertaining slapstick comedy with a lot of slapping, hitting and falling. Charlie plays a dental assistant that pretends to be a dentist. 

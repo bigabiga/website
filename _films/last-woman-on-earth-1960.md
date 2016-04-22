@@ -21,6 +21,7 @@ genre:
 decade: 1960s
 
 recommended: no
+editors-rating: 3
 
 runtime: 71
 

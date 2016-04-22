@@ -15,6 +15,7 @@ genre:
 - Drama
 decade: 1940s
 recommended: yes
+editors-rating: 3
 image: /feature-images/Dick-Tracys-Dilemma-1947.jpg
 video: https://www.youtube.com/embed/Jn_l-Ja0cWg?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Based on the 1930s comic strip character of Dick Tracy created by Chester Gould, this movie is the third in the film series. One of the most stylish films in the series, blends a noirish atmosphere with the classic detective story. Dick Tracy (Ralph Byrd in a great performance) investigates fur coats theft, also connected to several brutal murders. 

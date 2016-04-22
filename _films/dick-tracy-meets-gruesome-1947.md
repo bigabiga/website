@@ -14,6 +14,7 @@ genre:
 - Drama 
 decade: 1940s
 recommended: yes
+editors-rating: 3
 image: /feature-images/Dick_Tracy_Meets_Gruesome_1947.JPG
 video: https://www.youtube.com/embed/u5Nui-azC1s?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: The last movie in Dick Tracy's film series, based on the comic strip character created by Chester Gould. It is another great 1940s crime B-film, while not extraordinary, still more remarkable than other low budget B-film noirs of its time. In this movie, probably the best of the four, Dick Tracy has to confront a villain using a nerve gas to rob banks. Boris Karloff is extremely creepy and charismatic as the main villain.

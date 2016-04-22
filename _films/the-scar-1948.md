@@ -20,6 +20,7 @@ genre:
 decade: 1940s
 
 recommended: yes
+editors-rating: 3.5
 
 runtime: 83
 

@@ -20,6 +20,7 @@ genre:
 decade: 1950s
 
 recommended: yes
+editors-rating: 4
 
 runtime: 84
 
