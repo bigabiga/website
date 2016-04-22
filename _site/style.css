@@ -354,6 +354,14 @@ body {
       display: inline-block;
       top: 0;
       right: 0; }
+      .inner-nav .controls .search .remove-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 56px;
+        padding: 0 18px 0 10px;
+        color: #54a59e;
+        cursor: pointer; }
       .inner-nav .controls .search .search-input {
         height: 56px;
         font-size: 14px;
@@ -376,18 +384,18 @@ body {
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
           color: #305e5a;
           transition: color 0.1s ease; }
-        .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus {
+        .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
           background: #bbdcd9; }
-          .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder {
+          .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
             color: #53a29a;
             transition: color 0.1s ease; }
-          .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder {
+          .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
             color: #53a29a;
             transition: color 0.1s ease; }
-          .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder {
+          .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
             color: #53a29a;
             transition: color 0.1s ease; }
-          .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder {
+          .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
             color: #53a29a;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {

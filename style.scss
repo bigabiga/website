@@ -488,6 +488,16 @@ body {
       top: 0;
       right: 0;
 
+      .remove-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: $inner-nav-height;
+        padding: 0 18px 0 10px;
+        color: darken($logo-green, 25);
+        cursor: pointer;
+      }
+
       .search-input {
         height: $inner-nav-height;
         font-size: 14px;
@@ -524,8 +534,10 @@ body {
         }
 
         &:hover,
-        &:focus {
+        &:focus,
+        &.full {
           background: lighten($logo-green, 6);
+
           &::-webkit-input-placeholder {
             color: lighten($content-color, 20);
             transition: color 0.1s ease;
