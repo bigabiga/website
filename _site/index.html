@@ -131,28 +131,6 @@
   };
 </script>
 
-<!--<script>
-  function updateURLParameter(url, param, paramVal){
-    var newAdditionalURL = "";
-    var tempArray = url.split("?");
-    var baseURL = tempArray[0];
-    var additionalURL = tempArray[1];
-    var temp = "";
-    if (additionalURL) {
-      tempArray = additionalURL.split("&");
-      for (i=0; i<tempArray.length; i++){
-        if(tempArray[i].split('=')[0] != param){
-          newAdditionalURL += temp + tempArray[i];
-          temp = "&";
-        }
-      }
-    }
-
-    var rows_txt = temp + "" + param + "=" + paramVal;
-    return baseURL + "?" + newAdditionalURL + rows_txt;
-  }
-</script>-->
-
 <script type="text/javascript">
   function replaceUrlParam(url, paramName, paramValue){
     var pattern = new RegExp('\\b('+paramName+'=).*?(&|$)')
@@ -160,6 +138,13 @@
       return url.replace(pattern,'$1' + paramValue + '$2');
     }
     return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
+  }
+</script>
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+    var match = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
   }
 </script>
 </head>
@@ -613,7 +598,7 @@
   </div>
   <div class="home-categories">
     
-    <a class="thumbnail-cont" href="/genres/Drama/">
+    <a class="thumbnail-cont" href="/genres/Drama/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Bette-Davis-Leslie-Howard-in-Of-Human-Bondage.jpg)"></div>
         <div class="info">
@@ -622,7 +607,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/comedy/">
+    <a class="thumbnail-cont" href="/genres/comedy/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/The-Fireman-1916.jpg)"></div>
         <div class="info">
@@ -631,7 +616,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/crime/">
+    <a class="thumbnail-cont" href="/genres/crime/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/M-1931.jpg)"></div>
         <div class="info">
@@ -640,7 +625,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/film-noir/">
+    <a class="thumbnail-cont" href="/genres/film-noir/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Port-of-New-York-1949.jpg)"></div>
         <div class="info">
@@ -649,7 +634,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/horror/">
+    <a class="thumbnail-cont" href="/genres/horror/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/carnival-of-souls.jpg)"></div>
         <div class="info">
@@ -658,7 +643,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/mystery/">
+    <a class="thumbnail-cont" href="/genres/mystery/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/The-Lady-Vanishes-1938.jpg)"></div>
         <div class="info">
@@ -667,7 +652,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/romance/">
+    <a class="thumbnail-cont" href="/genres/romance/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Charade-1963.jpg)"></div>
         <div class="info">
@@ -676,7 +661,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/sci-fi/">
+    <a class="thumbnail-cont" href="/genres/sci-fi/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Attack-Of-The-Giant-Leeches-1959.jpg)"></div>
         <div class="info">
@@ -685,7 +670,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/silent/">
+    <a class="thumbnail-cont" href="/genres/silent/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Das-Cabinet-des-Dr-Caligari-1920.jpg)"></div>
         <div class="info">
@@ -694,7 +679,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/war/">
+    <a class="thumbnail-cont" href="/genres/war/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Battleship-Potemkin-1925.jpg)"></div>
         <div class="info">
@@ -703,7 +688,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/genres/zB-movies/">
+    <a class="thumbnail-cont" href="/genres/zB-movies/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/feature-images/Last-Woman-on-Earth-1960.jpg)"></div>
         <div class="info">
@@ -725,7 +710,7 @@
   </div>
   <div class="home-categories">
     
-    <a class="thumbnail-cont" href="/decades/1890s/">
+    <a class="thumbnail-cont" href="/decades/1890s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1890s/LArrivee_dun_train_en_gare_de_La_Ciotat-1896.jpg)"></div>
         <div class="info">
@@ -734,7 +719,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1900s/">
+    <a class="thumbnail-cont" href="/decades/1900s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1900s/A-Trip-to-the-Moon-1902.jpg)"></div>
         <div class="info">
@@ -743,7 +728,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1910s/">
+    <a class="thumbnail-cont" href="/decades/1910s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1910s/Birth-of-a-nation-1915-battle.jpg)"></div>
         <div class="info">
@@ -752,7 +737,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1920s/">
+    <a class="thumbnail-cont" href="/decades/1920s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1920s/Faust-1926.jpg)"></div>
         <div class="info">
@@ -761,7 +746,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1930s/">
+    <a class="thumbnail-cont" href="/decades/1930s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1930s/The-Blue-Angel-Marlene-Dietrich-1930.png)"></div>
         <div class="info">
@@ -770,7 +755,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1940s/">
+    <a class="thumbnail-cont" href="/decades/1940s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1940s/The-Stranger-1946.jpg)"></div>
         <div class="info">
@@ -779,7 +764,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1950s/">
+    <a class="thumbnail-cont" href="/decades/1950s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1950s/House-on-Haunted-Hill-Vincent-Price-1959.jpg)"></div>
         <div class="info">
@@ -788,7 +773,7 @@
       </div>
     </a>
     
-    <a class="thumbnail-cont" href="/decades/1960s/">
+    <a class="thumbnail-cont" href="/decades/1960s/?sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url(/images/decades/1960s/Night-of-the-Living-Dead-1968.jpg)"></div>
         <div class="info">

@@ -8,7 +8,7 @@
   {% include nav-bar.html %}
   <div class="inner-nav">
         <div class="content">
-            <div class="title"><span class="category">Genre:</span> {{ page.title }}</div>
+            <div class="title"><span class="category">Genre:</span> {{ page.title }} <span class="category" id="searchLabel">Search:</span> <span id="searchIndicator"></span></div>
             <div class="controls">
               <div class="search">
                 <input class="search-input" type="text" id="category-search" placeholder="Search this category">
@@ -17,19 +17,17 @@
                 </div>
               </div>
               <div class="sort-by">
-                    Sort by: Recommended
+                    <span>Sort by:</span>
+                    <span id="sortBy"></span>
                     <ul class="menu" id="genres-menu">
-                        <li onclick="updateSort('recommended')">
+                        <li onclick="updateSort('Recommended')">
                           Recommended
                         </li>
-                        <li onclick="updateSort('alphabetical')">
-                          Alphabetical
+                        <li onclick="updateSort('Alphabetically')">
+                          Alphabetically
                         </li>
-                        <li onclick="updateSort('year')">
+                        <li onclick="updateSort('Year')">
                           Year
-                        </li>
-                        <li onclick="updateSort('user_rating')">
-                          User rating
                         </li>
                     </ul>
                 </div>
@@ -72,7 +70,7 @@
 
     if (m = search.match(/sort=(\w+)/)) {
       switch (m[1]) {
-        case 'title':
+        case 'Alphabetically':
           $thumbnail.sortElements(function(a, b) {
             var $a = $(a).find('.title a');
             var $b = $(b).find('.title a');
@@ -82,7 +80,7 @@
           });
           break;
 
-        case 'year':
+        case 'Year':
           $thumbnail.sortElements(function(a, b) {
             var $a = $(a);
             var $b = $(b);
@@ -109,7 +107,24 @@
       window.open(url, "_self");
     }
   </script>
+
+  <script type="text/javascript">
+    //Indicating the search in the title:
+
+    var searchTerm = getParameterByName('search');
+    document.getElementById("searchIndicator").textContent = searchTerm;
+
+    if (getParameterByName('search') == null) {
+      document.getElementById("searchLabel").textContent = "";
+    }
+
+    //Indicating the sort in the sort dropdown:
+    var sort = getParameterByName('sort');
+    document.getElementById("sortBy").textContent = sort;
+
+  </script>
 </body>
+
 <footer>
   {% include footer.html %}
 </footer>
