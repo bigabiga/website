@@ -148,10 +148,11 @@ $film-padding: 3px;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   color: white;
-  text-shadow: 0 0 10px rgba(black, 0.4);
+  text-shadow: 0 0 10px rgba(black, 0.5);
   line-height: 18px;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
 
   .title {
     //font-family: 'Open Sans Condensed', sans-serif;
@@ -910,12 +911,23 @@ body {
     }
 
     .info {
-      @extend %film-overlay;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 10px 10px 10px;
+      color: white;
+      text-shadow: 0 0 10px rgba(black, 0.5);
+      line-height: 18px;
+      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
 
       .title {
-        //font-size: 16px;
-        //font-family: tenor-sans, sans-serif;
-        //font-weight: normal;
+        text-transform: none;
+        font-weight: 600;
+        font-size: 13px;
+
+        h3 {
+        }
       }
     }
   }

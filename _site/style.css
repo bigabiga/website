@@ -1,18 +1,19 @@
 @import url("reset.css");
-.right-bar .film .info, .recommended .film .info, .home-categories .category .info {
+.right-bar .film .info, .recommended .film .info {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  line-height: 18px; }
-  .right-bar .film .info .title, .recommended .film .info .title, .home-categories .category .info .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height: 18px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
+  .right-bar .film .info .title, .recommended .film .info .title {
     text-transform: none;
     font-weight: 600;
     font-size: 13px; }
-  .right-bar .film .info .description, .recommended .film .info .description, .home-categories .category .info .description {
+  .right-bar .film .info .description, .recommended .film .info .description {
     font-size: 13px;
     opacity: 0.7; }
 
@@ -781,6 +782,20 @@ body {
         bottom: 0;
         left: 0;
         background-color: rgba(30, 123, 133, 0.3); }
+    .home-categories .category .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 10px 10px 10px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      line-height: 18px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
+      .home-categories .category .info .title {
+        text-transform: none;
+        font-weight: 600;
+        font-size: 13px; }
 
 .about-cont {
   max-width: 680px;
