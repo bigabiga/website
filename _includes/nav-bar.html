@@ -7,7 +7,7 @@
         </div>
         <ul class="menu" id="genres-menu">
           {% for genre in site.genres limit: 8 %}
-          <a href="{{ genre.url }}">
+          <a href="{{ genre.url }}?sort=Recommended"">
             <li>
               {{ genre.title }}
             </li>
@@ -22,7 +22,7 @@
 
         <ul class="menu" id="Decades-menu">
           {% for decade in site.decades limit: 8 %}
-          <a href="{{ decade.url }}">
+          <a href="{{ decade.url }}?sort=Recommended"">
             <li>
               {{ decade.title }}
             </li>
