@@ -25,7 +25,7 @@ runtime: 78
 
 image: /feature-images/Life-at-Stake.png
 
-video: https://www.youtube.com/embed/G8Qhi1sUpPw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/G8Qhi1sUpPw?rel=0&amp;controls=0&amp;showinfo=0;
 
 synopsis: Also known as Key Man, this film-noir tells the story of an unemployed out-of-luck architect that encounters a married woman who has an unexpected business proposal for him. Soon the architect begins to suspect the woman's motives.
 

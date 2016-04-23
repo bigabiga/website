@@ -348,13 +348,14 @@
 </script>
   <div class="narrow-content">
     <div class="left-content">
-      <div class="film-cont">
+      <div class="film-cont" id="filmCont">
 
-        <div class="video-cover" style="background-image: url(/feature-images/The-Thirteenth-Guest-1932.png)" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+        <!--<div class="video-cover" style="background-image: url(/feature-images/The-Thirteenth-Guest-1932.png)" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">-->
+        <div class="video-cover" id="videoCover" style="background-image: url(/feature-images/The-Thirteenth-Guest-1932.png)">
           <div class="play-mark"></div>
         </div>
-        <div id="thevideo" style="display:none">
-          <iframe src="https://www.youtube.com/embed/71IJjCbbK7k?rel=0&amp;controls=0&amp;showinfo=0autoplay=1;" frameborder="0" allowfullscreen></iframe>
+        <div id="thevideo">
+          <!--<iframe src="https://www.youtube.com/embed/71IJjCbbK7k?rel=0&amp;controls=0&amp;showinfo=0autoplay=1" frameborder="0" allowfullscreen></iframe>-->
         </div>
 
         <div class="info">
@@ -462,6 +463,13 @@
       
     </div>
   </div>
+
+  <script type="text/javascript">
+    $( "#videoCover" ).click(function() {
+      $("#videoCover").remove();
+      $("#filmCont").prepend("<iframe src='https://www.youtube.com/embed/71IJjCbbK7k?rel=0&amp;controls=0&amp;showinfo=0autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  </script>
 
 </body>
 <footer>

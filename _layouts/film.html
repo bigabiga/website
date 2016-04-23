@@ -52,13 +52,14 @@
 {% include nav-bar.html %}
   <div class="narrow-content">
     <div class="left-content">
-      <div class="film-cont">
+      <div class="film-cont" id="filmCont">
 
-        <div class="video-cover" style="background-image: url({{ page.image }})" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+        <!--<div class="video-cover" style="background-image: url({{ page.image }})" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">-->
+        <div class="video-cover" id="videoCover" style="background-image: url({{ page.image }})">
           <div class="play-mark"></div>
         </div>
-        <div id="thevideo" style="display:none">
-          <iframe src="{{ page.video }}autoplay=1;" frameborder="0" allowfullscreen></iframe>
+        <div id="thevideo">
+          <!--<iframe src="{{ page.video }}autoplay=1" frameborder="0" allowfullscreen></iframe>-->
         </div>
 
         <div class="info">
@@ -160,6 +161,13 @@
       {% endfor %}
     </div>
   </div>
+
+  <script type="text/javascript">
+    $( "#videoCover" ).click(function() {
+      $("#videoCover").remove();
+      $("#filmCont").prepend("<iframe src='{{ page.video }}autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    });
+  </script>
 
 </body>
 <footer>
