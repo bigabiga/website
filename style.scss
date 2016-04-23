@@ -253,7 +253,7 @@ body {
       input.search-input {
         width: 90px;
         height: 40px;
-        padding: 4px 8px 4px 32px;
+        padding: 4px 8px 4px 33px;
         color: $text-dark;
         font-size: 14px;
         background: none;
@@ -367,17 +367,17 @@ body {
 .thumbnails {
   margin-left: -4px;
   margin-right: -4px;
-  padding: 20px $padding 0 $padding;
+  padding: 24px $padding 0 $padding;
   font-size: 0;
 
   .thumbnail {
     display: inline-block;
     width: 25%;
-    padding: 4px 6px 20px 6px;
+    padding: 4px 6px 14px 6px;
   }
 
   .film-image {
-    height: 170px;
+    height: 13.5vw;;
     display: block;
     background-size: cover;
     background-position: center center;
@@ -386,12 +386,10 @@ body {
 
   .film-description {
     width: 100%;
-    padding: 16px 16px;
-    background: white;
+    padding: 14px 20px 16px 6px;
     font-size: 13px;
     line-height: 18px;
-    color: $text-medium;
-    height: 222px;
+    color: darken($feature-background, 8);
 
     h3.basic-info {
       margin-bottom: 8px;
@@ -420,7 +418,6 @@ body {
     }
 
     .excerpt {
-      height: 128px;
       overflow: hidden;
     }
 
@@ -429,17 +426,26 @@ body {
       font-size: 21px;
       text-transform: none;
       color: $feature-background;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 25px;
+
+      .year {
+        color: lighten($feature-background, 30);
+      }
     }
   }
 }
 
 .inner-nav {
-  $inner-nav-height: 56px;
-  $content-color: darken($logo-green, 46);
+  $inner-nav-height: 48px;
+  //$content-color: darken($logo-green, 46);
+  //$background-color: $logo-green;
+  //$content-color: darken($feature-background, 0);
+  //$background-color: lighten($feature-background, 49);
+  $content-color: lighten($feature-background, 54);
+  $background-color: #905A6E;
 
-  background: $logo-green;
+  background: $background-color;
   height: $inner-nav-height;
 
   .title {
@@ -462,7 +468,7 @@ body {
     .sort-by {
       display: inline-block;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 20px, 12px, $content-color, #A7D2CE);
+      @include kavon(7px, 16px, 12px, $content-color, $background-color);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
@@ -486,7 +492,7 @@ body {
         right: 0;
         line-height: $inner-nav-height;
         padding: 0 18px 0 10px;
-        color: darken($logo-green, 25);
+        color: lighten($background-color, 30);
         cursor: pointer;
       }
 
@@ -495,8 +501,8 @@ body {
         font-size: 14px;
         background: transparent;
         width: 180px;
-        padding: 4px 8px 4px 32px;
-        color: $text-dark;
+        padding: 4px 8px 4px 33px;
+        color: lighten($content-color, 14);
         transition: background-color 0.1s ease;
 
         .icon svg path {
@@ -528,25 +534,25 @@ body {
         &:hover,
         &:focus,
         &.full {
-          background: lighten($logo-green, 6);
+          background: lighten($background-color, 6);
 
           &::-webkit-input-placeholder {
-            color: lighten($content-color, 20);
+            color: darken($content-color, 10);
             transition: color 0.1s ease;
           }
 
           &:-moz-placeholder {
-            color: lighten($content-color, 20);
+            color: darken($content-color, 10);
             transition: color 0.1s ease;
           }
 
           &::-moz-placeholder {
-            color: lighten($content-color, 20);
+            color: darken($content-color, 10);
             transition: color 0.1s ease;
           }
 
           &:-ms-input-placeholder {
-            color: lighten($content-color, 20);
+            color: darken($content-color, 10);
             transition: color 0.1s ease;
           }
         }
@@ -554,7 +560,7 @@ body {
 
       .icon {
         position: absolute;
-        top: 20px;
+        top: 16px;
         left: 7px;
         pointer-events: none;
 

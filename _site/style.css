@@ -81,7 +81,7 @@ body {
       .nav-bar .controls .search input.search-input {
         width: 90px;
         height: 40px;
-        padding: 4px 8px 4px 32px;
+        padding: 4px 8px 4px 33px;
         color: #231F20;
         font-size: 14px;
         background: none;
@@ -195,14 +195,14 @@ body {
 .thumbnails {
   margin-left: -4px;
   margin-right: -4px;
-  padding: 20px 26px 0 26px;
+  padding: 24px 26px 0 26px;
   font-size: 0; }
   .thumbnails .thumbnail {
     display: inline-block;
     width: 25%;
-    padding: 4px 6px 20px 6px; }
+    padding: 4px 6px 14px 6px; }
   .thumbnails .film-image {
-    height: 170px;
+    height: 13.5vw;
     display: block;
     background-size: cover;
     background-position: center center;
@@ -248,12 +248,10 @@ body {
       opacity: 0.8; }
   .thumbnails .film-description {
     width: 100%;
-    padding: 16px 16px;
-    background: white;
+    padding: 14px 20px 16px 6px;
     font-size: 13px;
     line-height: 18px;
-    color: #666;
-    height: 222px; }
+    color: #4f2d3a; }
     .thumbnails .film-description h3.basic-info {
       margin-bottom: 8px;
       font-size: 13px;
@@ -271,25 +269,26 @@ body {
           .thumbnails .film-description h3.basic-info .icon svg path {
             fill: #c89fae; }
     .thumbnails .film-description .excerpt {
-      height: 128px;
       overflow: hidden; }
     .thumbnails .film-description .title {
       font-size: 21px;
       text-transform: none;
       color: #693C4D;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 25px; }
+      .thumbnails .film-description .title .year {
+        color: #b98599; }
 
 .inner-nav {
-  background: #A7D2CE;
-  height: 56px; }
+  background: #905A6E;
+  height: 48px; }
   .inner-nav .title {
-    color: #305e5a;
+    color: #e6d3da;
     font-size: 20px;
-    line-height: 56px;
+    line-height: 48px;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(48, 94, 90, 0.5); }
+      color: rgba(230, 211, 218, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -297,10 +296,10 @@ body {
     .inner-nav .controls .sort-by {
       display: inline-block;
       cursor: pointer;
-      height: 56px;
+      height: 48px;
       font-size: 14px;
-      line-height: 56px;
-      color: #305e5a;
+      line-height: 48px;
+      color: #e6d3da;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -312,7 +311,7 @@ body {
         pointer-events: none;
         z-index: 1000;
         cursor: default;
-        top: 56px;
+        top: 48px;
         left: 0;
         min-width: 190px;
         padding: 10px 0;
@@ -329,20 +328,20 @@ body {
       .inner-nav .controls .sort-by:before {
         content: '';
         position: absolute;
-        top: 22px;
+        top: 18px;
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #305e5a;
+        background: #e6d3da;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
         position: absolute;
-        top: 20px;
+        top: 16px;
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #A7D2CE;
+        background: #905A6E;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by .menu {
         left: auto;
@@ -355,56 +354,56 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        line-height: 56px;
+        line-height: 48px;
         padding: 0 18px 0 10px;
-        color: #54a59e;
+        color: #d0b3be;
         cursor: pointer; }
       .inner-nav .controls .search .search-input {
-        height: 56px;
+        height: 48px;
         font-size: 14px;
         background: transparent;
         width: 180px;
-        padding: 4px 8px 4px 32px;
-        color: #231F20;
+        padding: 4px 8px 4px 33px;
+        color: white;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #305e5a;
+          color: #e6d3da;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #305e5a;
+          color: #e6d3da;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #305e5a;
+          color: #e6d3da;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #305e5a;
+          color: #e6d3da;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
-          background: #bbdcd9; }
+          background: #a1687d; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
-            color: #53a29a;
+            color: #d3b2bf;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
-            color: #53a29a;
+            color: #d3b2bf;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
-            color: #53a29a;
+            color: #d3b2bf;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
-            color: #53a29a;
+            color: #d3b2bf;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
-        top: 20px;
+        top: 16px;
         left: 7px;
         pointer-events: none; }
         .inner-nav .controls .search .icon svg {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: #305e5a; }
+            fill: #e6d3da; }
 
 .left-content {
   width: 68%; }
