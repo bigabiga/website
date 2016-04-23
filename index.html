@@ -12,8 +12,10 @@
   <div class="main">
     <div class="top-content">
       <div class="film-of-the-day">
+        {% assign features = site.data.features | where:"date","00today"  %}
+        {% for feature in features limit: 1 %}
         {% for film in site.films %}
-          {% if film.title == "A Life at Stake" %}
+          {% if film.title == feature.title %}
             <a href="{{ film.url }}"><div class="film">
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
               <div class="play-mark"></div>
@@ -32,6 +34,7 @@
               </div>
             </div>
           {% endif %}
+        {% endfor %}
         {% endfor %}
       </div>
     </div>
