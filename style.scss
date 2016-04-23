@@ -429,7 +429,7 @@ body {
   //$content-color: darken($feature-background, 0);
   //$background-color: lighten($feature-background, 49);
   $content-color: lighten($feature-background, 65);
-  $background-color: #A57285;
+  $background-color: lighten($feature-background, 25);
 
   background: $background-color;
   height: $inner-nav-height;
