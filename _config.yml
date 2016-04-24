@@ -10,3 +10,10 @@ collections:
 
 
 permalink: pretty
+
+
+defaults:
+    scope:
+      type: pages
+    values:
+      permalink: /:path/:basename:output_ext
