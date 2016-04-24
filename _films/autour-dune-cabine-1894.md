@@ -9,12 +9,13 @@ genre:
 - Animation
 - Short
 - Early Cinema
+- Silent
 silent: yes
 decade: 1890s
 recommended: yes
 editors-rating: 4
 image:  /feature-images/Autour-dune-cabine-1894.jpg
-video: https://www.youtube.com/embed/_ntdUMPancg?list=PLJTU-bDeWadsBdM11tHhYMDzz9W9DkdJE&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/_ntdUMPancg?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: Autour d'une cabine (Around A Cab) was made in 1894 by Émile Reynaud. It consists of 636 images, each one of them individually hand painted. The film was screened using Émile Reynaud invention of the Théâtre Optique, a method similar to modern cinema projectors.
 director: Émile Reynaud
 year: 1894
