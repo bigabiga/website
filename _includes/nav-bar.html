@@ -35,12 +35,37 @@
         <div class="label">
           Directors
         </div>
+
+        <ul class="menu" id="Decades-menu">
+          {% for director in site.directors limit: 8 %}
+          <a href="{{ director.url }}?sort=Recommended"">
+          <li>
+            {{ director.title }}
+          </li>
+          </a>
+          {% endfor %}
+        </ul>
+
       </div>
+
+
       <div class="drop-menu">
         <div class="label">
-          Countries
+          countries
         </div>
+
+        <ul class="menu" id="countries-menu">
+          {% for country in site.countries limit: 8 %}
+          <a href="{{ country.url }}?sort=Recommended"">
+          <li>
+            {{ country.title }}
+          </li>
+          </a>
+          {% endfor %}
+        </ul>
+
       </div>
+
     </div>
 
     <div id="asdasd" class="controls">

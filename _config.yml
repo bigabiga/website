@@ -8,6 +8,12 @@ collections:
   decades:
     output: true
 
+  countries:
+    output: true
+
+  directors:
+    output: true
+
 
 permalink: pretty
 

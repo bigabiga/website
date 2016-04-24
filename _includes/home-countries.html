@@ -1,0 +1,20 @@
+<div class="home-element">
+  <div class="element-title">
+    <h2>
+      Films by country
+    </h2>
+  </div>
+  <div class="home-categories">
+    {% for country in site.countries limit: 12 %}
+    <a class="thumbnail-cont" href="{{ country.url }}?sort=Recommended">
+      <div class="category">
+        <div class="item-image" style="background-image: url({{ country.feature-image }})"></div>
+        <div class="info">
+          <div class="title"><h3> {{ country.title }} </h3></div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+</div>

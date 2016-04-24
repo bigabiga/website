@@ -1,0 +1,20 @@
+<div class="home-element">
+  <div class="element-title">
+    <h2>
+      Films by director
+    </h2>
+  </div>
+  <div class="home-categories">
+    {% for director in site.directors limit: 12 %}
+    <a class="thumbnail-cont" href="{{ director.url }}?sort=Recommended">
+      <div class="category">
+        <div class="item-image" style="background-image: url({{ director.feature-image }})"></div>
+        <div class="info">
+          <div class="title"><h3> {{ director.title }} </h3></div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+</div>
