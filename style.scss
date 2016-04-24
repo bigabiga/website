@@ -3,7 +3,7 @@
 
 @import url("reset.css");
 
-$nav-background: #e6e6e6;
+$nav-background: #e0e0e0;
 $nav-text: #888;
 $darker-green: #1E7B85;
 $green-font: #669E99;
@@ -708,14 +708,14 @@ body {
 
 .element-title {
   @extend %bold-font;
-  font-size: 27px;
+  font-size: 29px;
   color: lighten($feature-background, 26);
   margin-bottom: 10px;
   letter-spacing: -0.04em;
 }
 
 .home-element {
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .film-of-the-day {
@@ -826,7 +826,7 @@ body {
   .thumbnail-cont {
     display: inline-block;
     width: 25%;
-    height: 13.5vw;
+    height: 14.5vw;
   }
 
   .film {

@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #e6e6e6; }
+  background: #e0e0e0; }
 
 .content,
 .top-content {
@@ -67,7 +67,7 @@ body {
       color: #6ab3ac; }
 
 .nav-bar {
-  background: #e6e6e6;
+  background: #e0e0e0;
   color: #695d60;
   padding: 0 20px;
   z-index: 100;
@@ -179,7 +179,7 @@ body {
         right: 14px;
         width: 6px;
         height: 6px;
-        background: #e6e6e6;
+        background: #e0e0e0;
         transform: rotate(45deg); }
 
 .thumbnails {
@@ -568,13 +568,13 @@ body {
   min-height: 800px; }
 
 .element-title {
-  font-size: 27px;
+  font-size: 29px;
   color: #b2788e;
   margin-bottom: 10px;
   letter-spacing: -0.04em; }
 
 .home-element {
-  margin-top: 30px; }
+  margin-top: 34px; }
 
 .film-of-the-day {
   font-size: 0;
@@ -685,7 +685,7 @@ body {
   .recommended .thumbnail-cont {
     display: inline-block;
     width: 25%;
-    height: 13.5vw; }
+    height: 14.5vw; }
   .recommended .film {
     position: absolute;
     top: 3px;
