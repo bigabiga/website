@@ -10,7 +10,7 @@ runtime: 70
 permalink: films/The-Big-Bluff-1955
 genre:
 - Crime
--  Drama
+- Drama
 - Film Noir
 decade: 1950s
 recommended: yes

@@ -6,7 +6,7 @@
           Genres
         </div>
         <ul class="menu" id="genres-menu">
-          {% for genre in site.genres limit: 8 %}
+          {% for genre in site.genres limit: 12 %}
           <a href="{{ genre.url }}?sort=Recommended"">
             <li>
               {{ genre.title }}
