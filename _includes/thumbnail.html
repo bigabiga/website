@@ -1,6 +1,6 @@
 <div class="thumbnail" id="{{ film.film-id }}" data-year="{{ film.year }}">
   <a href="{{ film.url }}">
-    <div class="film-image" style="background-image: url({{ film.image }})">
+    <div class="film-image" alt="{{ film.title}} ({{film.year}}), directed by {{ film.director }}" style="background-image: url({{ film.image }})">
       <div class="play-mark"></div>
     </div>
   </a>
