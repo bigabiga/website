@@ -6,6 +6,7 @@ excerpt: Charles-Émile Reynaud was the inventor of the animated cartoon. His 18
 title: Pauvre Pierrot
 runtime: 4
 genre:
+- Silent
 - Animation
 - Short
 - Early Cinema
