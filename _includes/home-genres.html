@@ -6,7 +6,7 @@
   </div>
   <div class="home-categories">
     {% for genre in site.genres limit: 12 %}
-    <a class="thumbnail-cont" href="{{ genre.url }}?sort=Recommended">
+    <a class="thumbnail-cont" href="{{ genre.url }}#sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url({{ genre.feature-image }})"></div>
         <div class="info">

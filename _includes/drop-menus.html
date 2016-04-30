@@ -1,0 +1,67 @@
+<div class="drop-menus">
+  <div class="drop-menu">
+    <div class="label">
+      Genres
+    </div>
+    <ul class="menu">
+      {% for genre in site.genres %}
+      <a href="{{ genre.url }}#sort=Recommended"">
+      <li>
+        {{ genre.title }}
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="drop-menu">
+    <div class="label">
+      Decades
+    </div>
+
+    <ul class="menu">
+      {% for decade in site.decades %}
+      <a href="{{ decade.url }}#sort=Recommended"">
+      <li>
+        {{ decade.title }}
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+
+  </div>
+  <div class="drop-menu">
+    <div class="label">
+      Directors
+    </div>
+
+    <ul class="menu">
+      {% for director in site.directors %}
+      <a href="{{ director.url }}#sort=Recommended"">
+      <li>
+        {{ director.title }}
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+
+  <div class="drop-menu">
+    <div class="label">
+      countries
+    </div>
+
+    <ul class="menu">
+      {% for country in site.countries %}
+      <a href="{{ country.url }}#sort=Recommended"">
+      <li>
+        {{ country.title }}
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</div>

@@ -1,74 +1,7 @@
 <div class="nav-bar">
   <div class="top-content">
-    <div class="drop-menus">
-      <div class="drop-menu">
-        <div class="label">
-          Genres
-        </div>
-        <ul class="menu" id="genres-menu">
-          {% for genre in site.genres limit: 12 %}
-          <a href="{{ genre.url }}?sort=Recommended"">
-            <li>
-              {{ genre.title }}
-            </li>
-          </a>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="drop-menu">
-        <div class="label">
-          Decades
-        </div>
-
-        <ul class="menu" id="Decades-menu">
-          {% for decade in site.decades limit: 8 %}
-          <a href="{{ decade.url }}?sort=Recommended"">
-            <li>
-              {{ decade.title }}
-            </li>
-          </a>
-          {% endfor %}
-        </ul>
-
-      </div>
-      <div class="drop-menu">
-        <div class="label">
-          Directors
-        </div>
-
-        <ul class="menu" id="Decades-menu">
-          {% for director in site.directors limit: 8 %}
-          <a href="{{ director.url }}?sort=Recommended"">
-          <li>
-            {{ director.title }}
-          </li>
-          </a>
-          {% endfor %}
-        </ul>
-
-      </div>
-
-
-      <div class="drop-menu">
-        <div class="label">
-          countries
-        </div>
-
-        <ul class="menu" id="countries-menu">
-          {% for country in site.countries limit: 8 %}
-          <a href="{{ country.url }}?sort=Recommended"">
-          <li>
-            {{ country.title }}
-          </li>
-          </a>
-          {% endfor %}
-        </ul>
-
-      </div>
-
-    </div>
-
-    <div id="asdasd" class="controls">
+    {% include drop-menus.html %}
+    <div class="controls">
       <div class="search">
         <input class="search-input" id="global-search" type="text" placeholder="Search">
         <div class="icon">

@@ -6,7 +6,7 @@
   </div>
   <div class="home-categories">
     {% for country in site.countries limit: 12 %}
-    <a class="thumbnail-cont" href="{{ country.url }}?sort=Recommended">
+    <a class="thumbnail-cont" href="{{ country.url }}#sort=Recommended">
       <div class="category">
         <div class="item-image" style="background-image: url({{ country.feature-image }})"></div>
         <div class="info">

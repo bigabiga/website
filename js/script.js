@@ -96,13 +96,16 @@ function updateState() {
                 $thumbnail.sortElements(function(a, b) {
                     var $a = $(a);
                     var $b = $(b);
-                    var contentA = parseInt($a.attr('data-recommended'));
-                    var contentB = parseInt($b.attr('data-recommended'));
+                    var contentA = parseInt($a.attr('data-editors-rating'));
+                    var contentB = parseInt($b.attr('data-editors-rating'));
                     return -ascending(contentA, contentB);
                 });
                 break;
         }
     }
+
+    var $searchTitle = $('#search-title');
+    $searchTitle.text(getParameterByName('search'));
 }
 
 window.onhashchange = updateState;
@@ -120,16 +123,13 @@ $(function() {
     updateState();
 
     var $categorySearch = $('#categorySearch');
-
-    //show the search remover only when there is something in the input:
     $categorySearch.on('input', function() {
         replaceHashParam('search', $categorySearch.val());
-        updateRemover();
     });
 
     var $globalSearch = $('#global-search');
     $globalSearch.pressEnter(function() {
-        var url = window.location.host + "/search/?sort=year&search=" + $globalSearch.val();
-        window.location.url = url;
+        var url = "/search/#sort=recommended&search=" + $globalSearch.val();
+        window.location.href = url;
     });
 });
