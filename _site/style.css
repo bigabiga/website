@@ -47,7 +47,7 @@ body {
   padding-left: 30px;
   padding-right: 30px; }
   .header .logo {
-    margin-bottom: -5px;
+    margin-bottom: -7px;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -622,7 +622,7 @@ body {
 
 .element-title {
   font-size: 29px;
-  color: #b2788e;
+  color: #aa6b83;
   margin-bottom: 12px;
   letter-spacing: -0.04em; }
 
@@ -836,8 +836,8 @@ body {
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
       .home-categories .category .info .title {
         text-transform: none;
-        font-weight: 600;
-        font-size: 14px; }
+        font-size: 16px;
+        font-family: tenor-sans, sans-serif; }
 
 .about-cont {
   max-width: 680px;

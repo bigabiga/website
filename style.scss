@@ -209,7 +209,7 @@ body {
   padding-right: $padding;
 
   .logo {
-    margin-bottom: -5px;
+    margin-bottom: -7px;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -780,7 +780,7 @@ body {
 .element-title {
   @extend %bold-font;
   font-size: 29px;
-  color: lighten($feature-background, 26);
+  color: lighten($feature-background, 22);
   margin-bottom: 12px;
   letter-spacing: -0.04em;
 }
@@ -979,8 +979,9 @@ body {
 
       .title {
         text-transform: none;
-        font-weight: 600;
-        font-size: 14px;
+        //font-weight: 600;
+        font-size: 16px;
+        font-family: tenor-sans, sans-serif;
 
         h3 {
         }
