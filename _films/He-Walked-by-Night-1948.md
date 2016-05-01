@@ -8,8 +8,8 @@ title: He Walked by Night
 runtime: 79
 permalink: films/He-Walked-by-Night-1948
 genre:
-- Crime
 - Film Noir
+- Crime
 - Thriller
 decade: 1940s
 recommended: yes

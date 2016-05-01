@@ -8,6 +8,7 @@ runtime: 1
 genre:
 - Documentary
 - Short
+- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

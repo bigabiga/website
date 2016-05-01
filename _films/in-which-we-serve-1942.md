@@ -4,9 +4,9 @@ layout: film
 excerpt: This "story of a ship," the British destroyer HMS Torrin, is told in flashbacks by survivors as they cling to a life raft.
 title: In Which We Serve
 runtime: 114
-genre: 
-- Drama
+genre:
 - War
+- Drama
 silent: no
 decade: 1940s
 recommended: no

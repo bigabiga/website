@@ -4,11 +4,11 @@ layout: film
 excerpt: Walter Paisley, nerdy busboy at a Bohemian café, is jealous of the talent (and popularity) of its various artistic regulars. But after accidentally killing his landlady's cat and covering the body in plaster to hide the evidence, he is acclaimed as a brilliant sculptor - but his new-found friends want to see more of his work. Lacking any artistic talent whatsoever, Walter has to resort to similar methods to produce new work, and soon people start mysteriously disappearing...
 title: A Bucket of Blood
 runtime: 66
-genre: 
+genre:
+- B-movie
+- Horror
 - Comedy
 - Crime
-- Horror
-- B-movie
 silent: no
 decade: 1950s
 recommended: yes

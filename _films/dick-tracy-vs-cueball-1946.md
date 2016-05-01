@@ -8,9 +8,9 @@ title: Dick Tracy vs. Cueball
 runtime: 62
 permalink: films/Dick-Tracy-vs-Cueball-1946
 genre: 
-- Action
 - Crime
-- Film Noir 
+- Film Noir
+- Action
 decade: 1940s
 recommended: no
 editors-rating: 3

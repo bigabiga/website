@@ -5,9 +5,9 @@ excerpt: An English anthropologist has discovered a frozen monster in the frozen
 title: Horror Express
 runtime: 84
 genre: 
+- B-movie
 - Horror
 - Sci-Fi 
-- B-movie
 silent: no
 decade: 1970s
 recommended: no

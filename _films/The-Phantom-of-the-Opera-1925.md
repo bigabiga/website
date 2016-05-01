@@ -5,9 +5,9 @@ excerpt: At the Opera of Paris, a mysterious phantom threatens a famous lyric si
 title: The Phantom of the Opera
 runtime: 93
 genre:
-- Silent 
 - Horror
-- Romance 
+- Romance
+- Silent
 silent: yes
 decade: 1920s
 recommended: yes

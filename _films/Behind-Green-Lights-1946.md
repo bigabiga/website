@@ -9,9 +9,9 @@ title: Behind Green Lights
 runtime: 64
 permalink: films/Behind-Green-Lights-1946
 genre:
-- Drama
 - Film Noir
 - Mystery
+- Drama
 decade: 1940s
 recommended: no
 editors-rating: 3

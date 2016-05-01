@@ -10,9 +10,9 @@ title: Suddenly
 permalink: films/Watch-Suddenly-1954
 
 genre:
+- Film Noir
 - Crime
 - Drama
-- Film Noir
 - Thriller
 
 decade: 1950s

@@ -6,11 +6,11 @@ excerpt: Loosely adapted from Dante's Divine Comedy and inspired by the illustra
 title: Dante's Inferno
 runtime: 68
 genre:
-- Silent
+- Early Cinema
 - Adventure
+- Silent
 - Drama
 - Fantasy
-- Early Cinema
 silent: yes
 decade: 1910s
 recommended: yes

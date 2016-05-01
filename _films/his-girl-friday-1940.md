@@ -6,9 +6,9 @@ excerpt: Walter Burns, the editor of a major Chicago newspaper, is about to lose
 title: His Girl Friday
 runtime: 92
 genre: 
+- Romance
 - Comedy
 - Drama
-- Romance
 silent: no
 decade: 1940s
 recommended: yes

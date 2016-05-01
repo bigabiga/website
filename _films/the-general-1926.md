@@ -7,9 +7,9 @@ excerpt: The General is a silent comedy-adventure film, co-directed and starring
 title: The General
 runtime: 67
 genre:  
+- Comedy
 - Action
 - Adventure
-- Comedy
 - Silent
 silent: yes
 decade: 1920s

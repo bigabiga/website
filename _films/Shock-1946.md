@@ -9,8 +9,8 @@ title: Shock
 runtime: 70
 permalink: films/Watch-Shock-1946
 genre:
-- Film Noir
 - Thriller
+- Film Noir
 decade: 1940s
 recommended: no
 editors-rating: 3

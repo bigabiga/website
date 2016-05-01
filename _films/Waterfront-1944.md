@@ -8,8 +8,8 @@ excerpt: A Nazi spy working as an optometrist in San Francisco waterfront distri
 title: Waterfront
 permalink: films/Watch-Online-Waterfront-1944
 genre:
-- Drama
 - War
+- Drama
 decade: 1940s
 recommended: no
 editors-rating: 2.5

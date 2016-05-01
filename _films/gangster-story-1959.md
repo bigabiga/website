@@ -15,8 +15,8 @@ permalink: films/Watch-Gangster-Story-1959
 
 genre:
 - Crime
-- Drama
 - Thriller
+- Drama
 
 decade: 1950s
 

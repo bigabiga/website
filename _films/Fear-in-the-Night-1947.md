@@ -11,9 +11,9 @@ title: Fear in the Night
 runtime: 72
 permalink: films/Fear-in-the-Night-1947
 genre:
+- Film Noir
 - Crime
 - Drama
-- Film-Noir
 
 decade: 1940s
 recommended: yes

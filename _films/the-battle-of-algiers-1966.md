@@ -5,8 +5,8 @@ excerpt: A film commissioned by the Algerian government that shows the Algerian 
 title: The Battle of Algiers
 runtime: 121
 genre:  
-- Drama
 - War
+- Drama
 silent: no
 decade: 1960s
 recommended: yes

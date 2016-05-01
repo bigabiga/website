@@ -9,9 +9,9 @@ title: Port of New York
 runtime: 82
 permalink: films/Port-of-New-York-1949
 genre:
+- Film Noir
 - Crime
 - Drama
-- Film Noir
 decade: 1940s
 recommended: no
 editors-rating: 3

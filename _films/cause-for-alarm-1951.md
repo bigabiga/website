@@ -13,8 +13,8 @@ permalink: films/Cause-for-Alarm-1951
 
 genre:
 - Film Noir
-- Drama
 - Crime
+- Drama
 
 decade: 1950s
 

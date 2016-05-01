@@ -4,9 +4,9 @@ excerpt: In California, an old man (Bela Lugosi) grieves the loss of his wife (V
 title: Plan 9 from Outer Space
 runtime: 79
 genre: 
-- Horror
-- Sci-Fi
 - B-movie
+- Sci-Fi
+- Horror
 silent: no
 decade: 1950s
 recommended: yes

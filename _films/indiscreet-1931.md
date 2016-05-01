@@ -12,9 +12,9 @@ title: Indiscreet
 permalink: films/Watch-Indiscreet-1931
 
 genre:
-- Drama
 - Musical
 - Romance
+- Drama
 
 decade: 1930s
 

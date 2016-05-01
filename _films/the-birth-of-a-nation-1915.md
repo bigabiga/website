@@ -5,8 +5,8 @@ excerpt: D.W. Griffith's epic tale of the American civil war, told primarily fro
 title:  The Birth of a Nation
 runtime: 165
 genre: 
-- Drama
 - War
+- Drama
 - Silent
 silent: yes
 decade: 1910s

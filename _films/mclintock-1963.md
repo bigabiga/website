@@ -6,9 +6,9 @@ excerpt: Cattle baron George Washington McLintock fights his wife, his daughter,
 title: McLintock!
 runtime: 127
 genre:
+- Western
 - Comedy
 - Romance
-- Western
 silent: no
 decade: 1960s
 recommended: yes

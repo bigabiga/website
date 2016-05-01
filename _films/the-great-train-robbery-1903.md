@@ -6,11 +6,11 @@ excerpt: Among the earliest existing films in American cinema - notable as the f
 title: The Great Train Robbery
 runtime: 11
 genre:
+- Early Cinema
 - Silent
 - Short
 - Action
 - Crime 
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

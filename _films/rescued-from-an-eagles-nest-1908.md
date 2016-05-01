@@ -6,10 +6,10 @@ excerpt: A family is terrified when an eagle carries off its young child.
 title: Rescued from an Eagle's Nest
 runtime: 6
 genre:
+- Early Cinema
 - Silent
 - Action
 - Short
-- Early Cinema 
 silent: yes
 decade: 1900s
 recommended: yes

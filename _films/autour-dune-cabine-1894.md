@@ -6,9 +6,9 @@ excerpt: Autour d'une cabine (Around A Cab) was made in 1894 by Émile Reynaud. 
 title: Autour d'une cabine
 runtime: 2
 genre:
+- Early Cinema
 - Animation
 - Short
-- Early Cinema
 - Silent
 silent: yes
 decade: 1890s

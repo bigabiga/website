@@ -5,8 +5,8 @@ excerpt: While driving through the desert, a teenage girl is frightened by a sev
 title: Eegah 
 runtime: 90
 genre: 
-- Comedy 
 - B-movie
+- Comedy
 silent: no
 decade: 1960s
 recommended: no

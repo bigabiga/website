@@ -6,11 +6,11 @@ excerpt: The first all-animated film in history, a series of scenes without much
 title: Fantasmagorie
 runtime: 2
 genre:
-- Silent
-- Animation
-- Short
-- Fantasy
 - Early Cinema
+- Animation
+- Fantasy
+- Silent
+- Short
 silent: yes
 decade: 1900s
 recommended: yes

@@ -4,10 +4,10 @@ layout: film
 excerpt: When perennial college students Danny O'Neill and Hank Taylor are forced to make it on their own, the competitive pair get jobs with Artie Shaw's band and reunite with ex-manager Ellen Miller.
 title: Second Chorus
 runtime: 84
-genre: 
-- Comedy
+genre:
 - Romance
 - Musical
+- Comedy
 silent: no
 decade: 1940s
 recommended: yes

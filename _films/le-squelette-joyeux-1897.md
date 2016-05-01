@@ -6,10 +6,10 @@ excerpt: A skeleton dances joyously, often collapsing into a heap of bones and q
 title: Le squelette joyeux
 runtime: 1
 genre:
-- Short
-- Animation
-- Silent
 - Early Cinema
+- Animation
+- Short
+- Silent
 silent: yes
 decade: 1890s
 recommended: yes

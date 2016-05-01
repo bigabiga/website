@@ -5,9 +5,9 @@ excerpt: A down-on-his-luck ex-GI finds himself framed for an armored car robber
 title: Kansas City Confidential
 runtime: 99
 genre: 
+- Film Noir
 - Crime
 - Drama
-- Film Noir
 silent: no
 decade: 1950s
 recommended: yes

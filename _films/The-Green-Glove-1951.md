@@ -10,8 +10,8 @@ runtime: 88
 permalink: films/The-Green-Glove-1951
 genre:
 - Crime
-- Drama
 - Film Noir
+- Drama
 decade: 1950s
 recommended: no
 editors-rating: 2.5

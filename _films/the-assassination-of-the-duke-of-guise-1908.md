@@ -6,11 +6,11 @@ excerpt: Lasting longer than was then usual, about 15 minutes, the film more or 
 title: The Assassination of the Duke of Guise
 runtime: 15
 genre:
+- Early Cinema
 - Silent
 - Short
 - History
 - Drama
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

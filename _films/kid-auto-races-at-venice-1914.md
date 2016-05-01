@@ -9,8 +9,8 @@ title: Kid Auto Races At Venice
 runtime: 11
 permalink: films/Kid-Auto-Races-At-Venice-1914
 genre:
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

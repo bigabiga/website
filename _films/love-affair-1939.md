@@ -5,9 +5,9 @@ excerpt: While in a cruise from Europe to New York to get married with his fianc
 title: Love Affair
 runtime: 88
 genre: 
+- Romance
 - Comedy
 - Drama
-- Romance
 silent: no
 decade: 1930s
 recommended: no

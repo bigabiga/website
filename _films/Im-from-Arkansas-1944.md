@@ -9,8 +9,8 @@ excerpt: I'm from Arkansas is an extremely entertaining movie, filled with great
 title: I'm from Arkansas
 permalink: films/I'm-from-Arkansas-1944
 genre:
-- Comedy
 - Musical
+- Comedy
 - Romance
 decade: 1940s
 recommended: no

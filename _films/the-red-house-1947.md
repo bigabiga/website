@@ -5,10 +5,10 @@ excerpt: Somehow overlooked today, The Red House is a well written and photograp
 
 title: The Red House
 runtime: 100
-genre: 
-- Drama
+genre:
 - Film Noir
-- Mystery 
+- Mystery
+- Drama
 silent: no
 decade: 1940s
 recommended: yes

@@ -5,7 +5,6 @@ excerpt: Mary Henry is enjoying the day by riding around in a car with two frien
 title: Carnival of Souls
 runtime: 78
 genre: 
-- Fantasy
 - Horror
 - Mystery
 silent: no

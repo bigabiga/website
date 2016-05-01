@@ -5,10 +5,10 @@ excerpt: The titles tell us this film is based on an incident in the Boxer Rebel
 title: Attack on a China Mission 
 runtime: 4
 genre:
+- War
 - Silent
 - Short
 - Drama
-- War
 - Early Cinema
 silent: yes
 decade: 1900s

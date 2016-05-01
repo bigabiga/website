@@ -4,10 +4,10 @@ layout: film
 excerpt: Romance and suspense ensue in Paris as a woman is pursued by several men who want a fortune her murdered husband had stolen. Who can she trust?
 title: Charade
 runtime: 113
-genre: 
+genre:
+- Romance
 - Comedy
 - Mystery
-- Romance 
 silent: no
 decade: 1960s
 recommended: yes

@@ -6,8 +6,8 @@ excerpt: This Experimental Sound Film is the first film in the history of motion
 title: Dickson Experimental Sound Film
 runtime: 1
 genre:
-- Short
 - Early Cinema
+- Short
 silent: no
 decade: 1890s
 recommended: yes

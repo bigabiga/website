@@ -15,10 +15,9 @@ title: Bubbling Over
 permalink: films/Bubbling-Over-1934
 
 genre:
-- Short
 - Musical
 - Comedy
-
+- Short
 
 decade: 1930s
 

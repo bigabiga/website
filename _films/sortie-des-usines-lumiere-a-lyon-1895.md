@@ -7,10 +7,10 @@ excerpt: Workers Leaving The Lumière Factory in Lyon (French&#58;
 title: Workers Leaving the Lumière Factory
 runtime: 1
 genre:
+- Early Cinema
 - Documentary
 - Short
 - Silent
-- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

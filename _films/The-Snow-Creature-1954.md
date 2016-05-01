@@ -8,8 +8,8 @@ title: The Snow Creature
 runtime: 69
 permalink: films/The-Snow-Creature-1954
 genre:
-- Sci-Fi
 - B-movie
+- Sci-Fi
 decade: 1950s
 recommended: no
 editors-rating: 1.5

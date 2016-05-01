@@ -11,9 +11,9 @@ title: Dick Tracy
 runtime: 61
 permalink: films/Dick-Tracy-1945
 genre:
-- Action
 - Crime
-- Film Noir 
+- Film Noir
+- Action
 decade: 1940s
 recommended: no
 editors-rating: 3

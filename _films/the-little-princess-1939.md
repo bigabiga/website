@@ -5,9 +5,9 @@ excerpt: In Victorian England little Sara Crewe's widowed father is sent to the 
 title: The Little Princess
 runtime: 93
 genre: 
+- Family
 - Comedy
 - Drama
-- Family 
 silent: no
 decade: 1930s
 recommended: yes

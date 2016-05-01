@@ -5,8 +5,8 @@ excerpt: As a young orphan boy Pip lives with Joe Gargery, the local blacksmith 
 title: Great Expectations
 runtime: 118
 genre: 
-- Adventure
 - Drama
+- Adventure
 - Mystery
 silent: no
 decade: 1940s

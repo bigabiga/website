@@ -5,10 +5,10 @@ excerpt: A documentary-style drama about the "Fouke Monster", a Bigfoot-type cre
 title: The Legend of Boggy Creek 
 runtime: 90
 genre: 
-- Drama
-- Horror
-- Mystery 
 - B-movie
+- Horror
+- Mystery
+- Drama
 silent: no
 decade: 1970s
 recommended: yes

@@ -6,10 +6,10 @@ excerpt: Annabelle Serpentine Dance is a short silent American film produced and
 title: Serpentine Dance
 runtime: 1
 genre:
+- Early Cinema
 - Documentary
 - Short
 - Silent
-- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

@@ -5,8 +5,8 @@ excerpt: A young man turns to a witch doctor to lure the woman he loves away fro
 title: White Zombie 
 runtime: 69
 genre: 
-- Horror
 - B-movie
+- Horror
 silent: no
 decade: 1930s
 recommended: yes

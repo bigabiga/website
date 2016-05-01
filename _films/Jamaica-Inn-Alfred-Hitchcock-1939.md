@@ -10,8 +10,8 @@ title: Jamaica Inn
 runtime: 108
 permalink: films/Jamaica-Inn-Alfred-Hitchcock-1939
 genre:
-- Adventure
 - Crime
+- Adventure
 decade: 1930s
 recommended: no
 editors-rating: 3.5

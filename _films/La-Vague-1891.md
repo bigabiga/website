@@ -6,9 +6,9 @@ excerpt: This early cinematic experiment was shot by French scientist Étienne-J
 title: La Vague
 runtime: 1
 genre: 
+- Early Cinema
 - Silent
 - Short
-- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

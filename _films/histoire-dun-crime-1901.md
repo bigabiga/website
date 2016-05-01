@@ -6,11 +6,11 @@ excerpt: The cell of a man condemned to death. He's sleeping and dreaming about 
 title: Histoire d'un crime 
 runtime: 5
 genre:
+- Early Cinema
 - Silent
 - Short
 - Crime
 - Drama
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

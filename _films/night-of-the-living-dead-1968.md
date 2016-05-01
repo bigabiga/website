@@ -5,8 +5,8 @@ excerpt: The dead come back to life and eat the living in this low budget, black
 title: Night of the Living Dead
 runtime: 96
 genre: 
+- B-movie
 - Horror
-- B-movie 
 silent: no
 decade: 1960s
 recommended: yes

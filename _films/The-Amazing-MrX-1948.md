@@ -10,9 +10,9 @@ title: The Amazing Mr. X
 runtime: 78
 permalink: films/The-Amazing-Mr-X-1948
 genre:
+- B-movie
 - Film Noir
 - Thriller
-- B-movie
 decade: 1940s
 recommended: no
 editors-rating: 3

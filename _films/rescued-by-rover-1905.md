@@ -6,11 +6,11 @@ excerpt: A dog leads its master to his kidnapped baby.
 title: Rescued by Rover
 runtime: 7
 genre:
+- Early Cinema
 - Silent
 - Short
 - Drama
 - Family
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

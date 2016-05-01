@@ -6,10 +6,10 @@ excerpt: L'Arroseur arrosé has the distinction of being the earliest known inst
 title: L'Arroseur arrosé
 runtime: 1
 genre:
+- Early Cinema
 - Comedy
 - Short
 - Silent
-- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

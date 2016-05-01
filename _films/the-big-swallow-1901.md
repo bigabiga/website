@@ -6,10 +6,10 @@ excerpt: A man, objecting to being filmed, comes closer and closer to the camera
 title: The Big Swallow
 runtime: 1
 genre:
+- Early Cinema
 - Silent
 - Comedy
 - Short 
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

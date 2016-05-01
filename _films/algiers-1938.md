@@ -5,10 +5,10 @@ layout: film
 excerpt: Beautiful Gaby meets a romantic jewel thief in the mysterious Casbah.
 title: Algiers
 runtime: 96
-genre: 
-- Drama
+genre:
+- Romance
 - Mystery
-- Romance 
+- Drama
 silent: no
 decade: 1930s
 recommended: yes

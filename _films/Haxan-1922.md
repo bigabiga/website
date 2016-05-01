@@ -6,10 +6,10 @@ excerpt: Part history lesson followed by re-enactments with actors, this film ta
 title: Häxan&#58; Witchcraft Through the Ages
 runtime: 91
 genre: 
-- Silent
+- Horror
 - Documentary
 - Fantasy
-- Horror 
+- Silent
 silent: yes
 decade: 1920s
 recommended: yes

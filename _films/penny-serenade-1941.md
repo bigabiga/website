@@ -4,8 +4,8 @@ excerpt: As Julie prepares to leave her husband Roger, she begins to play throug
 title: Penny Serenade
 runtime: 119
 genre: 
+- Romance
 - Drama
-- Romance 
 silent: no
 decade: 1940s
 recommended: yes

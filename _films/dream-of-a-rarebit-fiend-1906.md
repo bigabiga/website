@@ -6,10 +6,10 @@ excerpt: Adapted from Winsor McCay's films and comics of the period, this film f
 title: Dream of a Rarebit Fiend
 runtime: 7
 genre:
+- Early Cinema
+- Fantasy
 - Silent
 - Short
-- Fantasy
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

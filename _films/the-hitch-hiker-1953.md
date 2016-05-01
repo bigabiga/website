@@ -5,9 +5,9 @@ excerpt: While traveling in a fishing trip to San Felipe, the draftsman Gilbert 
 title: The Hitch-Hiker
 runtime: 71
 genre: 
-- Crime
 - Film Noir
-- Thriller 
+- Thriller
+- Crime
 silent: no
 decade: 1950s
 recommended: yes

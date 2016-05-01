@@ -9,9 +9,9 @@ title: Shed No Tears
 runtime: 70
 permalink: films/Shed-No-Tears-1948
 genre:
+- Film Noir
 - Crime
 - Drama
-- Film Noir
 decade: 1940s
 recommended: no
 editors-rating: 3

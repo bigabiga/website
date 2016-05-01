@@ -6,8 +6,8 @@ excerpt: The unethical surgeon Dr. Bill Cortner &#40;Herb Evers&#41; is developi
 title: The Brain That Wouldn't Die
 runtime: 82
 genre: 
-- Sci-Fi
 - B-movie
+- Sci-Fi
 silent: no
 decade: 1960s
 recommended: no

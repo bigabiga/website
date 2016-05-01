@@ -6,11 +6,11 @@ excerpt: Considered the first truly animated movie (or at least the first verifi
 title: Humorous Phases of Funny Faces
 runtime: 3
 genre: 
-- Silent
+- Early Cinema
 - Animation
+- Silent
 - Short
 - Comedy
-- Early Cinema 
 silent: yes
 decade: 1900s
 recommended: yes

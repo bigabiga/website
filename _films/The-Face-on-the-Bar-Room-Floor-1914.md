@@ -8,8 +8,8 @@ title: The Face on the Bar Room Floor
 runtime: 14
 permalink: films/The-Face-on-the-Bar-Room-Floor-1914
 genre:
+- Comedy
 - Short
-- Comedy 
 - Silent
 silent: yes
 decade: 1910s

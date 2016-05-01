@@ -9,9 +9,9 @@ excerpt: Based on the 1930s comic strip character of Dick Tracy created by Chest
 title: Dick Tracy's Dilemma
 runtime: 60
 permalink: films/Dick-Tracys-Dilemma-1947
-genre: 
-- Action
+genre:
 - Crime
+- Action
 - Drama
 decade: 1940s
 recommended: yes

@@ -6,6 +6,7 @@ excerpt: A baby is seated at a table between its cheerful parents, Auguste and M
 title: Baby's Dinner
 runtime: 1
 genre:
+- Early Cinema
 - Documentary
 - Short
 silent: yes

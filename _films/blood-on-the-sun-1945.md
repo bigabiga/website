@@ -16,9 +16,8 @@ permalink: films/Watch-Blood-on-the-Sun-1945
 
 genre:
 - Romance
-- Drama
 - Thriller
-
+- Drama
 decade: 1940s
 
 recommended: no

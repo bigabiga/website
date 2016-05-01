@@ -5,8 +5,8 @@ excerpt: When a man in mid-life crisis befriends a young woman, her venal fianc√
 title: Scarlet Street
 runtime: 103
 genre:
-- Drama
 - Film Noir
+- Drama
 - Thriller
 silent: no
 decade: 1940s

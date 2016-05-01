@@ -6,10 +6,10 @@ excerpt: A satire on the way that audiences unaccustomed to the cinema didn't kn
 title: The Countryman and the Cinematograph
 runtime: 1
 genre:
+- Early Cinema
 - Silent
 - Short
 - Comedy
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

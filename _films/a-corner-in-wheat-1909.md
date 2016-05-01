@@ -7,9 +7,9 @@ title: A Corner in Wheat
 runtime: 14
 genre:
 - Silent
+- Early Cinema
 - Short
 - Drama
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

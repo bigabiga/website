@@ -9,8 +9,8 @@ title: Between Showers
 runtime: 15
 permalink: films/Between-Showers-1914
 genre:
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

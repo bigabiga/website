@@ -4,9 +4,9 @@ layout: film
 excerpt: France, 1640&#58; Cyrano, the charismatic swordsman-poet with the absurd nose, hopelessly loves the beauteous Roxane; she, in turn, confesses to Cyrano her love for the handsome but tongue-tied Christian. The chivalrous Cyrano sets up with Christian an innocent deception, with tragic results. Much cut from the play, but dialogue not rewritten.
 title: Cyrano de Bergerac
 runtime: 112
-genre: 
+genre:
+- Romance
 - Drama
-- Romance 
 silent: no
 decade: 1950s
 recommended: yes

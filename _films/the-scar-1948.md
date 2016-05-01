@@ -13,9 +13,9 @@ title: The Scar
 permalink: films/Watch-The-Scar-1948
 
 genre:
+- Film Noir
 - Crime
 - Drama
-- Film Noir
 
 decade: 1940s
 

@@ -6,11 +6,11 @@ excerpt: The life of Jesus Christ in 25 scenes.
 title: La Vie du Christ
 runtime: 33
 genre:
+- Early Cinema
 - Silent
--  Short
+- Short
 - Biography
 - Drama
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: no

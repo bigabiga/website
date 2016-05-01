@@ -5,8 +5,8 @@ excerpt: A family gets lost on the road and stumbles upon a hidden, underground,
 title: Manos&#58;  The Hands of Fate
 runtime: 70
 genre:  
-- Horror
 - B-movie
+- Horror
 silent:
 decade: 1960s
 recommended: no

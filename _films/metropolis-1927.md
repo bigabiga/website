@@ -6,8 +6,8 @@ excerpt: In a futuristic city sharply divided between the working class and the 
 title: Metropolis
 runtime: 153
 genre: 
+- Sci-Fi
 - Drama
-- Sci-Fi 
 - Silent
 silent: yes
 decade: 1920s

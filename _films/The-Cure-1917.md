@@ -8,10 +8,10 @@ excerpt: The Cure is one of the 12 films Chaplin made with Mutual Films Company 
 title: The Cure
 runtime: 1917
 permalink: films/The-Cure-1917
-genre: 
-- Short
-- Comedy 
+genre:
+- Comedy
 - Silent
+- Short
 silent: yes
 decade: 1910s
 recommended: yes

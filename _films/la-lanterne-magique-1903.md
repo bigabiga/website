@@ -6,11 +6,11 @@ excerpt: In this brief "trick film" two clowns assemble an enormous magic lanter
 title: La lanterne magique
 runtime: 3
 genre:
+- Early Cinema
+- Fantasy
 - Silent
 - Short
 - Comedy
-- Fantasy
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

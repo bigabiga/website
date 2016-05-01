@@ -6,10 +6,10 @@ excerpt: On an empty stage, a magician (Méliès) multiplies himself and his cha
 title: The One-Man Band
 runtime: 2
 genre:
+- Early Cinema
 - Short
 - Comedy
 - Silent
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

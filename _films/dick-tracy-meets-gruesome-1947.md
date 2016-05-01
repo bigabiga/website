@@ -9,9 +9,9 @@ title: Dick Tracy meets Gruesome
 runtime: 65
 permalink: films/Dick-Tracy-meets-Gruesome-1947
 genre: 
-- Action
 - Crime
-- Drama 
+- Action
+- Drama
 decade: 1940s
 recommended: yes
 editors-rating: 3

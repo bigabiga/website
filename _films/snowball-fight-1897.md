@@ -6,10 +6,10 @@ excerpt: Wintertime in Lyons. About a dozen people, men and women, are having a 
 title: Snowball Fight
 runtime: 1
 genre:
+- Early cinema
 - Short
 - Documentary
 - Silent
-- Early cinema
 silent: yes
 decade: 1890s
 recommended: yes

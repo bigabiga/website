@@ -5,9 +5,9 @@ excerpt: Western legends Pat Garrett, Doc Holliday and Billy the Kid are played 
 title: The Outlaw
 runtime: 116
 genre: 
+- Romance
 - Comedy
 - Drama
-- Romance
 silent: no
 decade: 1940s
 recommended: no

@@ -6,9 +6,9 @@ title: The Lodger&#58; A Story of the London Fog
 runtime:
 genre: 
 - Silent
+- Mystery
 - Crime
 - Drama
-- Mystery 
 silent: yes
 decade: 1920s
 recommended: yes

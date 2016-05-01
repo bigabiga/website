@@ -6,9 +6,9 @@ excerpt: Boxing Kangaroo (German&#58;Das Boxende Känguruh) is an 1895 German sh
 title: Mr Delaware and the Boxing Kangaroo
 runtime: 1
 genre:
-- Short
-- Silent
 - Early Cinema
+- Silent
+- Short
 silent: yes
 decade: 1890s
 recommended: yes

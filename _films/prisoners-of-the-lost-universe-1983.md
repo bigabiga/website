@@ -5,9 +5,9 @@ excerpt: Three people are transported into a parallel reality, where they find t
 title: Prisoners of the Lost Universe
 runtime: 90
 genre:
-- Adventure
-- Sci-Fi
 - B-movie
+- Sci-Fi
+- Adventure
 silent: no
 decade: 1980s
 recommended: yes

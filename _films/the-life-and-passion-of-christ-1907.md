@@ -6,11 +6,11 @@ excerpt: Life and Passion of the Christ is one of the earliest feature-length na
 title: The Life and Passion of Christ 
 runtime: 44
 genre: 
+- Early Cinema
 - Silent
 - Short
 - Biography
 - Drama 
-- Early Cinema
 silent: yes
 decade: 1900s
 recommended: yes

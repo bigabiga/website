@@ -6,11 +6,11 @@ excerpt: La Fée aux Choux &#40;The Cabbage Fairy&#41; is one of the earliest na
 title: The Cabbage Fairy
 runtime: 1
 genre: 
+- Early cinema
 - Short
 - Family
 - Fantasy
 - Silent
-- Early cinema
 silent: yes
 decade:  1890s
 recommended: yes

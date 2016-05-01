@@ -7,8 +7,8 @@ excerpt: Parole Inc. is a B film noir produced by the Eagle-Lion studios. A grou
 title: Parole, Inc.
 permalink: films/Parole-Inc-1948
 genre:
-- Crime
 - Film Noir
+- Crime
 - Thriller
 decade: 1940s
 recommended: no

@@ -5,9 +5,9 @@ excerpt: During WWII, the death camp at Treblinka had an escape, causing the Com
 title: Escape from Sobibor
 runtime: 143
 genre: 
-- Drama
+- War
 - History
-- War 
+- Drama
 silent: no
 decade: 1980s
 recommended: yes

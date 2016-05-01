@@ -5,9 +5,9 @@ excerpt: Stage stars Tom and Ellen Bowen embark to open their show in England. I
 title: Royal Wedding
 runtime: 93
 genre: 
-- Comedy
 - Musical
-- Romance 
+- Comedy
+- Romance
 silent: no
 decade: 1950s
 recommended: yes

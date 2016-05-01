@@ -9,8 +9,8 @@ title: The Fireman
 runtime: 24
 permalink: films/The-Fireman-1916
 genre: 
+- Comedy
 - Short
-- Comedy 
 - Silent
 silent: yes
 decade: 1910s

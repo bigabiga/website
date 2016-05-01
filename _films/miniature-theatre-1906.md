@@ -6,11 +6,11 @@ excerpt: Three young children set up a table, and on the table is placed a minia
 title: Miniature Theatre
 runtime: 5
 genre:
+- Early Cinema
 - Silent
 - Animation
 - Short
 - Comedy
-- Early Cinema 
 silent: yes
 decade: 1900s
 recommended: yes

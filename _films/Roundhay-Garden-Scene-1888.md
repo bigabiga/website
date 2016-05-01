@@ -6,8 +6,8 @@ excerpt: This short silent celluloid film is believed to be the oldest surviving
 title: Roundhay Garden Scene
 runtime: 1
 genre: 
-- Silent
 - Early Cinema
+- Silent
 - Short
 silent: yes
 decade: 1890s

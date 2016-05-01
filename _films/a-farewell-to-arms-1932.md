@@ -4,10 +4,10 @@ layout: film
 excerpt: A tale of the love between ambulance driver Lt. Henry and Nurse Catherine Barkley during World War I. The action takes place in Italy and the two fall in love during the war and will stop at nothing to be together. The film also analyses Lt. Henry's feelings on war and the purpose of fighting.
 title: A Farewell to Arms
 runtime: 80
-genre: 
-- Drama
+genre:
 - Romance
-- War 
+- War
+- Drama
 silent: no
 decade: 1930s
 recommended: yes

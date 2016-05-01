@@ -6,10 +6,10 @@ excerpt: This 50-second silent film shows the entry of a train pulled by a steam
 title: The Arrival of a Train at La Ciotat Station
 runtime: 1
 genre:
+- Early Cinema
 - Documentary
 - Short
 - Silent
-- Early Cinema
 silent: yes
 decade: 1890s
 recommended: yes

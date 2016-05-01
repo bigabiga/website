@@ -6,10 +6,10 @@ excerpt: Smith casts his wife as a sluttish housewife who is mutilated by lighti
 title: Mary Jane's Mishap
 runtime: 4
 genre:
+- Early Cinema
 - Silent
 - Short
 - Comedy
-- Early Cinema 
 silent: yes
 decade: 1900s
 recommended: yes

@@ -6,10 +6,10 @@ excerpt: A group of men travel to the moon by being shot in a capsule from a gia
 title: A Trip to the Moon
 runtime: 13
 genre:
-- Silent
-- Short
 - Adventure
 - Fantasy
+- Silent
+- Short
 - Early Cinema
 silent: yes
 decade: 1900s

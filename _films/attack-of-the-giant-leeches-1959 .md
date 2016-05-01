@@ -15,10 +15,8 @@ title: Attack Of The Giant Leeches
 permalink: films/Attack-Of-The-Giant-Leeches-1959
 
 genre:
-- Sci-Fi
 - B-movie
-
-
+- Sci-Fi
 decade: 1950s
 
 recommended: yes
