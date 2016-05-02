@@ -854,8 +854,8 @@ body {
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
       .home-categories .category .info .title {
         text-transform: none;
-        font-size: 16px;
-        font-family: tenor-sans, sans-serif; }
+        font-weight: 600;
+        font-size: 15px; }
 
 .about-cont {
   max-width: 680px;

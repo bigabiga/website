@@ -177,7 +177,9 @@
       <div class="side-title">
         Related Films
       </div>
-      {% for film in site.films limit:3 %}
+      {% include related.html %}
+      {% for film in site.films %}
+      {% if film == film1 %}
       <a class="thumbnail-cont" href="{{ film.url }}">
         <div class="film">
           <div class="film-image" style="background-image: url({{ film.image }})"></div>
@@ -188,147 +190,36 @@
           <div class="play-mark"></div>
         </div>
       </a>
+      {% endif %}
       {% endfor %}
-
-      <div class="test" style="font-size: 10px;">
-        {% assign sorted-films = site.films | sort:"editors-rating" | reverse %}
-
-        {% assign film1 = false %}
-        {% assign film2 = false %}
-        {% assign film3 = false %}
-
-        {% for film in sorted-films %}
-        {% if film.title != page.title %}
-        {% if film.director == page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.silent == page.silent %}
-        {% assign film1 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-
-        {% if film1 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title %}
-        {% if film.director == page.director %}
-        {% assign film1 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film1 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title %}
-        {% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) %}
-        {% assign film1 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film1 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title %}
-        {% if film.silent == page.silent %}
-        {% assign film1 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        >>> {{ film1.title }} {{ film1.director }} {{ film1.editors-rating }}
-
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title %}
-        {% if film.director == page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.silent == page.silent %}
-        {% assign film2 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-
-        {% if film2 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title %}
-        {% if film.director == page.director %}
-        {% assign film2 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film2 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title %}
-        {% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) %}
-        {% assign film2 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film2 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title %}
-        {% if film.silent == page.silent %}
-        {% assign film2 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        <br> >>> {{ film2.title }} {{ film2.director }} {{ film2.editors-rating }}
-
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
-        {% if film.director == page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.silent == page.silent %}
-        {% assign film3 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-
-        {% if film3 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
-        {% if film.director == page.director %}
-        {% assign film3 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film3 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
-        {% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) %}
-        {% assign film3 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if film3 == false %}
-        {% for film in sorted-films %}
-        {% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
-        {% if film.silent == page.silent %}
-        {% assign film3 = film %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        <br> >>> {{ film3.title }} {{ film3.director }} {{ film3.editors-rating }}
-      </div>
+      {% for film in site.films %}
+      {% if film == film2 %}
+      <a class="thumbnail-cont" href="{{ film.url }}">
+        <div class="film">
+          <div class="film-image" style="background-image: url({{ film.image }})"></div>
+          <div class="info">
+            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+          </div>
+          <div class="play-mark"></div>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
+      {% for film in site.films %}
+      {% if film == film3 %}
+      <a class="thumbnail-cont" href="{{ film.url }}">
+        <div class="film">
+          <div class="film-image" style="background-image: url({{ film.image }})"></div>
+          <div class="info">
+            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+          </div>
+          <div class="play-mark"></div>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 

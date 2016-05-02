@@ -1,0 +1,300 @@
+{% assign sorted-films = site.films | sort:"editors-rating" | reverse %}
+
+{% if page.genre contains "Silent" %}
+{% assign page-silent = true %}
+{% else %}
+{% assign page-silent = false %}
+{% endif %}
+
+{% assign film1 = false %}
+{% assign film2 = false %}
+{% assign film3 = false %}
+
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.director == page.director and film.year == page.year %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.director == page.director and film.decade == page.decade %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.director == page.director and film.decade == page.decade %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.director == page.director %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.genre[0] == page.genre[0] and film.decade == page.decade %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if film.genre[0] == page.genre[0] %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.decade == page.decade %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film-silent == page-silent %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film1 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title %}
+{% if film-silent == page-silent %}
+{% assign film1 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+
+
+
+
+
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if film.director == page.director and film-silent == page-silent %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if film.director == page.director %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if film.genre[0] == page.genre[0] and film.decade == page.decade %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if film.genre[0] == page.genre[0] %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.decade == page.decade %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film-silent == page-silent %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film2 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title %}
+{% if film-silent == page-silent %}
+{% assign film2 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+
+
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and film.genre[0] == page.genre[0] and film.year == page.year %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and film.genre[0] == page.genre[0] and film.decade == page.decade %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and film.genre[0] == page.genre[0] and film-silent == page-silent %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.year == page.year %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film.decade == page.decade %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and (page.genre contains film.genre[0] or page.genre contains film.genre[1] or page.genre contains film.genre[2] or page.genre contains film.genre[3]) and film-silent == page-silent %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if film3 == false %}
+{% for film in sorted-films %}
+{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
+{% if film.title != page.title and film.title != film1.title and film.title != film2.title %}
+{% if film.director != page.director and film-silent == page-silent %}
+{% assign film3 = film %}
+{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
