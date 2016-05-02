@@ -452,7 +452,8 @@ body {
 .film-cont {
   background: white;
   display: inline-block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 100%; }
   .film-cont .info {
     padding: 34px 30px; }
     .film-cont .info h2 {
