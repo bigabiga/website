@@ -792,9 +792,10 @@ body {
 
 .panel {
   width: 100%;
-  background: white;
-  height: 240px;
   margin-bottom: 10px;
+  background: white;
+  min-height: 240px;
+  padding: 20px 30px;
 }
 
 .main {
@@ -1008,7 +1009,7 @@ body {
       .title {
         text-transform: none;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 14px;
         //font-family: tenor-sans, sans-serif;
 
         h3 {
