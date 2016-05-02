@@ -35,6 +35,9 @@ title: La Filmothèque
                 </h3>
                 <div class="synopsis"> {{ film.synopsis }} </div>
               </div>
+
+              {% include share-icons.html %}
+
             </div>
           {% endif %}
         {% endfor %}
@@ -45,9 +48,7 @@ title: La Filmothèque
 
       {% include recommended-films.html %}
 
-
       {% include home-genres.html %}
-
 
       {% include home-decades.html %}
 
