@@ -53,8 +53,9 @@ function updateState() {
         $thumbnail.each(function() {
             var $this = $(this);
             var title = $this.find('.title a').text().toLowerCase();
+            var director = $this.attr('data-director').toLowerCase();
             var genre = $this.attr('data-genre').toLowerCase();
-            var match = title.indexOf(query) !== -1 || genre.indexOf(query) !== -1;
+            var match = title.indexOf(query) !== -1 || director.indexOf(query) !== -1 || genre.indexOf(query) !== -1;
             if (match) {
                 $this.show();
             } else {
