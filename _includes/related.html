@@ -33,17 +33,6 @@
 {% if film1 == false %}
 {% for film in sorted-films %}
 {% if film.title != page.title %}
-{% if film.director == page.director and film.decade == page.decade %}
-{% assign film1 = film %}
-{% break %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% endif %}
-
-{% if film1 == false %}
-{% for film in sorted-films %}
-{% if film.title != page.title %}
 {% if film.director == page.director %}
 {% assign film1 = film %}
 {% break %}
@@ -124,17 +113,6 @@
 
 
 
-
-
-{% for film in sorted-films %}
-{% if film.genre contains "Silent" %}{% assign film-silent = true %}{% else %}{% assign film-silent = false %}{% endif %}
-{% if film.title != page.title and film.title != film1.title %}
-{% if film.director == page.director and film-silent == page-silent %}
-{% assign film2 = film %}
-{% break %}
-{% endif %}
-{% endif %}
-{% endfor %}
 
 {% if film2 == false %}
 {% for film in sorted-films %}
