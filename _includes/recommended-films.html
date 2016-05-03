@@ -5,38 +5,30 @@
       Recommended films
     </h2>
   </div>
-  <div class="recommended">
-    <!--{% for film in site.films limit: 8 %}
-    {% if film.country == "USA" %}
-    <a class="thumbnail-cont" href="{{ film.url }}">
-      <div class="film">
-        <div class="film-image" style="background-image: url({{ film.image }})"></div>
-        <div class="info">
-          <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-          <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
-        </div>
-        <div class="play-mark"></div>
-      </div>
-    </a>
-    {% endif %}
-    {% endfor %}-->
 
+  <div class="recommended">
     {% assign features = site.data.features | sort: 'date' | reverse %}
-    {% for feature in features limit: 8 %}
-      {% for film in site.films %}
-        {% if film.title == feature.title %}
-        <a class="thumbnail-cont" href="{{ film.url }}">
-          <div class="film">
-            <div class="film-image" style="background-image: url({{ film.image }})"></div>
-            <div class="info">
-              <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-              <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+    {% assign yesterday = site.time | date: "%s" | minus : 86400 | date: "%Y-%m-%d" %}
+    {% assign 9-days-ago = site.time | date: "%s" | minus : 691200 | date: "%Y-%m-%d" %}
+
+    {% for feature in features %}
+      {% assign feature-date = feature.date | date: "%Y-%m-%d" %}
+      {% if feature-date <= yesterday and feature-date >= 9-days-ago %}
+        {% for film in site.films %}
+          {% if film.title == feature.title %}
+          <a class="thumbnail-cont" href="{{ film.url }}">
+            <div class="film">
+              <div class="film-image" style="background-image: url({{ film.image }})"></div>
+              <div class="info">
+                <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+                <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+              </div>
+              <div class="play-mark"></div>
             </div>
-            <div class="play-mark"></div>
-          </div>
-        </a>
-        {% endif %}
-      {% endfor %}
+          </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>

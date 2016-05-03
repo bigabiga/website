@@ -52,11 +52,13 @@ function updateState() {
         var query = search.toLowerCase();
         $thumbnail.each(function() {
             var $this = $(this);
-            var title = $this.find('.title a').text();
-            if (title.toLowerCase().indexOf(query) === -1) {
-                $this.hide();
-            } else {
+            var title = $this.find('.title a').text().toLowerCase();
+            var genre = $this.attr('data-genre').toLowerCase();
+            var match = title.indexOf(query) !== -1 || genre.indexOf(query) !== -1;
+            if (match) {
                 $this.show();
+            } else {
+                $this.hide();
             }
         });
     } else {
