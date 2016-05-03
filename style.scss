@@ -22,6 +22,11 @@ $text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 4px;
 
+$bold: 500;
+//$text-font: 'lato', sans-serif;
+$text-font: 'roboto', sans-serif;
+$title-font: tenor-sans, sans-serif;
+
 @mixin kavon($size: 6px, $top: 13px, $right: 14px, $color: darken($feature-background, 16), $background: $nav-background) {
   &:before {
     content: '';
@@ -152,11 +157,8 @@ $film-padding: 4px;
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
 
   .title {
-    //font-family: 'Open Sans Condensed', sans-serif;
-    //font-family: tenor-sans, sans-serif;
-    //letter-spacing: -0.02em;
     text-transform: none;
-    font-weight: 500;
+    font-weight: $bold;
     font-size: 13px;
   }
 
@@ -172,9 +174,7 @@ $film-padding: 4px;
 }
 
 body {
-  //font-family: 'Open Sans', sans-serif;
-  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: $text-font;
   background: $nav-background;
 }
 
@@ -220,9 +220,8 @@ body {
     font-size: 15px;
     vertical-align: bottom;
     margin-bottom: 19px;
-    font-family: tenor-sans, sans-serif;
+    font-family: $title-font;
     color: #aaa;
-    //text-transform: uppercase;
 
     a {
       color: darken($logo-green, 18);
@@ -474,7 +473,7 @@ body {
     }
 
     .title {
-      @extend %bold-font;
+      font-family: $title-font;
       font-size: 21px;
       text-transform: none;
       color: $feature-background;
@@ -491,7 +490,7 @@ body {
 .inner-nav {
   $inner-nav-height: 48px;
   $content-color: lighten($feature-background, 65);
-  $background-color: lighten($feature-background, 21);
+  $background-color: lighten($feature-background, 1);
 
   background: $background-color;
   height: $inner-nav-height;
@@ -500,7 +499,7 @@ body {
     color: $content-color;
     font-size: 20px;
     line-height: $inner-nav-height;
-    @extend %bold-font;
+    font-family: $title-font;
     text-transform: none;
 
     .category {
@@ -639,7 +638,7 @@ body {
     padding: 40px 30px 34px 30px;
 
     h2 {
-      @extend %bold-font;
+      font-family: $title-font;
       text-transform: none;
       color: $feature-background;
       font-size: 34px;
@@ -745,7 +744,8 @@ body {
   padding: 0 0 0 15px;
 
   .side-title {
-    @extend %bold-font;
+    font-family: $title-font;
+    text-transform: uppercase;
     color: #777;
     font-size: 20px;
     padding: 13px 10px;
@@ -802,7 +802,8 @@ body {
 }
 
 .element-title {
-  @extend %bold-font;
+  font-family: $title-font;
+  text-transform: uppercase;
   font-size: 29px;
   color: lighten($feature-background, 22);
   margin-bottom: 12px;
@@ -853,7 +854,6 @@ body {
     }
 
     h3 {
-      //margin-bottom: 8px;
       line-height: 21px;
       font-size: 13px;
       color: lighten($feature-background, 34);
@@ -864,7 +864,6 @@ body {
       }
 
       &.more-info {
-        //margin-bottom: 18px;
       }
 
       .icon {
@@ -886,7 +885,7 @@ body {
     }
 
     .title {
-      @extend %bold-font;
+      font-family: $title-font;
       text-transform: none;
       font-size: 39px;
       line-height: 45px;
@@ -906,7 +905,8 @@ body {
     }
 
     .banner-2 {
-      @extend %bold-font;
+      font-family: $title-font;
+      text-transform: uppercase;
       color: lighten($feature-background, 26);
       font-size: 22px;
       margin-bottom: 16px;
@@ -1003,9 +1003,8 @@ body {
 
       .title {
         text-transform: none;
-        font-weight: 500;
         font-size: 14px;
-        //font-family: tenor-sans, sans-serif;
+        font-weight: $bold;
 
         h3 {
         }
