@@ -11,7 +11,7 @@
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
   .right-bar .film .info .title, .recommended .film .info .title {
     text-transform: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px; }
   .right-bar .film .info .description, .recommended .film .info .description {
     font-size: 13px;
@@ -22,7 +22,7 @@
   text-transform: uppercase; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #e0e0e0; }
 
 .content,
@@ -82,35 +82,35 @@ body {
       .nav-bar .controls .search input.search-input {
         width: 90px;
         height: 40px;
-        padding: 0 8px 4px 33px;
+        padding: 0 8px 2px 33px;
         color: #695d60;
-        font-size: 14px;
+        font-size: 13px;
         background: none;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s; }
         .nav-bar .controls .search input.search-input::-webkit-input-placeholder {
           color: #695d60;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-moz-placeholder {
           color: #695d60;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input::-moz-placeholder {
           color: #695d60;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-ms-input-placeholder {
           color: #695d60;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:hover, .nav-bar .controls .search input.search-input:focus {
-          background: #d6d6d6;
+          background: #d0d0d0;
           width: 200px; }
           .nav-bar .controls .search input.search-input:hover::-webkit-input-placeholder, .nav-bar .controls .search input.search-input:focus::-webkit-input-placeholder {
             color: #888; }
@@ -133,33 +133,33 @@ body {
     .nav-bar .controls .static-search {
       display: inline-block; }
       .nav-bar .controls .static-search input.search-input {
-        background: #d6d6d6;
+        background: #d0d0d0;
         width: 200px;
         height: 40px;
-        padding: 0 8px 4px 33px;
+        padding: 0 8px 2px 33px;
         color: #695d60;
-        font-size: 14px;
+        font-size: 13px;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s; }
         .nav-bar .controls .static-search input.search-input::-webkit-input-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .static-search input.search-input:-moz-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .static-search input.search-input::-moz-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .static-search input.search-input:-ms-input-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
       .nav-bar .controls .static-search .icon {
@@ -211,13 +211,13 @@ body {
     .nav-bar .drop-menus .drop-menu .label {
       display: inline-block;
       padding: 13px 28px 15px 6px;
-      font-size: 13px;
+      font-size: 12px;
       text-transform: uppercase;
       color: #695d60; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
         position: absolute;
-        top: 15px;
+        top: 14px;
         right: 14px;
         width: 6px;
         height: 6px;
@@ -226,7 +226,7 @@ body {
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
         position: absolute;
-        top: 13px;
+        top: 12px;
         right: 14px;
         width: 6px;
         height: 6px;
@@ -292,7 +292,7 @@ body {
     padding: 14px 20px 16px 6px;
     font-size: 13px;
     line-height: 18px;
-    color: #666; }
+    color: #777; }
     .thumbnails .film-description h3.basic-info {
       margin-bottom: 8px;
       font-size: 13px;
@@ -567,18 +567,18 @@ body {
     color: #777;
     font-size: 20px;
     padding: 13px 10px;
-    margin: 0 3px -3px 3px;
+    margin: 0 4px -4px 4px;
     background: white; }
   .right-bar .thumbnail-cont {
     display: inline-block;
     width: 100%;
-    height: 160px; }
+    height: 12.5vw; }
   .right-bar .film {
     position: absolute;
-    top: 3px;
-    bottom: 3px;
-    left: 3px;
-    right: 3px;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
     font-size: 15px;
     overflow: hidden;
     transition: opacity 0.1s ease; }
@@ -753,17 +753,17 @@ body {
 
 .recommended {
   font-size: 0;
-  margin: -3px; }
+  margin: -4px; }
   .recommended .thumbnail-cont {
     display: inline-block;
     width: 25%;
     height: 14.5vw; }
   .recommended .film {
     position: absolute;
-    top: 3px;
-    bottom: 3px;
-    left: 3px;
-    right: 3px;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
     font-size: 15px;
     overflow: hidden;
     transition: opacity 0.1s ease; }
@@ -814,7 +814,7 @@ body {
 
 .home-categories {
   font-size: 0;
-  margin: -3px; }
+  margin: -4px; }
   .home-categories .thumbnail-cont {
     display: inline-block;
     width: 16.6666%;
@@ -824,10 +824,10 @@ body {
       opacity: 1; }
   .home-categories .category {
     position: absolute;
-    top: 3px;
-    bottom: 3px;
-    left: 3px;
-    right: 3px; }
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px; }
     .home-categories .category .item-image {
       width: 100%;
       height: 100%;
@@ -855,7 +855,7 @@ body {
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
       .home-categories .category .info .title {
         text-transform: none;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px; }
 
 .about-cont {

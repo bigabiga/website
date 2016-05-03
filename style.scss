@@ -12,9 +12,6 @@ $padding: 30px;
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
-//$feature-background: #B7698D;
-//$feature-background: #499C95;
-//$feature-background: #5F313E;
 $feature-background: #693C4D;
 $banner-background: #8C4465;
 
@@ -23,7 +20,7 @@ $logo-green: #A7D2CE;
 $play-green: #1E7B85;
 $text-medium: #666;
 $text-dark: #231F20;
-$film-padding: 3px;
+$film-padding: 4px;
 
 @mixin kavon($size: 6px, $top: 13px, $right: 14px, $color: darken($feature-background, 16), $background: $nav-background) {
   &:before {
@@ -159,7 +156,7 @@ $film-padding: 3px;
     //font-family: tenor-sans, sans-serif;
     //letter-spacing: -0.02em;
     text-transform: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
   }
 
@@ -170,16 +167,14 @@ $film-padding: 3px;
 }
 
 %bold-font {
-  //font-family: pt-sans, sans-serif;
-  //font-family: abel, sans-serif;
-  font-family: tenor-sans, sans-serif; //letter-spacing: -0.02em;
+  font-family: tenor-sans, sans-serif;
   text-transform: uppercase;
 }
 
 body {
-  //font-family: 'Helvetice', Arial, sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  //font-family: tenor-sans, sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: $nav-background;
 }
 
@@ -256,9 +251,9 @@ body {
       input.search-input {
         width: 90px;
         height: 40px;
-        padding: 0 8px 4px 33px;
+        padding: 0 8px 2px 33px;
         color: $content-color;
-        font-size: 14px;
+        font-size: 13px;
         background: none;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
@@ -266,35 +261,35 @@ body {
 
         &::-webkit-input-placeholder {
           color: $content-color;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           color: $content-color;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           color: $content-color;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
           color: $content-color;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:hover,
         &:focus {
-          background: #d6d6d6;
+          background: #d0d0d0;
           width: 200px;
 
           &::-webkit-input-placeholder {
@@ -336,40 +331,40 @@ body {
       display: inline-block;
 
       input.search-input {
-        background: #d6d6d6;
+        background: #d0d0d0;
         width: 200px;
         height: 40px;
-        padding: 0 8px 4px 33px;
+        padding: 0 8px 2px 33px;
         color: $content-color;
-        font-size: 14px;
+        font-size: 13px;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s;
 
         &::-webkit-input-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
           color: #888;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
@@ -409,10 +404,10 @@ body {
     @include dropdown-menu;
 
     .label {
-      @include kavon(6px, 13px, 14px, $content-color, $nav-background);
+      @include kavon(6px, 12px, 14px, $content-color, $nav-background);
       display: inline-block;
       padding: 13px 28px 15px 6px;
-      font-size: 13px;
+      font-size: 12px;
       text-transform: uppercase;
       color: $content-color;
       //font-family: tenor-sans, sans-serif;
@@ -446,7 +441,7 @@ body {
     padding: 14px 20px 16px 6px;
     font-size: 13px;
     line-height: 18px;
-    color: #666;
+    color: #777;
 
     h3.basic-info {
       margin-bottom: 8px;
@@ -754,7 +749,7 @@ body {
     color: #777;
     font-size: 20px;
     padding: 13px 10px;
-    margin: 0 3px -3px 3px;
+    margin: 0 4px -4px 4px;
     background: white;
   }
 
@@ -764,7 +759,7 @@ body {
   .thumbnail-cont {
     display: inline-block;
     width: 100%;
-    height: 160px;
+    height: 12.5vw;
   }
 
   .film {
@@ -1008,7 +1003,7 @@ body {
 
       .title {
         text-transform: none;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         //font-family: tenor-sans, sans-serif;
 
