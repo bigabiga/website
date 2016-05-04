@@ -1,7 +1,7 @@
 ---
 layout: film
 
-excerpt: During WWII, the death camp at Treblinka had an escape, causing the Commandant at a similar camp in Sobibor to vow that his camp would never experience the same thing. But those who were its captives, the Jewish laborers that had been spared from the ovens, knew that they were on borrowed time and that their only hope was to escape... the only question was how to do it. However, because the Germans would kill an equal number of others whenever a group attempted to escape, the captives knew that if ever an escape was tried, all 600 prisoners in the camp would have to be included... logistically precluding any ideas about tunnels or sneak breakouts. Indeed, to have such a mass escape could only mean that the Ukrainian guards and Germain officers would have to be killed, which many of the Jews felt simply reduced themselves to no better than their captors... thus making it a struggle of conscience. And therein lies the story, with the film being based on a factual account of what then happened at that Sobibor prison.
+excerpt: The historical recreation of the escape from the Nazi Death Camp Sobibor, where approximately one-quarter million Jews were executed. Of approximately 600 prisoners who attempted escaped in October 1943, around 300 succeeded. However, nearly all were ultimately recaptured; only about 60 people survived Sobibor.
 title: Escape from Sobibor
 runtime: 143
 genre: 
