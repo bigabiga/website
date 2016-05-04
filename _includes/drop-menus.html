@@ -1,4 +1,52 @@
 <div class="drop-menus">
+  <div class="drop-menu unified">
+    <div class="label">
+      Brows films by
+    </div>
+    <ul class="menu">
+      <li class="category-name">
+        Genres
+      </li>
+      {% for genre in site.genres %}
+      <a href="{{ genre.url }}#sort=Recommended"">
+      <li>
+        {{ genre.title }}
+      </li>
+      </a>
+      {% endfor %}
+      <li class="category-name">
+        Decades
+      </li>
+      {% for decade in site.decades %}
+      <a href="{{ genre.url }}#sort=Recommended"">
+      <li>
+        {{ decade.title }}
+      </li>
+      </a>
+      {% endfor %}
+      <li class="category-name">
+        Directors
+      </li>
+      {% for director in site.directors %}
+      <a href="{{ genre.url }}#sort=Recommended"">
+      <li>
+        {{ director.title }}
+      </li>
+      </a>
+      {% endfor %}
+      <li class="category-name">
+        Countries
+      </li>
+      {% for country in site.countries %}
+      <a href="{{ genre.url }}#sort=Recommended"">
+      <li>
+        {{ country.title }}
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+  </div>
+
   <div class="drop-menu">
     <div class="label">
       Genres

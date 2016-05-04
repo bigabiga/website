@@ -412,13 +412,17 @@ body {
       //font-family: tenor-sans, sans-serif;
       //letter-spacing: -0.02em;
     }
+
+    &.unified {
+      display: none;
+    }
   }
 }
 
 .thumbnails {
   margin-left: -4px;
   margin-right: -4px;
-  padding: 24px $padding 0 $padding;
+  padding: 24px 0 0 0;
   font-size: 0;
 
   .thumbnail {
@@ -491,6 +495,7 @@ body {
   $inner-nav-height: 48px;
   $content-color: lighten($feature-background, 65);
   $background-color: lighten($feature-background, 1);
+  padding: 0 20px;
 
   background: $background-color;
   height: $inner-nav-height;
@@ -510,7 +515,7 @@ body {
   .controls {
     position: absolute;
     top: 0;
-    right: $padding;
+    right: 0;
 
     .sort-by {
       display: inline-block;
@@ -817,6 +822,8 @@ body {
 .film-of-the-day {
   font-size: 0;
   height: 27vw;
+  max-height: 410px;
+  min-height: 355px;
 
   .film {
     cursor: pointer;
@@ -891,6 +898,9 @@ body {
       line-height: 45px;
       margin-bottom: 22px;
       color: lighten($feature-background, 60);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       span.year {
         color: darken($feature-background, 20);
@@ -902,6 +912,8 @@ body {
       color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
+      max-height: 110px;
+      overflow: hidden;
     }
 
     .banner-2 {
@@ -1188,6 +1200,113 @@ body {
 
       svg path {
         fill: white;
+      }
+    }
+  }
+}
+
+html {
+
+  @media all and (max-width: 1000px) {
+    .recommended {
+      .thumbnail-cont {
+        width: 50%;
+        height: 22vw;
+      }
+    }
+
+    .home-categories {
+      .thumbnail-cont {
+        width: 25%;
+        height: 22vw;
+      }
+    }
+
+    .thumbnails {
+      .thumbnail {
+        width: 33.333333333%;
+
+        .film-image {
+          height: 20vw;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    .film-of-the-day {
+      height: auto;
+      max-height: none;
+
+      .film {
+        display: block;
+        width: 100%;
+        height: 300px;
+      }
+
+      .description {
+        display: block;
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    .header {
+      .logo {
+        max-width: 100%;
+        background-position: center left;
+      }
+
+      .info {
+        display: none;
+      }
+    }
+
+    .thumbnails {
+      .thumbnail {
+        width: 50%;
+
+        .film-image {
+          height: 30vw;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 540px) {
+    .recommended {
+      .thumbnail-cont {
+        width: 100%;
+        height: 42vw;
+      }
+    }
+
+    .home-categories {
+      .thumbnail-cont {
+        width: 50%;
+        height: 34vw;
+      }
+    }
+
+    .nav-bar {
+      .drop-menus {
+        .drop-menu {
+          display: none;
+
+          &.unified {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .thumbnails {
+      .thumbnail {
+        width: 100%;
+
+        .film-image {
+          height: 60vw;
+        }
       }
     }
   }

@@ -228,11 +228,13 @@ body {
         height: 6px;
         background: #e0e0e0;
         transform: rotate(45deg); }
+    .nav-bar .drop-menus .drop-menu.unified {
+      display: none; }
 
 .thumbnails {
   margin-left: -4px;
   margin-right: -4px;
-  padding: 24px 30px 0 30px;
+  padding: 24px 0 0 0;
   font-size: 0; }
   .thumbnails .thumbnail {
     display: inline-block;
@@ -318,6 +320,7 @@ body {
         color: #b98599; }
 
 .inner-nav {
+  padding: 0 20px;
   background: #6c3e4f;
   height: 48px; }
   .inner-nav .title {
@@ -331,7 +334,7 @@ body {
   .inner-nav .controls {
     position: absolute;
     top: 0;
-    right: 30px; }
+    right: 0; }
     .inner-nav .controls .sort-by {
       display: inline-block;
       cursor: pointer;
@@ -653,7 +656,9 @@ body {
 
 .film-of-the-day {
   font-size: 0;
-  height: 27vw; }
+  height: 27vw;
+  max-height: 410px;
+  min-height: 355px; }
   .film-of-the-day .film {
     cursor: pointer;
     display: inline-block;
@@ -742,14 +747,19 @@ body {
       font-size: 39px;
       line-height: 45px;
       margin-bottom: 22px;
-      color: #f1e6ea; }
+      color: #f1e6ea;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
       .film-of-the-day .description .title span.year {
         color: #28171d; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
       color: #e9d9df;
       line-height: 21px;
-      max-width: 600px; }
+      max-width: 600px;
+      max-height: 110px;
+      overflow: hidden; }
     .film-of-the-day .description .banner-2 {
       font-family: tenor-sans, sans-serif;
       text-transform: uppercase;
@@ -983,3 +993,51 @@ body {
       background: #a35e78; }
       .share-icons .icon:hover svg path {
         fill: white; }
+
+@media all and (max-width: 1000px) {
+  html .recommended .thumbnail-cont {
+    width: 50%;
+    height: 22vw; }
+  html .home-categories .thumbnail-cont {
+    width: 25%;
+    height: 22vw; }
+  html .thumbnails .thumbnail {
+    width: 33.333333333%; }
+    html .thumbnails .thumbnail .film-image {
+      height: 20vw; } }
+@media all and (max-width: 700px) {
+  html .film-of-the-day {
+    height: auto;
+    max-height: none; }
+    html .film-of-the-day .film {
+      display: block;
+      width: 100%;
+      height: 300px; }
+    html .film-of-the-day .description {
+      display: block;
+      width: 100%;
+      height: 300px; }
+  html .header .logo {
+    max-width: 100%;
+    background-position: center left; }
+  html .header .info {
+    display: none; }
+  html .thumbnails .thumbnail {
+    width: 50%; }
+    html .thumbnails .thumbnail .film-image {
+      height: 30vw; } }
+@media all and (max-width: 540px) {
+  html .recommended .thumbnail-cont {
+    width: 100%;
+    height: 42vw; }
+  html .home-categories .thumbnail-cont {
+    width: 50%;
+    height: 34vw; }
+  html .nav-bar .drop-menus .drop-menu {
+    display: none; }
+    html .nav-bar .drop-menus .drop-menu.unified {
+      display: inline-block; }
+  html .thumbnails .thumbnail {
+    width: 100%; }
+    html .thumbnails .thumbnail .film-image {
+      height: 60vw; } }
