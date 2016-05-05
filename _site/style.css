@@ -294,7 +294,7 @@ body {
     .thumbnails .film-description h3.basic-info {
       margin-bottom: 8px;
       font-size: 13px;
-      color: #c89fae; }
+      color: #d1a6b6; }
       .thumbnails .film-description h3.basic-info span {
         margin-right: 6px; }
       .thumbnails .film-description h3.basic-info .icon {
@@ -306,31 +306,31 @@ body {
           width: 100%;
           height: 100%; }
           .thumbnails .film-description h3.basic-info .icon svg path {
-            fill: #c89fae; }
+            fill: #d1a6b6; }
     .thumbnails .film-description .excerpt {
       overflow: hidden; }
     .thumbnails .film-description .title {
       font-family: tenor-sans, sans-serif;
       font-size: 21px;
       text-transform: none;
-      color: #693C4D;
+      color: #773E53;
       margin-bottom: 8px;
       line-height: 25px; }
       .thumbnails .film-description .title .year {
-        color: #b98599; }
+        color: #c38ba0; }
 
 .inner-nav {
   padding: 0 20px;
-  background: #6c3e4f;
+  background: #7a4055;
   height: 48px; }
   .inner-nav .title {
-    color: #faf6f8;
+    color: white;
     font-size: 20px;
     line-height: 48px;
     font-family: tenor-sans, sans-serif;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(250, 246, 248, 0.5); }
+      color: rgba(255, 255, 255, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -341,7 +341,7 @@ body {
       height: 48px;
       font-size: 14px;
       line-height: 48px;
-      color: #faf6f8;
+      color: white;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -374,7 +374,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #faf6f8;
+        background: white;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -383,7 +383,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #6c3e4f;
+        background: #7a4055;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by .menu {
         left: auto;
@@ -398,7 +398,7 @@ body {
         right: 0;
         line-height: 48px;
         padding: 0 18px 0 10px;
-        color: #bb889b;
+        color: #c48fa2;
         cursor: pointer; }
       .inner-nav .controls .search .search-input {
         height: 48px;
@@ -409,32 +409,32 @@ body {
         color: white;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #faf6f8;
+          color: white;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #faf6f8;
+          color: white;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #faf6f8;
+          color: white;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #faf6f8;
+          color: white;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
-          background: #80495e; }
+          background: #8e4a63; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
-            color: #e8d6dd;
+            color: #eedde3;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
-            color: #e8d6dd;
+            color: #eedde3;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
-            color: #e8d6dd;
+            color: #eedde3;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
-            color: #e8d6dd;
+            color: #eedde3;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
@@ -445,7 +445,7 @@ body {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: #faf6f8; }
+            fill: white; }
 
 .left-content {
   width: 68%; }
@@ -460,15 +460,15 @@ body {
     .film-cont .info h2 {
       font-family: tenor-sans, sans-serif;
       text-transform: none;
-      color: #693C4D;
+      color: #773E53;
       font-size: 34px;
       margin-bottom: 22px; }
       .film-cont .info h2 .year {
-        color: #b98599; }
+        color: #c38ba0; }
     .film-cont .info h3 {
       margin-bottom: 10px;
       font-size: 13px;
-      color: #a7647d; }
+      color: #b16a84; }
       .film-cont .info h3 span {
         margin-right: 6px; }
       .film-cont .info h3.more-info {
@@ -482,10 +482,10 @@ body {
           width: 100%;
           height: 100%; }
           .film-cont .info h3 .icon svg path {
-            fill: #a7647d; }
+            fill: #b16a84; }
     .film-cont .info .details {
       width: 100%;
-      color: #4f2d3a;
+      color: #5c3040;
       font-size: 13px;
       line-height: 19px; }
       .film-cont .info .details p {
@@ -547,7 +547,7 @@ body {
       width: 24px;
       height: 24px;
       margin-left: 6px;
-      background: #cca5b4; }
+      background: #d4adbb; }
       .film-cont .share-icons .icon svg {
         width: 16px;
         height: 16px;
@@ -556,7 +556,7 @@ body {
         .film-cont .share-icons .icon svg path {
           fill: white; }
       .film-cont .share-icons .icon:hover {
-        background: #a35e78; }
+        background: #ae637f; }
 
 .right-bar {
   position: absolute;
@@ -579,10 +579,10 @@ body {
     height: 12.5vw; }
   .right-bar .film {
     position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: 4px;
-    right: 4px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
     font-size: 15px;
     overflow: hidden;
     transition: opacity 0.1s ease; }
@@ -647,7 +647,7 @@ body {
   font-family: tenor-sans, sans-serif;
   text-transform: uppercase;
   font-size: 29px;
-  color: #aa6b83;
+  color: #b5708a;
   margin-bottom: 12px;
   letter-spacing: -0.04em; }
 
@@ -716,7 +716,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: #6c3e4f; }
+    background: #703b4e; }
     .film-of-the-day .description .info {
       position: absolute;
       display: inline-block;
@@ -727,7 +727,7 @@ body {
     .film-of-the-day .description h3 {
       line-height: 21px;
       font-size: 13px;
-      color: #c192a3;
+      color: #ca99ab;
       display: inline-block; }
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
@@ -740,46 +740,47 @@ body {
           width: 100%;
           height: 100%; }
           .film-of-the-day .description h3 .icon svg path {
-            fill: #c498a9; }
+            fill: #cd9fb0; }
     .film-of-the-day .description .title {
       font-family: tenor-sans, sans-serif;
       text-transform: none;
       font-size: 39px;
       line-height: 45px;
       margin-bottom: 22px;
-      color: #f1e6ea;
+      color: #f7f0f3;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
       .film-of-the-day .description .title span.year {
-        color: #28171d; }
+        color: #341b24; }
     .film-of-the-day .description .synopsis {
       font-size: 13px;
-      color: #e9d9df;
+      color: #f0e2e8;
       line-height: 21px;
       max-width: 600px;
-      max-height: 110px;
+      max-height: 82px;
       overflow: hidden; }
     .film-of-the-day .description .banner-2 {
       font-family: tenor-sans, sans-serif;
       text-transform: uppercase;
-      color: #b2788e;
+      color: #bc7e95;
       font-size: 22px;
       margin-bottom: 16px; }
 
 .recommended {
   font-size: 0;
-  margin: -4px; }
+  margin: -5px; }
   .recommended .thumbnail-cont {
     display: inline-block;
-    width: 25%;
-    height: 14.5vw; }
+    width: 33.333333333333333%;
+    height: 17vw;
+    max-height: 240px; }
   .recommended .film {
     position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: 4px;
-    right: 4px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
     font-size: 15px;
     overflow: hidden;
     transition: opacity 0.1s ease; }
@@ -830,7 +831,7 @@ body {
 
 .home-categories {
   font-size: 0;
-  margin: -4px; }
+  margin: -5px; }
   .home-categories .thumbnail-cont {
     display: inline-block;
     width: 16.6666%;
@@ -840,10 +841,10 @@ body {
       opacity: 1; }
   .home-categories .category {
     position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: 4px;
-    right: 4px; }
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px; }
     .home-categories .category .item-image {
       width: 100%;
       height: 100%;
@@ -937,20 +938,20 @@ body {
       margin-right: 8px;
       cursor: pointer; }
       .footer .left-cont .links a:hover {
-        color: #28171d;
+        color: #341b24;
         transition: color 0.1s ease; }
     .footer .left-cont .info span {
       margin-right: 8px;
       color: white; }
     .footer .left-cont .info a:hover {
-      color: #28171d;
+      color: #341b24;
       transition: color 0.1s ease; }
   .footer .right-cont {
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
-    background: #6c3e4f;
+    background: #7a4055;
     padding-left: 30px;
     padding-right: 30px; }
     .footer .right-cont .icon {
@@ -960,7 +961,7 @@ body {
       transform: translate(0, -50%);
       cursor: pointer; }
       .footer .right-cont .icon:hover svg path {
-        fill: #28171d; }
+        fill: #341b24; }
       .footer .right-cont .icon svg {
         width: 30px;
         height: 30px; }
@@ -977,7 +978,7 @@ body {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #93546c;
+    background: #a35571;
     border-radius: 16px;
     margin-left: 8px;
     cursor: pointer; }
@@ -988,35 +989,42 @@ body {
       top: 6px;
       left: 6px; }
       .share-icons .icon svg path {
-        fill: #e9d9df; }
+        fill: #f0e2e8; }
     .share-icons .icon:hover {
-      background: #a35e78; }
+      background: #ae637f; }
       .share-icons .icon:hover svg path {
         fill: white; }
 
 @media all and (max-width: 1000px) {
   html .recommended .thumbnail-cont {
     width: 50%;
-    height: 22vw; }
+    height: 24vw; }
   html .home-categories .thumbnail-cont {
     width: 25%;
     height: 22vw; }
   html .thumbnails .thumbnail {
     width: 33.333333333%; }
     html .thumbnails .thumbnail .film-image {
-      height: 20vw; } }
-@media all and (max-width: 700px) {
+      height: 20vw; }
   html .film-of-the-day {
     height: auto;
     max-height: none; }
     html .film-of-the-day .film {
       display: block;
       width: 100%;
-      height: 300px; }
+      height: 48vw;
+      min-height: 230px; }
     html .film-of-the-day .description {
       display: block;
       width: 100%;
-      height: 300px; }
+      height: auto; }
+      html .film-of-the-day .description .info {
+        position: relative;
+        margin-top: 40px;
+        padding-bottom: 40px; }
+        html .film-of-the-day .description .info .synopsis {
+          max-height: none; } }
+@media all and (max-width: 700px) {
   html .header .logo {
     max-width: 100%;
     background-position: center left; }
@@ -1041,3 +1049,10 @@ body {
     width: 100%; }
     html .thumbnails .thumbnail .film-image {
       height: 60vw; } }
+
+@media all and (max-width: 400px) {
+  .element-title {
+    font-size: 24px; }
+
+  .film-of-the-day .description .share-icons {
+    display: none; } }

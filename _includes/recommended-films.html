@@ -9,11 +9,11 @@
   <div class="recommended">
     {% assign features = site.data.features | sort: 'date' | reverse %}
     {% assign yesterday = site.time | date: "%s" | minus : 86400 | date: "%Y-%m-%d" %}
-    {% assign 9-days-ago = site.time | date: "%s" | minus : 691200 | date: "%Y-%m-%d" %}
+    {% assign 7-days-ago = site.time | date: "%s" | minus : 518400 | date: "%Y-%m-%d" %}
 
     {% for feature in features %}
       {% assign feature-date = feature.date | date: "%Y-%m-%d" %}
-      {% if feature-date <= yesterday and feature-date >= 9-days-ago %}
+      {% if feature-date <= yesterday and feature-date >= 7-days-ago %}
         {% for film in site.films %}
           {% if film.title == feature.title %}
           <a class="thumbnail-cont" href="{{ film.url }}">

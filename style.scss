@@ -12,7 +12,7 @@ $padding: 30px;
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 10);
 
-$feature-background: #693C4D;
+$feature-background: #773E53;
 $banner-background: #8C4465;
 
 $logo-green: #A7D2CE;
@@ -20,7 +20,7 @@ $logo-green: #A7D2CE;
 $play-green: #1E7B85;
 $text-medium: #666;
 $text-dark: #231F20;
-$film-padding: 4px;
+$film-padding: 5px;
 
 $bold: 500;
 //$text-font: 'lato', sans-serif;
@@ -849,7 +849,7 @@ body {
     width: 50%;
     height: 100%;
     display: inline-block;
-    background: lighten($feature-background, 1);
+    background: darken($feature-background, 2);
 
     .info {
       position: absolute;
@@ -912,7 +912,7 @@ body {
       color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
-      max-height: 110px;
+      max-height: 82px;
       overflow: hidden;
     }
 
@@ -932,8 +932,9 @@ body {
 
   .thumbnail-cont {
     display: inline-block;
-    width: 25%;
-    height: 14.5vw;
+    width: 33.333333333333333%;
+    height: 17vw;
+    max-height: 240px;
   }
 
   .film {
@@ -1211,7 +1212,7 @@ html {
     .recommended {
       .thumbnail-cont {
         width: 50%;
-        height: 22vw;
+        height: 24vw;
       }
     }
 
@@ -1231,9 +1232,7 @@ html {
         }
       }
     }
-  }
 
-  @media all and (max-width: 700px) {
     .film-of-the-day {
       height: auto;
       max-height: none;
@@ -1241,16 +1240,29 @@ html {
       .film {
         display: block;
         width: 100%;
-        height: 300px;
+        height: 48vw;
+        min-height: 230px;
       }
 
       .description {
         display: block;
         width: 100%;
-        height: 300px;
+        height: auto;
+
+        .info {
+          position: relative;
+          margin-top: 40px;
+          padding-bottom: 40px;
+
+          .synopsis {
+            max-height: none;
+          }
+        }
       }
     }
+  }
 
+  @media all and (max-width: 700px) {
     .header {
       .logo {
         max-width: 100%;
@@ -1307,6 +1319,20 @@ html {
         .film-image {
           height: 60vw;
         }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .element-title {
+    font-size: 24px;
+  }
+
+  .film-of-the-day {
+    .description {
+      .share-icons {
+        display: none;
       }
     }
   }
