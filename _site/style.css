@@ -607,10 +607,10 @@ body {
   margin-bottom: 40px;
   font-size: 0; }
   .right-bar .side-title {
-    font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
+    font-weight: 300;
     padding: 13px 10px;
     margin: 0 4px -4px 4px;
     background: white; }
@@ -678,6 +678,8 @@ body {
   background: white;
   min-height: 240px;
   padding: 20px 30px; }
+  .panel.ad {
+    min-height: 0; }
 
 .main {
   min-height: 800px; }
@@ -685,12 +687,12 @@ body {
     background: white; }
 
 .element-title {
-  font-family: "Tenor Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 29px;
-  color: #b5708a;
+  font-size: 31px;
+  color: #af6681;
   margin-bottom: 12px;
-  letter-spacing: -0.04em; }
+  letter-spacing: 0;
+  font-weight: 300; }
 
 .home-element {
   margin-top: 32px; }
@@ -799,10 +801,10 @@ body {
       max-height: 82px;
       overflow: hidden; }
     .film-of-the-day .description .banner-2 {
-      font-family: "Tenor Sans", sans-serif;
       text-transform: uppercase;
       color: #bc7e95;
-      font-size: 22px;
+      font-size: 23px;
+      font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px; }
 

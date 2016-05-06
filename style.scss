@@ -802,10 +802,11 @@ body {
   margin-bottom: 40px;
 
   .side-title {
-    font-family: $title-font;
+    //font-family: $title-font;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
+    font-weight: 300;
     padding: 13px 10px;
     margin: 0 4px -4px 4px;
     background: white;
@@ -849,6 +850,10 @@ body {
   background: white;
   min-height: 240px;
   padding: 20px 30px;
+
+  &.ad {
+    min-height: 0;
+  }
 }
 
 .main {
@@ -860,12 +865,13 @@ body {
 }
 
 .element-title {
-  font-family: $title-font;
+  //font-family: $title-font;
   text-transform: uppercase;
-  font-size: 29px;
-  color: lighten($feature-background, 22);
+  font-size: 31px;
+  color: lighten($feature-background, 19);
   margin-bottom: 12px;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  font-weight: 300;
 }
 
 .home-element {
@@ -967,10 +973,11 @@ body {
     }
 
     .banner-2 {
-      font-family: $title-font;
+      //font-family: $title-font;
       text-transform: uppercase;
       color: lighten($feature-background, 26);
-      font-size: 22px;
+      font-size: 23px;
+      font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px;
     }
