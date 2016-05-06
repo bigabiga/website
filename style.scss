@@ -25,6 +25,7 @@ $film-padding: 5px;
 $bold: 500;
 //$text-font: 'lato', sans-serif;
 $text-font: 'roboto', sans-serif;
+//$title-font: 'roboto', sans-serif;
 $title-font: tenor-sans, sans-serif;
 
 @mixin kavon($size: 6px, $top: 13px, $right: 14px, $color: darken($feature-background, 16), $background: $nav-background) {
@@ -419,6 +420,41 @@ body {
 
     &.unified {
       display: none;
+
+      .menu {
+        left: 0;
+        width: 80vw;
+        margin-left: -20px;
+
+        li {
+          padding-left: 26px;
+        }
+
+        /*&:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100%;
+          background: red;
+          z-index: 1;
+        }*/
+      }
+
+      .category-name {
+        font-weight: 500;
+        color: lighten($feature-background, 22);
+        text-transform: uppercase;
+        margin-top: 10px;
+        line-height: 37px;
+        background: #f4f4f4;
+        pointer-events: none;
+
+        &:first-child {
+          margin-top: -10px;
+        }
+      }
     }
   }
 }
@@ -1285,6 +1321,13 @@ html {
         .film-image {
           height: 30vw;
         }
+      }
+    }
+
+    .nav-bar .controls .search input.search-input {
+      &:hover,
+      &:focus {
+        width: 145px;
       }
     }
   }
