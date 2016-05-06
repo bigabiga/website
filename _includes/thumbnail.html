@@ -71,7 +71,7 @@
           </g>
         </svg>
       </div>
-      <span>{{ film.country }}</span>
+      <span>{{ film.country | join: ' / ' }}</span>
     </h3>
     <p class="excerpt">
       {{ film.excerpt }}

@@ -159,7 +159,7 @@ $title-font: tenor-sans, sans-serif;
   .title {
     text-transform: none;
     font-weight: $bold;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .description {
@@ -194,6 +194,10 @@ body {
 .content {
   padding-left: $padding;
   padding-right: $padding;
+
+  &.bottom {
+    margin-bottom: 40px;
+  }
 }
 
 .header {
@@ -424,6 +428,7 @@ body {
   margin-right: -4px;
   padding: 24px 0 0 0;
   font-size: 0;
+  padding-bottom: 40px;
 
   .thumbnail {
     display: inline-block;
@@ -631,6 +636,7 @@ body {
 
 .left-content {
   width: 68%;
+  margin-bottom: 40px;
 }
 
 .film-cont {
@@ -747,6 +753,7 @@ body {
   left: 68%;
   width: 32%;
   padding: 0 0 0 15px;
+  margin-bottom: 40px;
 
   .side-title {
     font-family: $title-font;
@@ -898,9 +905,6 @@ body {
       line-height: 45px;
       margin-bottom: 22px;
       color: lighten($feature-background, 60);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
 
       span.year {
         color: darken($feature-background, 20);
@@ -922,6 +926,7 @@ body {
       color: lighten($feature-background, 26);
       font-size: 22px;
       margin-bottom: 16px;
+      letter-spacing: 0.3px;
     }
   }
 }
@@ -1097,7 +1102,6 @@ body {
 
 .footer {
   background: #aaa;
-  margin-top: 40px;
 
   .content {
     padding-top: 22px;
@@ -1322,17 +1326,17 @@ html {
       }
     }
   }
-}
 
-@media all and (max-width: 400px) {
-  .element-title {
-    font-size: 24px;
-  }
+  @media all and (max-width: 400px) {
+    .element-title {
+      font-size: 24px;
+    }
 
-  .film-of-the-day {
-    .description {
-      .share-icons {
-        display: none;
+    .film-of-the-day {
+      .description {
+        .share-icons {
+          display: none;
+        }
       }
     }
   }

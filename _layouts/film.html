@@ -130,10 +130,10 @@
                 </g>
               </svg>
             </div>
-            <span>{{ page.country }}</span>
+            <span>{{ page.country | join: ' / ' }}</span>
           </h3>
           <h3 class="more-info">
-            {{ page.director }} | {{ page.genre | join: ', ' }}
+            {{ page.director | join: ', ' }} | {{ page.genre | join: ', ' }}
           </h3>
           <div class="details">
             <p>{{ page.synopsis }}</p>
@@ -199,7 +199,7 @@
           <div class="film-image" style="background-image: url({{ film.image }})"></div>
           <div class="info">
             <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
           </div>
           <div class="play-mark"></div>
         </div>
@@ -213,7 +213,7 @@
           <div class="film-image" style="background-image: url({{ film.image }})"></div>
           <div class="info">
             <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
           </div>
           <div class="play-mark"></div>
         </div>
@@ -227,7 +227,7 @@
           <div class="film-image" style="background-image: url({{ film.image }})"></div>
           <div class="info">
             <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
           </div>
           <div class="play-mark"></div>
         </div>

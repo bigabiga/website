@@ -29,14 +29,13 @@ title: La Filmothèque
                 <div class="play-mark"></div>
               </div></a>
               <div class="description">
-                <div class="banner">Film of the day</div>
                 <div class="info">
-                  <div class="banner-2">Film of the day</div>
+                  <div class="banner-2">Today's Spotlight</div>
                   <a href="{{ film.url }}">
                     <div class="title">{{ film.title }} <span class="year">{{ film.year }}</span></div>
                   </a>
                   <h3 class="more-info">
-                    {{ film.country }} | {{ film.director }} | {{ film.genre | join: ', ' }}
+                    {{ film.country }} | {{ film.director | join: ', ' }} | {{ film.genre | join: ', ' }}
                   </h3>
                   <div class="synopsis"> {{ film.synopsis }} </div>
                 </div>
@@ -50,7 +49,7 @@ title: La Filmothèque
         {% endfor %}
       </div>
     </div>
-    <div class="content">
+    <div class="content bottom">
 
       {% include recommended-films.html %}
 

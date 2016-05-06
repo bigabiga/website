@@ -21,7 +21,7 @@
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
               <div class="info">
                 <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-                <h4 class="description"> {{ film.director }}, {{ film.country }} </h4>
+                <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
               </div>
               <div class="play-mark"></div>
             </div>

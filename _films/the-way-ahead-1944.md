@@ -7,7 +7,7 @@ meta-description: A classic british world war drama movie. Watch old movies onli
 
 excerpt: A British Second World War drama that follows a group of civilians who are recruited into the British Army in order to fight in North Africa. In U.S, the movie was released as The Immortal Battalion.
 
-title: Watch The Way Ahead
+title: The Way Ahead
 
 permalink: films/Watch-The-Way-Ahead-1944
 

@@ -12,7 +12,7 @@
   .right-bar .film .info .title, .recommended .film .info .title {
     text-transform: none;
     font-weight: 500;
-    font-size: 13px; }
+    font-size: 14px; }
   .right-bar .film .info .description, .recommended .film .info .description {
     font-size: 13px;
     opacity: 0.7; }
@@ -35,6 +35,8 @@ body {
 .content {
   padding-left: 30px;
   padding-right: 30px; }
+  .content.bottom {
+    margin-bottom: 40px; }
 
 .header {
   font-size: 32px;
@@ -235,7 +237,8 @@ body {
   margin-left: -4px;
   margin-right: -4px;
   padding: 24px 0 0 0;
-  font-size: 0; }
+  font-size: 0;
+  padding-bottom: 40px; }
   .thumbnails .thumbnail {
     display: inline-block;
     width: 25%;
@@ -448,7 +451,8 @@ body {
             fill: white; }
 
 .left-content {
-  width: 68%; }
+  width: 68%;
+  margin-bottom: 40px; }
 
 .film-cont {
   background: white;
@@ -564,6 +568,7 @@ body {
   left: 68%;
   width: 32%;
   padding: 0 0 0 15px;
+  margin-bottom: 40px;
   font-size: 0; }
   .right-bar .side-title {
     font-family: tenor-sans, sans-serif;
@@ -747,10 +752,7 @@ body {
       font-size: 39px;
       line-height: 45px;
       margin-bottom: 22px;
-      color: #f7f0f3;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      color: #f7f0f3; }
       .film-of-the-day .description .title span.year {
         color: #341b24; }
     .film-of-the-day .description .synopsis {
@@ -765,7 +767,8 @@ body {
       text-transform: uppercase;
       color: #bc7e95;
       font-size: 22px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      letter-spacing: 0.3px; }
 
 .recommended {
   font-size: 0;
@@ -925,8 +928,7 @@ body {
       background: #51807c; }
 
 .footer {
-  background: #aaa;
-  margin-top: 40px; }
+  background: #aaa; }
   .footer .content {
     padding-top: 22px;
     padding-bottom: 22px; }
@@ -1049,10 +1051,8 @@ body {
     width: 100%; }
     html .thumbnails .thumbnail .film-image {
       height: 60vw; } }
-
 @media all and (max-width: 400px) {
-  .element-title {
+  html .element-title {
     font-size: 24px; }
-
-  .film-of-the-day .description .share-icons {
+  html .film-of-the-day .description .share-icons {
     display: none; } }
