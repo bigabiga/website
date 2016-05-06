@@ -26,7 +26,7 @@ $bold: 500;
 //$text-font: 'lato', sans-serif;
 $text-font: 'roboto', sans-serif;
 //$title-font: 'roboto', sans-serif;
-$title-font: tenor-sans, sans-serif;
+$title-font: 'Tenor Sans', sans-serif;
 
 @mixin kavon($size: 6px, $top: 13px, $right: 14px, $color: darken($feature-background, 16), $background: $nav-background) {
   &:before {
@@ -78,6 +78,7 @@ $title-font: tenor-sans, sans-serif;
     color: black;
     font-size: 14px;
     line-height: 30px;
+    font-weight: 300;
 
     li {
       cursor: pointer;
@@ -165,7 +166,8 @@ $title-font: tenor-sans, sans-serif;
 
   .description {
     font-size: 13px;
-    opacity: 0.7;
+    font-weight: 300;
+    opacity: 0.8;
   }
 }
 
@@ -223,10 +225,11 @@ body {
     bottom: 0;
     right: 0;
     font-size: 15px;
+    font-weight: 300;
     vertical-align: bottom;
     margin-bottom: 19px;
-    font-family: $title-font;
-    color: #aaa;
+    //font-family: $title-font;
+    color: #999;
 
     a {
       color: darken($logo-green, 18);
@@ -257,7 +260,8 @@ body {
         height: 40px;
         padding: 0 8px 2px 33px;
         color: $content-color;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 300;
         background: none;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
@@ -265,28 +269,28 @@ body {
 
         &::-webkit-input-placeholder {
           color: $content-color;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           color: $content-color;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           color: $content-color;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
           color: $content-color;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
@@ -340,35 +344,36 @@ body {
         height: 40px;
         padding: 0 8px 2px 33px;
         color: $content-color;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 300;
         margin: 0;
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s;
 
         &::-webkit-input-placeholder {
           color: #888;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           color: #888;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           color: #888;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
           color: #888;
-          font-size: 12px;
+          font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease;
         }
@@ -411,9 +416,10 @@ body {
       @include kavon(6px, 12px, 14px, $content-color, $nav-background);
       display: inline-block;
       padding: 13px 28px 15px 6px;
-      font-size: 12px;
+      font-size: 13px;
       text-transform: uppercase;
       color: $content-color;
+      font-weight: 300;
       //font-family: tenor-sans, sans-serif;
       //letter-spacing: -0.02em;
     }
@@ -483,13 +489,14 @@ body {
   .film-description {
     width: 100%;
     padding: 14px 20px 16px 6px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #555;
 
     h3.basic-info {
       margin-bottom: 8px;
-      font-size: 13px;
+      font-size: 14px;
       color: lighten($feature-background, 38);
 
       span {
@@ -500,7 +507,7 @@ body {
         width: 19px;
         height: 19px;
         display: inline-block;
-        margin-top: -1px;
+        margin-top: 0;
 
         svg {
           width: 100%;
@@ -682,7 +689,7 @@ body {
   width: 100%;
 
   .info {
-    padding: 40px 30px 34px 30px;
+    padding: 34px 30px 34px 30px;
 
     h2 {
       font-family: $title-font;
@@ -690,6 +697,7 @@ body {
       color: $feature-background;
       font-size: 34px;
       margin-bottom: 22px;
+      margin-right: 74px;
 
       .year {
         color: lighten($feature-background, 30);
@@ -698,7 +706,8 @@ body {
 
     h3 {
       margin-bottom: 10px;
-      font-size: 13px;
+      font-size: 14px;
+      font-weight: 300;
       color: lighten($feature-background, 20);
 
       span {
@@ -713,7 +722,7 @@ body {
         width: 19px;
         height: 19px;
         display: inline-block;
-        margin-top: -4px;
+        margin-top: -3px;
 
         svg {
           width: 100%;
@@ -729,7 +738,8 @@ body {
     .details {
       width: 100%;
       color: darken($feature-background, 8);
-      font-size: 13px;
+      font-size: 14px;
+      font-weight: 300;
       line-height: 19px;
 
       p {
@@ -756,7 +766,7 @@ body {
   }
 
   .share-icons {
-    top: 12px;
+    top: 14px;
     right: 14px;
 
     .icon {
@@ -893,6 +903,8 @@ body {
     height: 100%;
     display: inline-block;
     background: darken($feature-background, 2);
+    font-weight: 300;
+    font-size: 14px;
 
     .info {
       position: absolute;
@@ -905,7 +917,6 @@ body {
 
     h3 {
       line-height: 21px;
-      font-size: 13px;
       color: lighten($feature-background, 34);
       display: inline-block;
 
@@ -948,7 +959,6 @@ body {
     }
 
     .synopsis {
-      font-size: 13px;
       color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
@@ -1057,8 +1067,9 @@ body {
 
       .title {
         text-transform: none;
-        font-size: 14px;
-        font-weight: $bold;
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 300;
 
         h3 {
         }
@@ -1138,6 +1149,7 @@ body {
 
 .footer {
   background: #aaa;
+  font-weight: 300;
 
   .content {
     padding-top: 22px;
