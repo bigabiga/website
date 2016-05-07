@@ -763,7 +763,7 @@ body {
   font-weight: 300; }
 
 .home-element {
-  margin-top: 34px; }
+  margin-top: 32px; }
 
 .film-of-the-day {
   font-size: 0;
@@ -1087,7 +1087,7 @@ body {
     padding-right: 30px; }
     .footer .right-cont .icon {
       display: inline-block;
-      padding: 6px 8px;
+      padding: 6px;
       top: 50%;
       transform: translate(0, -50%);
       cursor: pointer; }
@@ -1206,11 +1206,21 @@ body {
     font-size: 32px;
     line-height: 37px; }
   html .film-of-the-day .description .banner-2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  html .footer .content {
+    padding-top: 14px;
+    padding-bottom: 14px; }
+  html .footer .left-cont .links a {
+    display: block; }
+  html .footer .left-cont .info {
+    display: none; } }
 @media all and (max-width: 400px) {
   html .element-title {
     font-size: 24px; }
   html .film-of-the-day .share-icons {
     display: none; }
   html .bottom-share {
-    display: block; } }
+    display: block; }
+  html .footer .right-cont {
+    padding-left: 15px;
+    padding-right: 15px; } }
