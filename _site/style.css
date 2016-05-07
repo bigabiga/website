@@ -763,7 +763,7 @@ body {
   font-weight: 300; }
 
 .home-element {
-  margin-top: 32px; }
+  margin-top: 34px; }
 
 .film-of-the-day {
   font-size: 0;
@@ -856,7 +856,7 @@ body {
     .film-of-the-day .description .title {
       font-family: "Tenor Sans", sans-serif;
       text-transform: none;
-      font-size: 39px;
+      font-size: 38px;
       line-height: 45px;
       margin-bottom: 22px;
       color: #f7f0f3; }
@@ -876,6 +876,26 @@ body {
       font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px; }
+
+.bottom-share {
+  display: none;
+  padding: 10px 30px;
+  background: #592e3e;
+  color: #b8778f;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right; }
+  .bottom-share span {
+    line-height: 30px;
+    margin-right: 2px; }
+  .bottom-share .share-icons {
+    position: relative;
+    display: inline-block;
+    top: auto;
+    right: auto; }
+    .bottom-share .share-icons .icon {
+      background: #88475f; }
 
 .recommended {
   font-size: 0;
@@ -1151,6 +1171,11 @@ body {
     html .left-content .film-cont .video-cover {
       height: 45vw; } }
 @media all and (max-width: 700px) {
+  html .film-of-the-day .description .title {
+    font-size: 35px;
+    line-height: 41px; }
+  html .film-of-the-day .description .banner-2 {
+    font-size: 20px; }
   html .header .logo {
     max-width: 100%;
     background-position: center left; }
@@ -1176,9 +1201,16 @@ body {
   html .thumbnails .thumbnail {
     width: 100%; }
     html .thumbnails .thumbnail .film-image {
-      height: 60vw; } }
+      height: 60vw; }
+  html .film-of-the-day .description .title {
+    font-size: 32px;
+    line-height: 37px; }
+  html .film-of-the-day .description .banner-2 {
+    font-size: 18px; } }
 @media all and (max-width: 400px) {
   html .element-title {
     font-size: 24px; }
-  html .film-of-the-day .description .share-icons {
-    display: none; } }
+  html .film-of-the-day .share-icons {
+    display: none; }
+  html .bottom-share {
+    display: block; } }

@@ -911,7 +911,7 @@ body {
 }
 
 .home-element {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .film-of-the-day {
@@ -990,7 +990,7 @@ body {
     .title {
       font-family: $title-font;
       text-transform: none;
-      font-size: 39px;
+      font-size: 38px;
       line-height: 45px;
       margin-bottom: 22px;
       color: lighten($feature-background, 60);
@@ -1016,6 +1016,33 @@ body {
       font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px;
+    }
+  }
+}
+
+.bottom-share {
+  display: none;
+  padding: 10px $padding;
+  background: darken($feature-background, 9);
+  color: lighten($feature-background, 24);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+
+  span {
+    line-height: 30px;
+    margin-right: 2px;
+  }
+
+  .share-icons {
+    position: relative;
+    display: inline-block;
+    top: auto;
+    right: auto;
+
+    .icon {
+      background: lighten($feature-background, 5);
     }
   }
 }
@@ -1393,6 +1420,19 @@ html {
   }
 
   @media all and (max-width: 700px) {
+    .film-of-the-day {
+      .description {
+        .title {
+          font-size: 35px;
+          line-height: 41px;
+        }
+
+        .banner-2 {
+          font-size: 20px;
+        }
+      }
+    }
+
     .header {
       .logo {
         max-width: 100%;
@@ -1458,6 +1498,19 @@ html {
         }
       }
     }
+
+    .film-of-the-day {
+      .description {
+        .title {
+          font-size: 32px;
+          line-height: 37px;
+        }
+
+        .banner-2 {
+          font-size: 18px;
+        }
+      }
+    }
   }
 
   @media all and (max-width: 400px) {
@@ -1466,11 +1519,13 @@ html {
     }
 
     .film-of-the-day {
-      .description {
-        .share-icons {
-          display: none;
-        }
+      .share-icons {
+        display: none;
       }
+    }
+
+    .bottom-share {
+      display: block;
     }
   }
 }
