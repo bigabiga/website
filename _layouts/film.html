@@ -50,14 +50,19 @@
 <body>
 {% include header.html %}
 {% include nav-bar.html %}
+{% include related.html %}
   <div class="narrow-content">
     <div class="left-content">
       <div class="film-cont" id="filmCont">
-
-        <!--<div class="video-cover" style="background-image: url({{ page.image }})" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">-->
-        <div class="video-cover" id="videoCover" style="background-image: url({{ page.image }})">
+        {% if page.image-offset != null %}
+        <div class="video-cover" id="videoCover" style="background-image: url({{ page.image }}); background-position-y: {{ page.image-offset }}%;">
           <div class="play-mark"></div>
         </div>
+        {% else %}
+        <div class="video-cover" id="videoCover" style="background-image: url({{ page.image }});">
+          <div class="play-mark"></div>
+        </div>
+        {% endif %}
         <div id="thevideo">
 
           <!--<iframe src="{{ page.video }}autoplay=1" frameborder="0" allowfullscreen></iframe>-->
@@ -145,6 +150,7 @@
 
         </div>
       </div>
+
       <div class="panel ad">
 
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -160,6 +166,11 @@
 
 
       </div>
+
+      <div class="panel related">
+        {% include center-bar.html %}
+      </div>
+
       <div class="panel">
         <div id="disqus_thread"></div>
         <script>
@@ -187,54 +198,7 @@
       </div>
     </div>
 
-    <div class="right-bar">
-      <div class="side-title">
-        Related Films
-      </div>
-      {% include related.html %}
-      {% for film in site.films %}
-      {% if film == film1 %}
-      <a class="thumbnail-cont" href="{{ film.url }}">
-        <div class="film">
-          <div class="film-image" style="background-image: url({{ film.image }})"></div>
-          <div class="info">
-            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
-          </div>
-          <div class="play-mark"></div>
-        </div>
-      </a>
-      {% endif %}
-      {% endfor %}
-      {% for film in site.films %}
-      {% if film == film2 %}
-      <a class="thumbnail-cont" href="{{ film.url }}">
-        <div class="film">
-          <div class="film-image" style="background-image: url({{ film.image }})"></div>
-          <div class="info">
-            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
-          </div>
-          <div class="play-mark"></div>
-        </div>
-      </a>
-      {% endif %}
-      {% endfor %}
-      {% for film in site.films %}
-      {% if film == film3 %}
-      <a class="thumbnail-cont" href="{{ film.url }}">
-        <div class="film">
-          <div class="film-image" style="background-image: url({{ film.image }})"></div>
-          <div class="info">
-            <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
-            <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
-          </div>
-          <div class="play-mark"></div>
-        </div>
-      </a>
-      {% endif %}
-      {% endfor %}
-    </div>
+    {% include right-bar.html %}
   </div>
 
   <script type="text/javascript">

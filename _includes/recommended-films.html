@@ -18,7 +18,13 @@
           {% if film.title == feature.title %}
           <a class="thumbnail-cont" href="{{ film.url }}">
             <div class="film">
+
+              {% if film.image-offset != null %}
+              <div class="film-image" style="background-image: url({{ film.image }}); background-position-y: {{ film.image-offset }}%;"></div>
+              {% else %}
               <div class="film-image" style="background-image: url({{ film.image }})"></div>
+              {% endif %}
+
               <div class="info">
                 <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
                 <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>

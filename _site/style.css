@@ -1,5 +1,5 @@
 @import url("reset.css");
-.right-bar .film .info, .recommended .film .info {
+.right-bar .film .info, .center-bar .film .info, .recommended .film .info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -9,11 +9,11 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   line-height: 18px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)); }
-  .right-bar .film .info .title, .recommended .film .info .title {
+  .right-bar .film .info .title, .center-bar .film .info .title, .recommended .film .info .title {
     text-transform: none;
     font-weight: 500;
     font-size: 14px; }
-  .right-bar .film .info .description, .recommended .film .info .description {
+  .right-bar .film .info .description, .center-bar .film .info .description, .recommended .film .info .description {
     font-size: 13px;
     font-weight: 300;
     opacity: 0.8; }
@@ -67,7 +67,7 @@ body {
 
 .nav-bar {
   background: #e0e0e0;
-  color: #695d60;
+  color: #666;
   padding: 0 20px;
   z-index: 100;
   height: 40px; }
@@ -82,7 +82,7 @@ body {
         width: 90px;
         height: 40px;
         padding: 0 8px 2px 33px;
-        color: #695d60;
+        color: #666;
         font-size: 14px;
         font-weight: 300;
         background: none;
@@ -90,36 +90,28 @@ body {
         transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
         transition-delay: 0.2s; }
         .nav-bar .controls .search input.search-input::-webkit-input-placeholder {
-          color: #695d60;
+          color: #666;
           font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-moz-placeholder {
-          color: #695d60;
+          color: #666;
           font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input::-moz-placeholder {
-          color: #695d60;
+          color: #666;
           font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:-ms-input-placeholder {
-          color: #695d60;
+          color: #666;
           font-size: 13px;
           text-transform: uppercase;
           transition: color 0.1s ease; }
         .nav-bar .controls .search input.search-input:hover, .nav-bar .controls .search input.search-input:focus {
           background: #d0d0d0;
           width: 200px; }
-          .nav-bar .controls .search input.search-input:hover::-webkit-input-placeholder, .nav-bar .controls .search input.search-input:focus::-webkit-input-placeholder {
-            color: #888; }
-          .nav-bar .controls .search input.search-input:hover:-moz-placeholder, .nav-bar .controls .search input.search-input:focus:-moz-placeholder {
-            color: #888; }
-          .nav-bar .controls .search input.search-input:hover::-moz-placeholder, .nav-bar .controls .search input.search-input:focus::-moz-placeholder {
-            color: #888; }
-          .nav-bar .controls .search input.search-input:hover:-ms-input-placeholder, .nav-bar .controls .search input.search-input:focus:-ms-input-placeholder {
-            color: #888; }
       .nav-bar .controls .search .icon {
         position: absolute;
         top: 10px;
@@ -129,7 +121,7 @@ body {
           width: 18px;
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
-            fill: #695d60; }
+            fill: #666; }
     .nav-bar .controls .static-search {
       display: inline-block; }
       .nav-bar .controls .static-search input.search-input {
@@ -137,7 +129,7 @@ body {
         width: 200px;
         height: 40px;
         padding: 0 8px 2px 33px;
-        color: #695d60;
+        color: #666;
         font-size: 14px;
         font-weight: 300;
         margin: 0;
@@ -172,7 +164,7 @@ body {
           width: 18px;
           height: 18px; }
           .nav-bar .controls .static-search .icon svg path {
-            fill: #695d60; }
+            fill: #666; }
       .nav-bar .controls .static-search .remove-search {
         position: absolute;
         top: 0;
@@ -215,7 +207,7 @@ body {
       padding: 13px 28px 15px 6px;
       font-size: 13px;
       text-transform: uppercase;
-      color: #695d60;
+      color: #666;
       font-weight: 300; }
       .nav-bar .drop-menus .drop-menu .label:before {
         content: '';
@@ -224,7 +216,7 @@ body {
         right: 14px;
         width: 6px;
         height: 6px;
-        background: #695d60;
+        background: #666;
         transform: rotate(45deg); }
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
@@ -356,16 +348,16 @@ body {
 
 .inner-nav {
   padding: 0 20px;
-  background: #7a4055;
+  background: #703b4e;
   height: 48px; }
   .inner-nav .title {
-    color: white;
+    color: #dfc1cc;
     font-size: 20px;
     line-height: 48px;
     font-family: "Tenor Sans", sans-serif;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(223, 193, 204, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -376,7 +368,7 @@ body {
       height: 48px;
       font-size: 14px;
       line-height: 48px;
-      color: white;
+      color: #dfc1cc;
       padding: 0 28px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
@@ -410,7 +402,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: white;
+        background: #dfc1cc;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
@@ -419,7 +411,7 @@ body {
         right: 12px;
         width: 7px;
         height: 7px;
-        background: #7a4055;
+        background: #703b4e;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by .menu {
         left: auto;
@@ -434,7 +426,7 @@ body {
         right: 0;
         line-height: 48px;
         padding: 0 18px 0 10px;
-        color: #c48fa2;
+        color: #bf859a;
         cursor: pointer; }
       .inner-nav .controls .search .search-input {
         height: 48px;
@@ -442,35 +434,35 @@ body {
         background: transparent;
         width: 180px;
         padding: 4px 8px 4px 33px;
-        color: white;
+        color: #f7f0f3;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: white;
+          color: #dfc1cc;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: white;
+          color: #dfc1cc;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: white;
+          color: #dfc1cc;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: white;
+          color: #dfc1cc;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
-          background: #8e4a63; }
+          background: #84455c; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
-            color: #eedde3;
+            color: #cd9fb0;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
-            color: #eedde3;
+            color: #cd9fb0;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
-            color: #eedde3;
+            color: #cd9fb0;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
-            color: #eedde3;
+            color: #cd9fb0;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
@@ -481,7 +473,7 @@ body {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: white; }
+            fill: #dfc1cc; }
 
 .left-content {
   width: 68%;
@@ -534,7 +526,7 @@ body {
         color: #669E99; }
   .film-cont .video-cover {
     width: 100%;
-    height: 27vw;
+    height: 392px;
     background-size: cover;
     background-position: center center;
     transition: opacity 0.1s ease;
@@ -603,28 +595,28 @@ body {
   top: 0;
   left: 68%;
   width: 32%;
-  padding: 0 0 0 15px;
+  padding: 0 5px 0 15px;
   margin-bottom: 40px;
+  margin-right: -5px;
   font-size: 0; }
   .right-bar .side-title {
     font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
-    font-weight: 300;
     padding: 13px 10px;
-    margin: 0 4px -4px 4px;
+    margin: 0 0 -5px 0;
     background: white; }
   .right-bar .thumbnail-cont {
     display: inline-block;
     width: 100%;
-    height: 12.5vw; }
+    height: 188px; }
   .right-bar .film {
     position: absolute;
     top: 5px;
     bottom: 5px;
-    left: 5px;
-    right: 5px;
+    left: 0;
+    right: 0;
     font-size: 15px;
     overflow: hidden;
     transition: opacity 0.1s ease; }
@@ -673,6 +665,78 @@ body {
       background-position: center center;
       background-size: cover; }
 
+.center-bar {
+  width: 100%;
+  font-size: 0; }
+  .center-bar .side-title {
+    font-family: "Tenor Sans", sans-serif;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 20px;
+    padding: 13px 0;
+    background: white; }
+  .center-bar .thumbs {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 8px; }
+  .center-bar .thumbnail-cont {
+    display: inline-block;
+    width: 50%;
+    height: 26vw; }
+  .center-bar .film {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: opacity 0.1s ease; }
+    .center-bar .film .play-mark {
+      transition: opacity 0.1s ease;
+      position: absolute;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      margin-top: -21.6px;
+      margin-left: -21.6px;
+      width: 43.2px;
+      height: 43.2px;
+      background: #64A7A0;
+      border-radius: 80px;
+      z-index: 10; }
+      .center-bar .film .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -10.08px;
+        margin-left: -6.3px;
+        border-top: 10.8px solid transparent;
+        border-bottom: 10.8px solid transparent;
+        border-left: 16.56px solid white; }
+    .center-bar .film:after {
+      content: '';
+      position: absolute;
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    .center-bar .film:hover:after {
+      opacity: 0.04; }
+    .center-bar .film:hover .play-mark {
+      opacity: 0.8; }
+    .center-bar .film .film-image {
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover; }
+
 .panel {
   width: 100%;
   margin-bottom: 10px;
@@ -681,6 +745,8 @@ body {
   padding: 20px 30px; }
   .panel.ad {
     min-height: 0; }
+  .panel.related {
+    display: none; }
 
 .main {
   min-height: 800px; }
@@ -1040,6 +1106,11 @@ body {
       .share-icons .icon:hover svg path {
         fill: white; }
 
+@media all and (max-width: 1100px) {
+  html .film-cont .video-cover {
+    height: 35vw; }
+  html .right-bar .thumbnail-cont {
+    height: 17vw; } }
 @media all and (max-width: 1000px) {
   html .recommended .thumbnail-cont {
     width: 50%;
@@ -1057,7 +1128,7 @@ body {
     html .film-of-the-day .film {
       display: block;
       width: 100%;
-      height: 48vw;
+      height: 45vw;
       min-height: 230px; }
     html .film-of-the-day .description {
       display: block;
@@ -1068,7 +1139,17 @@ body {
         margin-top: 40px;
         padding-bottom: 40px; }
         html .film-of-the-day .description .info .synopsis {
+          max-width: none;
           max-height: none; } }
+@media all and (max-width: 1000px) {
+  html .right-bar {
+    display: none; }
+  html .panel.related {
+    display: block; }
+  html .left-content {
+    width: 100%; }
+    html .left-content .film-cont .video-cover {
+      height: 45vw; } }
 @media all and (max-width: 700px) {
   html .header .logo {
     max-width: 100%;

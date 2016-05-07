@@ -238,7 +238,7 @@ body {
 }
 
 .nav-bar {
-  $content-color: lighten($text-dark, 26);
+  $content-color: #666;
 
   background: $nav-background;
   color: $content-color;
@@ -299,22 +299,6 @@ body {
         &:focus {
           background: #d0d0d0;
           width: 200px;
-
-          &::-webkit-input-placeholder {
-            color: #888;
-          }
-
-          &:-moz-placeholder {
-            color: #888;
-          }
-
-          &::-moz-placeholder {
-            color: #888;
-          }
-
-          &:-ms-input-placeholder {
-            color: #888;
-          }
         }
       }
 
@@ -541,8 +525,8 @@ body {
 
 .inner-nav {
   $inner-nav-height: 48px;
-  $content-color: lighten($feature-background, 65);
-  $background-color: lighten($feature-background, 1);
+  $content-color: lighten($feature-background, 46);
+  $background-color: darken($feature-background, 2);
   padding: 0 20px;
 
   background: $background-color;
@@ -754,7 +738,7 @@ body {
 
   .video-cover {
     width: 100%;
-    height: 27vw;
+    height: 392px;
     background-size: cover;
     background-position: center center;
     @include play-mark(54px);
@@ -798,17 +782,17 @@ body {
   top: 0;
   left: 68%;
   width: 32%;
-  padding: 0 0 0 15px;
+  padding: 0 $film-padding 0 15px;
   margin-bottom: 40px;
+  margin-right: -$film-padding;
 
   .side-title {
     font-family: $title-font;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
-    font-weight: 300;
     padding: 13px 10px;
-    margin: 0 4px -4px 4px;
+    margin: 0 0 (-$film-padding) 0;
     background: white;
   }
 
@@ -818,7 +802,55 @@ body {
   .thumbnail-cont {
     display: inline-block;
     width: 100%;
-    height: 12.5vw;
+    height: 188px;
+  }
+
+  .film {
+    position: absolute;
+    top: $film-padding;
+    bottom: $film-padding;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    overflow: hidden;
+    @include play-mark(36px);
+
+    .film-image {
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .info {
+      @extend %film-overlay;
+    }
+  }
+}
+
+.center-bar {
+  width: 100%;
+  font-size: 0;
+
+  .side-title {
+    font-family: $title-font;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 20px;
+    padding: 13px 0;
+    background: white;
+  }
+
+  .thumbs {
+    margin-left: -$film-padding;
+    margin-right: -$film-padding;
+    margin-bottom: 8px;
+  }
+
+  .thumbnail-cont {
+    display: inline-block;
+    width: 50%;
+    height: 26vw;
   }
 
   .film {
@@ -853,6 +885,10 @@ body {
 
   &.ad {
     min-height: 0;
+  }
+
+  &.related {
+    display: none;
   }
 }
 
@@ -1267,6 +1303,20 @@ body {
 
 html {
 
+  @media all and (max-width: 1100px) {
+    .film-cont {
+      .video-cover {
+        height: 35vw;
+      }
+    }
+
+    .right-bar {
+      .thumbnail-cont {
+        height: 17vw;
+      }
+    }
+  }
+
   @media all and (max-width: 1000px) {
     .recommended {
       .thumbnail-cont {
@@ -1299,7 +1349,7 @@ html {
       .film {
         display: block;
         width: 100%;
-        height: 48vw;
+        height: 45vw;
         min-height: 230px;
       }
 
@@ -1314,8 +1364,29 @@ html {
           padding-bottom: 40px;
 
           .synopsis {
+            max-width: none;
             max-height: none;
           }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    .right-bar {
+      display: none;
+    }
+
+    .panel.related {
+      display: block;
+    }
+
+    .left-content {
+      width: 100%;
+
+      .film-cont {
+        .video-cover {
+          height: 45vw;
         }
       }
     }
