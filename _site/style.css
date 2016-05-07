@@ -500,7 +500,7 @@ body {
       color: #773E53;
       font-size: 34px;
       margin-bottom: 22px;
-      margin-right: 74px; }
+      margin-right: 82px; }
       .film-cont .info h2 .year {
         color: #c38ba0; }
     .film-cont .info h3 {
@@ -581,8 +581,8 @@ body {
     .film-cont .video-cover .play-mark {
       opacity: 0.8; }
   .film-cont .share-icons {
-    top: 14px;
-    right: 14px; }
+    top: 22px;
+    right: 26px; }
     .film-cont .share-icons .icon {
       width: 24px;
       height: 24px;
@@ -607,6 +607,7 @@ body {
   margin-bottom: 40px;
   font-size: 0; }
   .right-bar .side-title {
+    font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
@@ -687,11 +688,12 @@ body {
     background: white; }
 
 .element-title {
+  font-family: "Tenor Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 31px;
+  font-size: 29px;
   color: #af6681;
   margin-bottom: 12px;
-  letter-spacing: 0;
+  letter-spacing: -0.04em;
   font-weight: 300; }
 
 .home-element {
@@ -700,13 +702,13 @@ body {
 .film-of-the-day {
   font-size: 0;
   height: 27vw;
-  max-height: 410px;
+  max-height: 390px;
   min-height: 355px; }
   .film-of-the-day .film {
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    width: 50%;
+    width: 55%;
     height: 100%;
     transition: opacity 0.1s ease; }
     .film-of-the-day .film .play-mark {
@@ -756,7 +758,7 @@ body {
       background-size: cover;
       background-position: center center; }
   .film-of-the-day .description {
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: inline-block;
     background: #703b4e;
@@ -801,9 +803,10 @@ body {
       max-height: 82px;
       overflow: hidden; }
     .film-of-the-day .description .banner-2 {
+      font-family: "Tenor Sans", sans-serif;
       text-transform: uppercase;
       color: #bc7e95;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px; }
@@ -1020,7 +1023,7 @@ body {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #a35571;
+    background: #9f536f;
     border-radius: 16px;
     margin-left: 8px;
     cursor: pointer; }

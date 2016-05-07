@@ -697,7 +697,7 @@ body {
       color: $feature-background;
       font-size: 34px;
       margin-bottom: 22px;
-      margin-right: 74px;
+      margin-right: 82px;
 
       .year {
         color: lighten($feature-background, 30);
@@ -766,8 +766,8 @@ body {
   }
 
   .share-icons {
-    top: 14px;
-    right: 14px;
+    top: 22px;
+    right: 26px;
 
     .icon {
       width: 24px;
@@ -802,7 +802,7 @@ body {
   margin-bottom: 40px;
 
   .side-title {
-    //font-family: $title-font;
+    font-family: $title-font;
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
@@ -865,12 +865,12 @@ body {
 }
 
 .element-title {
-  //font-family: $title-font;
+  font-family: $title-font;
   text-transform: uppercase;
-  font-size: 31px;
+  font-size: 29px;
   color: lighten($feature-background, 19);
   margin-bottom: 12px;
-  letter-spacing: 0;
+  letter-spacing: -0.04em;
   font-weight: 300;
 }
 
@@ -881,14 +881,14 @@ body {
 .film-of-the-day {
   font-size: 0;
   height: 27vw;
-  max-height: 410px;
+  max-height: 390px;
   min-height: 355px;
 
   .film {
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    width: 50%;
+    width: 55%;
     height: 100%;
     @include play-mark(54px);
 
@@ -905,7 +905,7 @@ body {
   }
 
   .description {
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: inline-block;
     background: darken($feature-background, 2);
@@ -973,10 +973,10 @@ body {
     }
 
     .banner-2 {
-      //font-family: $title-font;
+      font-family: $title-font;
       text-transform: uppercase;
       color: lighten($feature-background, 26);
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px;
@@ -1238,7 +1238,7 @@ body {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: lighten($feature-background, 13);
+    background: lighten($feature-background, 12);
     border-radius: 16px;
     margin-left: 8px;
     cursor: pointer;
