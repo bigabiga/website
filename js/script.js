@@ -55,7 +55,10 @@ function updateState() {
             var title = $this.find('.title a').text().toLowerCase();
             var director = $this.attr('data-director').toLowerCase();
             var genre = $this.attr('data-genre').toLowerCase();
-            var match = title.indexOf(query) !== -1 || director.indexOf(query) !== -1 || genre.indexOf(query) !== -1;
+            var cast = $this.attr('data-cast').toLowerCase();
+            var country = $this.attr('data-country').toLowerCase();
+            var excerpt = $this.attr('data-excerpt').toLowerCase();
+            var match = title.indexOf(query) !== -1 || director.indexOf(query) !== -1 || genre.indexOf(query) !== -1 || cast.indexOf(query) !== -1 || country.indexOf(query) !== -1 || excerpt.indexOf(query) !== -1;
             if (match) {
                 $this.show();
             } else {
