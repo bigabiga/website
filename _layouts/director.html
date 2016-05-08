@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Article">
 <head>
     {% include basic-head.html %}
-    <title> Classic {{ page.title }} Films - La Filmothèque </title>
-    <meta name="description" content="Watch Classic {{ page.title }} Films at La Filmothèque &#45; A Public Domain Film Library."/>
+    <title> {{ page.title }} - Public Domain Films - La Filmothèque </title>
+    <meta name="description" content="Watch Classic Films by {{ page.title }} at La Filmothèque &#45; A Public Domain Film Library."/>
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="description" content="Find Classic Films by {{ page.title }} at La Filmothèque &#45; A Public Domain Film Library.">
+    <meta itemprop="image" content="https://www.lafilmotheque.com{{ page.feature-image }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@La_Filmotheque">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="Find Classic Films by {{ page.title }} at La Filmothèque &#45; A Public Domain Film Library.">
+    <meta name="twitter:creator" content="@La_Filmotheque">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://www.lafilmotheque.com{{ page.feature-image }}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:image" content="https://www.lafilmotheque.com{{ page.feature-image }}" />
+    <meta property="og:description" content="Find Classic Films by {{ page.title }} at La Filmothèque &#45; A Public Domain Film Library." />
+    <meta property="og:site_name" content="La Filmothèque" />
 </head>
 <body>
 {% include header.html %}
