@@ -22,6 +22,8 @@ $text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 5px;
 
+$placeholder: #c6c6c6;
+
 $bold: 500;
 //$text-font: 'lato', sans-serif;
 $text-font: 'roboto', sans-serif;
@@ -520,6 +522,7 @@ body {
   }
 
   .film-image {
+    background: $placeholder;
     cursor: pointer;
     height: 13.5vw;
     display: block;
@@ -797,6 +800,7 @@ body {
   }
 
   .video-cover {
+    background: $placeholder;
     width: 100%;
     height: 392px;
     background-size: cover;
@@ -877,6 +881,7 @@ body {
     cursor: pointer;
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -926,6 +931,7 @@ body {
     @include play-mark(36px);
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -995,6 +1001,7 @@ body {
     }
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-size: cover;
@@ -1133,6 +1140,7 @@ body {
     @include play-mark(36px);
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1171,6 +1179,7 @@ body {
     right: $film-padding;
 
     .item-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;

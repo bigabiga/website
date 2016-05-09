@@ -349,6 +349,7 @@ body {
     width: 25%;
     padding: 4px 6px 14px 6px; }
   .thumbnails .film-image {
+    background: #c6c6c6;
     cursor: pointer;
     height: 13.5vw;
     display: block;
@@ -610,6 +611,7 @@ body {
       .film-cont .info .details .imdb-link {
         color: #669E99; }
   .film-cont .video-cover {
+    background: #c6c6c6;
     width: 100%;
     height: 392px;
     background-size: cover;
@@ -746,6 +748,7 @@ body {
     .right-bar .film:hover .play-mark {
       opacity: 0.8; }
     .right-bar .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -819,6 +822,7 @@ body {
     .center-bar .film:hover .play-mark {
       opacity: 0.8; }
     .center-bar .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -906,6 +910,7 @@ body {
     .film-of-the-day .film .play-mark {
       opacity: 0.8; }
     .film-of-the-day .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-size: cover;
@@ -1043,6 +1048,7 @@ body {
     .recommended .film:hover .play-mark {
       opacity: 0.8; }
     .recommended .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1066,6 +1072,7 @@ body {
     left: 5px;
     right: 5px; }
     .home-categories .category .item-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
