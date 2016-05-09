@@ -47,6 +47,7 @@ body {
   padding-right: 30px; }
   .header .logo {
     margin-bottom: -5px;
+    cursor: pointer;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -63,6 +64,7 @@ body {
     margin-bottom: 19px;
     color: #999; }
     .header .info a {
+      cursor: pointer;
       color: #6ab3ac; }
   .header .right-cont {
     display: none;
@@ -292,6 +294,7 @@ body {
         .nav-bar .drop-menus .drop-menu .menu li:hover {
           background: #ddeeec; }
     .nav-bar .drop-menus .drop-menu .label {
+      cursor: pointer;
       display: inline-block;
       padding: 13px 28px 15px 6px;
       font-size: 13px;
@@ -346,6 +349,7 @@ body {
     width: 25%;
     padding: 4px 6px 14px 6px; }
   .thumbnails .film-image {
+    cursor: pointer;
     height: 13.5vw;
     display: block;
     background-size: cover;
@@ -416,6 +420,7 @@ body {
     .thumbnails .film-description .excerpt {
       overflow: hidden; }
     .thumbnails .film-description .title {
+      cursor: pointer;
       font-family: "Tenor Sans", sans-serif;
       font-size: 21px;
       text-transform: none;
@@ -443,6 +448,7 @@ body {
     right: 0; }
     .inner-nav .controls .sort-by {
       display: inline-block;
+      cursor: pointer;
       cursor: pointer;
       height: 48px;
       font-size: 14px;
@@ -698,7 +704,8 @@ body {
     right: 0;
     font-size: 15px;
     overflow: hidden;
-    transition: opacity 0.1s ease; }
+    transition: opacity 0.1s ease;
+    cursor: pointer; }
     .right-bar .film .play-mark {
       transition: opacity 0.1s ease;
       position: absolute;
@@ -764,6 +771,7 @@ body {
     height: 26vw; }
   .center-bar .film {
     position: absolute;
+    cursor: pointer;
     top: 5px;
     bottom: 5px;
     left: 5px;
@@ -933,6 +941,7 @@ body {
           .film-of-the-day .description h3 .icon svg path {
             fill: #cd9fb0; }
     .film-of-the-day .description .title {
+      cursor: pointer;
       font-family: "Tenor Sans", sans-serif;
       text-transform: none;
       font-size: 38px;
@@ -986,6 +995,7 @@ body {
     max-height: 240px; }
   .recommended .film {
     position: absolute;
+    cursor: pointer;
     top: 5px;
     bottom: 5px;
     left: 5px;
@@ -1049,6 +1059,7 @@ body {
     .home-categories .thumbnail-cont:hover .item-image:after {
       opacity: 1; }
   .home-categories .category {
+    cursor: pointer;
     position: absolute;
     top: 5px;
     bottom: 5px;

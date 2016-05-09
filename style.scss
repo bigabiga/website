@@ -212,6 +212,7 @@ body {
 
   .logo {
     margin-bottom: -5px;
+    cursor: pointer;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -232,6 +233,7 @@ body {
     color: #999;
 
     a {
+      cursor: pointer;
       color: darken($logo-green, 18);
     }
   }
@@ -462,6 +464,7 @@ body {
     @include dropdown-menu;
 
     .label {
+      cursor: pointer;
       @include kavon(6px, 12px, 14px, $content-color, $nav-background);
       display: inline-block;
       padding: 13px 28px 15px 6px;
@@ -517,7 +520,8 @@ body {
   }
 
   .film-image {
-    height: 13.5vw;;
+    cursor: pointer;
+    height: 13.5vw;
     display: block;
     background-size: cover;
     background-position: center center;
@@ -563,6 +567,7 @@ body {
     }
 
     .title {
+      cursor: pointer;
       font-family: $title-font;
       font-size: 21px;
       text-transform: none;
@@ -605,6 +610,7 @@ body {
 
     .sort-by {
       display: inline-block;
+      cursor: pointer;
       @include dropdown-menu($inner-nav-height);
       @include kavon(7px, 16px, 12px, $content-color, $background-color);
       height: $inner-nav-height;
@@ -868,6 +874,7 @@ body {
     font-size: 15px;
     overflow: hidden;
     @include play-mark(36px);
+    cursor: pointer;
 
     .film-image {
       width: 100%;
@@ -909,6 +916,7 @@ body {
 
   .film {
     position: absolute;
+    cursor: pointer;
     top: $film-padding;
     bottom: $film-padding;
     left: $film-padding;
@@ -1042,6 +1050,7 @@ body {
     }
 
     .title {
+      cursor: pointer;
       font-family: $title-font;
       text-transform: none;
       font-size: 38px;
@@ -1114,6 +1123,7 @@ body {
 
   .film {
     position: absolute;
+    cursor: pointer;
     top: $film-padding;
     bottom: $film-padding;
     left: $film-padding;
@@ -1153,6 +1163,7 @@ body {
   }
 
   .category {
+    cursor: pointer;
     position: absolute;
     top: $film-padding;
     bottom: $film-padding;
