@@ -67,7 +67,15 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
               <div class="title">{{ film-of-the-day.title }} <span class="year">{{ film-of-the-day.year }}</span></div>
             </a>
             <h3 class="more-info">
-              {{ film-of-the-day.country }} | {{ film-of-the-day.director | join: ', ' }} | {{ film-of-the-day.genre | join: ', ' }}
+              {{ film-of-the-day.country }} | {{ film-of-the-day.director | join: ', ' }} |
+              {% for item in film-of-the-day.genre %}
+              {% if item != "Silent" and item != "Short" %}
+              {% if forloop.first != true %}
+              ,
+              {% endif %}
+              {{ item }}
+              {% endif %}
+              {% endfor %}
             </h3>
             <div class="synopsis"> {{ film-of-the-day.synopsis }} </div>
           </div>
