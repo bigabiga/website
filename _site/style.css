@@ -69,17 +69,17 @@ body {
     position: absolute;
     top: 0;
     right: 0; }
-    .header .right-cont .icon {
-      display: inline-block;
+    .header .right-cont .icon.search {
+      display: none;
       cursor: pointer;
       top: 14px;
       width: 26px;
       height: 26px;
       padding: 3px; }
-      .header .right-cont .icon svg {
+      .header .right-cont .icon.search svg {
         width: 20px;
         height: 20px; }
-        .header .right-cont .icon svg path {
+        .header .right-cont .icon.search svg path {
           fill: #555; }
     .header .right-cont .drop-menu {
       display: inline-block;
