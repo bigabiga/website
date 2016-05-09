@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: A group of men travel to the moon by being shot in a capsule from a giant cannon. They are captured by moon-men, escape, and return to the earth.
+excerpt: A Trip to the Moon is a 1902 French silent film directed by Georges Méliès. This early, remarkable film follows a group of astronomers who travel to the Moon in a cannon-propelled capsule, explore the Moon's surface, escape from an underground group of Selenites (lunar inhabitants), and return to Earth with a captive Selenite.
 title: A Trip to the Moon
 runtime: 13
 genre:
@@ -17,7 +17,7 @@ recommended: yes
 editors-rating: 5
 image: /feature-images/Le-Voyage-dans-la-Lune-1902.jpg
 video: https://www.youtube.com/embed/ikMN8MZKfPo?rel=0&amp;controls=0&amp;showinfo=0
-synopsis: A group of men travel to the moon by being shot in a capsule from a giant cannon. They are captured by moon-men, escape, and return to the earth.
+synopsis: A Trip to the Moon is a 1902 French silent film directed by Georges Méliès. This early, remarkable film follows a group of astronomers who travel to the Moon in a cannon-propelled capsule, explore the Moon's surface, escape from an underground group of Selenites (lunar inhabitants), and return to Earth with a captive Selenite.
 director: Georges Méliès
 year: 1902
 country: France
