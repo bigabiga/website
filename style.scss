@@ -8,6 +8,7 @@ $nav-text: #888;
 $darker-green: #1E7B85;
 $green-font: #669E99;
 $padding: 30px;
+$compact-padding: 18px;
 
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 11);
@@ -21,6 +22,8 @@ $play-green: #1E7B85;
 $text-medium: #666;
 $text-dark: #231F20;
 $film-padding: 5px;
+
+$placeholder: #c6c6c6;
 
 $bold: 500;
 //$text-font: 'lato', sans-serif;
@@ -179,6 +182,7 @@ $title-font: 'Tenor Sans', sans-serif;
 body {
   font-family: $text-font;
   background: $nav-background;
+  min-width: 316px;
 }
 
 .content,
@@ -212,6 +216,7 @@ body {
 
   .logo {
     margin-bottom: -5px;
+    cursor: pointer;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -232,6 +237,7 @@ body {
     color: #999;
 
     a {
+      cursor: pointer;
       color: darken($logo-green, 18);
     }
   }
@@ -307,7 +313,7 @@ body {
 
   background: $nav-background;
   color: $content-color;
-  padding: 0 20px;
+  padding: 0 ($padding - 6px);
   z-index: 100;
   height: 40px;
 
@@ -462,6 +468,7 @@ body {
     @include dropdown-menu;
 
     .label {
+      cursor: pointer;
       @include kavon(6px, 12px, 14px, $content-color, $nav-background);
       display: inline-block;
       padding: 13px 28px 15px 6px;
@@ -504,8 +511,8 @@ body {
 }
 
 .thumbnails {
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -($film-padding);
+  margin-right: -($film-padding);
   padding: 24px 0 0 0;
   font-size: 0;
   padding-bottom: 40px;
@@ -517,7 +524,9 @@ body {
   }
 
   .film-image {
-    height: 13.5vw;;
+    background: $placeholder;
+    cursor: pointer;
+    height: 13.5vw;
     display: block;
     background-size: cover;
     background-position: center center;
@@ -563,6 +572,7 @@ body {
     }
 
     .title {
+      cursor: pointer;
       font-family: $title-font;
       font-size: 21px;
       text-transform: none;
@@ -579,9 +589,9 @@ body {
 
 .inner-nav {
   $inner-nav-height: 48px;
-  $content-color: lighten($feature-background, 46);
+  $content-color: lighten($feature-background, 42);
   $background-color: darken($feature-background, 2);
-  padding: 0 20px;
+  padding: 0 $padding;
 
   background: $background-color;
   height: $inner-nav-height;
@@ -605,13 +615,14 @@ body {
 
     .sort-by {
       display: inline-block;
+      cursor: pointer;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 16px, 12px, $content-color, $background-color);
+      @include kavon(7px, 16px, 4px, $content-color, $background-color);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
       color: $content-color;
-      padding: 0 28px 0  10px;
+      padding: 0 20px 0  10px;
 
       .menu {
         left: auto;
@@ -638,7 +649,7 @@ body {
         height: $inner-nav-height;
         font-size: 14px;
         background: transparent;
-        width: 180px;
+        width: 148px;
         padding: 4px 8px 4px 33px;
         color: lighten($content-color, 14);
         transition: background-color 0.1s ease;
@@ -727,7 +738,7 @@ body {
   width: 100%;
 
   .info {
-    padding: 34px 30px 34px 30px;
+    padding: 34px $padding 34px $padding;
 
     h2 {
       font-family: $title-font;
@@ -791,6 +802,7 @@ body {
   }
 
   .video-cover {
+    background: $placeholder;
     width: 100%;
     height: 392px;
     background-size: cover;
@@ -868,8 +880,10 @@ body {
     font-size: 15px;
     overflow: hidden;
     @include play-mark(36px);
+    cursor: pointer;
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -909,6 +923,7 @@ body {
 
   .film {
     position: absolute;
+    cursor: pointer;
     top: $film-padding;
     bottom: $film-padding;
     left: $film-padding;
@@ -918,6 +933,7 @@ body {
     @include play-mark(36px);
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -935,7 +951,7 @@ body {
   margin-bottom: 10px;
   background: white;
   min-height: 240px;
-  padding: 20px 30px;
+  padding: 20px $padding;
 
   &.ad {
     min-height: 0;
@@ -987,6 +1003,7 @@ body {
     }
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-size: cover;
@@ -1008,7 +1025,7 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 30px 50px 30px;
+      padding: 0 $padding 50px $padding;
     }
 
     h3 {
@@ -1042,6 +1059,7 @@ body {
     }
 
     .title {
+      cursor: pointer;
       font-family: $title-font;
       text-transform: none;
       font-size: 38px;
@@ -1114,6 +1132,7 @@ body {
 
   .film {
     position: absolute;
+    cursor: pointer;
     top: $film-padding;
     bottom: $film-padding;
     left: $film-padding;
@@ -1123,6 +1142,7 @@ body {
     @include play-mark(36px);
 
     .film-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1153,6 +1173,7 @@ body {
   }
 
   .category {
+    cursor: pointer;
     position: absolute;
     top: $film-padding;
     bottom: $film-padding;
@@ -1160,6 +1181,7 @@ body {
     right: $film-padding;
 
     .item-image {
+      background: $placeholder;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1488,6 +1510,12 @@ html {
       }
     }
 
+    .film-cont {
+      .info h2 {
+        font-size: 30px;
+      }
+    }
+
     .header {
       .logo {
         max-width: 100%;
@@ -1515,6 +1543,41 @@ html {
         width: 145px;
       }
     }
+
+    .content {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .header {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .film-of-the-day .description .info {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .film-cont .info {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .panel {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .nav-bar {
+      padding-left: ($compact-padding - 6px);
+      padding-right: ($compact-padding - 6px);
+    }
+
+    .inner-nav {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
   }
 
   @media all and (max-width: 540px) {
@@ -1525,6 +1588,7 @@ html {
       left: 0;
       width: 100%;
       height: 55px;
+      min-width: 316px;
       box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 
       .logo {
@@ -1581,7 +1645,7 @@ html {
     .film-of-the-day {
       .description {
         .title {
-          font-size: 32px;
+          font-size: 30px;
           line-height: 37px;
         }
 
@@ -1616,6 +1680,34 @@ html {
         height: 46vw;
       }
     }
+
+    .film-cont {
+      .info {
+        h2 {
+          margin-right: 0;
+        }
+
+        .share-icons {
+          top: auto;
+          bottom: 26px;
+        }
+      }
+    }
+
+    .inner-nav {
+      height: 82px;
+
+      .top-content {
+        height: 100%;
+      }
+
+      .controls {
+        top: auto;
+        bottom: 0;
+        left: -6px;
+        white-space: nowrap;
+      }
+    }
   }
 
   @media all and (max-width: 400px) {
@@ -1637,6 +1729,24 @@ html {
       .right-cont {
         padding-left: 20px;
         padding-right: 20px;
+      }
+    }
+
+    .inner-nav {
+      .controls {
+        .sort-by {
+          .value, .colon {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 340px) {
+    .header {
+      .logo {
+        width: 206px;
       }
     }
   }

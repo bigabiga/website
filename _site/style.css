@@ -20,7 +20,8 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background: #e0e0e0; }
+  background: #e0e0e0;
+  min-width: 316px; }
 
 .content,
 .top-content {
@@ -47,6 +48,7 @@ body {
   padding-right: 30px; }
   .header .logo {
     margin-bottom: -5px;
+    cursor: pointer;
     display: inline-block;
     background-image: url(images/logo.png);
     background-size: contain;
@@ -63,6 +65,7 @@ body {
     margin-bottom: 19px;
     color: #999; }
     .header .info a {
+      cursor: pointer;
       color: #6ab3ac; }
   .header .right-cont {
     display: none;
@@ -157,7 +160,7 @@ body {
 .nav-bar {
   background: #e0e0e0;
   color: #666;
-  padding: 0 20px;
+  padding: 0 24px;
   z-index: 100;
   height: 40px; }
   .nav-bar .controls {
@@ -292,6 +295,7 @@ body {
         .nav-bar .drop-menus .drop-menu .menu li:hover {
           background: #ddeeec; }
     .nav-bar .drop-menus .drop-menu .label {
+      cursor: pointer;
       display: inline-block;
       padding: 13px 28px 15px 6px;
       font-size: 13px;
@@ -336,8 +340,8 @@ body {
           margin-top: -10px; }
 
 .thumbnails {
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -5px;
+  margin-right: -5px;
   padding: 24px 0 0 0;
   font-size: 0;
   padding-bottom: 40px; }
@@ -346,6 +350,8 @@ body {
     width: 25%;
     padding: 4px 6px 14px 6px; }
   .thumbnails .film-image {
+    background: #c6c6c6;
+    cursor: pointer;
     height: 13.5vw;
     display: block;
     background-size: cover;
@@ -416,6 +422,7 @@ body {
     .thumbnails .film-description .excerpt {
       overflow: hidden; }
     .thumbnails .film-description .title {
+      cursor: pointer;
       font-family: "Tenor Sans", sans-serif;
       font-size: 21px;
       text-transform: none;
@@ -426,17 +433,17 @@ body {
         color: #c38ba0; }
 
 .inner-nav {
-  padding: 0 20px;
+  padding: 0 30px;
   background: #703b4e;
   height: 48px; }
   .inner-nav .title {
-    color: #dfc1cc;
+    color: #d8b4c1;
     font-size: 20px;
     line-height: 48px;
     font-family: "Tenor Sans", sans-serif;
     text-transform: none; }
     .inner-nav .title .category {
-      color: rgba(223, 193, 204, 0.5); }
+      color: rgba(216, 180, 193, 0.5); }
   .inner-nav .controls {
     position: absolute;
     top: 0;
@@ -444,11 +451,12 @@ body {
     .inner-nav .controls .sort-by {
       display: inline-block;
       cursor: pointer;
+      cursor: pointer;
       height: 48px;
       font-size: 14px;
       line-height: 48px;
-      color: #dfc1cc;
-      padding: 0 28px 0  10px; }
+      color: #d8b4c1;
+      padding: 0 20px 0  10px; }
       .inner-nav .controls .sort-by:hover .menu {
         opacity: 1;
         pointer-events: auto; }
@@ -478,16 +486,16 @@ body {
         content: '';
         position: absolute;
         top: 18px;
-        right: 12px;
+        right: 4px;
         width: 7px;
         height: 7px;
-        background: #dfc1cc;
+        background: #d8b4c1;
         transform: rotate(45deg); }
       .inner-nav .controls .sort-by:after {
         content: '';
         position: absolute;
         top: 16px;
-        right: 12px;
+        right: 4px;
         width: 7px;
         height: 7px;
         background: #703b4e;
@@ -511,37 +519,37 @@ body {
         height: 48px;
         font-size: 14px;
         background: transparent;
-        width: 180px;
+        width: 148px;
         padding: 4px 8px 4px 33px;
-        color: #f7f0f3;
+        color: #f0e2e8;
         transition: background-color 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
-          color: #dfc1cc;
+          color: #d8b4c1;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-moz-placeholder {
           /* Firefox 18- */
-          color: #dfc1cc;
+          color: #d8b4c1;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input::-moz-placeholder {
           /* Firefox 19+ */
-          color: #dfc1cc;
+          color: #d8b4c1;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
-          color: #dfc1cc;
+          color: #d8b4c1;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
           background: #84455c; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
-            color: #cd9fb0;
+            color: #c692a5;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
-            color: #cd9fb0;
+            color: #c692a5;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
-            color: #cd9fb0;
+            color: #c692a5;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
-            color: #cd9fb0;
+            color: #c692a5;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
@@ -552,7 +560,7 @@ body {
           width: 18px;
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
-            fill: #dfc1cc; }
+            fill: #d8b4c1; }
 
 .left-content {
   width: 68%;
@@ -604,6 +612,7 @@ body {
       .film-cont .info .details .imdb-link {
         color: #669E99; }
   .film-cont .video-cover {
+    background: #c6c6c6;
     width: 100%;
     height: 392px;
     background-size: cover;
@@ -698,7 +707,8 @@ body {
     right: 0;
     font-size: 15px;
     overflow: hidden;
-    transition: opacity 0.1s ease; }
+    transition: opacity 0.1s ease;
+    cursor: pointer; }
     .right-bar .film .play-mark {
       transition: opacity 0.1s ease;
       position: absolute;
@@ -739,6 +749,7 @@ body {
     .right-bar .film:hover .play-mark {
       opacity: 0.8; }
     .right-bar .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -764,6 +775,7 @@ body {
     height: 26vw; }
   .center-bar .film {
     position: absolute;
+    cursor: pointer;
     top: 5px;
     bottom: 5px;
     left: 5px;
@@ -811,6 +823,7 @@ body {
     .center-bar .film:hover .play-mark {
       opacity: 0.8; }
     .center-bar .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -898,6 +911,7 @@ body {
     .film-of-the-day .film .play-mark {
       opacity: 0.8; }
     .film-of-the-day .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-size: cover;
@@ -933,6 +947,7 @@ body {
           .film-of-the-day .description h3 .icon svg path {
             fill: #cd9fb0; }
     .film-of-the-day .description .title {
+      cursor: pointer;
       font-family: "Tenor Sans", sans-serif;
       text-transform: none;
       font-size: 38px;
@@ -986,6 +1001,7 @@ body {
     max-height: 240px; }
   .recommended .film {
     position: absolute;
+    cursor: pointer;
     top: 5px;
     bottom: 5px;
     left: 5px;
@@ -1033,6 +1049,7 @@ body {
     .recommended .film:hover .play-mark {
       opacity: 0.8; }
     .recommended .film .film-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1049,12 +1066,14 @@ body {
     .home-categories .thumbnail-cont:hover .item-image:after {
       opacity: 1; }
   .home-categories .category {
+    cursor: pointer;
     position: absolute;
     top: 5px;
     bottom: 5px;
     left: 5px;
     right: 5px; }
     .home-categories .category .item-image {
+      background: #c6c6c6;
       width: 100%;
       height: 100%;
       background-position: center center;
@@ -1256,6 +1275,8 @@ body {
     line-height: 41px; }
   html .film-of-the-day .description .banner-2 {
     font-size: 20px; }
+  html .film-cont .info h2 {
+    font-size: 30px; }
   html .header .logo {
     max-width: 100%;
     background-position: center left; }
@@ -1266,7 +1287,28 @@ body {
     html .thumbnails .thumbnail .film-image {
       height: 30vw; }
   html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
-    width: 145px; } }
+    width: 145px; }
+  html .content {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .header {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-of-the-day .description .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-cont .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .panel {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .nav-bar {
+    padding-left: 12px;
+    padding-right: 12px; }
+  html .inner-nav {
+    padding-left: 18px;
+    padding-right: 18px; } }
 @media all and (max-width: 540px) {
   html .header {
     position: fixed;
@@ -1275,6 +1317,7 @@ body {
     left: 0;
     width: 100%;
     height: 55px;
+    min-width: 316px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
     html .header .logo {
       height: 55px; }
@@ -1301,7 +1344,7 @@ body {
     html .thumbnails .thumbnail .film-image {
       height: 60vw; }
   html .film-of-the-day .description .title {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 37px; }
   html .film-of-the-day .description .banner-2 {
     font-size: 18px; }
@@ -1314,7 +1357,21 @@ body {
     display: none; }
   html .center-bar .thumbnail-cont {
     width: 100%;
-    height: 46vw; } }
+    height: 46vw; }
+  html .film-cont .info h2 {
+    margin-right: 0; }
+  html .film-cont .info .share-icons {
+    top: auto;
+    bottom: 26px; }
+  html .inner-nav {
+    height: 82px; }
+    html .inner-nav .top-content {
+      height: 100%; }
+    html .inner-nav .controls {
+      top: auto;
+      bottom: 0;
+      left: -6px;
+      white-space: nowrap; } }
 @media all and (max-width: 400px) {
   html .element-title {
     font-size: 24px; }
@@ -1324,4 +1381,9 @@ body {
     display: block; }
   html .footer .right-cont {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  html .inner-nav .controls .sort-by .value, html .inner-nav .controls .sort-by .colon {
+    display: none; } }
+@media all and (max-width: 340px) {
+  html .header .logo {
+    width: 206px; } }
