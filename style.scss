@@ -235,6 +235,71 @@ body {
       color: darken($logo-green, 18);
     }
   }
+
+  .right-cont {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .icon {
+      display: inline-block;
+      cursor: pointer;
+      top: 14px;
+      width: 26px;
+      height: 26px;
+      padding: 3px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+          fill: #555;
+        }
+      }
+    }
+
+    .drop-menu {
+      display: inline-block;
+      @include dropdown-menu(55px);
+      margin-left: 6px;
+
+      .label {
+        @include kavon(6px, 20px, 0, #555, white);
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #555;
+        line-height: 55px;
+        padding: 0 13px 0 4px;
+      }
+
+      .menu {
+        left: auto;
+        right: -30px;
+        height: 100vh;
+        overflow: scroll;
+        padding-bottom: 100px;
+        width: 260px;
+
+        .category-name {
+          font-weight: 500;
+          color: lighten($feature-background, 22);
+          text-transform: uppercase;
+          margin-top: 10px;
+          line-height: 37px;
+          background: #eee;
+          pointer-events: none;
+
+          &:first-child {
+            margin-top: -10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .nav-bar {
@@ -419,17 +484,6 @@ body {
         li {
           padding-left: 26px;
         }
-
-        /*&:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100%;
-          background: red;
-          z-index: 1;
-        }*/
       }
 
       .category-name {
@@ -1334,6 +1388,7 @@ html {
     .film-cont {
       .video-cover {
         height: 35vw;
+        min-height: 240px;
       }
     }
 
@@ -1377,7 +1432,7 @@ html {
         display: block;
         width: 100%;
         height: 45vw;
-        min-height: 230px;
+        min-height: 240px;
       }
 
       .description {
@@ -1463,6 +1518,24 @@ html {
   }
 
   @media all and (max-width: 540px) {
+    .header {
+      position: fixed;
+      z-index: 200;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+
+      .logo {
+        height: 55px;
+      }
+
+      .right-cont {
+        display: block;
+      }
+    }
+
     .recommended {
       .thumbnail-cont {
         width: 100%;
@@ -1487,6 +1560,12 @@ html {
           }
         }
       }
+
+      margin-top: 55px;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
     }
 
     .thumbnails {
@@ -1528,6 +1607,13 @@ html {
         .info {
           display: none;
         }
+      }
+    }
+
+    .center-bar {
+      .thumbnail-cont {
+        width: 100%;
+        height: 46vw;
       }
     }
   }
