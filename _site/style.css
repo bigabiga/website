@@ -159,7 +159,7 @@ body {
 .nav-bar {
   background: #e0e0e0;
   color: #666;
-  padding: 0 20px;
+  padding: 0 24px;
   z-index: 100;
   height: 40px; }
   .nav-bar .controls {
@@ -339,8 +339,8 @@ body {
           margin-top: -10px; }
 
 .thumbnails {
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -5px;
+  margin-right: -5px;
   padding: 24px 0 0 0;
   font-size: 0;
   padding-bottom: 40px; }
@@ -1274,6 +1274,8 @@ body {
     line-height: 41px; }
   html .film-of-the-day .description .banner-2 {
     font-size: 20px; }
+  html .film-cont .info h2 {
+    font-size: 30px; }
   html .header .logo {
     max-width: 100%;
     background-position: center left; }
@@ -1284,7 +1286,25 @@ body {
     html .thumbnails .thumbnail .film-image {
       height: 30vw; }
   html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
-    width: 145px; } }
+    width: 145px; }
+  html .content {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .header {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-of-the-day .description .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-cont .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .panel {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .nav-bar {
+    padding-left: 12px;
+    padding-right: 12px; } }
 @media all and (max-width: 540px) {
   html .header {
     position: fixed;
@@ -1332,7 +1352,12 @@ body {
     display: none; }
   html .center-bar .thumbnail-cont {
     width: 100%;
-    height: 46vw; } }
+    height: 46vw; }
+  html .film-cont .info h2 {
+    margin-right: 0; }
+  html .film-cont .info .share-icons {
+    top: auto;
+    bottom: 26px; } }
 @media all and (max-width: 400px) {
   html .element-title {
     font-size: 24px; }

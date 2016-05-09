@@ -8,6 +8,7 @@ $nav-text: #888;
 $darker-green: #1E7B85;
 $green-font: #669E99;
 $padding: 30px;
+$compact-padding: 18px;
 
 $light-background: #A7D2CE;
 $light-green: darken($light-background, 11);
@@ -311,7 +312,7 @@ body {
 
   background: $nav-background;
   color: $content-color;
-  padding: 0 20px;
+  padding: 0 ($padding - 6px);
   z-index: 100;
   height: 40px;
 
@@ -509,8 +510,8 @@ body {
 }
 
 .thumbnails {
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -($film-padding);
+  margin-right: -($film-padding);
   padding: 24px 0 0 0;
   font-size: 0;
   padding-bottom: 40px;
@@ -736,7 +737,7 @@ body {
   width: 100%;
 
   .info {
-    padding: 34px 30px 34px 30px;
+    padding: 34px $padding 34px $padding;
 
     h2 {
       font-family: $title-font;
@@ -949,7 +950,7 @@ body {
   margin-bottom: 10px;
   background: white;
   min-height: 240px;
-  padding: 20px 30px;
+  padding: 20px $padding;
 
   &.ad {
     min-height: 0;
@@ -1023,7 +1024,7 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 30px 50px 30px;
+      padding: 0 $padding 50px $padding;
     }
 
     h3 {
@@ -1508,6 +1509,12 @@ html {
       }
     }
 
+    .film-cont {
+      .info h2 {
+        font-size: 30px;
+      }
+    }
+
     .header {
       .logo {
         max-width: 100%;
@@ -1534,6 +1541,36 @@ html {
       &:focus {
         width: 145px;
       }
+    }
+
+    .content {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .header {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .film-of-the-day .description .info {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .film-cont .info {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .panel {
+      padding-left: $compact-padding;
+      padding-right: $compact-padding;
+    }
+
+    .nav-bar {
+      padding-left: ($compact-padding - 6px);
+      padding-right: ($compact-padding - 6px);
     }
   }
 
@@ -1634,6 +1671,19 @@ html {
       .thumbnail-cont {
         width: 100%;
         height: 46vw;
+      }
+    }
+
+    .film-cont {
+      .info {
+        h2 {
+          margin-right: 0;
+        }
+
+        .share-icons {
+          top: auto;
+          bottom: 26px;
+        }
       }
     }
   }
