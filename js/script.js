@@ -114,7 +114,7 @@ function updateState() {
     $searchTitle.text(getParameterByName('search'));
 
     $("div.lazy").lazyload({
-        effect : "fadeIn"
+        effect : "fadeIn", effectspeed: 300
     });
 }
 

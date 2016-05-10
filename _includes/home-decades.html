@@ -8,7 +8,7 @@
     {% for decade in site.decades limit: 8 %}
     <a class="thumbnail-cont" href="{{ decade.url }}#sort=Recommended">
       <div class="category">
-        <div class="item-image" style="background-image: url({{ decade.feature-image }})"></div>
+        <div class="item-image lazy" data-original="{{ decade.feature-image }}" style="background-image: url('/images/transparent.png')"></div>
         <div class="info">
           <div class="title"><h3> {{ decade.title }} </h3></div>
         </div>

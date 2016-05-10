@@ -7,9 +7,9 @@
     <div class="film">
 
       {% if film.image-offset != null %}
-      <div class="film-image" style="background-image: url({{ film.image }}); background-position-y: {{ film.image-offset }}%;"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: {{ film.image-offset }}%;"></div>
       {% else %}
-      <div class="film-image" style="background-image: url({{ film.image }})"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png')"></div>
       {% endif %}
 
       <div class="info">
@@ -26,9 +26,9 @@
     <div class="film">
 
       {% if film.image-offset != null %}
-      <div class="film-image" style="background-image: url({{ film.image }}); background-position-y: {{ film.image-offset }}%;"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: {{ film.image-offset }}%;"></div>
       {% else %}
-      <div class="film-image" style="background-image: url({{ film.image }})"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png')"></div>
       {% endif %}
 
       <div class="info">
@@ -45,9 +45,9 @@
     <div class="film">
 
       {% if film.image-offset != null %}
-      <div class="film-image" style="background-image: url({{ film.image }}); background-position-y: {{ film.image-offset }}%;"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: {{ film.image-offset }}%;"></div>
       {% else %}
-      <div class="film-image" style="background-image: url({{ film.image }})"></div>
+      <div class="film-image lazy"  data-original="{{ film.image }}" style="background-image: url('/images/transparent.png')"></div>
       {% endif %}
 
       <div class="info">
