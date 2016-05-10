@@ -251,10 +251,9 @@ body {
     .icon.search {
       display: inline-block;
       cursor: pointer;
-      top: 14px;
       width: 26px;
-      height: 26px;
-      padding: 3px;
+      height: 50px;
+      padding: 16px 5px;
 
       svg {
         width: 20px;
@@ -269,17 +268,17 @@ body {
     .drop-menu {
       display: inline-block;
       @include dropdown-menu(55px);
-      margin-left: 6px;
+      margin-left: 0;
 
       .label {
-        @include kavon(6px, 20px, 0, #555, white);
+        @include kavon(7px, 20px, 5px, #555, white);
         cursor: pointer;
         font-size: 13px;
         font-weight: 500;
         text-transform: uppercase;
         color: #555;
         line-height: 55px;
-        padding: 0 13px 0 4px;
+        padding: 0 19px 0 10px;
       }
 
       .menu {
@@ -290,6 +289,32 @@ body {
         padding-bottom: 100px;
         width: 260px;
 
+        .search {
+          display: none;
+
+          li {
+            padding-left: 38px;
+            margin-bottom: 20px;
+          }
+
+          .icon {
+            position: absolute;
+            top: 5px;
+            left: 14px;
+            width: 18px;
+            height: 18px;
+
+            svg {
+              width: 100%;
+              height: 100%;
+
+              path {
+                fill: #444;
+              }
+            }
+          }
+        }
+
         .category-name {
           font-weight: 500;
           color: lighten($feature-background, 22);
@@ -299,7 +324,7 @@ body {
           background: #eee;
           pointer-events: none;
 
-          &:first-child {
+          &.first {
             margin-top: -10px;
           }
         }
@@ -1808,17 +1833,28 @@ html {
 
     .inner-nav {
       .controls {
-        .search {
+        .search.category {
           display: none;
         }
       }
     }
   }
 
-  @media all and (max-width: 340px) {
+  @media all and (max-width: 370px) {
     .header {
       .logo {
-        width: 206px;
+        width: 200px;
+        margin-top: 4px;
+      }
+
+      .right-cont {
+        .icon.search {
+          display: none;
+        }
+
+        .drop-menu .menu .search {
+          display: block;
+        }
       }
     }
   }
