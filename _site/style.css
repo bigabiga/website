@@ -75,10 +75,9 @@ body {
     .header .right-cont .icon.search {
       display: inline-block;
       cursor: pointer;
-      top: 14px;
       width: 26px;
-      height: 26px;
-      padding: 3px; }
+      height: 50px;
+      padding: 16px 5px; }
       .header .right-cont .icon.search svg {
         width: 20px;
         height: 20px; }
@@ -87,7 +86,7 @@ body {
     .header .right-cont .drop-menu {
       display: inline-block;
       cursor: pointer;
-      margin-left: 6px; }
+      margin-left: 0; }
       .header .right-cont .drop-menu:hover .menu {
         opacity: 1;
         pointer-events: auto; }
@@ -120,23 +119,23 @@ body {
         text-transform: uppercase;
         color: #555;
         line-height: 55px;
-        padding: 0 13px 0 4px; }
+        padding: 0 19px 0 10px; }
         .header .right-cont .drop-menu .label:before {
           content: '';
           position: absolute;
           top: 22px;
-          right: 0;
-          width: 6px;
-          height: 6px;
+          right: 5px;
+          width: 7px;
+          height: 7px;
           background: #555;
           transform: rotate(45deg); }
         .header .right-cont .drop-menu .label:after {
           content: '';
           position: absolute;
           top: 20px;
-          right: 0;
-          width: 6px;
-          height: 6px;
+          right: 5px;
+          width: 7px;
+          height: 7px;
           background: white;
           transform: rotate(45deg); }
       .header .right-cont .drop-menu .menu {
@@ -146,6 +145,22 @@ body {
         overflow: scroll;
         padding-bottom: 100px;
         width: 260px; }
+        .header .right-cont .drop-menu .menu .search {
+          display: none; }
+          .header .right-cont .drop-menu .menu .search li {
+            padding-left: 38px;
+            margin-bottom: 20px; }
+          .header .right-cont .drop-menu .menu .search .icon {
+            position: absolute;
+            top: 5px;
+            left: 14px;
+            width: 18px;
+            height: 18px; }
+            .header .right-cont .drop-menu .menu .search .icon svg {
+              width: 100%;
+              height: 100%; }
+              .header .right-cont .drop-menu .menu .search .icon svg path {
+                fill: #444; }
         .header .right-cont .drop-menu .menu .category-name {
           font-weight: 500;
           color: #b5708a;
@@ -154,7 +169,7 @@ body {
           line-height: 37px;
           background: #eee;
           pointer-events: none; }
-          .header .right-cont .drop-menu .menu .category-name:first-child {
+          .header .right-cont .drop-menu .menu .category-name.first {
             margin-top: -10px; }
 
 .nav-bar {
@@ -1434,8 +1449,13 @@ body {
   html .footer .right-cont {
     padding-left: 20px;
     padding-right: 20px; }
-  html .inner-nav .controls .search {
+  html .inner-nav .controls .search.category {
     display: none; } }
-@media all and (max-width: 340px) {
+@media all and (max-width: 370px) {
   html .header .logo {
-    width: 206px; } }
+    width: 200px;
+    margin-top: 4px; }
+  html .header .right-cont .icon.search {
+    display: none; }
+  html .header .right-cont .drop-menu .menu .search {
+    display: block; } }
