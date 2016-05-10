@@ -73,7 +73,7 @@ body {
     top: 0;
     right: 0; }
     .header .right-cont .icon.search {
-      display: none;
+      display: inline-block;
       cursor: pointer;
       top: 14px;
       width: 26px;
@@ -170,6 +170,18 @@ body {
     right: 0; }
     .nav-bar .controls .search {
       display: inline-block; }
+      .nav-bar .controls .search div.search-input {
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 8px 0 33px;
+        color: #666;
+        font-size: 13px;
+        font-weight: 300;
+        background: none;
+        margin: 0;
+        text-transform: uppercase;
+        cursor: pointer; }
       .nav-bar .controls .search input.search-input {
         width: 90px;
         height: 40px;
@@ -519,7 +531,7 @@ body {
         height: 48px;
         font-size: 14px;
         background: transparent;
-        width: 148px;
+        width: 144px;
         padding: 4px 8px 4px 33px;
         color: #f0e2e8;
         transition: background-color 0.1s ease; }
@@ -537,6 +549,8 @@ body {
         .inner-nav .controls .search .search-input:-ms-input-placeholder {
           color: #d8b4c1;
           transition: color 0.1s ease; }
+        .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
+          width: 180px; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
           background: #84455c; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
@@ -561,6 +575,24 @@ body {
           height: 18px; }
           .inner-nav .controls .search .icon svg path {
             fill: #d8b4c1; }
+
+.inner-nav .controls.v2 {
+  left: 0;
+  right: 0; }
+  .inner-nav .controls.v2 .sort-by {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .inner-nav .controls.v2 .search {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: 190px; }
+    .inner-nav .controls.v2 .search .search-input {
+      width: 100%;
+      padding-left: 63px; }
+    .inner-nav .controls.v2 .search .icon {
+      left: 37px; }
 
 .left-content {
   width: 68%;
@@ -1227,7 +1259,7 @@ body {
 @media all and (max-width: 1100px) {
   html .film-cont .video-cover {
     height: 35vw;
-    min-height: 240px; }
+    min-height: 255px; }
   html .right-bar .thumbnail-cont {
     height: 17vw; } }
 @media all and (max-width: 1000px) {
@@ -1248,7 +1280,7 @@ body {
       display: block;
       width: 100%;
       height: 45vw;
-      min-height: 240px; }
+      min-height: 255px; }
     html .film-of-the-day .description {
       display: block;
       width: 100%;
@@ -1270,109 +1302,129 @@ body {
     html .left-content .film-cont .video-cover {
       height: 45vw; } }
 @media all and (max-width: 700px) {
-  html .film-of-the-day .description .title {
-    font-size: 35px;
-    line-height: 41px; }
-  html .film-of-the-day .description .banner-2 {
-    font-size: 20px; }
-  html .film-cont .info h2 {
-    font-size: 30px; }
-  html .header .logo {
-    max-width: 100%;
-    background-position: center left; }
-  html .header .info {
-    display: none; }
-  html .thumbnails .thumbnail {
-    width: 50%; }
-    html .thumbnails .thumbnail .film-image {
-      height: 30vw; }
-  html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
-    width: 145px; }
-  html .content {
-    padding-left: 18px;
-    padding-right: 18px; }
-  html .header {
-    padding-left: 18px;
-    padding-right: 18px; }
-  html .film-of-the-day .description .info {
-    padding-left: 18px;
-    padding-right: 18px; }
-  html .film-cont .info {
-    padding-left: 18px;
-    padding-right: 18px; }
-  html .panel {
-    padding-left: 18px;
-    padding-right: 18px; }
-  html .nav-bar {
-    padding-left: 12px;
-    padding-right: 12px; }
-  html .inner-nav {
-    padding-left: 18px;
-    padding-right: 18px; } }
+  html {
+    /*.header {
+      .logo {
+        max-width: 100%;
+        background-position: center left;
+      }
+
+      .info {
+        display: none;
+      }
+    }*/ }
+    html .film-of-the-day .description .title {
+      font-size: 35px;
+      line-height: 41px; }
+    html .film-of-the-day .description .banner-2 {
+      font-size: 20px; }
+    html .film-cont .info h2 {
+      font-size: 30px; }
+    html .header {
+      position: fixed;
+      z-index: 200;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      min-width: 316px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
+      html .header .info {
+        display: none; }
+      html .header .logo {
+        height: 55px; }
+      html .header .right-cont {
+        display: block; }
+    html .nav-bar {
+      margin-top: 55px;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none; }
+      html .nav-bar .drop-menus .drop-menu {
+        display: none; }
+        html .nav-bar .drop-menus .drop-menu.unified {
+          display: inline-block; }
+    html .thumbnails .thumbnail {
+      width: 50%; }
+      html .thumbnails .thumbnail .film-image {
+        height: 30vw; }
+    html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
+      width: 145px; }
+    html .content {
+      padding-left: 18px;
+      padding-right: 18px; }
+    html .header {
+      padding-left: 18px;
+      padding-right: 18px; }
+    html .film-of-the-day .description .info {
+      padding-left: 18px;
+      padding-right: 18px; }
+    html .film-cont .info {
+      padding-left: 18px;
+      padding-right: 18px; }
+    html .panel {
+      padding-left: 18px;
+      padding-right: 18px; }
+    html .nav-bar {
+      padding-left: 12px;
+      padding-right: 12px; }
+    html .inner-nav {
+      padding-left: 18px;
+      padding-right: 18px; } }
 @media all and (max-width: 540px) {
-  html .header {
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    min-width: 316px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
-    html .header .logo {
-      height: 55px; }
-    html .header .right-cont {
+  html {
+    /*.inner-nav {
+      height: 82px;
+
+      .top-content {
+        height: 100%;
+      }
+
+      .controls {
+        top: auto;
+        bottom: 0;
+        left: -6px;
+        white-space: nowrap;
+      }
+    }*/ }
+    html .recommended .thumbnail-cont {
+      width: 100%;
+      height: 42vw; }
+    html .home-categories .thumbnail-cont {
+      width: 50%;
+      height: 34vw; }
+    html .thumbnails .thumbnail {
+      width: 100%; }
+      html .thumbnails .thumbnail .film-image {
+        height: 55vw; }
+    html .film-of-the-day .description .title {
+      font-size: 30px;
+      line-height: 37px; }
+    html .film-of-the-day .description .banner-2 {
+      font-size: 18px; }
+    html .footer .content {
+      padding-top: 14px;
+      padding-bottom: 14px; }
+    html .footer .left-cont .links a {
       display: block; }
-  html .recommended .thumbnail-cont {
-    width: 100%;
-    height: 42vw; }
-  html .home-categories .thumbnail-cont {
-    width: 50%;
-    height: 34vw; }
-  html .nav-bar {
-    margin-top: 55px;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none; }
-    html .nav-bar .drop-menus .drop-menu {
+    html .footer .left-cont .info {
       display: none; }
-      html .nav-bar .drop-menus .drop-menu.unified {
-        display: inline-block; }
-  html .thumbnails .thumbnail {
-    width: 100%; }
-    html .thumbnails .thumbnail .film-image {
-      height: 60vw; }
-  html .film-of-the-day .description .title {
-    font-size: 30px;
-    line-height: 37px; }
-  html .film-of-the-day .description .banner-2 {
-    font-size: 18px; }
-  html .footer .content {
-    padding-top: 14px;
-    padding-bottom: 14px; }
-  html .footer .left-cont .links a {
-    display: block; }
-  html .footer .left-cont .info {
-    display: none; }
-  html .center-bar .thumbnail-cont {
-    width: 100%;
-    height: 46vw; }
-  html .film-cont .info h2 {
-    margin-right: 0; }
-  html .film-cont .info .share-icons {
-    top: auto;
-    bottom: 26px; }
-  html .inner-nav {
-    height: 82px; }
-    html .inner-nav .top-content {
-      height: 100%; }
-    html .inner-nav .controls {
+    html .center-bar .thumbnail-cont {
+      width: 100%;
+      height: 46vw; }
+    html .film-cont .info h2 {
+      margin-right: 0; }
+    html .film-cont .info .share-icons {
       top: auto;
-      bottom: 0;
-      left: -6px;
-      white-space: nowrap; } }
-@media all and (max-width: 400px) {
+      bottom: 26px; }
+    html .inner-nav .controls.v2 .search {
+      right: 90px; }
+    html .inner-nav .controls.v2 .sort-by .value, html .inner-nav .controls.v2 .sort-by .colon {
+      display: none; }
+    html .inner-nav .controls .sort-by .colon, html .inner-nav .controls .sort-by .value {
+      display: none; } }
+@media all and (max-width: 410px) {
   html .element-title {
     font-size: 24px; }
   html .film-of-the-day .share-icons {
@@ -1382,7 +1434,7 @@ body {
   html .footer .right-cont {
     padding-left: 20px;
     padding-right: 20px; }
-  html .inner-nav .controls .sort-by .value, html .inner-nav .controls .sort-by .colon {
+  html .inner-nav .controls .search {
     display: none; } }
 @media all and (max-width: 340px) {
   html .header .logo {

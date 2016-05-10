@@ -249,7 +249,7 @@ body {
     right: 0;
 
     .icon.search {
-      display: none;
+      display: inline-block;
       cursor: pointer;
       top: 14px;
       width: 26px;
@@ -325,6 +325,20 @@ body {
 
     .search {
       display: inline-block;
+
+      div.search-input {
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 8px 0 33px;
+        color: $content-color;
+        font-size: 13px;
+        font-weight: 300;
+        background: none;
+        margin: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
 
       input.search-input {
         width: 90px;
@@ -649,7 +663,7 @@ body {
         height: $inner-nav-height;
         font-size: 14px;
         background: transparent;
-        width: 148px;
+        width: 144px;
         padding: 4px 8px 4px 33px;
         color: lighten($content-color, 14);
         transition: background-color 0.1s ease;
@@ -678,6 +692,11 @@ body {
         &:-ms-input-placeholder {
           color: rgba($content-color, 1);
           transition: color 0.1s ease;
+        }
+
+        &:focus,
+        &.full {
+          width: 180px;
         }
 
         &:hover,
@@ -722,6 +741,33 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.inner-nav .controls.v2 {
+  left: 0;
+  right: 0;
+
+  .sort-by {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .search {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: 190px;
+
+    .search-input {
+      width: 100%;
+      padding-left: 63px;
+    }
+
+    .icon {
+      left: 37px;
     }
   }
 }
@@ -1410,7 +1456,7 @@ html {
     .film-cont {
       .video-cover {
         height: 35vw;
-        min-height: 240px;
+        min-height: 255px;
       }
     }
 
@@ -1454,7 +1500,7 @@ html {
         display: block;
         width: 100%;
         height: 45vw;
-        min-height: 240px;
+        min-height: 255px;
       }
 
       .description {
@@ -1516,7 +1562,7 @@ html {
       }
     }
 
-    .header {
+    /*.header {
       .logo {
         max-width: 100%;
         background-position: center left;
@@ -1525,6 +1571,47 @@ html {
       .info {
         display: none;
       }
+    }*/
+
+    .header {
+      position: fixed;
+      z-index: 200;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      min-width: 316px;
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+
+      .info {
+        display: none;
+      }
+
+      .logo {
+        height: 55px;
+      }
+
+      .right-cont {
+        display: block;
+      }
+    }
+
+    .nav-bar {
+      .drop-menus {
+        .drop-menu {
+          display: none;
+
+          &.unified {
+            display: inline-block;
+          }
+        }
+      }
+
+      margin-top: 55px;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
     }
 
     .thumbnails {
@@ -1581,25 +1668,6 @@ html {
   }
 
   @media all and (max-width: 540px) {
-    .header {
-      position: fixed;
-      z-index: 200;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 55px;
-      min-width: 316px;
-      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
-
-      .logo {
-        height: 55px;
-      }
-
-      .right-cont {
-        display: block;
-      }
-    }
-
     .recommended {
       .thumbnail-cont {
         width: 100%;
@@ -1614,30 +1682,12 @@ html {
       }
     }
 
-    .nav-bar {
-      .drop-menus {
-        .drop-menu {
-          display: none;
-
-          &.unified {
-            display: inline-block;
-          }
-        }
-      }
-
-      margin-top: 55px;
-      height: 0;
-      opacity: 0;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
     .thumbnails {
       .thumbnail {
         width: 100%;
 
         .film-image {
-          height: 60vw;
+          height: 55vw;
         }
       }
     }
@@ -1695,6 +1745,30 @@ html {
     }
 
     .inner-nav {
+      .controls.v2 {
+        .search {
+          right: 90px;
+        }
+
+        .sort-by {
+          .value, .colon {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .inner-nav {
+      .controls {
+        .sort-by {
+          .colon, .value {
+            display: none;
+          }
+        }
+      }
+    }
+
+    /*.inner-nav {
       height: 82px;
 
       .top-content {
@@ -1707,10 +1781,10 @@ html {
         left: -6px;
         white-space: nowrap;
       }
-    }
+    }*/
   }
 
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 410px) {
     .element-title {
       font-size: 24px;
     }
@@ -1734,10 +1808,8 @@ html {
 
     .inner-nav {
       .controls {
-        .sort-by {
-          .value, .colon {
-            display: none;
-          }
+        .search {
+          display: none;
         }
       }
     }
