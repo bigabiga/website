@@ -112,6 +112,10 @@ function updateState() {
 
     var $searchTitle = $('#search-title');
     $searchTitle.text(getParameterByName('search'));
+
+    $("div.lazy").lazyload({
+        effect : "fadeIn"
+    });
 }
 
 window.onhashchange = updateState;

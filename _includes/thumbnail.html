@@ -2,11 +2,11 @@
   <a href="{{ film.url }}">
 
     {% if film.image-offset != null %}
-    <div class="film-image" alt="{{ film.title}} ({{film.year}}), directed by {{ film.director }}" style="background-image: url({{ film.image }}); background-position-y: {{ film.image-offset }}%;">
+    <div class="film-image lazy" alt="{{ film.title}} ({{film.year}}), directed by {{ film.director }}" data-original="{{ film.image }}" style="background-image: url('/feature-images/The-General-1926.jpg'); background-position-y: {{ film.image-offset }}%;">
       <div class="play-mark"></div>
     </div>
     {% else %}
-    <div class="film-image" alt="{{ film.title}} ({{film.year}}), directed by {{ film.director }}" style="background-image: url({{ film.image }})">
+    <div class="film-image lazy" alt="{{ film.title}} ({{film.year}}), directed by {{ film.director }}" data-original="{{ film.image }}" style="background-image: url('/feature-images/The-General-1926.jpg')">
       <div class="play-mark"></div>
     </div>
     {% endif %}
