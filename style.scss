@@ -455,7 +455,7 @@ body {
 
     .label {
       cursor: pointer;
-      @include kavon(6px, 12px, 8px, $content-color, $nav-background);
+      //@include kavon(6px, 12px, 8px, $content-color, $nav-background);
       display: inline-block;
       height: 40px;
       padding: 13px 22px 0 8px;
@@ -468,9 +468,17 @@ body {
       &:hover {
         color: #444;
         background: #d0d0d0;
+      }
 
-        &:after {
-          background-color: #d0d0d0;
+      svg {
+        position: absolute;
+        top: 13px;
+        right: 5px;
+        width: 12px;
+        height: 12px;
+
+        path {
+          fill: $content-color;
         }
       }
     }
@@ -584,7 +592,7 @@ body {
       display: inline-block;
       cursor: pointer;
       @include dropdown-menu($inner-nav-height);
-      @include kavon(7px, 16px, 4px, $content-color, $background-color);
+      //@include kavon(7px, 16px, 4px, $content-color, $background-color);
       height: $inner-nav-height;
       font-size: 14px;
       line-height: $inner-nav-height;
@@ -594,6 +602,18 @@ body {
 
       .label-wrapper {
         padding: 0 20px 0 10px;
+
+        svg {
+          position: absolute;
+          top: 18px;
+          right: 3px;
+          width: 12px;
+          height: 12px;
+
+          path {
+            fill: $content-color;
+          }
+        }
       }
 
       .menu {
@@ -609,12 +629,25 @@ body {
 
       .remove-search {
         position: absolute;
-        top: 0;
-        right: 0;
-        line-height: $inner-nav-height;
-        padding: 0 18px 0 10px;
-        color: lighten($background-color, 34);
         cursor: pointer;
+        top: 4px;
+        right: 4px;
+        padding: 8px;
+
+        svg {
+          width: 22px;
+          height: 22px;
+
+          path, polygon {
+            fill: $content-color;
+          }
+        }
+
+        &:hover {
+          .svg path, polygon {
+            fill: white;
+          }
+        }
       }
 
       .search-input {
@@ -627,24 +660,24 @@ body {
         transition: background-color 0.1s ease, width 0.1s ease;
 
         &::-webkit-input-placeholder {
-          color: rgba($content-color, 1);
+          color: lighten($content-color, 0);
           transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           /* Firefox 18- */
-          color: rgba($content-color, 1);
+          color: lighten($content-color, 0);
           transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           /* Firefox 19+ */
-          color: rgba($content-color, 1);
+          color: lighten($content-color, 0);
           transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
-          color: rgba($content-color, 1);
+          color: lighten($content-color, 0);
           transition: color 0.1s ease;
         }
 
@@ -656,25 +689,25 @@ body {
         &:hover,
         &:focus,
         &.full {
-          background: lighten($background-color, 6);
+          background: lighten($background-color, 8);
 
           &::-webkit-input-placeholder {
-            color: darken($content-color, 10);
+            color: darken($content-color, 4);
             transition: color 0.1s ease;
           }
 
           &:-moz-placeholder {
-            color: darken($content-color, 10);
+            color: darken($content-color, 4);
             transition: color 0.1s ease;
           }
 
           &::-moz-placeholder {
-            color: darken($content-color, 10);
+            color: darken($content-color, 4);
             transition: color 0.1s ease;
           }
 
           &:-ms-input-placeholder {
-            color: darken($content-color, 10);
+            color: darken($content-color, 4);
             transition: color 0.1s ease;
           }
         }

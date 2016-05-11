@@ -311,31 +311,17 @@ body {
       text-transform: uppercase;
       color: #666;
       font-weight: 300; }
-      .nav-bar .drop-menus .drop-menu .label:before {
-        content: '';
-        position: absolute;
-        top: 14px;
-        right: 8px;
-        width: 6px;
-        height: 6px;
-        background: #666;
-        transform: rotate(45deg);
-        pointer-events: none; }
-      .nav-bar .drop-menus .drop-menu .label:after {
-        content: '';
-        position: absolute;
-        top: 12px;
-        right: 8px;
-        width: 6px;
-        height: 6px;
-        background: #e0e0e0;
-        transform: rotate(45deg);
-        pointer-events: none; }
       .nav-bar .drop-menus .drop-menu .label:hover {
         color: #444;
         background: #d0d0d0; }
-        .nav-bar .drop-menus .drop-menu .label:hover:after {
-          background-color: #d0d0d0; }
+      .nav-bar .drop-menus .drop-menu .label svg {
+        position: absolute;
+        top: 13px;
+        right: 5px;
+        width: 12px;
+        height: 12px; }
+        .nav-bar .drop-menus .drop-menu .label svg path {
+          fill: #666; }
 
 .thumbnails {
   margin-left: -5px;
@@ -501,28 +487,16 @@ body {
               fill: #aaa; }
           .inner-nav .controls .sort-by .menu .close:hover svg path, .inner-nav .controls .sort-by .menu .close:hover polygon {
             fill: #444; }
-      .inner-nav .controls .sort-by:before {
-        content: '';
-        position: absolute;
-        top: 18px;
-        right: 4px;
-        width: 7px;
-        height: 7px;
-        background: #d8b4c1;
-        transform: rotate(45deg);
-        pointer-events: none; }
-      .inner-nav .controls .sort-by:after {
-        content: '';
-        position: absolute;
-        top: 16px;
-        right: 4px;
-        width: 7px;
-        height: 7px;
-        background: #703b4e;
-        transform: rotate(45deg);
-        pointer-events: none; }
       .inner-nav .controls .sort-by .label-wrapper {
         padding: 0 20px 0 10px; }
+        .inner-nav .controls .sort-by .label-wrapper svg {
+          position: absolute;
+          top: 18px;
+          right: 3px;
+          width: 12px;
+          height: 12px; }
+          .inner-nav .controls .sort-by .label-wrapper svg path {
+            fill: #d8b4c1; }
       .inner-nav .controls .sort-by .menu {
         left: auto;
         right: 0; }
@@ -532,12 +506,17 @@ body {
       right: 0; }
       .inner-nav .controls .search .remove-search {
         position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 48px;
-        padding: 0 18px 0 10px;
-        color: #c692a5;
-        cursor: pointer; }
+        cursor: pointer;
+        top: 4px;
+        right: 4px;
+        padding: 8px; }
+        .inner-nav .controls .search .remove-search svg {
+          width: 22px;
+          height: 22px; }
+          .inner-nav .controls .search .remove-search svg path, .inner-nav .controls .search .remove-search svg polygon {
+            fill: #d8b4c1; }
+        .inner-nav .controls .search .remove-search:hover .svg path, .inner-nav .controls .search .remove-search:hover polygon {
+          fill: white; }
       .inner-nav .controls .search .search-input {
         height: 48px;
         font-size: 14px;
@@ -563,18 +542,18 @@ body {
         .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
           width: 200px; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
-          background: #84455c; }
+          background: #8b4861; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
-            color: #c692a5;
+            color: #d1a6b6;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-moz-placeholder, .inner-nav .controls .search .search-input:focus:-moz-placeholder, .inner-nav .controls .search .search-input.full:-moz-placeholder {
-            color: #c692a5;
+            color: #d1a6b6;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover::-moz-placeholder, .inner-nav .controls .search .search-input:focus::-moz-placeholder, .inner-nav .controls .search .search-input.full::-moz-placeholder {
-            color: #c692a5;
+            color: #d1a6b6;
             transition: color 0.1s ease; }
           .inner-nav .controls .search .search-input:hover:-ms-input-placeholder, .inner-nav .controls .search .search-input:focus:-ms-input-placeholder, .inner-nav .controls .search .search-input.full:-ms-input-placeholder {
-            color: #c692a5;
+            color: #d1a6b6;
             transition: color 0.1s ease; }
       .inner-nav .controls .search .icon {
         position: absolute;
