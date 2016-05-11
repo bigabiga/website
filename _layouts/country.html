@@ -42,6 +42,7 @@
 <div class="main thumbs">
     <div class="content">
         <div class="thumbnails">
+            {% include search-notes.html %}
             {% for film in site.films %}
             {% if film.country contains page.title %}
             {% include thumbnail.html %}

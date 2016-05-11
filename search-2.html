@@ -19,6 +19,7 @@
 <div class="main thumbs">
   <div class="content">
     <div class="thumbnails">
+      {% include search-notes.html %}
       {% for film in site.films %}
       {% include thumbnail.html %}
       {% endfor %}

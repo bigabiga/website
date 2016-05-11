@@ -44,10 +44,15 @@ function updateState() {
     var $categorySearch = $('#categorySearch');
     var $removeSearch = $('#removeSearch');
     var currentPath = window.location.pathname;
+    var anyResults = 0;
+    var $searchNoteNone = $('#search-note-none');
+    var $searchNoteBlank = $('#search-note-blank');
 
     var search = getParameterByName('search');
     $categorySearch.val(search);
     if (search) {
+        anyResults = 0;
+        $searchNoteBlank.hide();
         $categorySearch.addClass("full")
         $removeSearch.show();
         var query = search.toLowerCase();
@@ -61,10 +66,17 @@ function updateState() {
             var match = title.indexOf(query) !== -1 || director.indexOf(query) !== -1 || genre.indexOf(query) !== -1 || cast.indexOf(query) !== -1 || country.indexOf(query) !== -1;
             if (match) {
                 $this.show();
+                anyResults = 1;
             } else {
                 $this.hide();
             }
         });
+        if (anyResults === 0) {
+            $searchNoteNone.show();
+        }
+        else {
+            $searchNoteNone.hide();
+        }
     } else if (currentPath !== "/search-2/") {
         $categorySearch.removeClass("full");
         $removeSearch.hide();
@@ -78,6 +90,8 @@ function updateState() {
         $thumbnail.each(function() {
             var $this = $(this);
             $this.hide();
+            $searchNoteNone.hide();
+            $searchNoteBlank.show();
         });
     }
 

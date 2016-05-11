@@ -317,6 +317,14 @@ body {
   padding: 24px 0 0 0;
   font-size: 0;
   padding-bottom: 40px; }
+  .thumbnails .search-note {
+    display: none;
+    margin-top: 6px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    color: #aaa; }
   .thumbnails .thumbnail {
     display: inline-block;
     width: 25%;
