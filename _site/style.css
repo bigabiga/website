@@ -140,27 +140,15 @@ body {
         text-transform: uppercase;
         color: #555;
         line-height: 55px;
-        padding: 0 19px 0 10px; }
-        .header .right-cont .drop-menu .label:before {
-          content: '';
-          position: absolute;
-          top: 22px;
-          right: 5px;
-          width: 7px;
-          height: 7px;
-          background: #555;
-          transform: rotate(45deg);
-          pointer-events: none; }
-        .header .right-cont .drop-menu .label:after {
-          content: '';
+        padding: 0 21px 0 10px; }
+        .header .right-cont .drop-menu .label svg {
           position: absolute;
           top: 20px;
-          right: 5px;
-          width: 7px;
-          height: 7px;
-          background: white;
-          transform: rotate(45deg);
-          pointer-events: none; }
+          right: 3px;
+          width: 14px;
+          height: 14px; }
+          .header .right-cont .drop-menu .label svg path {
+            fill: #555; }
       .header .right-cont .drop-menu .menu {
         left: auto;
         right: -18px;
@@ -1369,6 +1357,56 @@ body {
     width: 100%; }
     html .thumbnails .thumbnail .film-image {
       height: 55vw; }
+  html .film-of-the-day .film,
+  html .film-cont .video-cover {
+    transition: opacity 0.1s ease; }
+    html .film-of-the-day .film .play-mark,
+    html .film-cont .video-cover .play-mark {
+      transition: opacity 0.1s ease;
+      position: absolute;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      margin-top: -27.6px;
+      margin-left: -27.6px;
+      width: 55.2px;
+      height: 55.2px;
+      background: #64A7A0;
+      border-radius: 80px;
+      z-index: 10; }
+      html .film-of-the-day .film .play-mark:after,
+      html .film-cont .video-cover .play-mark:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -12.88px;
+        margin-left: -8.05px;
+        border-top: 13.8px solid transparent;
+        border-bottom: 13.8px solid transparent;
+        border-left: 21.16px solid white; }
+    html .film-of-the-day .film:after,
+    html .film-cont .video-cover:after {
+      content: '';
+      position: absolute;
+      transition: opacity 0.1s ease;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white; }
+    html .film-of-the-day .film:hover:after,
+    html .film-cont .video-cover:hover:after {
+      opacity: 0.04; }
+    html .film-of-the-day .film:hover .play-mark,
+    html .film-cont .video-cover:hover .play-mark {
+      opacity: 0.8; }
+    html .film-of-the-day .film .play-mark,
+    html .film-cont .video-cover .play-mark {
+      opacity: 0.8; }
   html .film-of-the-day .description .title {
     font-size: 30px;
     line-height: 37px; }
