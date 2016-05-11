@@ -41,6 +41,7 @@ $title-font: 'Tenor Sans', sans-serif;
     height: $size;
     background: $color;
     transform: rotate(45deg);
+    pointer-events: none;
   }
 
   &:after {
@@ -52,29 +53,22 @@ $title-font: 'Tenor Sans', sans-serif;
     height: $size;
     background: $background;
     transform: rotate(45deg);
+    pointer-events: none;
   }
 }
 
 @mixin dropdown-menu($top: 39px) {
   cursor: pointer;
-
-  &:hover {
-    .menu {
-      opacity: 1;
-      pointer-events: auto;
-    }
-  }
-
   .menu {
     position: absolute;
     transition: opacity 0.1s ease;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    display: none;
     z-index: 1000;
     cursor: default;
     top: $top;
     left: 0;
-    min-width: 190px;
+    min-width: 220px;
     padding: 10px 0;
     background: white;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
@@ -90,6 +84,31 @@ $title-font: 'Tenor Sans', sans-serif;
 
       &:hover {
         background: lighten(#A7D2CE, 16);
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 34px;
+      height: 34px;
+      padding: 6px;
+      cursor: pointer;
+
+      svg {
+        width: 22px;
+        height: 22px;
+
+        path, polygon {
+          fill: #aaa;
+        }
+      }
+
+      &:hover {
+        svg path, polygon {
+          fill: #444;
+        }
       }
     }
   }
@@ -148,6 +167,15 @@ $title-font: 'Tenor Sans', sans-serif;
       opacity: 0.8;
     }
   }
+}
+
+@mixin user-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+
 }
 
 %film-overlay {
@@ -233,7 +261,6 @@ body {
     font-weight: 300;
     vertical-align: bottom;
     margin-bottom: 19px;
-    //font-family: $title-font;
     color: #999;
 
     a {
@@ -269,6 +296,7 @@ body {
       display: inline-block;
       @include dropdown-menu(55px);
       margin-left: 0;
+      @include user-select;
 
       .label {
         @include kavon(7px, 20px, 5px, #555, white);
@@ -283,11 +311,17 @@ body {
 
       .menu {
         left: auto;
-        right: -30px;
+        right: -18px;
         height: 100vh;
         overflow: scroll;
         padding-bottom: 100px;
-        width: 260px;
+        width: 280px;
+
+        .close {
+          top: 55px;
+          right: 10px;
+          position: fixed;
+        }
 
         .search {
           display: none;
@@ -338,7 +372,7 @@ body {
 
   background: $nav-background;
   color: $content-color;
-  padding: 0 ($padding - 6px);
+  padding: 0 ($padding - 8px);
   z-index: 100;
   height: 40px;
 
@@ -351,63 +385,47 @@ body {
     .search {
       display: inline-block;
 
-      div.search-input {
-        width: 90px;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 8px 0 33px;
-        color: $content-color;
-        font-size: 13px;
-        font-weight: 300;
-        background: none;
-        margin: 0;
-        text-transform: uppercase;
-        cursor: pointer;
-      }
-
       input.search-input {
-        width: 90px;
+        width: 92px;
         height: 40px;
-        padding: 0 8px 2px 33px;
+        padding: 0 8px 2px 32px;
         color: $content-color;
         font-size: 14px;
         font-weight: 300;
         background: none;
         margin: 0;
-        transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
-        transition-delay: 0.2s;
+        transition: width 0.1s ease;
 
         &::-webkit-input-placeholder {
           color: $content-color;
           font-size: 13px;
           text-transform: uppercase;
-          transition: color 0.1s ease;
         }
 
         &:-moz-placeholder {
           color: $content-color;
           font-size: 13px;
           text-transform: uppercase;
-          transition: color 0.1s ease;
         }
 
         &::-moz-placeholder {
           color: $content-color;
           font-size: 13px;
           text-transform: uppercase;
-          transition: color 0.1s ease;
         }
 
         &:-ms-input-placeholder {
           color: $content-color;
           font-size: 13px;
           text-transform: uppercase;
-          transition: color 0.1s ease;
         }
 
         &:hover,
         &:focus {
           background: #d0d0d0;
+        }
+
+        &:focus {
           width: 200px;
         }
       }
@@ -428,121 +446,31 @@ body {
         }
       }
     }
-
-    .static-search {
-      display: inline-block;
-
-      input.search-input {
-        background: #d0d0d0;
-        width: 200px;
-        height: 40px;
-        padding: 0 8px 2px 33px;
-        color: $content-color;
-        font-size: 14px;
-        font-weight: 300;
-        margin: 0;
-        transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
-        transition-delay: 0.2s;
-
-        &::-webkit-input-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease;
-        }
-
-        &:-moz-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease;
-        }
-
-        &::-moz-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease;
-        }
-
-        &:-ms-input-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease;
-        }
-      }
-
-      .icon {
-        position: absolute;
-        top: 10px;
-        left: 7px;
-        pointer-events: none;
-
-        svg {
-          width: 18px;
-          height: 18px;
-
-          path {
-            fill: $content-color;
-          }
-        }
-      }
-
-      .remove-search {
-        position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 40px;
-        padding: 0 18px 0 10px;
-        color: #999;
-        cursor: pointer;
-        z-index: 10;
-      }
-    }
   }
 
   .drop-menus .drop-menu {
     display: inline-block;
     @include dropdown-menu;
+    @include user-select;
 
     .label {
       cursor: pointer;
-      @include kavon(6px, 12px, 14px, $content-color, $nav-background);
+      @include kavon(6px, 12px, 8px, $content-color, $nav-background);
       display: inline-block;
-      padding: 13px 28px 15px 6px;
+      height: 40px;
+      padding: 13px 22px 0 8px;
+      margin-right: 6px;
       font-size: 13px;
       text-transform: uppercase;
       color: $content-color;
       font-weight: 300;
-      //font-family: tenor-sans, sans-serif;
-      //letter-spacing: -0.02em;
-    }
 
-    &.unified {
-      display: none;
+      &:hover {
+        color: #444;
+        background: #d0d0d0;
 
-      .menu {
-        left: 0;
-        width: 80vw;
-        margin-left: -20px;
-
-        li {
-          padding-left: 26px;
-        }
-      }
-
-      .category-name {
-        font-weight: 500;
-        color: lighten($feature-background, 22);
-        text-transform: uppercase;
-        margin-top: 10px;
-        line-height: 37px;
-        background: #f4f4f4;
-        pointer-events: none;
-
-        &:first-child {
-          margin-top: -10px;
+        &:after {
+          background-color: #d0d0d0;
         }
       }
     }
@@ -661,7 +589,12 @@ body {
       font-size: 14px;
       line-height: $inner-nav-height;
       color: $content-color;
-      padding: 0 20px 0  10px;
+      padding: 0;
+      @include user-select;
+
+      .label-wrapper {
+        padding: 0 20px 0 10px;
+      }
 
       .menu {
         left: auto;
@@ -680,7 +613,7 @@ body {
         right: 0;
         line-height: $inner-nav-height;
         padding: 0 18px 0 10px;
-        color: lighten($background-color, 30);
+        color: lighten($background-color, 34);
         cursor: pointer;
       }
 
@@ -691,11 +624,7 @@ body {
         width: 144px;
         padding: 4px 8px 4px 33px;
         color: lighten($content-color, 14);
-        transition: background-color 0.1s ease;
-
-        .icon svg path {
-
-        }
+        transition: background-color 0.1s ease, width 0.1s ease;
 
         &::-webkit-input-placeholder {
           color: rgba($content-color, 1);
@@ -721,7 +650,7 @@ body {
 
         &:focus,
         &.full {
-          width: 180px;
+          width: 200px;
         }
 
         &:hover,
@@ -1096,7 +1025,7 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 $padding 50px $padding;
+      padding: 0 $padding 46px $padding;
     }
 
     h3 {
@@ -1107,34 +1036,14 @@ body {
       span {
         margin-right: 6px;
       }
-
-      &.more-info {
-      }
-
-      .icon {
-        width: 19px;
-        height: 19px;
-        display: inline-block;
-        margin-top: -4px;
-
-        svg {
-          width: 100%;
-          height: 100%;
-
-          path {
-            //fill: darken($feature-background, 26);
-            fill: lighten($feature-background, 36);
-          }
-        }
-      }
     }
 
     .title {
       cursor: pointer;
       font-family: $title-font;
       text-transform: none;
-      font-size: 38px;
-      line-height: 45px;
+      font-size: 35px;
+      line-height: 40px;
       margin-bottom: 22px;
       color: lighten($feature-background, 60);
 
@@ -1147,7 +1056,7 @@ body {
       color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
-      max-height: 82px;
+      max-height: 103px;
       overflow: hidden;
     }
 
@@ -1296,7 +1205,7 @@ body {
 }
 
 .about-cont {
-  max-width: 680px;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
   background: white;
@@ -1305,11 +1214,12 @@ body {
   margin-bottom: 250px;
 
   h1 {
-    font-size: 32px;
+    font-size: 34px;
+    line-height: 46px;
     text-align: center;
-    color: darken($green-font, 20);
+    color: $feature-background;
     margin-bottom: 18px;
-    font-family: tenor-sans, sans-serif;
+    font-family: $title-font;
   }
 
   h3 {
@@ -1317,10 +1227,28 @@ body {
   }
 
   p, h3 {
-    font-size: 14px;
-    line-height: 23px;
-    color: darken($green-font, 20);
-    margin-bottom: 16px;
+    color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &.faint {
+      color: #999;
+    }
+
+    a {
+      color: $green-font;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    span.bold {
+      font-weight: $bold;
+    }
 
     &.extra {
       //font-style: italic;
@@ -1477,6 +1405,24 @@ body {
 
 html {
 
+  @media all and (max-width: 1362px) {
+    .film-of-the-day {
+      .description {
+
+        .title {
+          font-size: 32px;
+          line-height: 36px;
+        }
+
+        .info {
+          .synopsis {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
   @media all and (max-width: 1100px) {
     .film-cont {
       .video-cover {
@@ -1541,6 +1487,7 @@ html {
           .synopsis {
             max-width: none;
             max-height: none;
+            font-size: 14px;
           }
         }
       }
@@ -1570,11 +1517,6 @@ html {
   @media all and (max-width: 700px) {
     .film-of-the-day {
       .description {
-        .title {
-          font-size: 35px;
-          line-height: 41px;
-        }
-
         .banner-2 {
           font-size: 20px;
         }
@@ -1586,17 +1528,6 @@ html {
         font-size: 30px;
       }
     }
-
-    /*.header {
-      .logo {
-        max-width: 100%;
-        background-position: center left;
-      }
-
-      .info {
-        display: none;
-      }
-    }*/
 
     .header {
       position: fixed;
@@ -1637,6 +1568,18 @@ html {
       opacity: 0;
       overflow: hidden;
       pointer-events: none;
+    }
+
+    .inner-nav {
+
+      .controls {
+        .search.category .search-input {
+          &:focus,
+          &.full {
+            width: 144px;
+          }
+        }
+      }
     }
 
     .thumbnails {
@@ -1727,6 +1670,12 @@ html {
         .banner-2 {
           font-size: 18px;
         }
+
+        .info {
+          .synopsis, h3 {
+            font-size: 13px;
+          }
+        }
       }
     }
 
@@ -1784,6 +1733,9 @@ html {
     }
 
     .inner-nav {
+      .search.category {
+        display: none;
+      }
       .controls {
         .sort-by {
           .colon, .value {
@@ -1792,26 +1744,11 @@ html {
         }
       }
     }
-
-    /*.inner-nav {
-      height: 82px;
-
-      .top-content {
-        height: 100%;
-      }
-
-      .controls {
-        top: auto;
-        bottom: 0;
-        left: -6px;
-        white-space: nowrap;
-      }
-    }*/
   }
 
   @media all and (max-width: 410px) {
     .element-title {
-      font-size: 24px;
+      font-size: 25px;
     }
 
     .film-of-the-day {
@@ -1828,14 +1765,6 @@ html {
       .right-cont {
         padding-left: 20px;
         padding-right: 20px;
-      }
-    }
-
-    .inner-nav {
-      .controls {
-        .search.category {
-          display: none;
-        }
       }
     }
   }
@@ -1856,6 +1785,19 @@ html {
           display: block;
         }
       }
+    }
+
+    .film-of-the-day {
+      .description {
+        .title {
+          font-size: 28px;
+          line-height: 33px;
+        }
+      }
+    }
+
+    .element-title {
+      font-size: 23px;
     }
   }
 }

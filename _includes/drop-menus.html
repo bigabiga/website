@@ -1,115 +1,128 @@
 <div class="drop-menus">
-  <div class="drop-menu unified">
-    <div class="label">
-      Brows films by
-    </div>
-    <ul class="menu">
-      <li class="category-name">
-        Genres
-      </li>
-      {% for genre in site.genres %}
-      <a href="{{ genre.url }}#sort=Recommended"">
-      <li>
-        {{ genre.title }}
-      </li>
-      </a>
-      {% endfor %}
-      <li class="category-name">
-        Decades
-      </li>
-      {% for decade in site.decades %}
-      <a href="{{ genre.url }}#sort=Recommended"">
-      <li>
-        {{ decade.title }}
-      </li>
-      </a>
-      {% endfor %}
-      <li class="category-name">
-        Directors
-      </li>
-      {% for director in site.directors %}
-      <a href="{{ genre.url }}#sort=Recommended"">
-      <li>
-        {{ director.title }}
-      </li>
-      </a>
-      {% endfor %}
-      <li class="category-name">
-        Countries
-      </li>
-      {% for country in site.countries %}
-      <a href="{{ genre.url }}#sort=Recommended"">
-      <li>
-        {{ country.title }}
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-  </div>
 
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#genres-menu').hide(); $('#genres-menu').toggle();">
       Genres
     </div>
-    <ul class="menu">
-      {% for genre in site.genres %}
-      <a href="{{ genre.url }}#sort=Recommended"">
-      <li>
-        {{ genre.title }}
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
+    <div class="menu" id="genres-menu">
+      <ul class="menu-list">
+        {% for genre in site.genres %}
+        <a href="{{ genre.url }}#sort=Recommended"">
+        <li>
+          {{ genre.title }}
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+      <div class="close" onclick="$('#genres-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
+
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#decades-menu').hide(); $('#decades-menu').toggle();">
       Decades
     </div>
-
-    <ul class="menu">
-      {% for decade in site.decades %}
-      <a href="{{ decade.url }}#sort=Recommended"">
-      <li>
-        {{ decade.title }}
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-
+    <div class="menu" id="decades-menu">
+        <ul class="menu-list">
+        {% for decade in site.decades %}
+        <a href="{{ decade.url }}#sort=Recommended"">
+        <li>
+          {{ decade.title }}
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+      <div class="close" onclick="$('#decades-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
+
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#directors-menu').hide(); $('#directors-menu').toggle();">
       Directors
     </div>
-
-    <ul class="menu">
-      {% for director in site.directors %}
-      <a href="{{ director.url }}#sort=Recommended"">
-      <li>
-        {{ director.title }}
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-
+    <div class="menu" id="directors-menu">
+      <ul class="menu-list">
+        {% for director in site.directors %}
+        <a href="{{ director.url }}#sort=Recommended"">
+        <li>
+          {{ director.title }}
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+      <div class="close" onclick="$('#directors-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
 
 
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#countries-menu').hide(); $('#countries-menu').toggle();">
       countries
     </div>
-
-    <ul class="menu">
-      {% for country in site.countries %}
-      <a href="{{ country.url }}#sort=Recommended"">
-      <li>
-        {{ country.title }}
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-
+    <div class="menu" id="countries-menu">
+        <ul class="menu-list">
+        {% for country in site.countries %}
+        <a href="{{ country.url }}#sort=Recommended"">
+        <li>
+          {{ country.title }}
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+      <div class="close" onclick="$('#countries-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
 
 </div>

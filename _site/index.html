@@ -104,10 +104,11 @@
         </svg>
       </a>
       <div class="drop-menu unified">
-        <div class="label">
+        <div class="label" onclick="$('.menu').not('#unified-menu').hide(); $('#unified-menu').toggle();">
           Menu
         </div>
-        <ul class="menu">
+        <div class="menu" id="unified-menu">
+          <ul class="menu-list">
           <a class="search" href="/search-2#sort=Recommended">
           <li>
             <div class="icon">
@@ -300,6 +301,21 @@
           </a>
           
         </ul>
+          <div class="close" onclick="$('#unified-menu').hide();">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+              <title>x</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="x" fill="#000000">
+                  <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -307,381 +323,262 @@
   <div class="nav-bar">
   <div class="top-content">
     <div class="drop-menus">
-  <div class="drop-menu unified">
-    <div class="label">
-      Brows films by
-    </div>
-    <ul class="menu">
-      <li class="category-name">
-        Genres
-      </li>
-      
-      <a href="/genres/Drama/#sort=Recommended"">
-      <li>
-        Drama
-      </li>
-      </a>
-      
-      <a href="/genres/comedy/#sort=Recommended"">
-      <li>
-        Comedy
-      </li>
-      </a>
-      
-      <a href="/genres/crime/#sort=Recommended"">
-      <li>
-        Crime
-      </li>
-      </a>
-      
-      <a href="/genres/early%20cinema/#sort=Recommended"">
-      <li>
-        Early Cinema
-      </li>
-      </a>
-      
-      <a href="/genres/film-noir/#sort=Recommended"">
-      <li>
-        Film Noir
-      </li>
-      </a>
-      
-      <a href="/genres/horror/#sort=Recommended"">
-      <li>
-        Horror
-      </li>
-      </a>
-      
-      <a href="/genres/mystery/#sort=Recommended"">
-      <li>
-        Mystery
-      </li>
-      </a>
-      
-      <a href="/genres/romance/#sort=Recommended"">
-      <li>
-        Romance
-      </li>
-      </a>
-      
-      <a href="/genres/sci-fi/#sort=Recommended"">
-      <li>
-        Sci-Fi
-      </li>
-      </a>
-      
-      <a href="/genres/silent/#sort=Recommended"">
-      <li>
-        Silent
-      </li>
-      </a>
-      
-      <a href="/genres/war/#sort=Recommended"">
-      <li>
-        War
-      </li>
-      </a>
-      
-      <a href="/genres/zB-movies/#sort=Recommended"">
-      <li>
-        B-movie
-      </li>
-      </a>
-      
-      <li class="category-name">
-        Decades
-      </li>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1890s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1900s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1910s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1920s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1930s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1940s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1950s
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        1960s
-      </li>
-      </a>
-      
-      <li class="category-name">
-        Directors
-      </li>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        Alfred Hitchcock
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        Charlie Chaplin
-      </li>
-      </a>
-      
-      <li class="category-name">
-        Countries
-      </li>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        France
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        Germany
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        UK
-      </li>
-      </a>
-      
-      <a href="#sort=Recommended"">
-      <li>
-        USA
-      </li>
-      </a>
-      
-    </ul>
-  </div>
 
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#genres-menu').hide(); $('#genres-menu').toggle();">
       Genres
     </div>
-    <ul class="menu">
-      
-      <a href="/genres/Drama/#sort=Recommended"">
-      <li>
-        Drama
-      </li>
-      </a>
-      
-      <a href="/genres/comedy/#sort=Recommended"">
-      <li>
-        Comedy
-      </li>
-      </a>
-      
-      <a href="/genres/crime/#sort=Recommended"">
-      <li>
-        Crime
-      </li>
-      </a>
-      
-      <a href="/genres/early%20cinema/#sort=Recommended"">
-      <li>
-        Early Cinema
-      </li>
-      </a>
-      
-      <a href="/genres/film-noir/#sort=Recommended"">
-      <li>
-        Film Noir
-      </li>
-      </a>
-      
-      <a href="/genres/horror/#sort=Recommended"">
-      <li>
-        Horror
-      </li>
-      </a>
-      
-      <a href="/genres/mystery/#sort=Recommended"">
-      <li>
-        Mystery
-      </li>
-      </a>
-      
-      <a href="/genres/romance/#sort=Recommended"">
-      <li>
-        Romance
-      </li>
-      </a>
-      
-      <a href="/genres/sci-fi/#sort=Recommended"">
-      <li>
-        Sci-Fi
-      </li>
-      </a>
-      
-      <a href="/genres/silent/#sort=Recommended"">
-      <li>
-        Silent
-      </li>
-      </a>
-      
-      <a href="/genres/war/#sort=Recommended"">
-      <li>
-        War
-      </li>
-      </a>
-      
-      <a href="/genres/zB-movies/#sort=Recommended"">
-      <li>
-        B-movie
-      </li>
-      </a>
-      
-    </ul>
+    <div class="menu" id="genres-menu">
+      <ul class="menu-list">
+        
+        <a href="/genres/Drama/#sort=Recommended"">
+        <li>
+          Drama
+        </li>
+        </a>
+        
+        <a href="/genres/comedy/#sort=Recommended"">
+        <li>
+          Comedy
+        </li>
+        </a>
+        
+        <a href="/genres/crime/#sort=Recommended"">
+        <li>
+          Crime
+        </li>
+        </a>
+        
+        <a href="/genres/early%20cinema/#sort=Recommended"">
+        <li>
+          Early Cinema
+        </li>
+        </a>
+        
+        <a href="/genres/film-noir/#sort=Recommended"">
+        <li>
+          Film Noir
+        </li>
+        </a>
+        
+        <a href="/genres/horror/#sort=Recommended"">
+        <li>
+          Horror
+        </li>
+        </a>
+        
+        <a href="/genres/mystery/#sort=Recommended"">
+        <li>
+          Mystery
+        </li>
+        </a>
+        
+        <a href="/genres/romance/#sort=Recommended"">
+        <li>
+          Romance
+        </li>
+        </a>
+        
+        <a href="/genres/sci-fi/#sort=Recommended"">
+        <li>
+          Sci-Fi
+        </li>
+        </a>
+        
+        <a href="/genres/silent/#sort=Recommended"">
+        <li>
+          Silent
+        </li>
+        </a>
+        
+        <a href="/genres/war/#sort=Recommended"">
+        <li>
+          War
+        </li>
+        </a>
+        
+        <a href="/genres/zB-movies/#sort=Recommended"">
+        <li>
+          B-movie
+        </li>
+        </a>
+        
+      </ul>
+      <div class="close" onclick="$('#genres-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
+
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#decades-menu').hide(); $('#decades-menu').toggle();">
       Decades
     </div>
-
-    <ul class="menu">
-      
-      <a href="/decades/1890s/#sort=Recommended"">
-      <li>
-        1890s
-      </li>
-      </a>
-      
-      <a href="/decades/1900s/#sort=Recommended"">
-      <li>
-        1900s
-      </li>
-      </a>
-      
-      <a href="/decades/1910s/#sort=Recommended"">
-      <li>
-        1910s
-      </li>
-      </a>
-      
-      <a href="/decades/1920s/#sort=Recommended"">
-      <li>
-        1920s
-      </li>
-      </a>
-      
-      <a href="/decades/1930s/#sort=Recommended"">
-      <li>
-        1930s
-      </li>
-      </a>
-      
-      <a href="/decades/1940s/#sort=Recommended"">
-      <li>
-        1940s
-      </li>
-      </a>
-      
-      <a href="/decades/1950s/#sort=Recommended"">
-      <li>
-        1950s
-      </li>
-      </a>
-      
-      <a href="/decades/1960s/#sort=Recommended"">
-      <li>
-        1960s
-      </li>
-      </a>
-      
-    </ul>
-
+    <div class="menu" id="decades-menu">
+        <ul class="menu-list">
+        
+        <a href="/decades/1890s/#sort=Recommended"">
+        <li>
+          1890s
+        </li>
+        </a>
+        
+        <a href="/decades/1900s/#sort=Recommended"">
+        <li>
+          1900s
+        </li>
+        </a>
+        
+        <a href="/decades/1910s/#sort=Recommended"">
+        <li>
+          1910s
+        </li>
+        </a>
+        
+        <a href="/decades/1920s/#sort=Recommended"">
+        <li>
+          1920s
+        </li>
+        </a>
+        
+        <a href="/decades/1930s/#sort=Recommended"">
+        <li>
+          1930s
+        </li>
+        </a>
+        
+        <a href="/decades/1940s/#sort=Recommended"">
+        <li>
+          1940s
+        </li>
+        </a>
+        
+        <a href="/decades/1950s/#sort=Recommended"">
+        <li>
+          1950s
+        </li>
+        </a>
+        
+        <a href="/decades/1960s/#sort=Recommended"">
+        <li>
+          1960s
+        </li>
+        </a>
+        
+      </ul>
+      <div class="close" onclick="$('#decades-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
+
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#directors-menu').hide(); $('#directors-menu').toggle();">
       Directors
     </div>
-
-    <ul class="menu">
-      
-      <a href="/directors/Alfred-Hitchcock/#sort=Recommended"">
-      <li>
-        Alfred Hitchcock
-      </li>
-      </a>
-      
-      <a href="/directors/Charlie-Chaplin/#sort=Recommended"">
-      <li>
-        Charlie Chaplin
-      </li>
-      </a>
-      
-    </ul>
-
+    <div class="menu" id="directors-menu">
+      <ul class="menu-list">
+        
+        <a href="/directors/Alfred-Hitchcock/#sort=Recommended"">
+        <li>
+          Alfred Hitchcock
+        </li>
+        </a>
+        
+        <a href="/directors/Charlie-Chaplin/#sort=Recommended"">
+        <li>
+          Charlie Chaplin
+        </li>
+        </a>
+        
+      </ul>
+      <div class="close" onclick="$('#directors-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
 
 
   <div class="drop-menu">
-    <div class="label">
+    <div class="label" onclick="$('.menu').not('#countries-menu').hide(); $('#countries-menu').toggle();">
       countries
     </div>
-
-    <ul class="menu">
-      
-      <a href="/countries/France/#sort=Recommended"">
-      <li>
-        France
-      </li>
-      </a>
-      
-      <a href="/countries/Germany/#sort=Recommended"">
-      <li>
-        Germany
-      </li>
-      </a>
-      
-      <a href="/countries/UK/#sort=Recommended"">
-      <li>
-        UK
-      </li>
-      </a>
-      
-      <a href="/countries/USA/#sort=Recommended"">
-      <li>
-        USA
-      </li>
-      </a>
-      
-    </ul>
-
+    <div class="menu" id="countries-menu">
+        <ul class="menu-list">
+        
+        <a href="/countries/France/#sort=Recommended"">
+        <li>
+          France
+        </li>
+        </a>
+        
+        <a href="/countries/Germany/#sort=Recommended"">
+        <li>
+          Germany
+        </li>
+        </a>
+        
+        <a href="/countries/UK/#sort=Recommended"">
+        <li>
+          UK
+        </li>
+        </a>
+        
+        <a href="/countries/USA/#sort=Recommended"">
+        <li>
+          USA
+        </li>
+        </a>
+        
+      </ul>
+      <div class="close" onclick="$('#countries-menu').hide();">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+          <title>x</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="x" fill="#000000">
+              <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -713,22 +610,22 @@
   <div class="main">
     <div class="top-content">
       <div class="film-of-the-day">
-        <a href="/films/Watch-The-Big-Combo-1955"><div class="film">
-          <div class="film-image" style="background-image: url(/feature-images/The-Big-Combo-1955.jpg)"></div>
+        <a href="/films/m-1931/"><div class="film">
+          <div class="film-image" style="background-image: url(/feature-images/M-1931.jpg)"></div>
           <div class="play-mark"></div>
         </div></a>
         <div class="description">
           <div class="info">
             <div class="banner-2">Today's Spotlight</div>
-            <a href="/films/Watch-The-Big-Combo-1955">
-              <div class="title">The Big Combo <span class="year">1955</span></div>
+            <a href="/films/m-1931/">
+              <div class="title">M <span class="year">1931</span></div>
             </a>
             <h3 class="more-info">
-              USA | Joseph H. Lewis |
+              Germany | Fritz Lang |
               
               
               
-              Film Noir
+              Mystery
               
               
               
@@ -746,7 +643,7 @@
               
               
             </h3>
-            <div class="synopsis"> Filmed by Legendary cinematographer John Alton, This film-noir detective is considered to be one of the most innovative, stylish movies of the genre. Police Lt. Diamond is ordered to close his investigation of deadly mob boss Mr. Brown because he hasn't been able to collect any evidence against him. He makes one last effort to reveal Brown's crimes by going to Brown's girlfriend. </div>
+            <div class="synopsis"> A psychotic child murderer stalks a city, and despite an exhaustive investigation fueled by public hysteria and outcry, the police have been unable to find him. But the police crackdown does have one side-affect, it makes it nearly impossible for the organized criminal underground to operate. So they decide that the only way to get the police off their backs is to catch the murderer themselves. </div>
           </div>
 
           <div class="share-icons">
@@ -783,7 +680,7 @@
     </svg>
   </div>
   </a>
-  <a href="#" onClick="MyWindow=window.open('https://pinterest.com/pin/create/button/?url=https%3A//www.lafilmotheque.com/&media=https%3A//www.lafilmotheque.com/feature-images/The-Big-Combo-1955.jpg&description=','MyWindow','width=600,height=300'); return false;">
+  <a href="#" onClick="MyWindow=window.open('https://pinterest.com/pin/create/button/?url=https%3A//www.lafilmotheque.com/&media=https%3A//www.lafilmotheque.com/feature-images/M-1931.jpg&description=','MyWindow','width=600,height=300'); return false;">
   <div class="icon pinterest">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -839,7 +736,7 @@
     </svg>
   </div>
   </a>
-  <a href="#" onClick="MyWindow=window.open('https://pinterest.com/pin/create/button/?url=https%3A//www.lafilmotheque.com/&media=https%3A//www.lafilmotheque.com/feature-images/The-Big-Combo-1955.jpg&description=','MyWindow','width=600,height=300'); return false;">
+  <a href="#" onClick="MyWindow=window.open('https://pinterest.com/pin/create/button/?url=https%3A//www.lafilmotheque.com/&media=https%3A//www.lafilmotheque.com/feature-images/M-1931.jpg&description=','MyWindow','width=600,height=300'); return false;">
   <div class="icon pinterest">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -882,6 +779,453 @@
       
     
       
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="thumbnail-cont" href="/films/Watch-The-Big-Combo-1955">
+            <div class="film">
+
+              
+              <div class="film-image lazy" data-original="/feature-images/The-Big-Combo-1955.jpg" style="background-image: url('/images/transparent.png')"></div>
+              
+
+              <div class="info">
+                <h3 class="title"> The Big Combo (1955) </h3>
+                <h4 class="description"> Joseph H. Lewis, USA </h4>
+              </div>
+              <div class="play-mark"></div>
+            </div>
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
       
@@ -3135,453 +3479,6 @@
       
     
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="thumbnail-cont" href="/films/his-girl-friday-1940/">
-            <div class="film">
-
-              
-              <div class="film-image lazy" data-original="/feature-images/His-Girl-Friday-1940.jpg" style="background-image: url('/images/transparent.png'); background-position-y: 20%;"></div>
-              
-
-              <div class="info">
-                <h3 class="title"> His Girl Friday (1940) </h3>
-                <h4 class="description"> Howard Hawks, USA </h4>
-              </div>
-              <div class="play-mark"></div>
-            </div>
-          </a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
       
     
       

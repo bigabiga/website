@@ -86,20 +86,26 @@ body {
     .header .right-cont .drop-menu {
       display: inline-block;
       cursor: pointer;
-      margin-left: 0; }
-      .header .right-cont .drop-menu:hover .menu {
-        opacity: 1;
-        pointer-events: auto; }
+      margin-left: 0;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Chrome/Safari/Opera */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none; }
       .header .right-cont .drop-menu .menu {
         position: absolute;
         transition: opacity 0.1s ease;
-        opacity: 0;
-        pointer-events: none;
+        opacity: 1;
+        display: none;
         z-index: 1000;
         cursor: default;
         top: 55px;
         left: 0;
-        min-width: 190px;
+        min-width: 220px;
         padding: 10px 0;
         background: white;
         box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
@@ -112,6 +118,21 @@ body {
           padding: 0 20px; }
           .header .right-cont .drop-menu .menu li:hover {
             background: #ddeeec; }
+        .header .right-cont .drop-menu .menu .close {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          width: 34px;
+          height: 34px;
+          padding: 6px;
+          cursor: pointer; }
+          .header .right-cont .drop-menu .menu .close svg {
+            width: 22px;
+            height: 22px; }
+            .header .right-cont .drop-menu .menu .close svg path, .header .right-cont .drop-menu .menu .close svg polygon {
+              fill: #aaa; }
+          .header .right-cont .drop-menu .menu .close:hover svg path, .header .right-cont .drop-menu .menu .close:hover polygon {
+            fill: #444; }
       .header .right-cont .drop-menu .label {
         cursor: pointer;
         font-size: 13px;
@@ -128,7 +149,8 @@ body {
           width: 7px;
           height: 7px;
           background: #555;
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+          pointer-events: none; }
         .header .right-cont .drop-menu .label:after {
           content: '';
           position: absolute;
@@ -137,14 +159,19 @@ body {
           width: 7px;
           height: 7px;
           background: white;
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+          pointer-events: none; }
       .header .right-cont .drop-menu .menu {
         left: auto;
-        right: -30px;
+        right: -18px;
         height: 100vh;
         overflow: scroll;
         padding-bottom: 100px;
-        width: 260px; }
+        width: 280px; }
+        .header .right-cont .drop-menu .menu .close {
+          top: 55px;
+          right: 10px;
+          position: fixed; }
         .header .right-cont .drop-menu .menu .search {
           display: none; }
           .header .right-cont .drop-menu .menu .search li {
@@ -175,7 +202,7 @@ body {
 .nav-bar {
   background: #e0e0e0;
   color: #666;
-  padding: 0 24px;
+  padding: 0 22px;
   z-index: 100;
   height: 40px; }
   .nav-bar .controls {
@@ -185,51 +212,35 @@ body {
     right: 0; }
     .nav-bar .controls .search {
       display: inline-block; }
-      .nav-bar .controls .search div.search-input {
-        width: 90px;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 8px 0 33px;
-        color: #666;
-        font-size: 13px;
-        font-weight: 300;
-        background: none;
-        margin: 0;
-        text-transform: uppercase;
-        cursor: pointer; }
       .nav-bar .controls .search input.search-input {
-        width: 90px;
+        width: 92px;
         height: 40px;
-        padding: 0 8px 2px 33px;
+        padding: 0 8px 2px 32px;
         color: #666;
         font-size: 14px;
         font-weight: 300;
         background: none;
         margin: 0;
-        transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
-        transition-delay: 0.2s; }
+        transition: width 0.1s ease; }
         .nav-bar .controls .search input.search-input::-webkit-input-placeholder {
           color: #666;
           font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
+          text-transform: uppercase; }
         .nav-bar .controls .search input.search-input:-moz-placeholder {
           color: #666;
           font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
+          text-transform: uppercase; }
         .nav-bar .controls .search input.search-input::-moz-placeholder {
           color: #666;
           font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
+          text-transform: uppercase; }
         .nav-bar .controls .search input.search-input:-ms-input-placeholder {
           color: #666;
           font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
+          text-transform: uppercase; }
         .nav-bar .controls .search input.search-input:hover, .nav-bar .controls .search input.search-input:focus {
-          background: #d0d0d0;
+          background: #d0d0d0; }
+        .nav-bar .controls .search input.search-input:focus {
           width: 200px; }
       .nav-bar .controls .search .icon {
         position: absolute;
@@ -241,74 +252,28 @@ body {
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
             fill: #666; }
-    .nav-bar .controls .static-search {
-      display: inline-block; }
-      .nav-bar .controls .static-search input.search-input {
-        background: #d0d0d0;
-        width: 200px;
-        height: 40px;
-        padding: 0 8px 2px 33px;
-        color: #666;
-        font-size: 14px;
-        font-weight: 300;
-        margin: 0;
-        transition: width 0.1s ease, background 0.1s ease, padding 0.1s ease;
-        transition-delay: 0.2s; }
-        .nav-bar .controls .static-search input.search-input::-webkit-input-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
-        .nav-bar .controls .static-search input.search-input:-moz-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
-        .nav-bar .controls .static-search input.search-input::-moz-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
-        .nav-bar .controls .static-search input.search-input:-ms-input-placeholder {
-          color: #888;
-          font-size: 13px;
-          text-transform: uppercase;
-          transition: color 0.1s ease; }
-      .nav-bar .controls .static-search .icon {
-        position: absolute;
-        top: 10px;
-        left: 7px;
-        pointer-events: none; }
-        .nav-bar .controls .static-search .icon svg {
-          width: 18px;
-          height: 18px; }
-          .nav-bar .controls .static-search .icon svg path {
-            fill: #666; }
-      .nav-bar .controls .static-search .remove-search {
-        position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 40px;
-        padding: 0 18px 0 10px;
-        color: #999;
-        cursor: pointer;
-        z-index: 10; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
-    cursor: pointer; }
-    .nav-bar .drop-menus .drop-menu:hover .menu {
-      opacity: 1;
-      pointer-events: auto; }
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
     .nav-bar .drop-menus .drop-menu .menu {
       position: absolute;
       transition: opacity 0.1s ease;
-      opacity: 0;
-      pointer-events: none;
+      opacity: 1;
+      display: none;
       z-index: 1000;
       cursor: default;
       top: 39px;
       left: 0;
-      min-width: 190px;
+      min-width: 220px;
       padding: 10px 0;
       background: white;
       box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
@@ -321,10 +286,27 @@ body {
         padding: 0 20px; }
         .nav-bar .drop-menus .drop-menu .menu li:hover {
           background: #ddeeec; }
+      .nav-bar .drop-menus .drop-menu .menu .close {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 34px;
+        height: 34px;
+        padding: 6px;
+        cursor: pointer; }
+        .nav-bar .drop-menus .drop-menu .menu .close svg {
+          width: 22px;
+          height: 22px; }
+          .nav-bar .drop-menus .drop-menu .menu .close svg path, .nav-bar .drop-menus .drop-menu .menu .close svg polygon {
+            fill: #aaa; }
+        .nav-bar .drop-menus .drop-menu .menu .close:hover svg path, .nav-bar .drop-menus .drop-menu .menu .close:hover polygon {
+          fill: #444; }
     .nav-bar .drop-menus .drop-menu .label {
       cursor: pointer;
       display: inline-block;
-      padding: 13px 28px 15px 6px;
+      height: 40px;
+      padding: 13px 22px 0 8px;
+      margin-right: 6px;
       font-size: 13px;
       text-transform: uppercase;
       color: #666;
@@ -333,38 +315,27 @@ body {
         content: '';
         position: absolute;
         top: 14px;
-        right: 14px;
+        right: 8px;
         width: 6px;
         height: 6px;
         background: #666;
-        transform: rotate(45deg); }
+        transform: rotate(45deg);
+        pointer-events: none; }
       .nav-bar .drop-menus .drop-menu .label:after {
         content: '';
         position: absolute;
         top: 12px;
-        right: 14px;
+        right: 8px;
         width: 6px;
         height: 6px;
         background: #e0e0e0;
-        transform: rotate(45deg); }
-    .nav-bar .drop-menus .drop-menu.unified {
-      display: none; }
-      .nav-bar .drop-menus .drop-menu.unified .menu {
-        left: 0;
-        width: 80vw;
-        margin-left: -20px; }
-        .nav-bar .drop-menus .drop-menu.unified .menu li {
-          padding-left: 26px; }
-      .nav-bar .drop-menus .drop-menu.unified .category-name {
-        font-weight: 500;
-        color: #b5708a;
-        text-transform: uppercase;
-        margin-top: 10px;
-        line-height: 37px;
-        background: #f4f4f4;
+        transform: rotate(45deg);
         pointer-events: none; }
-        .nav-bar .drop-menus .drop-menu.unified .category-name:first-child {
-          margin-top: -10px; }
+      .nav-bar .drop-menus .drop-menu .label:hover {
+        color: #444;
+        background: #d0d0d0; }
+        .nav-bar .drop-menus .drop-menu .label:hover:after {
+          background-color: #d0d0d0; }
 
 .thumbnails {
   margin-left: -5px;
@@ -483,20 +454,26 @@ body {
       font-size: 14px;
       line-height: 48px;
       color: #d8b4c1;
-      padding: 0 20px 0  10px; }
-      .inner-nav .controls .sort-by:hover .menu {
-        opacity: 1;
-        pointer-events: auto; }
+      padding: 0;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Chrome/Safari/Opera */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none; }
       .inner-nav .controls .sort-by .menu {
         position: absolute;
         transition: opacity 0.1s ease;
-        opacity: 0;
-        pointer-events: none;
+        opacity: 1;
+        display: none;
         z-index: 1000;
         cursor: default;
         top: 48px;
         left: 0;
-        min-width: 190px;
+        min-width: 220px;
         padding: 10px 0;
         background: white;
         box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
@@ -509,6 +486,21 @@ body {
           padding: 0 20px; }
           .inner-nav .controls .sort-by .menu li:hover {
             background: #ddeeec; }
+        .inner-nav .controls .sort-by .menu .close {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          width: 34px;
+          height: 34px;
+          padding: 6px;
+          cursor: pointer; }
+          .inner-nav .controls .sort-by .menu .close svg {
+            width: 22px;
+            height: 22px; }
+            .inner-nav .controls .sort-by .menu .close svg path, .inner-nav .controls .sort-by .menu .close svg polygon {
+              fill: #aaa; }
+          .inner-nav .controls .sort-by .menu .close:hover svg path, .inner-nav .controls .sort-by .menu .close:hover polygon {
+            fill: #444; }
       .inner-nav .controls .sort-by:before {
         content: '';
         position: absolute;
@@ -517,7 +509,8 @@ body {
         width: 7px;
         height: 7px;
         background: #d8b4c1;
-        transform: rotate(45deg); }
+        transform: rotate(45deg);
+        pointer-events: none; }
       .inner-nav .controls .sort-by:after {
         content: '';
         position: absolute;
@@ -526,7 +519,10 @@ body {
         width: 7px;
         height: 7px;
         background: #703b4e;
-        transform: rotate(45deg); }
+        transform: rotate(45deg);
+        pointer-events: none; }
+      .inner-nav .controls .sort-by .label-wrapper {
+        padding: 0 20px 0 10px; }
       .inner-nav .controls .sort-by .menu {
         left: auto;
         right: 0; }
@@ -540,7 +536,7 @@ body {
         right: 0;
         line-height: 48px;
         padding: 0 18px 0 10px;
-        color: #bf859a;
+        color: #c692a5;
         cursor: pointer; }
       .inner-nav .controls .search .search-input {
         height: 48px;
@@ -549,7 +545,7 @@ body {
         width: 144px;
         padding: 4px 8px 4px 33px;
         color: #f0e2e8;
-        transition: background-color 0.1s ease; }
+        transition: background-color 0.1s ease, width 0.1s ease; }
         .inner-nav .controls .search .search-input::-webkit-input-placeholder {
           color: #d8b4c1;
           transition: color 0.1s ease; }
@@ -565,7 +561,7 @@ body {
           color: #d8b4c1;
           transition: color 0.1s ease; }
         .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
-          width: 180px; }
+          width: 200px; }
         .inner-nav .controls .search .search-input:hover, .inner-nav .controls .search .search-input:focus, .inner-nav .controls .search .search-input.full {
           background: #84455c; }
           .inner-nav .controls .search .search-input:hover::-webkit-input-placeholder, .inner-nav .controls .search .search-input:focus::-webkit-input-placeholder, .inner-nav .controls .search .search-input.full::-webkit-input-placeholder {
@@ -976,29 +972,19 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 30px 50px 30px; }
+      padding: 0 30px 46px 30px; }
     .film-of-the-day .description h3 {
       line-height: 21px;
       color: #ca99ab;
       display: inline-block; }
       .film-of-the-day .description h3 span {
         margin-right: 6px; }
-      .film-of-the-day .description h3 .icon {
-        width: 19px;
-        height: 19px;
-        display: inline-block;
-        margin-top: -4px; }
-        .film-of-the-day .description h3 .icon svg {
-          width: 100%;
-          height: 100%; }
-          .film-of-the-day .description h3 .icon svg path {
-            fill: #cd9fb0; }
     .film-of-the-day .description .title {
       cursor: pointer;
       font-family: "Tenor Sans", sans-serif;
       text-transform: none;
-      font-size: 38px;
-      line-height: 45px;
+      font-size: 35px;
+      line-height: 40px;
       margin-bottom: 22px;
       color: #f7f0f3; }
       .film-of-the-day .description .title span.year {
@@ -1007,7 +993,7 @@ body {
       color: #f0e2e8;
       line-height: 21px;
       max-width: 600px;
-      max-height: 82px;
+      max-height: 103px;
       overflow: hidden; }
     .film-of-the-day .description .banner-2 {
       font-family: "Tenor Sans", sans-serif;
@@ -1152,7 +1138,7 @@ body {
         font-weight: 300; }
 
 .about-cont {
-  max-width: 680px;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
   background: white;
@@ -1160,18 +1146,29 @@ body {
   min-height: 450px;
   margin-bottom: 250px; }
   .about-cont h1 {
-    font-size: 32px;
+    font-size: 34px;
+    line-height: 46px;
     text-align: center;
-    color: #3d615e;
+    color: #773E53;
     margin-bottom: 18px;
-    font-family: tenor-sans, sans-serif; }
+    font-family: "Tenor Sans", sans-serif; }
   .about-cont h3 {
     text-transform: uppercase; }
   .about-cont p, .about-cont h3 {
-    font-size: 14px;
-    line-height: 23px;
-    color: #3d615e;
-    margin-bottom: 16px; }
+    color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px; }
+    .about-cont p:not(:last-child), .about-cont h3:not(:last-child) {
+      margin-bottom: 16px; }
+    .about-cont p.faint, .about-cont h3.faint {
+      color: #999; }
+    .about-cont p a, .about-cont h3 a {
+      color: #669E99;
+      cursor: pointer;
+      text-decoration: underline; }
+    .about-cont p span.bold, .about-cont h3 span.bold {
+      font-weight: 500; }
 
 .contact-form {
   font-size: 14px; }
@@ -1271,6 +1268,12 @@ body {
       .share-icons .icon:hover svg path {
         fill: white; }
 
+@media all and (max-width: 1362px) {
+  html .film-of-the-day .description .title {
+    font-size: 32px;
+    line-height: 36px; }
+  html .film-of-the-day .description .info .synopsis {
+    font-size: 13px; } }
 @media all and (max-width: 1100px) {
   html .film-cont .video-cover {
     height: 35vw;
@@ -1306,7 +1309,8 @@ body {
         padding-bottom: 40px; }
         html .film-of-the-day .description .info .synopsis {
           max-width: none;
-          max-height: none; } }
+          max-height: none;
+          font-size: 14px; } }
 @media all and (max-width: 1000px) {
   html .right-bar {
     display: none; }
@@ -1317,140 +1321,115 @@ body {
     html .left-content .film-cont .video-cover {
       height: 45vw; } }
 @media all and (max-width: 700px) {
-  html {
-    /*.header {
-      .logo {
-        max-width: 100%;
-        background-position: center left;
-      }
-
-      .info {
-        display: none;
-      }
-    }*/ }
-    html .film-of-the-day .description .title {
-      font-size: 35px;
-      line-height: 41px; }
-    html .film-of-the-day .description .banner-2 {
-      font-size: 20px; }
-    html .film-cont .info h2 {
-      font-size: 30px; }
-    html .header {
-      position: fixed;
-      z-index: 200;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 55px;
-      min-width: 316px;
-      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
-      html .header .info {
-        display: none; }
-      html .header .logo {
-        height: 55px; }
-      html .header .right-cont {
-        display: block; }
-    html .nav-bar {
-      margin-top: 55px;
-      height: 0;
-      opacity: 0;
-      overflow: hidden;
-      pointer-events: none; }
-      html .nav-bar .drop-menus .drop-menu {
-        display: none; }
-        html .nav-bar .drop-menus .drop-menu.unified {
-          display: inline-block; }
-    html .thumbnails .thumbnail {
-      width: 50%; }
-      html .thumbnails .thumbnail .film-image {
-        height: 30vw; }
-    html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
-      width: 145px; }
-    html .content {
-      padding-left: 18px;
-      padding-right: 18px; }
-    html .header {
-      padding-left: 18px;
-      padding-right: 18px; }
-    html .film-of-the-day .description .info {
-      padding-left: 18px;
-      padding-right: 18px; }
-    html .film-cont .info {
-      padding-left: 18px;
-      padding-right: 18px; }
-    html .panel {
-      padding-left: 18px;
-      padding-right: 18px; }
-    html .nav-bar {
-      padding-left: 12px;
-      padding-right: 12px; }
-    html .inner-nav {
-      padding-left: 18px;
-      padding-right: 18px; } }
-@media all and (max-width: 540px) {
-  html {
-    /*.inner-nav {
-      height: 82px;
-
-      .top-content {
-        height: 100%;
-      }
-
-      .controls {
-        top: auto;
-        bottom: 0;
-        left: -6px;
-        white-space: nowrap;
-      }
-    }*/ }
-    html .recommended .thumbnail-cont {
-      width: 100%;
-      height: 42vw; }
-    html .home-categories .thumbnail-cont {
-      width: 50%;
-      height: 34vw; }
-    html .thumbnails .thumbnail {
-      width: 100%; }
-      html .thumbnails .thumbnail .film-image {
-        height: 55vw; }
-    html .film-of-the-day .description .title {
-      font-size: 30px;
-      line-height: 37px; }
-    html .film-of-the-day .description .banner-2 {
-      font-size: 18px; }
-    html .footer .content {
-      padding-top: 14px;
-      padding-bottom: 14px; }
-    html .footer .left-cont .links a {
+  html .film-of-the-day .description .banner-2 {
+    font-size: 20px; }
+  html .film-cont .info h2 {
+    font-size: 30px; }
+  html .header {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    min-width: 316px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
+    html .header .info {
+      display: none; }
+    html .header .logo {
+      height: 55px; }
+    html .header .right-cont {
       display: block; }
-    html .footer .left-cont .info {
+  html .nav-bar {
+    margin-top: 55px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none; }
+    html .nav-bar .drop-menus .drop-menu {
       display: none; }
-    html .center-bar .thumbnail-cont {
-      width: 100%;
-      height: 46vw; }
-    html .film-cont .info h2 {
-      margin-right: 0; }
-    html .film-cont .info .share-icons {
-      top: auto;
-      bottom: 26px; }
-    html .inner-nav .controls.v2 .search {
-      right: 90px; }
-    html .inner-nav .controls.v2 .sort-by .value, html .inner-nav .controls.v2 .sort-by .colon {
-      display: none; }
-    html .inner-nav .controls .sort-by .colon, html .inner-nav .controls .sort-by .value {
-      display: none; } }
+      html .nav-bar .drop-menus .drop-menu.unified {
+        display: inline-block; }
+  html .inner-nav .controls .search.category .search-input:focus, html .inner-nav .controls .search.category .search-input.full {
+    width: 144px; }
+  html .thumbnails .thumbnail {
+    width: 50%; }
+    html .thumbnails .thumbnail .film-image {
+      height: 30vw; }
+  html .nav-bar .controls .search input.search-input:hover, html .nav-bar .controls .search input.search-input:focus {
+    width: 145px; }
+  html .content {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .header {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-of-the-day .description .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .film-cont .info {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .panel {
+    padding-left: 18px;
+    padding-right: 18px; }
+  html .nav-bar {
+    padding-left: 12px;
+    padding-right: 12px; }
+  html .inner-nav {
+    padding-left: 18px;
+    padding-right: 18px; } }
+@media all and (max-width: 540px) {
+  html .recommended .thumbnail-cont {
+    width: 100%;
+    height: 42vw; }
+  html .home-categories .thumbnail-cont {
+    width: 50%;
+    height: 34vw; }
+  html .thumbnails .thumbnail {
+    width: 100%; }
+    html .thumbnails .thumbnail .film-image {
+      height: 55vw; }
+  html .film-of-the-day .description .title {
+    font-size: 30px;
+    line-height: 37px; }
+  html .film-of-the-day .description .banner-2 {
+    font-size: 18px; }
+  html .film-of-the-day .description .info .synopsis, html .film-of-the-day .description .info h3 {
+    font-size: 13px; }
+  html .footer .content {
+    padding-top: 14px;
+    padding-bottom: 14px; }
+  html .footer .left-cont .links a {
+    display: block; }
+  html .footer .left-cont .info {
+    display: none; }
+  html .center-bar .thumbnail-cont {
+    width: 100%;
+    height: 46vw; }
+  html .film-cont .info h2 {
+    margin-right: 0; }
+  html .film-cont .info .share-icons {
+    top: auto;
+    bottom: 26px; }
+  html .inner-nav .controls.v2 .search {
+    right: 90px; }
+  html .inner-nav .controls.v2 .sort-by .value, html .inner-nav .controls.v2 .sort-by .colon {
+    display: none; }
+  html .inner-nav .search.category {
+    display: none; }
+  html .inner-nav .controls .sort-by .colon, html .inner-nav .controls .sort-by .value {
+    display: none; } }
 @media all and (max-width: 410px) {
   html .element-title {
-    font-size: 24px; }
+    font-size: 25px; }
   html .film-of-the-day .share-icons {
     display: none; }
   html .bottom-share {
     display: block; }
   html .footer .right-cont {
     padding-left: 20px;
-    padding-right: 20px; }
-  html .inner-nav .controls .search.category {
-    display: none; } }
+    padding-right: 20px; } }
 @media all and (max-width: 370px) {
   html .header .logo {
     width: 200px;
@@ -1458,4 +1437,9 @@ body {
   html .header .right-cont .icon.search {
     display: none; }
   html .header .right-cont .drop-menu .menu .search {
-    display: block; } }
+    display: block; }
+  html .film-of-the-day .description .title {
+    font-size: 28px;
+    line-height: 33px; }
+  html .element-title {
+    font-size: 23px; } }

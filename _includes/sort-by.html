@@ -1,15 +1,33 @@
 <div class="sort-by">
-  <span class="label">Sort by</span><span class="colon">:</span>
-  <span class="value" id="sortBy">---</span>
-  <ul class="menu" id="genres-menu">
-    <li onclick="updateSort('Recommended')">
-      Recommended
-    </li>
-    <li onclick="updateSort('Alphabetically')">
-      Alphabetically
-    </li>
-    <li onclick="updateSort('Year')">
-      Year
-    </li>
-  </ul>
+  <div class="label-wrapper" onclick="$('.menu').not('#sort-menu').hide(); $('#sort-menu').toggle();">
+    <span class="label">Sort by</span><span class="colon">:</span>
+    <span class="value" id="sortBy">---</span>
+  </div>
+  <div class="menu" id="sort-menu">
+    <ul class="menu-list">
+      <li onclick="updateSort('Recommended')">
+        Recommended
+      </li>
+      <li onclick="updateSort('Alphabetically')">
+        Alphabetically
+      </li>
+      <li onclick="updateSort('Year')">
+        Year
+      </li>
+    </ul>
+    <div class="close" onclick="$('#sort-menu').hide();">
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+        <title>x</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="x" fill="#000000">
+            <polygon id="Combined-Shape" points="160.15615 144.005981 90.6072538 74.4570839 75.0495547 90.0147829 144.598451 159.56368 74 230.162131 89.5569361 245.719067 160.155388 175.120616 231.181577 246.146806 246.739276 230.589107 175.713087 159.562917 246.719067 88.5569361 231.162131 73 160.15615 144.005981"></polygon>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
 </div>
