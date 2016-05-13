@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: A projectionist is studying to be a detective and is in love with a young lady. When he proposes her, his rival steals the chain watch of her father and incriminates him. The disappointed young projectionist returns to his job and while projecting the film, he dreams on being the detective of the story. Meanwhile, the girl finds the truth and acquits the guilty of the projectionist to her father.
+excerpt: A film projectionist longs to be a detective, and puts his meagre skills to work when he is framed by a rival for stealing his girlfriend's father's pocketwatch.
 synopsis: A projectionist is studying to be a detective and is in love with a young lady. When he proposes her, his rival steals the chain watch of her father and incriminates him. The disappointed young projectionist returns to his job and while projecting the film, he dreams on being the detective of the story. Meanwhile, the girl finds the truth and acquits the guilty of the projectionist to her father.
 title: Sherlock Junior
 runtime: 45
