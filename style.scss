@@ -1051,7 +1051,7 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 $padding 46px $padding;
+      padding: 0 $padding 44px $padding;
     }
 
     h3 {
@@ -1082,7 +1082,7 @@ body {
       color: lighten($feature-background, 56);
       line-height: 21px;
       max-width: 600px;
-      max-height: 103px;
+      max-height: 104px;
       overflow: hidden;
     }
 
@@ -1091,7 +1091,6 @@ body {
       text-transform: uppercase;
       color: lighten($feature-background, 26);
       font-size: 22px;
-      font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: 0.3px;
     }
@@ -1434,15 +1433,20 @@ html {
   @media all and (max-width: 1362px) {
     .film-of-the-day {
       .description {
+        .banner-2 {
+          font-size: 21px;
+        }
 
         .title {
-          font-size: 32px;
-          line-height: 36px;
+          font-size: 30px;
+          line-height: 34px;
         }
 
         .info {
           .synopsis {
             font-size: 13px;
+            line-height: 19px;
+            max-height: 114px;
           }
         }
       }
@@ -1464,7 +1468,7 @@ html {
     }
   }
 
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1018px) {
     .recommended {
       .thumbnail-cont {
         width: 50%;
@@ -1520,7 +1524,7 @@ html {
     }
   }
 
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1018px) {
     .right-bar {
       display: none;
     }
