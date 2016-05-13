@@ -370,6 +370,26 @@ body {
     .search {
       display: inline-block;
 
+      div.search-input {
+        width: 92px;
+        height: 40px;
+        padding: 0 8px 2px 32px;
+        color: $content-color;
+        font-size: 13px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        background: none;
+        margin: 0;
+        @include user-select;
+        cursor: pointer;
+
+        &:hover {
+          background: #d0d0d0;
+          color: #444;
+        }
+      }
+
       input.search-input {
         width: 92px;
         height: 40px;
@@ -478,7 +498,7 @@ body {
 
   .search-note {
     display: none;
-    margin-top: 6px;
+    margin-top: 24px;
     font-size: 22px;
     line-height: 28px;
     font-weight: 300;
@@ -588,6 +608,7 @@ body {
       @include dropdown-menu($inner-nav-height);
       height: $inner-nav-height;
       font-size: 14px;
+      font-weight: 300;
       line-height: $inner-nav-height;
       color: $content-color;
       padding: 0;
@@ -646,6 +667,7 @@ body {
       .search-input {
         height: $inner-nav-height;
         font-size: 14px;
+        font-weight: 300;
         background: transparent;
         width: 144px;
         padding: 4px 8px 4px 33px;
@@ -744,6 +766,7 @@ body {
     .search-input {
       width: 100%;
       padding-left: 63px;
+      font-size: 18px;
     }
 
     .icon {
