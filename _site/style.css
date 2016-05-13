@@ -120,6 +120,7 @@ body {
             background: #ddeeec; }
         .header .right-cont .drop-menu .menu .close {
           position: absolute;
+          display: none;
           top: 6px;
           right: 6px;
           width: 34px;
@@ -300,6 +301,7 @@ body {
           background: #ddeeec; }
       .nav-bar .drop-menus .drop-menu .menu .close {
         position: absolute;
+        display: none;
         top: 6px;
         right: 6px;
         width: 34px;
@@ -495,6 +497,7 @@ body {
             background: #ddeeec; }
         .inner-nav .controls .sort-by .menu .close {
           position: absolute;
+          display: none;
           top: 6px;
           right: 6px;
           width: 34px;
