@@ -4,11 +4,11 @@ layout: film
 excerpt: A serial killer known as &quot;The Avenger&quot; is on the loose in London, murdering blonde women. A mysterious man arrives at the house of Mr. and Mrs. Bunting looking for a room to rent. The Bunting's daughter is a blonde model and is seeing one of the detectives assigned to the case. The detective becomes jealous of the lodger and begins to suspect he may be the avenger.
 title: The Lodger&#58; A Story of the London Fog
 runtime:
-genre: 
-- Silent
+genre:
 - Mystery
 - Crime
 - Drama
+- Silent
 silent: yes
 decade: 1920s
 recommended: yes
