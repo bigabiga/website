@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: Dovzhenko’s Earth is the third part of his “War Trilogy” (alongside Zvenigora and Arsenal). This film poem describes the collective experiences of the Ukranian proles’ lives, examining natural cycles through his montage. Alexander Dovzhenko explores life, death and the poetic possibilities of cinema itself. It has been an important influence on film directors such as Andrei Tarkovsky and is considered to be one of the greatest silent films ever made.
+excerpt: Dovzhenko’s Earth is the third part of his “War Trilogy” (alongside Zvenigora and Arsenal). This film poem describes the collective experiences of the Ukranian proles’ lives, exploring life, death and the poetic possibilities of cinema itself. It has been an important influence on film directors such as Andrei Tarkovsky and is considered to be one of the greatest silent films ever made.
 synopsis: Dovzhenko’s Earth (Ukrainian&#58; Земля, Zemlya) is the third part of his “War Trilogy” (alongside Zvenigora and Arsenal). This film poem describes the collective experiences of the Ukranian proles’ lives, examining natural cycles through his montage. Alexander Dovzhenko explores life, death and the poetic possibilities of cinema itself. Earth is Alexander Dovzhenko’s most famous film. Its visual beauty and complex montage presents a true cinematic genius. It has been an important influence on film directors such as Andrei Tarkovsky and is considered to be one of the greatest silent films ever made.
 title: Earth
 runtime: 75

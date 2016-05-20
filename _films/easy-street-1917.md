@@ -16,7 +16,7 @@ recommended:
 editors-rating: 4
 image:  /feature-images/Easy-Street-1917.jpg  
 video: https://www.youtube.com/embed/G_D2G66bplk?rel=0&amp;controls=0&amp;showinfo=0
-director: Charles Chaplin 
+director: Charlie Chaplin
 year: 1917
 country: USA
 Language: English

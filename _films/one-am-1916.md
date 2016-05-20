@@ -17,7 +17,7 @@ recommended:
 editors-rating: 3.5
 image:  /feature-images/One-AM-1916.jpg 
 video: https://www.youtube.com/embed/w2sewbP5P3o?rel=0&amp;controls=0&amp;showinfo=0
-director: Charles Chaplin 
+director: Charlie Chaplin
 year: 1916
 country: USA
 language: English 
