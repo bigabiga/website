@@ -708,6 +708,9 @@ body {
       opacity: 0.8; }
     .film-cont .video-cover .play-mark {
       opacity: 0.8; }
+  .film-cont iframe.archive-video {
+    width: 100%;
+    height: 392px; }
   .film-cont .share-icons {
     top: 22px;
     right: 26px; }
@@ -1284,6 +1287,9 @@ body {
     max-height: 114px; } }
 @media all and (max-width: 1100px) {
   html .film-cont .video-cover {
+    height: 35vw;
+    min-height: 255px; }
+  html .film-cont iframe.archive-video {
     height: 35vw;
     min-height: 255px; }
   html .right-bar .thumbnail-cont {
