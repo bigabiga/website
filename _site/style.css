@@ -1334,6 +1334,9 @@ body {
     width: 100%; }
     html .left-content .film-cont .video-cover {
       height: 45vw; } }
+@media all and (max-width: 750px) {
+  html .header .info {
+    display: none; } }
 @media all and (max-width: 700px) {
   html .film-of-the-day .description .banner-2 {
     font-size: 20px; }
@@ -1348,8 +1351,6 @@ body {
     height: 55px;
     min-width: 316px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
-    html .header .info {
-      display: none; }
     html .header .logo {
       height: 55px; }
     html .header .right-cont {

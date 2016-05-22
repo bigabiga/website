@@ -1578,6 +1578,14 @@ html {
     }
   }
 
+  @media all and (max-width: 750px) {
+    .header {
+      .info {
+        display: none;
+      }
+    }
+  }
+
   @media all and (max-width: 700px) {
     .film-of-the-day {
       .description {
@@ -1602,10 +1610,6 @@ html {
       height: 55px;
       min-width: 316px;
       box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
-
-      .info {
-        display: none;
-      }
 
       .logo {
         height: 55px;
