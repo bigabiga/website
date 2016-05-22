@@ -219,7 +219,7 @@
   <script type="text/javascript">
     $( "#videoCover" ).click(function() {
       $("#videoCover").remove();
-      $("#filmCont").prepend('<iframe src="{{ page.video }}" class="archive-video" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>');
+      $("#filmCont").prepend('<iframe src="{{ page.video }}&autoplay=1" class="archive-video" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>');
     });
   </script>
   {% endif %}
