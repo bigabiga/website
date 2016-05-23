@@ -13,10 +13,10 @@ genre:
 - Avant-Garde
 silent: yes
 decade: 1920s
-recommended: 
+recommended:
 editors-rating: 5
 image:  /feature-images/Arsenal-1929.jpg  
-video: https://www.youtube.com/embed/iIq0UDHvqic?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/yrjky-vAr8w?rel=0&amp;controls=0&amp;showinfo=0
 director: Aleksandr Dovzhenko
 year: 1929
 country: Soviet Union

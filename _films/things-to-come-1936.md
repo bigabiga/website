@@ -1,7 +1,7 @@
 ---
 layout: film
 
-excerpt: It's Christmastime 1940 in Everytown. People are happy and enjoying the holiday season but all is shattered when war is declared. Some see war as necessary but John Cabal for one knows there is always a heavy price to pay where war is concerned. As the decades roll by the war continues and in the 1960's the ravages of disease, the Walking Sickness, takes its toll. By the 1970's the disease is gone and society begins to rebuild itself. The return of John Cabal brings hope for the future but even by 2040, there are still those who are prepared to fight to stop progress.
+excerpt: The story of a century&#58; a decades-long second World War leaves plague and anarchy, then a rational state rebuilds civilization and attempts space travel.
 title: Things to Come
 runtime: 100
 genre: 
