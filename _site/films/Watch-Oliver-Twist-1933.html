@@ -6703,8 +6703,12 @@
 
 
 
+
+
+
   <div class="narrow-content">
     <div class="left-content">
+      
       <div class="film-cont" id="filmCont">
         
         <div class="video-cover" id="videoCover" style="background-image: url(/feature-images/Oliver-Twist-1933.PNG)">
@@ -6718,6 +6722,7 @@
 
         </div>
 
+        
         <div class="info">
           <h2>Oliver Twist <span class="year">1933</span></h2>
           <h3 class="basic-info">
@@ -6834,7 +6839,12 @@
 </div>
 
         </div>
+        
       </div>
+
+      <!-- part 2 -->
+
+      
 
       <div class="panel ad">
 
@@ -6860,22 +6870,6 @@
 
   <div class="thumbs">
     
-    <a class="thumbnail-cont" href="/films/earth-1930/">
-      <div class="film">
-
-        
-        <div class="film-image lazy"  data-original="/feature-images/Earth-1930.jpg" style="background-image: url('/images/transparent.png')"></div>
-        
-
-        <div class="info">
-          <h3 class="title"> Earth (1930) </h3>
-          <h4 class="description"> Aleksandr Dovzhenko, Soviet Union </h4>
-        </div>
-        <div class="play-mark"></div>
-      </div>
-    </a>
-
-    
     <a class="thumbnail-cont" href="/films/passing-fancy-1933/">
       <div class="film">
 
@@ -6886,6 +6880,22 @@
         <div class="info">
           <h3 class="title"> Passing Fancy (1933) </h3>
           <h4 class="description"> Yasujirô Ozu, Japan </h4>
+        </div>
+        <div class="play-mark"></div>
+      </div>
+    </a>
+
+    
+    <a class="thumbnail-cont" href="/films/earth-1930/">
+      <div class="film">
+
+        
+        <div class="film-image lazy"  data-original="/feature-images/Earth-1930.jpg" style="background-image: url('/images/transparent.png')"></div>
+        
+
+        <div class="info">
+          <h3 class="title"> Earth (1930) </h3>
+          <h4 class="description"> Aleksandr Dovzhenko, Soviet Union </h4>
         </div>
         <div class="play-mark"></div>
       </div>
@@ -6942,23 +6952,6 @@
     Related Films
   </div>
   
-  <a class="thumbnail-cont" href="/films/earth-1930/">
-    <div class="film">
-
-      
-      <div class="film-image lazy"  data-original="/feature-images/Earth-1930.jpg" style="background-image: url('/images/transparent.png')"></div>
-      
-
-      <div class="info">
-        <h3 class="title"> Earth (1930) </h3>
-        <h4 class="description"> Aleksandr Dovzhenko, Soviet Union </h4>
-      </div>
-      <div class="play-mark"></div>
-    </div>
-  </a>
-
-
-  
   <a class="thumbnail-cont" href="/films/passing-fancy-1933/">
     <div class="film">
 
@@ -6969,6 +6962,23 @@
       <div class="info">
         <h3 class="title"> Passing Fancy (1933) </h3>
         <h4 class="description"> Yasujirô Ozu, Japan </h4>
+      </div>
+      <div class="play-mark"></div>
+    </div>
+  </a>
+
+
+  
+  <a class="thumbnail-cont" href="/films/earth-1930/">
+    <div class="film">
+
+      
+      <div class="film-image lazy"  data-original="/feature-images/Earth-1930.jpg" style="background-image: url('/images/transparent.png')"></div>
+      
+
+      <div class="info">
+        <h3 class="title"> Earth (1930) </h3>
+        <h4 class="description"> Aleksandr Dovzhenko, Soviet Union </h4>
       </div>
       <div class="play-mark"></div>
     </div>
@@ -6993,14 +7003,18 @@
 </div>
   </div>
 
-  
-  <script type="text/javascript">
-    $( "#videoCover" ).click(function() {
-      $("#videoCover").remove();
-      $("#filmCont").prepend("<iframe src='https://www.youtube.com/embed/prnREuwR3ro?rel=0&amp;controls=0&amp;showinfo=0autoplay=1' frameborder='0' allowfullscreen></iframe>");
-    });
-  </script>
-  
+
+<script type="text/javascript">
+  $( "#videoCover" ).click(function() {
+    $("#videoCover").remove();
+    $("#filmCont").prepend("<iframe src='https://www.youtube.com/embed/prnREuwR3ro?rel=0&amp;controls=0&amp;showinfo=0autoplay=1' frameborder='0' allowfullscreen></iframe>");
+  });
+  $( "#videoCover2" ).click(function() {
+    $("#videoCover2").remove();
+    $("#filmCont2").prepend("<iframe src='autoplay=1' frameborder='0' allowfullscreen></iframe>");
+  });
+</script>
+
 
 <footer>
   <div class="footer">

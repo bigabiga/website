@@ -614,6 +614,16 @@ body {
   width: 68%;
   margin-bottom: 40px; }
 
+.part-title {
+  font-family: "Tenor Sans", sans-serif;
+  color: #777;
+  font-size: 17px;
+  padding: 0 12px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0;
+  background: white; }
+
 .film-cont {
   background: white;
   display: inline-block;
@@ -743,7 +753,9 @@ body {
     text-transform: uppercase;
     color: #777;
     font-size: 20px;
-    padding: 13px 10px;
+    padding: 0 12px;
+    height: 46px;
+    line-height: 46px;
     margin: 0 0 -5px 0;
     background: white; }
   .right-bar .thumbnail-cont {
@@ -1285,6 +1297,12 @@ body {
     font-size: 13px;
     line-height: 19px;
     max-height: 114px; } }
+@media all and (max-width: 1160px) {
+  html .narrow-content {
+    max-width: 100%;
+    width: 100%; }
+  html .part-title {
+    padding: 0 30px; } }
 @media all and (max-width: 1100px) {
   html .film-cont .video-cover {
     height: 35vw;
@@ -1393,7 +1411,9 @@ body {
     padding-right: 12px; }
   html .inner-nav {
     padding-left: 18px;
-    padding-right: 18px; } }
+    padding-right: 18px; }
+  html .part-title {
+    padding: 0 18px; } }
 @media all and (max-width: 540px) {
   html .recommended .thumbnail-cont {
     width: 100%;
