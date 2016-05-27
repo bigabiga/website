@@ -154,7 +154,9 @@
           </h3>
           <div class="details">
             <p>{{ page.synopsis }}</p>
+            {% if page.cast != null %}
             <p>Cast: {{ page.cast | join: ', ' }}.</p>
+            {% endif %}
             <p class="imdb-link"><a href="{{ page.imdb }}">More info on IMDB</a></p>
           </div>
 
@@ -263,7 +265,9 @@
           </h3>
           <div class="details">
             <p>{{ page.synopsis }}</p>
+            {% if page.cast != null %}
             <p>Cast: {{ page.cast | join: ', ' }}.</p>
+            {% endif %}
             <p class="imdb-link"><a href="{{ page.imdb }}">More info on IMDB</a></p>
           </div>
 
