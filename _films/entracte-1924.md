@@ -6,10 +6,10 @@ excerpt: An absolute surrealistic movie. Somebody gets killed, his coffin gets o
 synopsis: An absolute surrealistic movie. Somebody gets killed, his coffin gets out of control and after a surrelistic chase it stops. The person gets out of it and let everybody who followed the coffin disapear.
 title: Entr’acte
 runtime: 22
-genre: 
-- Short 
-- Silent
+genre:
 - Avant-Garde
+- Short
+- Silent
 silent: yes
 decade: 1920s
 recommended: 

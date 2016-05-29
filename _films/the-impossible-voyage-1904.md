@@ -7,11 +7,11 @@ synopsis: Using every known means of transportation, several savants from the Ge
 title: The Impossible Voyage
 runtime: 24
 genre: 
-- Short
+- Early Cinema
 - Adventure
 - Fantasy
 - Silent
-- Early Cinema
+- Short
 silent: yes
 decade: 1900s
 recommended: 

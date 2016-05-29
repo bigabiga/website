@@ -7,8 +7,8 @@ synopsis: Botany major Buster mistakenly graduates in electrical engineering and
 title: The Electric House
 runtime: 22
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1920s

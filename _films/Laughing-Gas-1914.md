@@ -10,8 +10,8 @@ title: Laughing Gas
 runtime: 16
 permalink: films/Laughing-Gas-1914-Chaplin
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

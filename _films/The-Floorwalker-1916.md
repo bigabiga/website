@@ -11,8 +11,8 @@ runtime: 29
 permalink: films/The-Floorwalker-1916
 
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

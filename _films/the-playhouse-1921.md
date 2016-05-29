@@ -7,9 +7,9 @@ synopsis: After waking up from his wacky dream, a theater stage hand inadvertent
 title: The Playhouse 
 runtime: 23
 genre: 
-- Short
 - Comedy
 - Fantasy
+- Short
 - Silent
 silent: yes
 decade: 1920s

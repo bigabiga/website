@@ -7,9 +7,9 @@ synopsis: Buster and his family go on a voyage on his homemade boat that proves 
 title: The Boat
 runtime: 23
 genre: 
-- Short
 - Comedy
 - Family 
+- Short
 - Silent
 silent: yes
 decade: 1920s

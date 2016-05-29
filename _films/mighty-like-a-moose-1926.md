@@ -7,9 +7,9 @@ synopsis: Mr. and Mrs. Moose are not pretty. But after he has his teeth fixed an
 title: Mighty Like a Moose
 runtime: 22
 genre: 
-- Short
 - Comedy
 - Family
+- Short
 - Silent
 silent: yes
 decade: 1920s

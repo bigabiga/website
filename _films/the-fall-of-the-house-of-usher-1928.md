@@ -7,10 +7,10 @@ synopsis: A traveller arrives at the Usher mansion to find that the sibling inha
 title: The Fall of the House of Usher
 runtime: 13
 genre: 
-- Short
+- Avant-Garde
 - Horror
 - Silent
-- Avant-Garde
+- Short
 silent: yes
 decade: 1920s
 recommended: 

@@ -7,9 +7,9 @@ synopsis: A pulsing, kaleidoscope of images set to an energetic soundtrack. A yo
 title: Ballet Mécanique
 runtime: 19
 genre: 
-- Short 
-- Silent
 - Avant-Garde
+- Silent
+- Short
 silent: yes
 decade: 1920s
 recommended: 

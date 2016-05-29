@@ -7,8 +7,8 @@ synopsis: Daisy and her husband both go in for a face-pulling contest, but when 
 title: Daisy Doodad’s Dial
 runtime: 9
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

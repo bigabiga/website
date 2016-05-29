@@ -7,9 +7,9 @@ synopsis: A one-man mime show. Charlie comes home drunk. Forgetting his key, he 
 title: One A.M. 
 runtime: 22
 genre: 
-- Short
 - Comedy
 - Family
+- Short
 - Silent
 silent: yes
 decade: 1910s

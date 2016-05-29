@@ -7,8 +7,8 @@ synopsis: Buster and Sybil exit a chapel as newlyweds. Among the gifts is a port
 title: One Week
 runtime: 25
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1920s

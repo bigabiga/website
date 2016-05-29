@@ -7,8 +7,8 @@ synopsis: A hapless amusement park attendant finds his run away balloon ride has
 title: The Balloonatic
 runtime: 22
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1920s

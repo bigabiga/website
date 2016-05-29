@@ -7,11 +7,11 @@ synopsis: A couple is brutally murdered in the working-class district of Paris. 
 title: Ménilmontant
 runtime: 38
 genre: 
-- Short
-- Mystery 
-- Drama
-- Silent
 - Avant-Garde
+- Mystery
+- Drama
+- Short
+- Silent
 silent: yes
 decade: 1920s
 recommended: 

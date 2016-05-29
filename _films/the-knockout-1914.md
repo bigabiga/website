@@ -9,8 +9,8 @@ title: The Knockout
 runtime: 27
 permalink: films/The-Knockout-1914
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes 
 decade: 1910s

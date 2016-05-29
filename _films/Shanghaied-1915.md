@@ -11,8 +11,8 @@ runtime: 27
 permalink: films/Shanghaied-1915
 
 genre: 
+- Comedy
 - Short
-- Comedy 
 - Silent
 silent: yes
 decade: 1910s

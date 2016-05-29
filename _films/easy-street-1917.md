@@ -7,8 +7,8 @@ synopsis: A reformed tramp becomes a police constable who must fight a huge thug
 title: Easy Street 
 runtime: 23
 genre: 
-- Short
 - Comedy
+- Short
 - Silent
 silent: yes
 decade: 1910s

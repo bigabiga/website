@@ -7,9 +7,9 @@ synopsis: The Romeo and Juliet story played out in a tenement neighborhood with 
 title: Neighbors 
 runtime: 18
 genre: 
-- Short
 - Comedy
 - Romance 
+- Short
 - Silent
 silent: yes
 decade: 1920s

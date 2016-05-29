@@ -7,10 +7,10 @@ synopsis: Charlie is an overworked labourer at a film studio who helps a young w
 title: Behind the Screen
 runtime: 29
 genre: 
-- Short
 - Comedy
 - Romance
 - Silent
+- Short
 silent: yes
 decade: 1910s
 recommended: 
