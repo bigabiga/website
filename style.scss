@@ -1365,6 +1365,62 @@ body {
   }
 }
 
+.store-cont {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  min-height: 450px;
+  margin-bottom: 250px;
+
+  .store-info {
+    padding: 30px 26px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: $feature-background;
+    margin-bottom: 18px;
+    font-family: $title-font;
+  }
+
+  p {
+    color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &.faint {
+      color: #999;
+    }
+
+    a {
+      color: $green-font;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    span.bold {
+      font-weight: $bold;
+    }
+  }
+
+  .store-tabs {
+    width: 100%;
+    text-align: center;
+
+    .tab {
+      display: inline-block;
+    }
+  }
+}
+
 .contact-form {
   font-size: 14px;
 

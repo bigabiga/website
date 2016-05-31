@@ -1217,6 +1217,43 @@ body {
     .about-cont p span.bold, .about-cont h3 span.bold {
       font-weight: 500; }
 
+.store-cont {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  min-height: 450px;
+  margin-bottom: 250px; }
+  .store-cont .store-info {
+    padding: 30px 26px; }
+  .store-cont h1 {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #773E53;
+    margin-bottom: 18px;
+    font-family: "Tenor Sans", sans-serif; }
+  .store-cont p {
+    color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px; }
+    .store-cont p:not(:last-child) {
+      margin-bottom: 16px; }
+    .store-cont p.faint {
+      color: #999; }
+    .store-cont p a {
+      color: #669E99;
+      cursor: pointer;
+      text-decoration: underline; }
+    .store-cont p span.bold {
+      font-weight: 500; }
+  .store-cont .store-tabs {
+    width: 100%;
+    text-align: center; }
+    .store-cont .store-tabs .tab {
+      display: inline-block; }
+
 .contact-form {
   font-size: 14px; }
   .contact-form label {
