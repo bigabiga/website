@@ -16,6 +16,7 @@ decade: 1920s
 recommended: yes
 editors-rating: 5
 image:  /feature-images/Faust-1926.jpeg
+image-offset: 26
 video: https://www.youtube.com/embed/a2wwpXB7PW8?rel=0&amp;controls=0&amp;showinfo=0
 director: F.W. Murnau
 year: 1926

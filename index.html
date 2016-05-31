@@ -57,7 +57,15 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
     <div class="top-content">
       <div class="film-of-the-day">
         <a href="{{ film-of-the-day.url }}"><div class="film">
+
+
+          {% if film-of-the-day.image-offset != null %}
+          <div class="film-image" style="background-image: url({{ film-of-the-day.image }}); background-position-y: {{ film-of-the-day.image-offset }}%;"></div>
+          {% else %}
           <div class="film-image" style="background-image: url({{ film-of-the-day.image }})"></div>
+          {% endif %}
+
+
           <div class="play-mark"></div>
         </div></a>
         <div class="description">
