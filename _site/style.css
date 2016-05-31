@@ -265,6 +265,8 @@ body {
           height: 18px; }
           .nav-bar .controls .search .icon svg path {
             fill: #666; }
+  .nav-bar .drop-menus {
+    display: inline-block; }
   .nav-bar .drop-menus .drop-menu {
     display: inline-block;
     cursor: pointer;
@@ -336,6 +338,32 @@ body {
         height: 12px; }
         .nav-bar .drop-menus .drop-menu .label svg path {
           fill: #666; }
+  .nav-bar .store-link {
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    padding: 13px 8px 0 29px;
+    margin-right: 6px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 300; }
+    .nav-bar .store-link:hover {
+      color: #444;
+      background: #d0d0d0; }
+      .nav-bar .store-link:hover .icon svg path {
+        fill: #555; }
+    .nav-bar .store-link .icon {
+      position: absolute;
+      top: 11px;
+      left: 7px;
+      width: 16px;
+      height: 16px; }
+      .nav-bar .store-link .icon svg {
+        width: 100%;
+        height: 100%; }
+        .nav-bar .store-link .icon svg path {
+          fill: #777; }
 
 .thumbnails {
   margin-left: -5px;
