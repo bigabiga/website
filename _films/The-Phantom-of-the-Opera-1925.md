@@ -1,7 +1,7 @@
 ---
 layout: film
 
-excerpt: At the Opera of Paris, a mysterious phantom threatens a famous lyric singer, Carlotta and thus forces her to give up her role (Marguerite in Faust) for unknown Christine Daae. Christine meets this phantom (a masked man) in the catacombs, where he lives. What's his goal ? What's his secret ?
+excerpt: At the Opera of Paris, a mysterious phantom threatens a famous lyric singer, Carlotta and thus forces her to give up her role (Marguerite in Faust) for unknown Christine Daae. Christine meets this phantom (a masked man) in the catacombs, where he lives. What's his goal? What's his secret?
 title: The Phantom of the Opera
 runtime: 93
 genre:
