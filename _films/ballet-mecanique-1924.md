@@ -14,7 +14,7 @@ silent: yes
 decade: 1920s
 recommended: 
 editors-rating: 3.5
-image:  /feature-images/Le-ballet-mechanique-1924.jpg 
+image: /feature-images/Le-ballet-mechanique-1924.jpg
 video: https://www.youtube.com/embed/oWa2iy-0TEQ?rel=0&amp;controls=0&amp;showinfo=0
 director: 
 - Fernand Léger
