@@ -34,6 +34,24 @@ title: About Us - La Filmothèque
       </div>
     </div>
     <div class="store-items">
+      {% for item in site.data.store-items %}
+      <div class="store-item">
+        <div class="image">
+          <img src="{{ item.image-link }}">
+        </div>
+        <div class="info">
+          <h3 class="title">
+            {{ item.title }}
+          </h3>
+          <p class="description">
+            {{ item.description }}
+          </p>
+          <a class="action" href="{{ item.link }}">
+            Add to cart
+          </a>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
   <footer>
