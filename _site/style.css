@@ -1264,7 +1264,7 @@ body {
     background: #EBB3C7;
     height: 40px;
     font-size: 0; }
-    .store-cont .store-tabs .tab {
+    .store-cont .store-tabs .store-tab {
       display: inline-block;
       font-size: 14px;
       color: #773e53;
@@ -1272,9 +1272,9 @@ body {
       line-height: 40px;
       padding: 0 18px;
       cursor: pointer; }
-      .store-cont .store-tabs .tab:hover {
+      .store-cont .store-tabs .store-tab:hover {
         background: #f0c7d6; }
-      .store-cont .store-tabs .tab.selected {
+      .store-cont .store-tabs .store-tab.selected {
         background: #f5d7e2;
         color: #773e53; }
   .store-cont .store-items {

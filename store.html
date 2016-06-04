@@ -37,43 +37,105 @@ title: About Us - La Filmothèque
       </p>
     </div>
     <div class="store-tabs">
-      <div class="tab selected">
+      <div class="store-tab selected">
         Recommended items
       </div>
-      <div class="tab">
+      <div class="store-tab">
         DVD & Bluray
       </div>
-      <div class="tab">
+      <div class="store-tab">
         Printed mugs
       </div>
     </div>
-    <div class="store-items">
+
+
+    <div class="store-items" id="recommended">
       <div class="items-cont">
-      {% for item in site.data.store-items %}
-      <div class="store-item">
-        <div class="image">
-          <img src="{{ item.image-link }}">
-        </div>
-        <div class="info">
-          <h3 class="title">
-            {{ item.title }}
-          </h3>
-          <div class="rating">
-            Amazon rating:
-            {% assign cover-width = 5 | minus: item.rating | times: 20 %}
-            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
+        {% for item in site.data.store-items %}
+        <div class="store-item">
+          <div class="image">
+            <img src="{{ item.image-link }}">
           </div>
-          <p class="description">
-            {{ item.description }}
-          </p>
-          <a class="action" href="{{ item.link }}">
-            Buy on Amazon - {{ item.price }}
-          </a>
+          <div class="info">
+            <h3 class="title">
+              {{ item.title }}
+            </h3>
+            <div class="rating">
+              Amazon rating:
+              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
+              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
+            </div>
+            <p class="description">
+              {{ item.description }}
+            </p>
+            <a class="action" href="{{ item.link }}">
+              Buy on Amazon - {{ item.price }}
+            </a>
+          </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
+
+
+    <div class="store-items" id="dvds">
+      <div class="items-cont">
+        {% for item in site.data.store-items %}
+        <div class="store-item">
+          <div class="image">
+            <img src="{{ item.image-link }}">
+          </div>
+          <div class="info">
+            <h3 class="title">
+              {{ item.title }}
+            </h3>
+            <div class="rating">
+              Amazon rating:
+              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
+              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
+            </div>
+            <p class="description">
+              {{ item.description }}
+            </p>
+            <a class="action" href="{{ item.link }}">
+              Buy on Amazon - {{ item.price }}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
+
+
+    <div class="store-items" id="mugs">
+      <div class="items-cont">
+        {% for item in site.data.store-items %}
+        <div class="store-item">
+          <div class="image">
+            <img src="{{ item.image-link }}">
+          </div>
+          <div class="info">
+            <h3 class="title">
+              {{ item.title }}
+            </h3>
+            <div class="rating">
+              Amazon rating:
+              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
+              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
+            </div>
+            <p class="description">
+              {{ item.description }}
+            </p>
+            <a class="action" href="{{ item.link }}">
+              Buy on Amazon - {{ item.price }}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
   </div>
   <footer>
     {% include footer.html %}

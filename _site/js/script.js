@@ -137,6 +137,26 @@ function updateState() {
     $("div.lazy").lazyload({
         //effect : "fadeIn"
     });
+    
+    //only show in store the items of the current tab:
+    var storeCategory = getParameterByName('store-category');
+    var $storeItems = $('.store-items');
+    $storeItems.each(function() {
+        var $this = $(this);
+        if ($this.attr('id') == storeCategory) {
+            $this.show();
+        }
+
+        else {
+            $this.hide();
+        }
+    });
+
+    //correctly highlight store tab:
+    var $storeTab = $('.store-tab');
+    $storeTab.each(function() {
+        var $this = $(this);
+    });
 }
 
 window.onhashchange = updateState;
