@@ -1368,7 +1368,7 @@ body {
 }
 
 .store-cont {
-  max-width: 1100px;
+  max-width: 1018px;
   margin-left: auto;
   margin-right: auto;
   background: white;
@@ -1384,8 +1384,21 @@ body {
     line-height: 46px;
     text-align: center;
     color: $feature-background;
+    margin-top: 6px;
     margin-bottom: 18px;
     font-family: $title-font;
+  }
+
+  .title-icon {
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: -10px;
+  }
+
+  p.store-description {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   p {
@@ -1418,7 +1431,7 @@ body {
 
     width: 100%;
     text-align: center;
-    background: lighten($feature-background, 44);
+    background: #EBB3C7;
     height: $tab-height;
     font-size: 0;
 
@@ -1432,58 +1445,89 @@ body {
       cursor: pointer;
 
       &:hover {
-        background: lighten($feature-background, 48);
+        background: lighten(#EBB3C7, 5);
       }
 
       &.selected {
-        background: lighten($feature-background, 52);
+        background: lighten(#EBB3C7, 9);
         color: darken($feature-background, 0);
       }
     }
   }
 
   .store-items {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  .items-cont {
+    display: inline-block;
+    text-align: left;
+    width: 950px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0;
 
     .store-item {
       display: inline-block;
-      width: 42%;
-      margin: 2%;
+      width: 475px;
+      margin-bottom: 40px;
 
       .info {
-        width: 62%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-left: 38%;
-        padding: 8px 0 0 14px;
+        display: inline-block;
+        width: 325px;
+        padding: 10px 14px 0 14px;
+        font-size: 14px;
+        line-height: 20px;
 
         .title {
-          font-size: 14px;
-          line-height: 18px;
           font-weight: $bold;
-          margin-bottom: 6px;
+          margin-bottom: 10px;
+        }
+
+        .rating {
+          font-weight: 300;
+          margin-bottom: 10px;
+
+          .stars {
+            display: inline-block;
+            letter-spacing: -3px;
+            color: #D7AC40;
+
+            .cover {
+              position: absolute;
+              top: 0;
+              right: -2px;
+              height: 100%;
+              background: white;
+            }
+          }
         }
 
         .description {
-          font-size: 13px;
-          line-height: 18px;
-          margin-bottom: 10px;
+          line-height: 20px;
+          margin-bottom: 14px;
         }
 
         .action {
           display: inline-block;
-          background-color: $feature-background;
+          background-color: lighten($feature-background, 6);
           color: white;
-          font-size: 14px;
+          font-size: 13px;
           border-radius: 2px;
-          padding: 10px 14px;
+          padding: 7px 14px;
+          min-width: 140px;
+          text-align: center;
+
+          &:hover {
+            background-color: lighten($feature-background, 2);
+          }
         }
       }
 
       .image {
-        width: 38%;
+        display: inline-block;
+        width: 150px;
+        min-height: 10px;
 
         img {
           width: 100%;
