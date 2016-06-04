@@ -1399,9 +1399,7 @@ body {
     max-width: 820px;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  p {
     color: #444;
     font-size: 15px;
     font-weight: 300;
@@ -1478,6 +1476,7 @@ body {
         padding: 10px 14px 0 14px;
         font-size: 14px;
         line-height: 20px;
+        font-weight: 300;
 
         .title {
           font-weight: $bold;
@@ -1485,7 +1484,6 @@ body {
         }
 
         .rating {
-          font-weight: 300;
           margin-bottom: 10px;
 
           .stars {
@@ -1510,16 +1508,16 @@ body {
 
         .action {
           display: inline-block;
-          background-color: lighten($feature-background, 6);
+          background-color: lighten($feature-background, 4);
           color: white;
           font-size: 13px;
           border-radius: 2px;
-          padding: 7px 14px;
+          padding: 6px 14px;
           min-width: 140px;
           text-align: center;
 
           &:hover {
-            background-color: lighten($feature-background, 2);
+            background-color: lighten($feature-background, 0);
           }
         }
       }
