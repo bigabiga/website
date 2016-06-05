@@ -1245,8 +1245,6 @@ body {
     margin-top: 6px;
     margin-bottom: 18px;
     font-family: "Tenor Sans", sans-serif; }
-    .store-cont h1 a {
-      cursor: pointer; }
   .store-cont .title-icon {
     display: inline-block;
     margin-top: 3px;
@@ -1320,6 +1318,8 @@ body {
         .store-cont .items-cont .store-item .info .title {
           font-weight: 500;
           margin-bottom: 10px; }
+          .store-cont .items-cont .store-item .info .title a {
+            cursor: pointer; }
         .store-cont .items-cont .store-item .info .rating {
           margin-bottom: 10px; }
           .store-cont .items-cont .store-item .info .rating .stars {

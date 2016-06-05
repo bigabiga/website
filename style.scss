@@ -1388,10 +1388,6 @@ body {
     margin-top: 6px;
     margin-bottom: 18px;
     font-family: $title-font;
-
-    a {
-      cursor: pointer;
-    }
   }
 
   .title-icon {
@@ -1487,6 +1483,9 @@ body {
         .title {
           font-weight: $bold;
           margin-bottom: 10px;
+          a {
+            cursor: pointer;
+          }
         }
 
         .rating {
