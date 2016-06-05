@@ -36,87 +36,87 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
 
 </head>
 <body>
-  {% include header.html %}
-  {% include nav-bar.html %}
+{% include header.html %}
+{% include nav-bar.html %}
 
-  {% assign features = site.data.features %}
-  {% assign site-time = site.time | date: "%Y-%m-%d" %}
+{% assign features = site.data.features %}
+{% assign site-time = site.time | date: "%Y-%m-%d" %}
 
-  {% for feature in features %}
-    {% assign feature-date = feature.date | date: "%Y-%m-%d" %}
-    {% if feature-date == site-time %}
-      {% for film in site.films %}
-        {% if film.title == feature.title %}
-          {% assign film-of-the-day = film %}
+{% for feature in features %}
+{% assign feature-date = feature.date | date: "%Y-%m-%d" %}
+{% if feature-date == site-time %}
+{% for film in site.films %}
+{% if film.title == feature.title %}
+{% assign film-of-the-day = film %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+<div class="main">
+  <div class="top-content">
+    <div class="film-of-the-day">
+      <a href="{{ film-of-the-day.url }}"><div class="film">
+
+
+        {% if film-of-the-day.image-offset != null %}
+        <div class="film-image" style="background-image: url({{ film-of-the-day.image }}); background-position-y: {{ film-of-the-day.image-offset }}%;"></div>
+        {% else %}
+        <div class="film-image" style="background-image: url({{ film-of-the-day.image }})"></div>
         {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-
-  <div class="main">
-    <div class="top-content">
-      <div class="film-of-the-day">
-        <a href="{{ film-of-the-day.url }}"><div class="film">
 
 
-          {% if film-of-the-day.image-offset != null %}
-          <div class="film-image" style="background-image: url({{ film-of-the-day.image }}); background-position-y: {{ film-of-the-day.image-offset }}%;"></div>
-          {% else %}
-          <div class="film-image" style="background-image: url({{ film-of-the-day.image }})"></div>
-          {% endif %}
-
-
-          <div class="play-mark"></div>
-        </div></a>
-        <div class="description">
-          <div class="info">
-            <div class="banner-2">Today's Spotlight</div>
-            <a href="{{ film-of-the-day.url }}">
-              <div class="title">{{ film-of-the-day.title }} <span class="year">{{ film-of-the-day.year }}</span></div>
-            </a>
-            <h3 class="more-info">
-              {{ film-of-the-day.country | join: ' / ' }} | {{ film-of-the-day.director | join: ', ' }} |
-              {% for item in film-of-the-day.genre %}
-              {% if item != "Silent" and item != "Short" %}
-              {% if forloop.first != true %}
-              ,
-              {% endif %}
-              {{ item }}
-              {% endif %}
-              {% endfor %}
-            </h3>
-            <div class="synopsis"> {{ film-of-the-day.excerpt }} </div>
-          </div>
-
-          {% include share-icons-home.html %}
-
+        <div class="play-mark"></div>
+      </div></a>
+      <div class="description">
+        <div class="info">
+          <div class="banner-2">Today's Spotlight</div>
+          <a href="{{ film-of-the-day.url }}">
+            <div class="title">{{ film-of-the-day.title }} <span class="year">{{ film-of-the-day.year }}</span></div>
+          </a>
+          <h3 class="more-info">
+            {{ film-of-the-day.country | join: ' / ' }} | {{ film-of-the-day.director | join: ', ' }} |
+            {% for item in film-of-the-day.genre %}
+            {% if item != "Silent" and item != "Short" %}
+            {% if forloop.first != true %}
+            ,
+            {% endif %}
+            {{ item }}
+            {% endif %}
+            {% endfor %}
+          </h3>
+          <div class="synopsis"> {{ film-of-the-day.excerpt }} </div>
         </div>
 
-      </div>
-      <div class="bottom-share">
-        <span>Share on</span> {% include share-icons-home.html %}
+        {% include share-icons-home.html %}
+
       </div>
 
     </div>
-    <div class="content bottom">
-
-      {% include recommended-films.html %}
-
-      {% include home-genres.html %}
-
-      {% include home-decades.html %}
-
-      {% include home-countries.html %}
-
-      {% include home-directors.html %}
-
-
+    <div class="bottom-share">
+      <span>Share on</span> {% include share-icons-home.html %}
     </div>
+
   </div>
+  <div class="content bottom">
 
-  <footer>
-    {% include footer.html %}
-  </footer>
+    {% include recommended-films.html %}
+
+    {% include home-genres.html %}
+
+    {% include home-decades.html %}
+
+    {% include home-countries.html %}
+
+    {% include home-directors.html %}
+
+
+  </div>
+</div>
+
+<footer>
+  {% include footer.html %}
+</footer>
 </body>
 <!--<script src="jquery.lazyload.js" type="text/javascript"></script>-->
 </html>
