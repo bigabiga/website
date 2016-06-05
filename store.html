@@ -36,15 +36,16 @@ title: About Us - La Filmothèque
         It is also a place to sit back, grab a coffee, and do some shopping!
       </p>
     </div>
+
     <div class="store-tabs">
-      <div class="store-tab selected">
+      <div class="store-tab" data-category="recommended">
         Recommended items
       </div>
-      <div class="store-tab">
+      <div class="store-tab" data-category="dvd">
         DVD & Bluray
       </div>
-      <div class="store-tab">
-        Printed mugs
+      <div class="store-tab" data-category="box-set">
+        Box sets
       </div>
     </div>
 
@@ -52,85 +53,31 @@ title: About Us - La Filmothèque
     <div class="store-items" id="recommended">
       <div class="items-cont">
         {% for item in site.data.store-items %}
-        <div class="store-item">
-          <div class="image">
-            <img src="{{ item.image-link }}">
-          </div>
-          <div class="info">
-            <h3 class="title">
-              {{ item.title }}
-            </h3>
-            <div class="rating">
-              Amazon rating:
-              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
-              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
-            </div>
-            <p class="description">
-              {{ item.description }}
-            </p>
-            <a class="action" href="{{ item.link }}">
-              Buy on Amazon - {{ item.price }}
-            </a>
-          </div>
-        </div>
+        {% if item.category contains 'recommended' %}
+        {% include store-item.html %}
+        {% endif %}
         {% endfor %}
       </div>
     </div>
 
 
-    <div class="store-items" id="dvds">
+    <div class="store-items" id="dvd">
       <div class="items-cont">
         {% for item in site.data.store-items %}
-        <div class="store-item">
-          <div class="image">
-            <img src="{{ item.image-link }}">
-          </div>
-          <div class="info">
-            <h3 class="title">
-              {{ item.title }}
-            </h3>
-            <div class="rating">
-              Amazon rating:
-              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
-              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
-            </div>
-            <p class="description">
-              {{ item.description }}
-            </p>
-            <a class="action" href="{{ item.link }}">
-              Buy on Amazon - {{ item.price }}
-            </a>
-          </div>
-        </div>
+        {% if item.category contains 'dvd' %}
+        {% include store-item.html %}
+        {% endif %}
         {% endfor %}
       </div>
     </div>
 
 
-    <div class="store-items" id="mugs">
+    <div class="store-items" id="box-set">
       <div class="items-cont">
         {% for item in site.data.store-items %}
-        <div class="store-item">
-          <div class="image">
-            <img src="{{ item.image-link }}">
-          </div>
-          <div class="info">
-            <h3 class="title">
-              {{ item.title }}
-            </h3>
-            <div class="rating">
-              Amazon rating:
-              {% assign cover-width = 5 | minus: item.rating | times: 20 %}
-              <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
-            </div>
-            <p class="description">
-              {{ item.description }}
-            </p>
-            <a class="action" href="{{ item.link }}">
-              Buy on Amazon - {{ item.price }}
-            </a>
-          </div>
-        </div>
+        {% if item.category contains 'box set' %}
+        {% include store-item.html %}
+        {% endif %}
         {% endfor %}
       </div>
     </div>

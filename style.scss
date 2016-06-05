@@ -494,8 +494,9 @@ body {
   }
 
   .store-link {
-    display: inline-block;
+    display: none;
     cursor: pointer;
+    @include user-select;
     height: 40px;
     padding: 13px 8px 0 29px;
     margin-right: 6px;
@@ -1432,6 +1433,7 @@ body {
     background: #EBB3C7;
     height: $tab-height;
     font-size: 0;
+    @include user-select;
 
     .store-tab {
       display: inline-block;

@@ -339,8 +339,17 @@ body {
         .nav-bar .drop-menus .drop-menu .label svg path {
           fill: #666; }
   .nav-bar .store-link {
-    display: inline-block;
+    display: none;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
     height: 40px;
     padding: 13px 8px 0 29px;
     margin-right: 6px;
@@ -1263,7 +1272,16 @@ body {
     text-align: center;
     background: #EBB3C7;
     height: 40px;
-    font-size: 0; }
+    font-size: 0;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
     .store-cont .store-tabs .store-tab {
       display: inline-block;
       font-size: 14px;
