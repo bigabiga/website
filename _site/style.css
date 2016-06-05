@@ -1245,6 +1245,8 @@ body {
     margin-top: 6px;
     margin-bottom: 18px;
     font-family: "Tenor Sans", sans-serif; }
+    .store-cont h1 a {
+      cursor: pointer; }
   .store-cont .title-icon {
     display: inline-block;
     margin-top: 3px;
@@ -1310,7 +1312,7 @@ body {
       margin-bottom: 40px; }
       .store-cont .items-cont .store-item .info {
         display: inline-block;
-        width: 325px;
+        width: 330px;
         padding: 10px 14px 0 14px;
         font-size: 14px;
         line-height: 20px;
@@ -1323,7 +1325,8 @@ body {
           .store-cont .items-cont .store-item .info .rating .stars {
             display: inline-block;
             letter-spacing: -3px;
-            color: #D7AC40; }
+            color: #D7AC40;
+            font-size: 15px; }
             .store-cont .items-cont .store-item .info .rating .stars .cover {
               position: absolute;
               top: 0;
@@ -1333,7 +1336,11 @@ body {
         .store-cont .items-cont .store-item .info .description {
           line-height: 20px;
           margin-bottom: 14px; }
-        .store-cont .items-cont .store-item .info .action {
+        .store-cont .items-cont .store-item .info form {
+          display: inline-block;
+          margin: 0; }
+        .store-cont .items-cont .store-item .info .action,
+        .store-cont .items-cont .store-item .info .amazon-button {
           display: inline-block;
           background-color: #84455c;
           color: white;
@@ -1341,15 +1348,31 @@ body {
           border-radius: 2px;
           padding: 6px 14px;
           min-width: 140px;
-          text-align: center; }
-          .store-cont .items-cont .store-item .info .action:hover {
+          text-align: center;
+          height: 32px;
+          font-family: "roboto", sans-serif;
+          font-weight: 300;
+          cursor: pointer; }
+          .store-cont .items-cont .store-item .info .action:hover,
+          .store-cont .items-cont .store-item .info .amazon-button:hover {
             background-color: #773e53; }
+      .store-cont .items-cont .store-item .iframe-cont {
+        pointer-events: none; }
       .store-cont .items-cont .store-item .image {
         display: inline-block;
-        width: 150px;
+        width: 145px;
         min-height: 10px; }
+        .store-cont .items-cont .store-item .image .img-cont {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 181px;
+          background: white;
+          overflow: hidden; }
         .store-cont .items-cont .store-item .image img {
-          width: 100%; }
+          width: 100%;
+          cursor: pointer; }
 
 .contact-form {
   font-size: 14px; }
