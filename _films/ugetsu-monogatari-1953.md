@@ -4,7 +4,7 @@ layout: film
 
 excerpt: A fantastic tale of war, love, family and ambition set in the midst of the Japanese Civil Wars of the sixteenth century.
 synopsis: A fantastic tale of war, love, family and ambition set in the midst of the Japanese Civil Wars of the sixteenth century.
-title: Ugetsu monogatari
+title: Ugetsu Monogatari
 runtime: 96
 genre:
 - War

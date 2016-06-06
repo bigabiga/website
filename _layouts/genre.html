@@ -51,6 +51,7 @@
         {% include search-notes.html %}
         {% for film in site.films %}
           {% if film.genre contains page.title %}
+            {% increment thumb-counter %}
             {% include thumbnail.html %}
           {% endif %}
         {% endfor %}

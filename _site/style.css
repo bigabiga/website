@@ -18,6 +18,9 @@
     font-weight: 300;
     opacity: 0.8; }
 
+.hide-our-ads {
+  display: none; }
+
 body {
   font-family: "roboto", sans-serif;
   background: #e0e0e0;
@@ -476,6 +479,10 @@ body {
       .thumbnails .film-description .title .year {
         color: #c38ba0; }
 
+.thumbnail.thumb-ad {
+  background: #ccc;
+  height: 220px; }
+
 .inner-nav {
   padding: 0 30px;
   background: #703b4e;
@@ -786,6 +793,10 @@ body {
   margin-bottom: 40px;
   margin-right: -5px;
   font-size: 0; }
+  .right-bar .right-ad {
+    background: #fff;
+    height: 160px;
+    margin-bottom: 10px; }
   .right-bar .side-title {
     font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
@@ -957,6 +968,52 @@ body {
 
 .home-element {
   margin-top: 32px; }
+
+.home-ads {
+  font-size: 0;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 26px; }
+  .home-ads .ad-cont {
+    display: inline-block;
+    width: 50%;
+    height: 92px; }
+    .home-ads .ad-cont .inside {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      background: #ccc;
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+      left: 5px; }
+      .home-ads .ad-cont .inside.store-banner {
+        background: #703b4e;
+        padding: 23px 21px 21px 68px;
+        cursor: pointer;
+        transition: background 0.1s ease; }
+        .home-ads .ad-cont .inside.store-banner:hover {
+          background: #773e53; }
+        .home-ads .ad-cont .inside.store-banner h3 {
+          font-family: "Tenor Sans", sans-serif;
+          font-size: 19px;
+          color: #e6ced7;
+          margin-bottom: 4px; }
+        .home-ads .ad-cont .inside.store-banner p {
+          font-weight: 300;
+          font-size: 13px;
+          color: #c895a8; }
+        .home-ads .ad-cont .inside.store-banner .icon {
+          position: absolute;
+          top: 19px;
+          left: 20px;
+          width: 36px;
+          height: 36px; }
+          .home-ads .ad-cont .inside.store-banner .icon svg {
+            width: 100%;
+            height: 100%; }
+            .home-ads .ad-cont .inside.store-banner .icon svg path {
+              fill: #c895a8; }
 
 .film-of-the-day {
   font-size: 0;

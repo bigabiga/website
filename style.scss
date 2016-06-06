@@ -182,6 +182,10 @@ $title-font: 'Tenor Sans', sans-serif;
   text-transform: uppercase;
 }
 
+.hide-our-ads {
+  display: none;
+}
+
 body {
   font-family: $text-font;
   background: $nav-background;
@@ -621,6 +625,11 @@ body {
   }
 }
 
+.thumbnail.thumb-ad {
+  background: #ccc;
+  height: 220px;
+}
+
 .inner-nav {
   $inner-nav-height: 48px;
   $content-color: lighten($feature-background, 42);
@@ -962,6 +971,12 @@ body {
   margin-bottom: 40px;
   margin-right: -$film-padding;
 
+  .right-ad {
+    background: #fff;
+    height: 160px;
+    margin-bottom: 2 * $film-padding
+  }
+
   .side-title {
     font-family: $title-font;
     text-transform: uppercase;
@@ -1094,6 +1109,71 @@ body {
 
 .home-element {
   margin-top: 32px;
+}
+
+.home-ads {
+  font-size: 0;
+  margin-left: -1 * $film-padding;
+  margin-right: -1 * $film-padding;
+  margin-top: 26px;
+
+  .ad-cont {
+    display: inline-block;
+    width: 50%;
+    height: 92px;
+
+    .inside {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      background: #ccc;
+      top: $film-padding;
+      right: $film-padding;
+      bottom: $film-padding;
+      left: $film-padding;
+
+      &.store-banner {
+        background: darken($feature-background, 2);
+        padding: 23px 21px 21px 68px;
+        cursor: pointer;
+        transition: background 0.1s ease;
+
+        &:hover {
+          background: lighten($feature-background, 0);
+        }
+
+        h3 {
+          font-family: $title-font;
+          font-size: 19px;
+          color: lighten($feature-background, 50);
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 13px;
+          color: lighten($feature-background, 33);
+        }
+
+        .icon {
+          position: absolute;
+          top: 19px;
+          left: 20px;
+          width: 36px;
+          height: 36px;
+
+          svg {
+            width: 100%;
+            height: 100%;
+
+            path {
+              fill: lighten($feature-background, 33);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .film-of-the-day {
