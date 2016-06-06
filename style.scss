@@ -182,7 +182,7 @@ $title-font: 'Tenor Sans', sans-serif;
   text-transform: uppercase;
 }
 
-.hide-our-ads {
+.hide-our-pandas {
   display: none;
 }
 
@@ -971,7 +971,7 @@ body {
   margin-bottom: 40px;
   margin-right: -$film-padding;
 
-  .right-ad {
+  .right-panda {
     background: #fff;
     height: 160px;
     margin-bottom: 2 * $film-padding
@@ -1080,7 +1080,7 @@ body {
   min-height: 240px;
   padding: 20px $padding;
 
-  &.ad {
+  &.panda {
     min-height: 0;
   }
 
@@ -1111,13 +1111,13 @@ body {
   margin-top: 32px;
 }
 
-.home-ads {
+.home-pandas {
   font-size: 0;
   margin-left: -1 * $film-padding;
   margin-right: -1 * $film-padding;
   margin-top: 26px;
 
-  .ad-cont {
+  .panda-cont {
     display: inline-block;
     width: 50%;
     height: 92px;
@@ -1144,9 +1144,9 @@ body {
 
         h3 {
           font-family: $title-font;
-          font-size: 19px;
+          font-size: 18px;
           color: lighten($feature-background, 50);
-          margin-bottom: 4px;
+          margin-bottom: 5px;
         }
 
         p {
@@ -1810,6 +1810,14 @@ body {
       }
     }
   }
+}
+
+.please-message {
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #444;
+  //text-decoration: underline;
 }
 
 html {

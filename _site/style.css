@@ -18,7 +18,7 @@
     font-weight: 300;
     opacity: 0.8; }
 
-.hide-our-ads {
+.hide-our-pandas {
   display: none; }
 
 body {
@@ -793,7 +793,7 @@ body {
   margin-bottom: 40px;
   margin-right: -5px;
   font-size: 0; }
-  .right-bar .right-ad {
+  .right-bar .right-panda {
     background: #fff;
     height: 160px;
     margin-bottom: 10px; }
@@ -947,7 +947,7 @@ body {
   background: white;
   min-height: 240px;
   padding: 20px 30px; }
-  .panel.ad {
+  .panel.panda {
     min-height: 0; }
   .panel.related {
     display: none; }
@@ -969,16 +969,16 @@ body {
 .home-element {
   margin-top: 32px; }
 
-.home-ads {
+.home-pandas {
   font-size: 0;
   margin-left: -5px;
   margin-right: -5px;
   margin-top: 26px; }
-  .home-ads .ad-cont {
+  .home-pandas .panda-cont {
     display: inline-block;
     width: 50%;
     height: 92px; }
-    .home-ads .ad-cont .inside {
+    .home-pandas .panda-cont .inside {
       position: absolute;
       display: inline-block;
       cursor: pointer;
@@ -987,32 +987,32 @@ body {
       right: 5px;
       bottom: 5px;
       left: 5px; }
-      .home-ads .ad-cont .inside.store-banner {
+      .home-pandas .panda-cont .inside.store-banner {
         background: #703b4e;
         padding: 23px 21px 21px 68px;
         cursor: pointer;
         transition: background 0.1s ease; }
-        .home-ads .ad-cont .inside.store-banner:hover {
+        .home-pandas .panda-cont .inside.store-banner:hover {
           background: #773e53; }
-        .home-ads .ad-cont .inside.store-banner h3 {
+        .home-pandas .panda-cont .inside.store-banner h3 {
           font-family: "Tenor Sans", sans-serif;
-          font-size: 19px;
+          font-size: 18px;
           color: #e6ced7;
-          margin-bottom: 4px; }
-        .home-ads .ad-cont .inside.store-banner p {
+          margin-bottom: 5px; }
+        .home-pandas .panda-cont .inside.store-banner p {
           font-weight: 300;
           font-size: 13px;
           color: #c895a8; }
-        .home-ads .ad-cont .inside.store-banner .icon {
+        .home-pandas .panda-cont .inside.store-banner .icon {
           position: absolute;
           top: 19px;
           left: 20px;
           width: 36px;
           height: 36px; }
-          .home-ads .ad-cont .inside.store-banner .icon svg {
+          .home-pandas .panda-cont .inside.store-banner .icon svg {
             width: 100%;
             height: 100%; }
-            .home-ads .ad-cont .inside.store-banner .icon svg path {
+            .home-pandas .panda-cont .inside.store-banner .icon svg path {
               fill: #c895a8; }
 
 .film-of-the-day {
@@ -1538,6 +1538,12 @@ body {
       background: #ae637f; }
       .share-icons .icon:hover svg path {
         fill: white; }
+
+.please-message {
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #444; }
 
 @media all and (max-width: 1362px) {
   html .film-of-the-day .description .banner-2 {
