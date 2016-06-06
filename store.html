@@ -55,10 +55,10 @@ title: About Us - La Filmothèque
       </div>
     </div>
 
-
+    {% assign store-items = site.data.store-items | sort: 'rating' | reverse %}
     <div class="store-items" id="recommended">
       <div class="items-cont">
-        {% for item in site.data.store-items %}
+        {% for item in store-items %}
         {% if item.category contains 'recommended' %}
         {% include store-item.html %}
         {% endif %}
@@ -69,7 +69,7 @@ title: About Us - La Filmothèque
 
     <div class="store-items" id="dvd">
       <div class="items-cont">
-        {% for item in site.data.store-items %}
+        {% for item in store-items %}
         {% if item.category contains 'dvd' %}
         {% include store-item.html %}
         {% endif %}
@@ -80,7 +80,7 @@ title: About Us - La Filmothèque
 
     <div class="store-items" id="box-set">
       <div class="items-cont">
-        {% for item in site.data.store-items %}
+        {% for item in store-items %}
         {% if item.category contains 'box set' %}
         {% include store-item.html %}
         {% endif %}

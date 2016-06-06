@@ -1428,6 +1428,8 @@ body {
       .store-cont .items-cont .store-item .image {
         display: inline-block;
         position: absolute;
+        top: 0;
+        left: 0;
         width: 165px;
         height: 207px; }
         .store-cont .items-cont .store-item .image .img-cont {
