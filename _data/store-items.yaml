@@ -2,10 +2,20 @@
   category:
   - recommended
   - dvd
-  title: All That Heaven Allows (Blu-ray + DVD)
+  title: Seven Samurai (Blu-ray)
   asin: B01DWKQG34
-  description: This heartbreakingly beautiful indictment of 1950s American mores by Douglas Sirk. Very good quality and so on.
-  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00J2PQYG8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
+  description: Douglas sirk’s classic melodrama about An upper-class widow who falls in love with a much younger, down-to-earth nurseryman, much to the disapproval of her children and criticism of her country club peers. Criterion collection did a pretty spectacular job in preserving this highly accurate, vivid technicolor film. Finally a 2K resolution film transfer that does justice to these carefully framed, breathtaking shots.
+  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B003KGBISY&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
+  price: $38.89
+  rating: 4.5
+
+- type: Amazon
+  category:
+  - dvd
+  title: Only Angels Have Wings (Blu-ray)
+  asin: B01AONIYZU
+  description: Douglas sirk’s classic melodrama about An upper-class widow who falls in love with a much younger, down-to-earth nurseryman, much to the disapproval of her children and criticism of her country club peers. Criterion collection did a pretty spectacular job in preserving this highly accurate, vivid technicolor film. Finally a 2K resolution film transfer that does justice to these carefully framed, breathtaking shots.
+  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01AONIYZU&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
   price: $38.89
   rating: 4.3
 
@@ -13,22 +23,13 @@
   category:
   - recommended
   - dvd
-  title: All That Heaven Allows (Blu-ray + DVD)
-  asin: B01DWKQG34
-  description: This heartbreakingly beautiful indictment of 1950s American mores by Douglas Sirk. Very good quality and so on.
-  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00J2PQYG8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
-  price: $38.89
-  rating: 2.7
+  title: In a Lonely Place (Blu-ray)
+  asin: B01BUX7Z0I
+  description: Douglas sirk’s classic melodrama about An upper-class widow who falls in love with a much younger, down-to-earth nurseryman, much to the disapproval of her children and criticism of her country club peers. Criterion collection did a pretty spectacular job in preserving this highly accurate, vivid technicolor film. Finally a 2K resolution film transfer that does justice to these carefully framed, breathtaking shots.
+  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01BUX7Z0I&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
 
-- type: Amazon
-  category:
-  - recommended
-  title: All That Heaven Allows (Blu-ray + DVD)
-  asin: B01DWKQG34
-  description: This heartbreakingly beautiful indictment of 1950s American mores by Douglas Sirk. Very good quality and so on.
-  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00J2PQYG8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
   price: $38.89
-  rating: 4
+  rating: 4.1
 
 - type: Amazon
   category:
