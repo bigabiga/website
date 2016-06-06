@@ -13,7 +13,7 @@ title: About Us - La Filmothèque
 <body>
   {% include header.html %}
   {% include nav-bar.html %}
-  <div class="about-cont">
+  <div class="about-cont no-space">
     <h1>About Us</h1>
     <p>
       La Filmothèque is a public domain film library. This means a place to watch classic public domain films free of charge,
@@ -36,6 +36,19 @@ title: About Us - La Filmothèque
       All the best,<br>
       La Filmothèque Team
     </p>
+  </div>
+
+  <div class="about-cont">
+    <h1 id="recommended-resources">Recommended Resources</h1>
+    <div class="resources">
+      <a href="http://www.cinematologists.com/">
+        <img src="/images/sites/cinematologists.jpg" style="width: 100%">
+      </a>
+      <br>
+      <p>
+        The Cinematologists - Film club and podcast for discerning cinephiles, Hosted by Dr. Dario Llinares & Dr. Neil Fox.
+      </p>
+    </div>
   </div>
   <footer>
     {% include footer.html %}

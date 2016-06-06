@@ -1402,11 +1402,30 @@ body {
   margin-right: auto;
   background: white;
   padding: 30px 26px;
-  min-height: 450px;
+  //min-height: 450px;
   margin-bottom: 250px;
 
+  .resources {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+
+  &.no-space {
+    margin-bottom: 20px;
+  }
+
   h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 46px;
     text-align: center;
     color: $feature-background;
@@ -1506,7 +1525,7 @@ body {
   }
 
   .store-tabs {
-    $tab-height: 40px;
+    $tab-height: 42px;
 
     width: 100%;
     text-align: center;
