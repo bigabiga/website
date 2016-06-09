@@ -6,7 +6,7 @@ title: The Blue Angel
 runtime: 124
 genre: 
 - Drama
-- Music
+- Musical
 silent: no
 decade: 1930s
 recommended: yes
