@@ -1445,10 +1445,10 @@ body {
 
   h2 {
     font-family: $title-font;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 29px;
     color: #444;
-    margin-top: 28px;
+    margin-top: 26px;
     margin-bottom: 14px;
   }
 
@@ -1488,6 +1488,7 @@ body {
 }
 
 .about-cont .article-film {
+  display: block;
   height: 240px;
   cursor: pointer;
   font-size: 15px;

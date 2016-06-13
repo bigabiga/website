@@ -12,13 +12,13 @@
   {% include header.html %}
   {% include nav-bar.html %}
   <div class="about-cont article">
-    <h1>New Light on Classic Films</h1>
+    <h1>Watch the Damn Films!</h1>
     <p>
-      It used to be the case that one had to travel across many miles, or even continents and oceans, to gain access
+      It used to be the case that one had to cross many miles, even continents and oceans, to gain access
       to the world’s cultural assets - these invaluable works in the fields of art, literature and philosophy.
     </p>
     <p>
-      We have come a long way since. In the case of public domain classic films, our particular field of interest,
+      We have come a long way since. In the case of classic films, our particular field of interest,
       not only are they becoming increasingly available online, but a large number of them are considered as belonging
       to the public domain.
     </p>
@@ -30,23 +30,23 @@
     <p>
       While these are all valuable approaches, at the core of it there is a simpler answer: to benefit from cinema one
       needs to experience cinema, and to understand cinema history one needs to experience cinema history.
-      <span class="bold">That is, actually watch the films!</span>
+      That is, <span class="bold">actually watch the films!</span>
     </p>
     <p>
-      La Filmotheque, our personal project, was built with that in mind: a platform to learn about classic films
+      La Filmothèque, our personal project, was built with that in mind: a platform to learn about classic films
       through experience. We are putting together and organizing these wonderful films – well known and obscure,
-      Hollywood classics and world cinema, mainstream and avant-garde, silent and talkies. Our hope is to expose
+      Hollywood classics and world cinema, mainstream and avant-garde, silent and talkies – with the hope to expose
       new audience to films, genres and directors they might not have been exposed to otherwise.
     </p>
     <p>
-      We have assembled together a few notable examples public domain films, showing some of the fascinating themes
-      the world of classic cinema has to offer.
+      We have assembled together a few notable examples belonging to the public domain, showing some of the fascinating
+      themes one might come across.
     </p>
     <h2>The Cure (1917) - Charlie Chaplin, USA</h2>
 
     {% for film in site.films %}
     {% if film.title == "The Cure" %}
-    <div class="article-film">
+    <a class="article-film" href="{{ film.url }}">
 
       <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 26%;"></div>
 
@@ -55,7 +55,7 @@
         <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
       </div>
       <div class="play-mark"></div>
-    </div>
+    </a>
     {% endif %}
     {% endfor %}
 
@@ -73,15 +73,15 @@
       British Music Hall.
     </p>
     <p>
-      The story begins when Chaplin’s character arrives at a health spa to a health spa to overcome his alcoholism.
-      It is soon clear however that he has no intention to do that, as his suitcase is full of booze. One thing leads
+      The story begins when Chaplin’s character arrives at a health spa, supposedly to overcome his alcoholism.
+      It is soon clear however that he has no intention of doing that, as his suitcase is full of booze. One thing leads
       to another, and at some point everyone in the health spa gets completely drunk and things get wild.
     </p>
     <h2>The Lodger: A Story of the London Fog (1927) - Alfred Hitchcock, UK</h2>
 
     {% for film in site.films %}
     {% if film.title == "The Lodger&#58; A Story of the London Fog" %}
-    <div class="article-film">
+    <a class="article-film" href="{{ film.url }}">
 
       <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 30%;"></div>
 
@@ -90,13 +90,13 @@
         <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
       </div>
       <div class="play-mark"></div>
-    </div>
+    </a>
     {% endif %}
     {% endfor %}
 
     <p>
-      The Lodger is Hitchcock’s third film as a director and one of his most notable silent films. The films sees
-      Hitchcock’s cinematic language became more mature, and introduces themes such as murder, mystery and suspense,
+      The Lodger is Hitchcock’s third film as a director and one of his most notable silent films. This films sees
+      Hitchcock’s cinematic language coming to maturity, and introduces themes such as murder, mystery and suspense
       which he later became identified with. Hitchcock himself considered The Lodger to be his first true film.
     </p>
     <p>
@@ -111,7 +111,7 @@
 
     {% for film in site.films %}
     {% if film.title == "Pandora’s Box" %}
-    <div class="article-film">
+    <a class="article-film" href="{{ film.url }}">
 
       <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 33%;"></div>
 
@@ -120,7 +120,7 @@
         <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
       </div>
       <div class="play-mark"></div>
-    </div>
+    </a>
     {% endif %}
     {% endfor %}
 
@@ -140,7 +140,7 @@
 
     {% for film in site.films %}
     {% if film.title == "Earth" %}
-    <div class="article-film">
+    <a class="article-film" href="{{ film.url }}">
 
       <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 68%;"></div>
 
@@ -149,7 +149,7 @@
         <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
       </div>
       <div class="play-mark"></div>
-    </div>
+    </a>
     {% endif %}
     {% endfor %}
 
@@ -163,11 +163,12 @@
     </p>
     <p>
       Andrei Tarkovsky had said about Earth that he used to watch is over and over again, and would re-watch it
-      before he began work on each of his films.
+      before he began to work on each of his films.
     </p>
+    <h2>To learn more, watch the films!</h2>
     <p>
-      This is just a taste of what classic cinema has to offer. These films and many others are available online,
-      and on La Filmotheque. Their historical, cultural, and artistic significance is indispensable, and as can be
+      This is just a taste of what classic cinema has to offer. These films and many others are available online
+      and on La Filmothèque. Their historical, cultural, and artistic significance is indispensable, and as can be
       seen, they are still alive and kicking!
     </p>
   </div>
