@@ -1,0 +1,178 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include basic-head.html %}
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <title>New Light on Classic Films</title>
+</head>
+<body>
+  {% include header.html %}
+  {% include nav-bar.html %}
+  <div class="about-cont article">
+    <h1>New Light on Classic Films</h1>
+    <p>
+      It used to be the case that one had to travel across many miles, or even continents and oceans, to gain access
+      to the world’s cultural assets - these invaluable works in the fields of art, literature and philosophy.
+    </p>
+    <p>
+      We have come a long way since. In the case of public domain classic films, our particular field of interest,
+      not only are they becoming increasingly available online, but a large number of them are considered as belonging
+      to the public domain.
+    </p>
+    <p>
+      In light of this one might wonder: where does the value of these films lie for the modern viewer? How could one
+      get to know them? Is it by storing and archiving them? By reading, writing and referencing them? Through courses
+      and lectures?
+    </p>
+    <p>
+      While these are all valuable approaches, at the core of it there is a simpler answer: to benefit from cinema one
+      needs to experience cinema, and to understand cinema history one needs to experience cinema history.
+      <span class="bold">That is, actually watch the films!</span>
+    </p>
+    <p>
+      La Filmotheque, our personal project, was built with that in mind: a platform to learn about classic films
+      through experience. We are putting together and organizing these wonderful films – well known and obscure,
+      Hollywood classics and world cinema, mainstream and avant-garde, silent and talkies. Our hope is to expose
+      new audience to films, genres and directors they might not have been exposed to otherwise.
+    </p>
+    <p>
+      We have assembled together a few notable examples public domain films, showing some of the fascinating themes
+      the world of classic cinema has to offer.
+    </p>
+    <h2>The Cure (1917) - Charlie Chaplin, USA</h2>
+
+    {% for film in site.films %}
+    {% if film.title == "The Cure" %}
+    <div class="article-film">
+
+      <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 26%;"></div>
+
+      <div class="info">
+        <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+        <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
+      </div>
+      <div class="play-mark"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <p>
+      The Cure is Chaplin’s tenth short comedy with Mutual Film Corporation. It was written, directed, and starring
+      Chaplin himself, and is probably one of the funniest Chaplin films of all time.
+    </p>
+    <p>
+      Unlike Chaplin’s later films, which tended to have a strong sentimental side, The Cure does not revolve around
+      subjects like poverty, harsh childhood, or unreturned love, but provides laughs from start to finish.
+    </p>
+    <p>
+      It is also interesting that Chaplin does not appear as the usual iconic “Little Tramp”, but as a wealthy
+      alcoholic bourgeois. Drunken characters is an act Chaplin had specialized in from back in his days at the
+      British Music Hall.
+    </p>
+    <p>
+      The story begins when Chaplin’s character arrives at a health spa to a health spa to overcome his alcoholism.
+      It is soon clear however that he has no intention to do that, as his suitcase is full of booze. One thing leads
+      to another, and at some point everyone in the health spa gets completely drunk and things get wild.
+    </p>
+    <h2>The Lodger: A Story of the London Fog (1927) - Alfred Hitchcock, UK</h2>
+
+    {% for film in site.films %}
+    {% if film.title == "The Lodger&#58; A Story of the London Fog" %}
+    <div class="article-film">
+
+      <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 30%;"></div>
+
+      <div class="info">
+        <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+        <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
+      </div>
+      <div class="play-mark"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <p>
+      The Lodger is Hitchcock’s third film as a director and one of his most notable silent films. The films sees
+      Hitchcock’s cinematic language became more mature, and introduces themes such as murder, mystery and suspense,
+      which he later became identified with. Hitchcock himself considered The Lodger to be his first true film.
+    </p>
+    <p>
+      The film is loosely based on Jack the Ripper, and drives inspiration from a novel by Mrs. Belloc Lowndes.
+    </p>
+    <p>
+      It is situated in London, where a serial killer called “The Avenger” takes blond-haired girls as his victims.
+      Around the same time, Mr. and Mrs. Bunting take in a mysterious lodger. As the man and their blond-haired
+      daughter grow close, suspicions begin to arise.
+    </p>
+    <h2>Pandora’s Box (1929) - G. W. Pabst, Germany</h2>
+
+    {% for film in site.films %}
+    {% if film.title == "Pandora’s Box" %}
+    <div class="article-film">
+
+      <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 33%;"></div>
+
+      <div class="info">
+        <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+        <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
+      </div>
+      <div class="play-mark"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <p>
+      Pandora’s Box, directed by G.W. Pabst, is the film that made Louise Brooks a star and a remarkable icon of the
+      Jazz age, and of modernity.
+    </p>
+    <p>
+      The film is based on several different plays by Frank Wedekind, an important early expressionist dramatist.
+      It tells the tragic story of Lulu, a good hearted prostitute whose life lead her into cruel circumstances and a
+      fatal fate.
+    </p>
+    <p>
+      Pabst’s direction, unlike any other silent German Expressionist film, is naturalistic and strikingly modern.
+    </p>
+    <h2>Earth (1930) - Alexander Dovzhenko, Soviet Union</h2>
+
+    {% for film in site.films %}
+    {% if film.title == "Earth" %}
+    <div class="article-film">
+
+      <div class="film-image lazy" data-original="{{ film.image }}" style="background-image: url('/images/transparent.png'); background-position-y: 68%;"></div>
+
+      <div class="info">
+        <h3 class="title"> {{ film.title }} ({{ film.year }}) </h3>
+        <h4 class="description"> {{ film.director | join: ', ' }}, {{ film.country | join: ' / ' }} </h4>
+      </div>
+      <div class="play-mark"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <p>
+      Earth is a Soviet film by Ukrainian director Alexander Dovzhenko - a cinematic poet and one of Andrei
+      Tarkovsky’s most admired directors. This is the third film in his “Ukrain” trilogy, alongside Zvenigora and Arsenal.
+    </p>
+    <p>
+      As a film-poem, the surface plot in Earth not the main emphasis. The film shines with its rich montage,
+      depicting the cycle of life and death, growth and decay, and the “earth” itself.
+    </p>
+    <p>
+      Andrei Tarkovsky had said about Earth that he used to watch is over and over again, and would re-watch it
+      before he began work on each of his films.
+    </p>
+    <p>
+      This is just a taste of what classic cinema has to offer. These films and many others are available online,
+      and on La Filmotheque. Their historical, cultural, and artistic significance is indispensable, and as can be
+      seen, they are still alive and kicking!
+    </p>
+  </div>
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
+</html>
