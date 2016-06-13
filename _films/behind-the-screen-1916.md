@@ -15,7 +15,7 @@ silent: yes
 decade: 1910s
 recommended: 
 editors-rating: 3.5
-image:  /feature-images/Behind-the-Screen-1916.png
+image:  /feature-images/Behind-the-Screen-1916.jpg
 video: https://www.youtube.com/embed/_GRXeseZUVc?rel=0&amp;controls=0&amp;showinfo=0
 director: Charlie Chaplin
 year: 1916
