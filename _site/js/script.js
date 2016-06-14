@@ -148,7 +148,7 @@ function updateState() {
       countToAd = countToAd + 1;
 
       if (countToAd == 3) {
-        $this.after('<div class="thumbnail thumb-ad hide-our-pandas"></div>');
+        $this.after('<div class="thumb-ad hide-our-pandas"></div>');
       }
 
       if (countToAd == 11) {
