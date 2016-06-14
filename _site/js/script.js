@@ -140,7 +140,7 @@ function updateState() {
 
   //insert ads in thumbnails
 
-  var countToAd = 0;
+  /*var countToAd = 0;
   $('.thumbnails .thumbnail').each(function(i){
     var $this = $(this);
 
@@ -155,7 +155,7 @@ function updateState() {
         $this.after('<div class="thumb-ad full hide-our-pandas"></div>');
       }
     }
-  });
+  });*/
     
   //only show in store the items of the current tab:
   var storeCategory = getParameterByName('store-category');
