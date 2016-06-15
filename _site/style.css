@@ -482,14 +482,16 @@ body {
       .thumbnails .film-description .title .year {
         color: #c38ba0; }
 
-.thumbnail.thumb-ad {
-  background: #ccc;
-  height: 280px; }
+.thumb-ad {
+  display: inline-block;
+  background: #fff;
+  width: 25%;
+  height: 290px; }
 
 .thumb-ad.full {
-  background: #ccc;
+  background: #fff;
   width: 100%;
-  height: 130px;
+  height: 110px;
   margin-bottom: 30px; }
 
 .inner-nav {
@@ -803,8 +805,8 @@ body {
   margin-right: -5px;
   font-size: 0; }
   .right-bar .right-panda {
-    background: #fff;
-    height: 160px;
+    background: white;
+    height: 110px;
     margin-bottom: 10px; }
   .right-bar .side-title {
     font-family: "Tenor Sans", sans-serif;
@@ -991,7 +993,7 @@ body {
       position: absolute;
       display: inline-block;
       cursor: pointer;
-      background: #ccc;
+      background: #FFF;
       top: 5px;
       right: 5px;
       bottom: 5px;
