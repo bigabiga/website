@@ -1578,7 +1578,7 @@ body {
 
     width: 100%;
     text-align: center;
-    background: #EBB3C7;
+    background: $feature-background;
     height: $tab-height;
     font-size: 0;
     @include user-select;
@@ -1586,19 +1586,20 @@ body {
     .store-tab {
       display: inline-block;
       font-size: 14px;
-      color: darken($feature-background, 0);
+      color: lighten($feature-background, 40);
       height: $tab-height;
       line-height: $tab-height;
       padding: 0 18px;
       cursor: pointer;
+      font-weight: 300;
 
       &:hover {
-        background: lighten(#EBB3C7, 5);
+        background: darken($feature-background, 4);
       }
 
       &.selected {
-        background: lighten(#EBB3C7, 9);
-        color: darken($feature-background, 0);
+        background: darken($feature-background, 9);
+        color: lighten($feature-background, 60);
       }
     }
   }
@@ -1663,7 +1664,26 @@ body {
           margin: 0;
         }
 
-        .action,
+        .action {
+          display: inline-block;
+          background-color: lighten($feature-background, 4);
+          color: white;
+          font-size: 13px;
+          border-radius: 2px;
+          padding: 0 14px;
+          min-width: 140px;
+          text-align: center;
+          line-height: 32px;
+          height: 32px;
+          font-family: $text-font;
+          font-weight: 300;
+          cursor: pointer;
+
+          &:hover {
+            background-color: lighten($feature-background, 0);
+          }
+        }
+
         .amazon-button {
           display: inline-block;
           background-color: lighten($feature-background, 4);

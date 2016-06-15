@@ -1,27 +1,27 @@
 <div class="store-item">
   <div class="info">
     <h3 class="title">
-      <a href="http://www.amazon.com/dp/{{ item.asin }}/ref=as_li_ss_tl?ie=UTF8&fpl=fresh&redirect=true&ref_=s9_cartx_gw_g15_i1_r&linkCode=ll1&tag=lafilmotheque-20&linkId=c5540e3f4c1c81479463bb8590ad9f20"">
+      <a href="http://www.amazon.com/dp/{{ item.asin }}/ref=as_li_ss_tl?ie=UTF8&fpl=fresh&redirect=true&ref_=s9_cartx_gw_g15_i1_r&linkCode=ll1&tag=lafilmotheque-20&linkId=c5540e3f4c1c81479463bb8590ad9f20">
       {{ item.title }}
       </a>
     </h3>
     <div class="rating">
-      Rating:
+      La Filmothèque rating:
       {% assign cover-width = 5 | minus: item.rating | times: 20 %}
       <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;<div class="cover" style="width: {{ cover-width }}%"></div></div>
     </div>
     <p class="description">
       {{ item.description }}
     </p>
-    <!--<a class="action" href="{{ item.link }}">
-      Buy from Amazon
-    </a>-->
-    <form method="GET" action="http://www.amazon.com/gp/aws/cart/add.html"> <input type="hidden" name="AssociateTag" value="lafilmotheque-20"/> <input type="hidden" name="SubscriptionId" value="[AWSAccessKeyId]"/> <input type="hidden" name="ASIN.1" value="{{ item.asin }}"/> <input type="hidden" name="Quantity.1" value="1"/> <input class="amazon-button" type="submit" name="add" value="Buy from Amazon" border="0" alt="Buy from Amazon"> </form>
+    <a class="action" href="http://www.amazon.com/dp/{{ item.asin }}/ref=as_li_ss_tl?ie=UTF8&fpl=fresh&redirect=true&ref_=s9_cartx_gw_g15_i1_r&linkCode=ll1&tag=lafilmotheque-20&linkId=c5540e3f4c1c81479463bb8590ad9f20">
+      Buy on Amazon: &nbsp;{{ item.price }}
+    </a>
+    <!--<form method="GET" action="http://www.amazon.com/gp/aws/cart/add.html"> <input type="hidden" name="AssociateTag" value="lafilmotheque-20"/> <input type="hidden" name="SubscriptionId" value="[AWSAccessKeyId]"/> <input type="hidden" name="ASIN.1" value="{{ item.asin }}"/> <input type="hidden" name="Quantity.1" value="1"/> <input class="amazon-button" type="submit" name="add" value="Amazon add to cart:&nbsp; {{ item.price }}" border="0" alt="Amazon add to cart:&nbsp; {{ item.price }}"> </form>-->
   </div>
   <div class="image">
-    <div class="iframe-cont">
+    <!--<div class="iframe-cont">
       <iframe style="width:120px;height:204px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=lafilmotheque-20&marketplace=amazon&region=US&placement=B00J2PQYG8&asins=B00J2PQYG8&linkId=bd6c8c9d676b2a7d2bffc75e8d2faf2e&show_border=false&link_opens_in_new_window=true"></iframe>
-    </div>
+    </div>-->
     <div class="img-cont">
       <a href="http://www.amazon.com/dp/{{ item.asin }}/ref=as_li_ss_tl?ie=UTF8&fpl=fresh&redirect=true&ref_=s9_cartx_gw_g15_i1_r&linkCode=ll1&tag=lafilmotheque-20&linkId=c5540e3f4c1c81479463bb8590ad9f20">
         <img src="{{ item.image-link }}">

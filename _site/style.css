@@ -1410,7 +1410,7 @@ body {
   .store-cont .store-tabs {
     width: 100%;
     text-align: center;
-    background: #EBB3C7;
+    background: #773E53;
     height: 42px;
     font-size: 0;
     -webkit-touch-callout: none;
@@ -1425,16 +1425,17 @@ body {
     .store-cont .store-tabs .store-tab {
       display: inline-block;
       font-size: 14px;
-      color: #773e53;
+      color: #d4adbb;
       height: 42px;
       line-height: 42px;
       padding: 0 18px;
-      cursor: pointer; }
+      cursor: pointer;
+      font-weight: 300; }
       .store-cont .store-tabs .store-tab:hover {
-        background: #f0c7d6; }
+        background: #6a374a; }
       .store-cont .store-tabs .store-tab.selected {
-        background: #f5d7e2;
-        color: #773e53; }
+        background: #592e3e;
+        color: #f7f0f3; }
   .store-cont .store-items {
     text-align: center; }
   .store-cont .items-cont {
@@ -1477,7 +1478,22 @@ body {
         .store-cont .items-cont .store-item .info form {
           display: inline-block;
           margin: 0; }
-        .store-cont .items-cont .store-item .info .action,
+        .store-cont .items-cont .store-item .info .action {
+          display: inline-block;
+          background-color: #84455c;
+          color: white;
+          font-size: 13px;
+          border-radius: 2px;
+          padding: 0 14px;
+          min-width: 140px;
+          text-align: center;
+          line-height: 32px;
+          height: 32px;
+          font-family: "roboto", sans-serif;
+          font-weight: 300;
+          cursor: pointer; }
+          .store-cont .items-cont .store-item .info .action:hover {
+            background-color: #773e53; }
         .store-cont .items-cont .store-item .info .amazon-button {
           display: inline-block;
           background-color: #84455c;
@@ -1491,7 +1507,6 @@ body {
           font-family: "roboto", sans-serif;
           font-weight: 300;
           cursor: pointer; }
-          .store-cont .items-cont .store-item .info .action:hover,
           .store-cont .items-cont .store-item .info .amazon-button:hover {
             background-color: #773e53; }
       .store-cont .items-cont .store-item .iframe-cont {
