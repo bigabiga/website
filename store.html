@@ -56,7 +56,7 @@ title: About Us - La Filmothèque
     {% assign store-items = site.data.store-items | sort: 'rating' | reverse %}
     <div class="store-items" id="recommended">
       <div class="items-cont">
-        {% for item in store-items %}
+        {% for item in site.data.store-items %}
         {% if item.category contains 'recommended' %}
         {% include store-item.html %}
         {% endif %}
