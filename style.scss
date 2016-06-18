@@ -26,9 +26,7 @@ $film-padding: 5px;
 $placeholder: #c6c6c6;
 
 $bold: 500;
-//$text-font: 'lato', sans-serif;
 $text-font: 'roboto', sans-serif;
-//$title-font: 'roboto', sans-serif;
 $title-font: 'Tenor Sans', sans-serif;
 
 @mixin dropdown-menu($top: 39px) {
@@ -1527,11 +1525,11 @@ body {
   margin-bottom: 250px;
 
   .store-info {
-    padding: 30px 26px;
+    padding: 44px 26px;
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 46px;
     text-align: center;
     color: $feature-background;
