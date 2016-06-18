@@ -345,7 +345,7 @@ body {
         .nav-bar .drop-menus .drop-menu .label svg path {
           fill: #666; }
   .nav-bar .store-link {
-    display: none;
+    display: inline-block;
     cursor: pointer;
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -1477,9 +1477,6 @@ body {
         .store-cont .items-cont .store-item .info .description {
           line-height: 20px;
           margin-bottom: 14px; }
-        .store-cont .items-cont .store-item .info form {
-          display: inline-block;
-          margin: 0; }
         .store-cont .items-cont .store-item .info .action {
           display: inline-block;
           background-color: #84455c;
@@ -1496,25 +1493,6 @@ body {
           cursor: pointer; }
           .store-cont .items-cont .store-item .info .action:hover {
             background-color: #773e53; }
-        .store-cont .items-cont .store-item .info .amazon-button {
-          display: inline-block;
-          background-color: #84455c;
-          color: white;
-          font-size: 13px;
-          border-radius: 2px;
-          padding: 6px 14px;
-          min-width: 140px;
-          text-align: center;
-          height: 32px;
-          font-family: "roboto", sans-serif;
-          font-weight: 300;
-          cursor: pointer; }
-          .store-cont .items-cont .store-item .info .amazon-button:hover {
-            background-color: #773e53; }
-      .store-cont .items-cont .store-item .iframe-cont {
-        pointer-events: none; }
-        .store-cont .items-cont .store-item .iframe-cont iframe {
-          margin-top: 27px; }
       .store-cont .items-cont .store-item .image {
         display: inline-block;
         position: absolute;
@@ -1769,6 +1747,13 @@ body {
   html .part-title {
     padding: 0 18px; } }
 @media all and (max-width: 540px) {
+  html .store-cont .items-cont .store-item .image {
+    position: relative;
+    display: block;
+    margin-bottom: 8px; }
+  html .store-cont .items-cont .store-item .info {
+    padding-left: 0;
+    margin-bottom: 20px; }
   html .recommended .thumbnail-cont {
     width: 100%;
     height: 48vw; }
@@ -1868,7 +1853,13 @@ body {
     display: block; }
   html .footer .right-cont {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  html .store-cont h1 .title-icon {
+    display: block; }
+  html .store-cont .store-tabs {
+    height: auto; }
+    html .store-cont .store-tabs .store-tab {
+      display: block; } }
 @media all and (max-width: 370px) {
   html .header .logo {
     width: 200px;

@@ -501,7 +501,7 @@ body {
   }
 
   .store-link {
-    display: none;
+    display: inline-block;
     cursor: pointer;
     @include user-select;
     height: 40px;
@@ -1661,11 +1661,6 @@ body {
           margin-bottom: 14px;
         }
 
-        form {
-          display: inline-block;
-          margin: 0;
-        }
-
         .action {
           display: inline-block;
           background-color: lighten($feature-background, 4);
@@ -1684,33 +1679,6 @@ body {
           &:hover {
             background-color: lighten($feature-background, 0);
           }
-        }
-
-        .amazon-button {
-          display: inline-block;
-          background-color: lighten($feature-background, 4);
-          color: white;
-          font-size: 13px;
-          border-radius: 2px;
-          padding: 6px 14px;
-          min-width: 140px;
-          text-align: center;
-          height: 32px;
-          font-family: $text-font;
-          font-weight: 300;
-          cursor: pointer;
-
-          &:hover {
-            background-color: lighten($feature-background, 0);
-          }
-        }
-      }
-
-      .iframe-cont {
-        pointer-events: none;
-
-        iframe {
-          margin-top: 27px;
         }
       }
 
@@ -2161,6 +2129,19 @@ html {
   }
 
   @media all and (max-width: 540px) {
+    .store-cont .items-cont .store-item {
+      .image {
+        position: relative;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .info {
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+
     .recommended {
       .thumbnail-cont {
         width: 100%;
@@ -2299,6 +2280,20 @@ html {
       .right-cont {
         padding-left: 20px;
         padding-right: 20px;
+      }
+    }
+
+    .store-cont {
+      h1 .title-icon {
+        display: block;
+      }
+
+      .store-tabs {
+        height: auto;
+
+        .store-tab {
+          display: block;
+        }
       }
     }
   }
