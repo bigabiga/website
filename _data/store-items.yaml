@@ -1,5 +1,16 @@
 - type: Amazon
   category:
+  - recommended
+  - box-set
+  title: The Ultimate Buster Keaton Collection (Blu-ray)
+  asin: B009CSVQB8
+  price: $149.99
+  description: Released by Kino Classics, boxed set includes all Buster Keaton Kino Classic Ultimate Collections. Set consists of Ultimate Edition releases of Keaton's 1920-1923 short films, The Saphead, Our Hospitality, Sherlock Jr, and many others. Set has been repackaged to save space with up to four discs in four plastic cases and a slip case. Upgrades range from major restoration to sharper images from past releases.
+  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B009CSVQB8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
+  rating: 5
+
+- type: Amazon
+  category:
   - dvd
   title: Only Angels Have Wings (Blu-ray)
   asin: B01AONIYZU
@@ -145,17 +156,6 @@
   image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B003KGBISY&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
   rating: 4.5
 
-- type: Amazon
-  category:
-  - dvd
-  - box set
-  - recommended
-  title: The Ultimate Buster Keaton Collection (Blu-ray)
-  asin: B009CSVQB8
-  price: $149.99
-  description: Released by Kino Classics, boxed set includes all Buster Keaton Kino Classic Ultimate Collections. Set consists of Ultimate Edition releases of Keaton's 1920-1923 short films, The Saphead, Our Hospitality, Sherlock Jr, and many others. Set has been repackaged to save space with up to four discs in four plastic cases and a slip case. Upgrades range from major restoration to sharper images from past releases.
-  image-link: //ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B009CSVQB8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=lafilmotheque-20
-  rating: 5
 
 - type: Amazon
   category:
@@ -291,7 +291,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: The Ingmar Bergman Trilogy (DVD)
   asin: B0000A02TX
@@ -302,7 +301,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Late Ozu (DVD)
   asin: B000OPPAF6
@@ -313,7 +311,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Carl Theodor Dreyer (DVD)
   asin: B00005M2C7
@@ -324,7 +321,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   - recommended
   title: The Apu Trilogy (DVD)
@@ -336,7 +332,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Kenji Mizoguchi's Fallen Women (DVD)
   asin: B001CW7ZTE
@@ -347,7 +342,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Monsters and Madmen (DVD)
   asin: B000K0YM18
@@ -358,7 +352,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Eisenstein&#58; The Sound Years (DVD)
   asin: B00004XQN5
@@ -369,7 +362,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   - recommended
   title: Essential Art House - 50 Years of Janus Films (DVD)
@@ -394,7 +386,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: The First Films of Akira Kurosawa (DVD)
   asin: B003N2CVQ8
@@ -405,7 +396,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Twin Peaks - The Entire Mystery (Blu-ray)
   asin: B00H9BFV98
@@ -416,7 +406,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: The Complete Jean Vigo (Blu-ray)
   asin: B005152CC8
@@ -428,7 +417,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: The Complete Jacques Tati (Blu-ray)
   asin: B00LUSUWSQ
@@ -451,7 +439,7 @@
 
 - type: Amazon
   category:
-  - dvd
+
   - box set
   title: Buster Keaton&#58; The Shorts Collection 1917-1923 (Blu-ray)
   asin: B01CJCQG22
@@ -464,7 +452,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: British Noir&#58; Five Film Collection (DVD)
   asin: B00YQTD1JS
@@ -475,7 +462,6 @@
 
 - type: Amazon
   category:
-  - dvd
   - box set
   title: Murnau Collection (DVD)
   asin: B001M9ELK8
