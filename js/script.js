@@ -224,16 +224,39 @@ window.onload = function(){
 
     // We are targeting the first banner ad of AdSense
     var ad = document.querySelector("ins.adsbygoogle");
+    var $panda = $(".hide-our-pandas");
+    var $message = $(".show-our-message");
 
     // If the ad contains no innerHTML, ad blockers are at work
     if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
 
-      // Since ad blocks hide ads using CSS too
+      /*// Since ad blocks hide ads using CSS too
       ad.style.cssText = 'display:block !important; text-decoration: none !important';
 
       // You can put any text, image or even IFRAME tags here
-      ad.innerHTML = '<div class = "please-message">Please consider turning off your ad blocker.</div>';
+      ad.innerHTML = '<div class = "please-message">Please consider turning off your ad blocker.</div>';*/
 
+      /*$panda.each(function() {
+        var $this = $(this);
+        $this.hide();
+      });
+
+      $message.each(function() {
+        var $this = $(this);
+        $this.show();
+      });*/
+    }
+
+    else {
+      /*$panda.each(function() {
+        var $this = $(this);
+        $this.show();
+      });
+
+      $message.each(function() {
+        var $this = $(this);
+        $this.hide();
+      });*/
     }
 
   }, 2000); // The ad blocker check is performed 2 seconds after the page load

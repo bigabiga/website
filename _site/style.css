@@ -21,9 +21,6 @@
     font-weight: 300;
     opacity: 0.8; }
 
-.hide-our-pandas {
-  display: none !important; }
-
 body {
   font-family: "roboto", sans-serif;
   background: #e0e0e0;
@@ -483,12 +480,13 @@ body {
         color: #c38ba0; }
 
 .thumb-ad {
-  display: inline-block;
+  display: none;
   background: #fff;
   width: 25%;
   height: 290px; }
 
 .thumb-ad.full {
+  display: none;
   background: #fff;
   width: 100%;
   height: 110px;
@@ -805,9 +803,7 @@ body {
   margin-right: -5px;
   font-size: 0; }
   .right-bar .right-panda {
-    background: white;
-    height: 110px;
-    margin-bottom: 10px; }
+    background: white; }
   .right-bar .side-title {
     font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
@@ -959,7 +955,9 @@ body {
   min-height: 240px;
   padding: 20px 30px; }
   .panel.panda {
-    min-height: 0; }
+    min-height: 0;
+    margin-bottom: 0;
+    padding: 0; }
   .panel.related {
     display: none; }
 
@@ -998,6 +996,8 @@ body {
       right: 5px;
       bottom: 5px;
       left: 5px; }
+      .home-pandas .panda-cont .inside.panda {
+        padding: 10px; }
       .home-pandas .panda-cont .inside.store-banner {
         background: #703b4e;
         padding: 23px 21px 21px 68px;
@@ -1642,6 +1642,9 @@ body {
   html .right-bar .thumbnail-cont {
     height: 17vw; } }
 @media all and (max-width: 1018px) {
+  html .home-pandas .panda-cont {
+    display: block;
+    width: 100%; }
   html .recommended .thumbnail-cont {
     width: 50%;
     height: 28vw;
@@ -1675,7 +1678,7 @@ body {
           max-width: none;
           max-height: none;
           font-size: 14px; } }
-@media all and (max-width: 1018px) {
+@media all and (max-width: 1090px) {
   html .right-bar {
     display: none; }
   html .panel.related {
