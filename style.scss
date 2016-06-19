@@ -184,7 +184,7 @@ $title-font: 'Tenor Sans', sans-serif;
 }
 
 .hide-our-pandas {
-  //display: none !important;
+  display: none !important;
 }
 
 body {
@@ -499,7 +499,8 @@ body {
   }
 
   .store-link {
-    display: inline-block;
+    //display: inline-block;
+    display: none;
     cursor: pointer;
     @include user-select;
     height: 40px;
