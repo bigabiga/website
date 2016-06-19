@@ -1158,7 +1158,7 @@ body {
       right: $film-padding;
       bottom: $film-padding;
       left: $film-padding;
-      padding: 21px 21px 21px 21px;
+      padding: 22px 21px 21px 21px;
 
       h3 {
         font-family: $title-font;
@@ -1195,7 +1195,7 @@ body {
       &.store-banner {
         cursor: pointer;
         background: darken($feature-background, 2);
-        padding: 21px 21px 21px 68px;
+        padding: 22px 21px 21px 68px;
         cursor: pointer;
         transition: background 0.1s ease;
 
