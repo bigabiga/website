@@ -480,6 +480,7 @@ body {
         color: #c38ba0; }
 
 .thumb-panda-full {
+  background: blue;
   width: 100%; }
   .thumb-panda-full.x3 {
     display: none; }
