@@ -480,7 +480,8 @@ body {
         color: #c38ba0; }
 
 .thumb-panda-full {
-  background: blue;
+  background: #eee;
+  text-align: center;
   width: 100%; }
   .thumb-panda-full.x3 {
     display: none; }
@@ -798,7 +799,8 @@ body {
   margin-right: -5px;
   font-size: 0; }
   .right-bar .right-panda {
-    background: white; }
+    background: white;
+    text-align: center; }
   .right-bar .side-title {
     font-family: "Tenor Sans", sans-serif;
     text-transform: uppercase;
@@ -952,7 +954,8 @@ body {
   .panel.panda {
     min-height: 0;
     margin-bottom: 0;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
   .panel.related {
     display: none; }
 

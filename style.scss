@@ -635,7 +635,7 @@ body {
 }
 
 .thumb-panda-full {
-  //background: blue;
+  background: #eee;
   text-align: center;
   width: 100%;
 
@@ -991,6 +991,7 @@ body {
 
   .right-panda {
     background: white;
+    text-align: center;
     //max-height: 110px;
 
     ins {
@@ -1110,6 +1111,7 @@ body {
     //background: none;
     margin-bottom: 0;
     padding: 0;
+    text-align: center;
   }
 
   &.related {
