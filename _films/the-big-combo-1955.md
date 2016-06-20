@@ -6,7 +6,7 @@ meta-title: Watch The Big Combo (1955) Film Noir Detective Classic
 meta-description: Watch The Big Combo (1955), and more public domain classic Film Noir detective movies at La Filmothèque.
 
 
-excerpt: Filmed by Legendary cinematographer John Alton, This film-noir detective classic is considered to be one of the most innovative, stylish movies of the genre. The police Lt. Diamond is ordered to close his investigation of deadly mob boss Mr. Brown because he hasn't been able to collect any firm evidence against him. Lt. Diamond makes one last effort to reveal Brown's crimes by going to Brown's girlfriend.
+excerpt: Filmed by Legendary cinematographer John Alton, This film-noir detective classic is considered to be one of the most innovative movies of the genre. police Lt. Diamond is ordered to close his investigation of deadly mob boss Mr. Brown because he hasn't been able to collect any firm evidence against him. Diamond makes one last effort to reveal Brown's crimes by going to Brown's girlfriend.
 
 title: The Big Combo
 
