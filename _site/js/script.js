@@ -148,15 +148,31 @@ function updateState() {
         countToAd = countToAd + 1;
 
         if (countToAd === 3) {
-          $this.after('<div class="thumb-ad hide-our-pandas"></div>');
+          //$this.after('<div class="thumb-panda hide-our-pandas"></div>');
         }
 
-        if (countToAd === 11) {
-          $this.after('<div class="thumb-ad full hide-our-pandas"></div>');
+        if (countToAd === 8) {
+          $this.after('<div class="thumb-panda-full x4 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
         }
 
-        if (countToAd === 15) {
-          $this.after('<div class="thumb-ad hide-our-pandas"></div>');
+        if (countToAd === 16) {
+          $this.after('<div class="thumb-panda-full x4 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
+        }
+
+        if (countToAd === 6) {
+          $this.after('<div class="thumb-panda-full x3 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
+        }
+
+        if (countToAd === 12) {
+          $this.after('<div class="thumb-panda-full x3 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
+        }
+
+        if (countToAd === 4) {
+          $this.after('<div class="thumb-panda-full x2 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
+        }
+
+        if (countToAd === 8) {
+          $this.after('<div class="thumb-panda-full x2 hide-our-pandas"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-8843122781716673" data-ad-slot="4196628149" data-ad-format="auto"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>');
         }
       }
     }
@@ -225,7 +241,7 @@ window.onload = function(){
     // We are targeting the first banner ad of AdSense
     var ad = document.querySelector("ins.adsbygoogle");
     var $panda = $(".hide-our-pandas");
-    var $message = $(".show-our-message");
+    var $message = $(".panda-message");
 
     // If the ad contains no innerHTML, ad blockers are at work
     if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
@@ -236,15 +252,10 @@ window.onload = function(){
       // You can put any text, image or even IFRAME tags here
       ad.innerHTML = '<div class = "please-message">Please consider turning off your ad blocker.</div>';*/
 
-      /*$panda.each(function() {
-        var $this = $(this);
-        $this.hide();
-      });
-
       $message.each(function() {
         var $this = $(this);
         $this.show();
-      });*/
+      });
     }
 
     else {
