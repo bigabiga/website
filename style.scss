@@ -1112,6 +1112,10 @@ body {
     margin-bottom: 0;
     padding: 0;
     text-align: center;
+
+    &.flexible {
+      display: none;
+    }
   }
 
   &.related {
@@ -2075,6 +2079,14 @@ html {
       .info {
         display: none;
       }
+    }
+
+    .panel.panda.large {
+      display: none;
+    }
+
+    .panel.panda.flexible {
+      display: block;
     }
   }
 

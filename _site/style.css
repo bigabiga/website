@@ -955,6 +955,8 @@ body {
     margin-bottom: 0;
     padding: 0;
     text-align: center; }
+    .panel.panda.flexible {
+      display: none; }
   .panel.related {
     display: none; }
 
@@ -1714,7 +1716,11 @@ body {
       height: 45vw; } }
 @media all and (max-width: 750px) {
   html .header .info {
-    display: none; } }
+    display: none; }
+  html .panel.panda.large {
+    display: none; }
+  html .panel.panda.flexible {
+    display: block; } }
 @media all and (max-width: 700px) {
   html .film-of-the-day .description .banner-2 {
     font-size: 20px; }
