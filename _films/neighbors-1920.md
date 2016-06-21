@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: The Romeo and Juliet story played out in a tenement neighborhood with Buster and Virginia's families hating each other over the fence separating their buildings.
+excerpt: A young couple who live next to each other in tenement apartments do everything they can to be together despite of their feuding families.
 synopsis: The Romeo and Juliet story played out in a tenement neighborhood with Buster and Virginia's families hating each other over the fence separating their buildings.
 title: Neighbors 
 runtime: 18
