@@ -59,6 +59,7 @@ body {
     width: 390px;
     height: 82px; }
   .header .info {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -70,6 +71,34 @@ body {
     .header .info a {
       cursor: pointer;
       color: #6ab3ac; }
+  .header .updates {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 250px;
+    font-weight: 300; }
+    .header .updates .shituf-icons {
+      top: 0;
+      right: 0; }
+      .header .updates .shituf-icons .label {
+        font-size: 13px;
+        line-height: 30px;
+        margin-right: 0;
+        display: inline-block;
+        color: #458781;
+        pointer-events: none; }
+      .header .updates .shituf-icons .icon {
+        font-size: 13px;
+        background: #c9e3e1;
+        color: #458781; }
+        .header .updates .shituf-icons .icon:hover {
+          background: #bbdcd9; }
+        .header .updates .shituf-icons .icon.wide {
+          width: auto;
+          line-height: 30px;
+          padding: 0 12px; }
+        .header .updates .shituf-icons .icon svg path {
+          fill: #458781; }
   .header .right-cont {
     display: none;
     position: absolute;
@@ -770,22 +799,22 @@ body {
   .film-cont iframe.archive-video {
     width: 100%;
     height: 392px; }
-  .film-cont .share-icons {
+  .film-cont .shituf-icons {
     top: 22px;
     right: 26px; }
-    .film-cont .share-icons .icon {
+    .film-cont .shituf-icons .icon {
       width: 24px;
       height: 24px;
       margin-left: 6px;
       background: #d4adbb; }
-      .film-cont .share-icons .icon svg {
+      .film-cont .shituf-icons .icon svg {
         width: 16px;
         height: 16px;
         top: 4px;
         left: 4px; }
-        .film-cont .share-icons .icon svg path {
+        .film-cont .shituf-icons .icon svg path {
           fill: white; }
-      .film-cont .share-icons .icon:hover {
+      .film-cont .shituf-icons .icon:hover {
         background: #ae637f; }
 
 .right-bar {
@@ -1150,7 +1179,7 @@ body {
       margin-bottom: 16px;
       letter-spacing: 0.3px; }
 
-.bottom-share {
+.bottom-shituf {
   display: none;
   padding: 10px 30px;
   background: #592e3e;
@@ -1159,15 +1188,15 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   text-align: right; }
-  .bottom-share span {
+  .bottom-shituf span {
     line-height: 30px;
     margin-right: 2px; }
-  .bottom-share .share-icons {
+  .bottom-shituf .shituf-icons {
     position: relative;
     display: inline-block;
     top: auto;
     right: auto; }
-    .bottom-share .share-icons .icon {
+    .bottom-shituf .shituf-icons .icon {
       background: #88475f; }
 
 .recommended {
@@ -1605,12 +1634,12 @@ body {
           fill: white;
           transition: fill 0.1s ease; }
 
-.share-icons {
+.shituf-icons {
   position: absolute;
   top: 14px;
-  right: 20px;
+  right: 30px;
   font-size: 0; }
-  .share-icons .icon {
+  .shituf-icons .icon {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -1618,17 +1647,17 @@ body {
     border-radius: 16px;
     margin-left: 8px;
     cursor: pointer; }
-    .share-icons .icon svg {
+    .shituf-icons .icon svg {
       position: absolute;
       width: 18px;
       height: 18px;
       top: 6px;
       left: 6px; }
-      .share-icons .icon svg path {
+      .shituf-icons .icon svg path {
         fill: #f0e2e8; }
-    .share-icons .icon:hover {
+    .shituf-icons .icon:hover {
       background: #ae637f; }
-      .share-icons .icon:hover svg path {
+      .shituf-icons .icon:hover svg path {
         fill: white; }
 
 .please-message {
@@ -1636,6 +1665,30 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: #444; }
+
+.newsletter-modal {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .newsletter-modal .modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); }
+  .newsletter-modal .modal {
+    top: 100px;
+    width: 580px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3); }
 
 @media all and (max-width: 1362px) {
   html .film-of-the-day .description .banner-2 {
@@ -1735,6 +1788,8 @@ body {
     height: 55px;
     min-width: 316px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2); }
+    html .header .updates {
+      display: none; }
     html .header .logo {
       height: 55px; }
     html .header .right-cont {
@@ -1785,7 +1840,9 @@ body {
     padding-left: 18px;
     padding-right: 18px; }
   html .part-title {
-    padding: 0 18px; } }
+    padding: 0 18px; }
+  html .shituf-icons {
+    right: 18px; } }
 @media all and (max-width: 540px) {
   html .store-cont .items-cont .store-item .image {
     position: relative;
@@ -1877,7 +1934,7 @@ body {
     height: 46vw; }
   html .film-cont .info h2 {
     margin-right: 0; }
-  html .film-cont .info .share-icons {
+  html .film-cont .info .shituf-icons {
     top: auto;
     bottom: 26px; }
   html .inner-nav .controls.v2 .search {
@@ -1891,9 +1948,9 @@ body {
 @media all and (max-width: 410px) {
   html .element-title {
     font-size: 25px; }
-  html .film-of-the-day .share-icons {
+  html .film-of-the-day .shituf-icons {
     display: none; }
-  html .bottom-share {
+  html .bottom-shituf {
     display: block; }
   html .footer .right-cont {
     padding-left: 20px;

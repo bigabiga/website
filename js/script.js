@@ -298,4 +298,16 @@ $(function() {
     var tabCategory = $(this).attr('data-category');
     replaceHashParam('store-category', tabCategory);
   });
+
+  var $newsletterButton = $(".newsletter-button");
+  var $newsletterModal = $(".newsletter-modal");
+  var $modalBackdrop = $(".modal-backdrop");
+
+  $newsletterButton.click(function () {
+    $newsletterModal.show();
+  });
+
+  $modalBackdrop.click(function () {
+    $newsletterModal.hide();
+  });
 });

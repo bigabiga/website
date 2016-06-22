@@ -234,6 +234,7 @@ body {
   }
 
   .info {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -246,6 +247,48 @@ body {
     a {
       cursor: pointer;
       color: darken($logo-green, 18);
+    }
+  }
+
+  .updates {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 250px;
+    font-weight: 300;
+
+    .shituf-icons {
+      top: 0;
+      right: 0;
+
+      .label {
+        font-size: 13px;
+        line-height: 30px;
+        margin-right: 0;
+        display: inline-block;
+        color: darken($logo-green, 34);
+        pointer-events: none;
+      }
+
+      .icon {
+        font-size: 13px;
+        background: lighten($logo-green, 10);
+        color: darken($logo-green, 34);
+
+        &:hover {
+          background: lighten($logo-green, 6);
+        }
+
+        &.wide {
+          width: auto;
+          line-height: 30px;
+          padding: 0 12px;
+        }
+
+        svg path {
+          fill: darken($logo-green, 34);
+        }
+      }
     }
   }
 
@@ -952,7 +995,7 @@ body {
     height: 392px;
   }
 
-  .share-icons {
+  .shituf-icons {
     top: 22px;
     right: 26px;
 
@@ -1331,7 +1374,7 @@ body {
   }
 }
 
-.bottom-share {
+.bottom-shituf {
   display: none;
   padding: 10px $padding;
   background: darken($feature-background, 9);
@@ -1346,7 +1389,7 @@ body {
     margin-right: 2px;
   }
 
-  .share-icons {
+  .shituf-icons {
     position: relative;
     display: inline-block;
     top: auto;
@@ -1875,10 +1918,10 @@ body {
   }
 }
 
-.share-icons {
+.shituf-icons {
   position: absolute;
   top: 14px;
-  right: 20px;
+  right: $padding;
   font-size: 0;
 
   .icon {
@@ -1920,11 +1963,37 @@ body {
   //text-decoration: underline;
 }
 
-html {
+.newsletter-modal {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-  @media all and (max-width: 1382px) {
-
+  .modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
   }
+
+  .modal {
+    //display: inline-block;
+    top: 100px;
+    width: 580px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+  }
+}
+
+html {
 
   @media all and (max-width: 1362px) {
     .film-of-the-day {
@@ -2115,6 +2184,10 @@ html {
       min-width: 316px;
       box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 
+      .updates {
+        display: none;
+      }
+
       .logo {
         height: 55px;
       }
@@ -2216,6 +2289,10 @@ html {
 
     .part-title {
       padding: 0 $compact-padding;
+    }
+
+    .shituf-icons {
+      right: $compact-padding;
     }
   }
 
@@ -2327,7 +2404,7 @@ html {
           margin-right: 0;
         }
 
-        .share-icons {
+        .shituf-icons {
           top: auto;
           bottom: 26px;
         }
@@ -2368,12 +2445,12 @@ html {
     }
 
     .film-of-the-day {
-      .share-icons {
+      .shituf-icons {
         display: none;
       }
     }
 
-    .bottom-share {
+    .bottom-shituf {
       display: block;
     }
 
