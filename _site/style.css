@@ -59,7 +59,6 @@ body {
     width: 390px;
     height: 82px; }
   .header .info {
-    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -72,6 +71,7 @@ body {
       cursor: pointer;
       color: #6ab3ac; }
   .header .updates {
+    display: none;
     position: absolute;
     top: 22px;
     right: 0;

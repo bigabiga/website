@@ -234,7 +234,7 @@ body {
   }
 
   .info {
-    display: none;
+    //display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -251,6 +251,7 @@ body {
   }
 
   .updates {
+    display: none;
     position: absolute;
     top: 22px;
     right: 0;
