@@ -1,7 +1,7 @@
 ---
 
 title: La Filmothèque
-description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film Library.
+description: La Filmothèque is a free, public domain film library where you can watch and discover new movies. Our goal is to expose new audience to classic films, genres and directors from around the world.
 
 ---
 
@@ -9,7 +9,7 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
 <html lang="en" itemscope itemtype="http://schema.org/Article">
 <head>
   {% include basic-head.html %}
-  <title> La Filmothèque: Watch and Discover Classic Public Domain Movies</title>
+  <title> La Filmothèque: Watch and Discover Classic Public Domain films</title>
   <meta name="description" content="{{ page.description }}"/>
 
   <!-- Schema.org markup for Google+ -->
@@ -70,9 +70,9 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
       </div></a>
       <div class="description">
         <div class="info">
-          <div class="banner-2">Today's Spotlight</div>
+          <h1 class="banner-2">Today's Spotlight</h1>
           <a href="{{ film-of-the-day.url }}">
-            <div class="title">{{ film-of-the-day.title }} <span class="year">{{ film-of-the-day.year }}</span></div>
+            <div class="title"><h2>{{ film-of-the-day.title }}</h2> <span class="year">{{ film-of-the-day.year }}</span></div>
           </a>
           <h3 class="more-info">
             {{ film-of-the-day.country | join: ' / ' }} | {{ film-of-the-day.director | join: ', ' }} |
@@ -85,7 +85,7 @@ description: Watch Classic Films at La Filmothèque &#45; A Public Domain Film L
             {% endif %}
             {% endfor %}
           </h3>
-          <div class="synopsis"> {{ film-of-the-day.excerpt }} </div>
+          <div class="synopsis"> <p>{{ film-of-the-day.excerpt }} </p></div>
         </div>
 
         {% include share-icons-home.html %}
