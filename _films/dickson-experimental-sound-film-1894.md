@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: This Experimental Sound Film is the first film in the history of motion pictures to record picture and sound together. It was made at the Edison lab complex in West Orange, New Jersey by William K.L. Dickson - Edison's assistant.  Dickson tried to combine two existing technologies&#58; the phonograph and the kinetoscope. However, he was unable to synchronise the playback and his early experiment was never released to the public.
+excerpt: This Experimental Sound Film is the first film in the history of motion pictures to record picture and sound together. It was made by William K.L. Dickson - Edison's assistant.  Dickson tried to combine two existing technologies&#58; the phonograph and the kinetoscope. However, he was unable to synchronise the playback and his early experiment was never released to the public.
 title: Dickson Experimental Sound Film
 runtime: 1
 genre:
@@ -13,6 +13,7 @@ decade: 1890s
 recommended: yes
 editors-rating: 3.5
 image:  /feature-images/Experimental-Sound-Film-1894.png
+image-offset: 45
 video: https://www.youtube.com/embed/Y6b0wpBTR1s?rel=0&amp;controls=0&amp;showinfo=0
 synopsis:  This Experimental Sound Film is the first film in the history of motion pictures to record picture and sound together. It was made at the Edison lab complex in West Orange, New Jersey by William K.L. Dickson - Edison's assistant.  Dickson tried to combine two existing technologies&#58; the phonograph and the kinetoscope. However, he was unable to synchronise the playback and his early experiment was never released to the public.
 director: William K.L. Dickson
