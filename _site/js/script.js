@@ -302,12 +302,17 @@ $(function() {
   var $newsletterButton = $(".newsletter-button");
   var $newsletterModal = $(".newsletter-modal");
   var $modalBackdrop = $(".modal-backdrop");
+  var $modalCloseButton = $(".modal-close-button");
 
   $newsletterButton.click(function () {
     $newsletterModal.show();
   });
 
   $modalBackdrop.click(function () {
+    $newsletterModal.hide();
+  });
+
+  $modalCloseButton.click(function () {
     $newsletterModal.hide();
   });
 });

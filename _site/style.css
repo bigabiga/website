@@ -59,6 +59,7 @@ body {
     width: 390px;
     height: 82px; }
   .header .info {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -71,7 +72,6 @@ body {
       cursor: pointer;
       color: #6ab3ac; }
   .header .updates {
-    display: none;
     position: absolute;
     top: 22px;
     right: 0;
@@ -89,14 +89,14 @@ body {
         pointer-events: none; }
       .header .updates .shituf-icons .icon {
         font-size: 13px;
-        background: #c9e3e1;
+        background: #cfe7e5;
         color: #458781; }
         .header .updates .shituf-icons .icon:hover {
-          background: #bbdcd9; }
+          background: #c2e0dd; }
         .header .updates .shituf-icons .icon.wide {
           width: auto;
           line-height: 30px;
-          padding: 0 12px; }
+          padding: 0 12px 0 27px; }
         .header .updates .shituf-icons .icon svg path {
           fill: #458781; }
   .header .right-cont {
@@ -1648,10 +1648,10 @@ body {
     cursor: pointer; }
     .shituf-icons .icon svg {
       position: absolute;
-      width: 18px;
-      height: 18px;
-      top: 6px;
-      left: 6px; }
+      width: 16px;
+      height: 16px;
+      top: 7px;
+      left: 7px; }
       .shituf-icons .icon svg path {
         fill: #f0e2e8; }
     .shituf-icons .icon:hover {
@@ -1672,7 +1672,8 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  overflow: scroll; }
   .newsletter-modal .modal-backdrop {
     position: absolute;
     top: 0;
@@ -1682,12 +1683,37 @@ body {
     background: rgba(0, 0, 0, 0.3); }
   .newsletter-modal .modal {
     top: 100px;
-    width: 580px;
-    height: 340px;
+    max-width: 580px;
+    width: 100%;
+    min-height: 340px;
     margin-left: auto;
     margin-right: auto;
     background: white;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3); }
+    .newsletter-modal .modal h2 {
+      font-family: "Tenor Sans", sans-serif !important;
+      font-weight: 400 !important;
+      font-size: 22px !important;
+      margin-bottom: 20px !important; }
+    .newsletter-modal .modal label {
+      font-weight: 300 !important; }
+    .newsletter-modal .modal span.asterisk {
+      top: 0 !important; }
+    .newsletter-modal .modal input[type="submit"] {
+      background: #773E53 !important; }
+    .newsletter-modal .modal .modal-close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 3px;
+      cursor: pointer; }
+      .newsletter-modal .modal .modal-close-button svg {
+        width: 26px;
+        height: 26px; }
+        .newsletter-modal .modal .modal-close-button svg path, .newsletter-modal .modal .modal-close-button svg polygon {
+          fill: #999; }
+      .newsletter-modal .modal .modal-close-button:hover svg path, .newsletter-modal .modal .modal-close-button:hover svg polygon {
+        fill: #444; }
 
 @media all and (max-width: 1362px) {
   html .film-of-the-day .description .banner-2 {
