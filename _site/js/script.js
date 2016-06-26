@@ -140,7 +140,7 @@ function updateState() {
 
   //insert ads in thumbnails
 
-  var countToAd = 0;
+  /*var countToAd = 0;
   $('.thumbnails .thumbnail').each(function(i){
     var $this = $(this);
     if (search === null) {
@@ -176,7 +176,7 @@ function updateState() {
         }
       }
     }
-  });
+  });*/
     
   //only show in store the items of the current tab:
   var storeCategory = getParameterByName('store-category');
@@ -275,6 +275,23 @@ window.onload = function(){
 
 
 $(function() {
+  var $newsletterButton = $(".newsletter-button");
+  var $newsletterModal = $(".newsletter-modal");
+  var $modalBackdrop = $(".modal-backdrop");
+  var $modalCloseButton = $(".modal-close-button");
+
+  $newsletterButton.click(function () {
+    $newsletterModal.show();
+  });
+
+  $modalBackdrop.click(function () {
+    $newsletterModal.hide();
+  });
+
+  $modalCloseButton.mousedown(function () {
+    $newsletterModal.hide();
+  });
+
   updateState();
 
   var $categorySearch = $('#categorySearch');
@@ -297,22 +314,5 @@ $(function() {
   $('.store-tab').click(function () {
     var tabCategory = $(this).attr('data-category');
     replaceHashParam('store-category', tabCategory);
-  });
-
-  var $newsletterButton = $(".newsletter-button");
-  var $newsletterModal = $(".newsletter-modal");
-  var $modalBackdrop = $(".modal-backdrop");
-  var $modalCloseButton = $(".modal-close-button");
-
-  $newsletterButton.click(function () {
-    $newsletterModal.show();
-  });
-
-  $modalBackdrop.click(function () {
-    $newsletterModal.hide();
-  });
-
-  $modalCloseButton.mousedown(function () {
-    $newsletterModal.hide();
   });
 });
