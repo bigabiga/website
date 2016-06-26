@@ -312,7 +312,7 @@ $(function() {
     $newsletterModal.hide();
   });
 
-  $modalCloseButton.click(function () {
+  $modalCloseButton.mousedown(function () {
     $newsletterModal.hide();
   });
 });

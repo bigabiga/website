@@ -1694,7 +1694,9 @@ body {
       font-family: "Tenor Sans", sans-serif !important;
       font-weight: 400 !important;
       font-size: 22px !important;
-      margin-bottom: 20px !important; }
+      margin-bottom: 20px !important;
+      padding-right: 60px !important;
+      line-height: 30px !important; }
     .newsletter-modal .modal label {
       font-weight: 300 !important; }
     .newsletter-modal .modal span.asterisk {
@@ -1704,7 +1706,7 @@ body {
     .newsletter-modal .modal .modal-close-button {
       position: absolute;
       top: 20px;
-      right: 20px;
+      right: 3%;
       padding: 3px;
       cursor: pointer; }
       .newsletter-modal .modal .modal-close-button svg {
@@ -1800,6 +1802,11 @@ body {
   html .panel.panda.flexible {
     display: block; } }
 @media all and (max-width: 700px) {
+  html .newsletter-modal .modal {
+    top: 0;
+    width: auto;
+    margin: 10% 6%;
+    max-width: none; }
   html .film-of-the-day .description .banner-2 {
     font-size: 20px; }
   html .film-cont .info h2 {

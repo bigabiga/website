@@ -1999,6 +1999,8 @@ body {
       font-weight: 400 !important;
       font-size: 22px !important;
       margin-bottom: 20px !important;
+      padding-right: 60px !important;
+      line-height: 30px !important;
     }
 
     label {
@@ -2016,7 +2018,7 @@ body {
     .modal-close-button {
       position: absolute;
       top: 20px;
-      right: 20px;
+      right: 3%;
       //width: 32px;
       //height: 32px;
       padding: 3px;
@@ -2207,6 +2209,15 @@ html {
   }
 
   @media all and (max-width: 700px) {
+    .newsletter-modal {
+      .modal {
+        top: 0;
+        width: auto;
+        margin: 10% 6%;
+        max-width: none;
+      }
+    }
+
     .film-of-the-day {
       .description {
         .banner-2 {
