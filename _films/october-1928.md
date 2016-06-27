@@ -15,7 +15,8 @@ decade: 1920S
 recommended: yes
 editors-rating: 5
 image:  /feature-images/October-1928.jpg
-video: https://www.youtube.com/embed/iyme-uwgrRw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://archive.org/embed/Eisenstein-October
+video-type: archive
 director:  
 - Grigori Aleksandrov 
 - Sergei M. Eisenstein 
