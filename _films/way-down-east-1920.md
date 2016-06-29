@@ -15,6 +15,7 @@ decade: 1920s
 recommended: yes
 editors-rating: 4.5
 image:  /feature-images/Way-Down-East-1920.jpg 
+image-offset: 30
 video: https://www.youtube.com/embed/W4WPL-b0JGg?rel=0&amp;controls=0&amp;showinfo=0
 director: D.W. Griffith  
 year: 1920
