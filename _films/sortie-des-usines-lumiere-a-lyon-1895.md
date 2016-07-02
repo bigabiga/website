@@ -2,8 +2,7 @@
 
 layout: film
 
-excerpt: Workers Leaving The Lumière Factory in Lyon (French&#58;
- La Sortie de l'Usine Lumière à Lyon), also known as Employees Leaving the Lumière Factory and Exiting the Factory, is an 1895 French short black-and-white silent documentary film directed and produced by Louis Lumière. It is often referred to as the first real motion picture ever made, although Louis Le Prince's 1888 Roundhay Garden Scene pre-dated it by seven years.
+excerpt: Workers Leaving The Lumière Factory in Lyon, also known as Employees Leaving the Lumière Factory and Exiting the Factory, is an 1895 French short black-and-white silent documentary film directed and produced by Louis Lumière. It is often referred to as the first real motion picture ever made, although Louis Le Prince's 1888 Roundhay Garden Scene pre-dated it by seven years.
 title: Workers Leaving the Lumière Factory
 runtime: 1
 genre:
