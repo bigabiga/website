@@ -16,7 +16,7 @@ decade: 1920s
 recommended: 
 editors-rating: 4.5
 image:  /feature-images/A-Page-of-Madness-1926.jpg
-video: https://www.youtube.com/embed/0B1QqrFbHvo?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/ubJ_nuAGZBs?rel=0&amp;controls=0&amp;showinfo=0
 director: Teinosuke Kinugasa
 year: 1926
 country: Japan

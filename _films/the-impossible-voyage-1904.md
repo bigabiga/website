@@ -17,7 +17,7 @@ decade: 1900s
 recommended: 
 editors-rating: 4
 image:  /feature-images/The-Impossible-Voyage-1904.jpg  
-video: https://www.youtube.com/embed/Y_2R4v0pcbk?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/EKFXsOL84rI?rel=0&amp;controls=0&amp;showinfo=0
 director: Georges Méliès
 year: 1904
 country: France
