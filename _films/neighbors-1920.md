@@ -16,7 +16,7 @@ decade: 1920s
 recommended: 
 editors-rating: 4
 image:  /feature-images/Neighbors-1920.jpg
-video: https://www.youtube.com/embed/vl-qkFd2udk?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/mW_GEDc9RwE?rel=0&amp;controls=0&amp;showinfo=0
 director: 
 - Edward F. Cline 
 - Buster Keaton

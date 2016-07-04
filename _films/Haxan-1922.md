@@ -2,7 +2,7 @@
 layout: film
 meta-title: Watch Häxan (1922) Online Free
 meta-description: This old movie takes us on a journey into the history of witchcraft through the ages&#58; from its pagan roots to its confusion with hysteria in contemporary Europe.
-excerpt: Part history lesson followed by re-enactments with actors, this film takes depicts the history of witchcraft from its earliest days through to the present day (in this case,1922 or thereabouts). The result is a documentary-like film that must be among the first to use re-enactments as a visual and narrative tool. From pagan worship to satanic rites to hysteria, the film takes you on a journey through the ages with highly effective visual sequences.
+excerpt: Fictionalized documentary showing the evolution of witchcraft, from its pagan roots to its confusion with hysteria in modern Europe.
 title: Häxan&#58; Witchcraft Through the Ages
 runtime: 91
 genre: 

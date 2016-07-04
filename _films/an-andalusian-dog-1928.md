@@ -2,7 +2,7 @@
 
 layout: film
 
-excerpt: A surrealistic film with input from Salvador Dalí. Director Luis Buñuel presents stark, surrealistic images including the slitting open of a woman's eye and a dead horse being pulled along on top of a piano. A mysterious film open to interpretations ranging from deep to it all meaning absolutely nothing. It is certain that this short (17 minute) film presented something new in the cinema of its day.
+excerpt: A surrealistic film with input from Salvador Dalí. Director Luis Buñuel presents stark, surrealistic images including the slitting open of a woman's eye and a dead horse being pulled along on top of a piano.
 synopsis: A surrealistic film with input from Salvador Dalí. Director Luis Buñuel presents stark, surrealistic images including the slitting open of a woman's eye and a dead horse being pulled along on top of a piano. A mysterious film open to interpretations ranging from deep to it all meaning absolutely nothing. It is certain that this short (17 minute) film presented something new in the cinema of its day.
 title: The Andalusian Dog
 runtime: 16

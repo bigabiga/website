@@ -19,7 +19,7 @@ recommended: yes
 editors-rating: 4.5
 
 image: /feature-images/The-Vagabond-1916.jpg
-video: https://www.youtube.com/embed/ie2kasEK8XI?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/L277pNm3Y4w?rel=0&amp;controls=0&amp;showinfo=0
 synopsis: The Vagabond is the third film Chaplin made for Mutual Company and although not the funniest, certainly one of the most serious and interesting. Chaplin tells a melodramatic story with elements of melancholy, similar to those we can find in later feature films such as The Kid. The Tramp is an impoverished street violinist who falls for a gypsy girl (Edna Purviance) and rescues her from a gypsy camp. 
 
 director: Charlie Chaplin
