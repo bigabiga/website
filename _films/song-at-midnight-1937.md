@@ -2,8 +2,8 @@
 
 layout: film
 
-excerpt: China's first horror film, this is loosely based on The Phantom of the Opera. A disfigured musical genius roams a traditional Chinese opera house, punishing those who offend him.
-synopsis: China's first horror film, this is loosely based on The Phantom of the Opera. A disfigured musical genius roams a traditional Chinese opera house, punishing those who offend him.
+excerpt: China's first horror film, loosely based on The Phantom of the Opera. A disfigured musical genius roams a traditional Chinese opera house, punishing those who offend him.
+synopsis: China's first horror film, loosely based on The Phantom of the Opera. A disfigured musical genius roams a traditional Chinese opera house, punishing those who offend him.
 title: Song at Midnight 
 runtime: 113
 genre:
