@@ -7,8 +7,8 @@ synopsis: A surrealistic film with input from Salvador Dalí. Director Luis Buñ
 title: The Andalusian Dog
 runtime: 16
 genre:
-- Short
 - Fantasy
+- Short
 - Silent
 silent: yes
 decade: 1920s
