@@ -409,7 +409,7 @@ body {
 .thumbnails {
   margin-left: -5px;
   margin-right: -5px;
-  padding: 24px 0 0 0;
+  padding: 65px 0 0 0;
   font-size: 0;
   padding-bottom: 40px; }
   .thumbnails .search-note {
@@ -507,6 +507,23 @@ body {
       line-height: 25px; }
       .thumbnails .film-description .title .year {
         color: #c38ba0; }
+  .thumbnails .shituf-icons {
+    top: 20px;
+    right: 5px; }
+    .thumbnails .shituf-icons .icon {
+      width: 26px;
+      height: 26px;
+      margin-left: 6px;
+      background: #d4adbb; }
+      .thumbnails .shituf-icons .icon svg {
+        width: 16px;
+        height: 16px;
+        top: 5px;
+        left: 5px; }
+        .thumbnails .shituf-icons .icon svg path {
+          fill: white; }
+      .thumbnails .shituf-icons .icon:hover {
+        background: #ae637f; }
 
 .thumb-panda-full {
   text-align: center;
@@ -724,7 +741,7 @@ body {
       font-weight: 300;
       color: #b16a84; }
       .film-cont .info h3 span {
-        margin-right: 6px; }
+        margin-right: 7px; }
       .film-cont .info h3.more-info {
         margin-bottom: 22px; }
       .film-cont .info h3 .icon {
@@ -803,15 +820,15 @@ body {
     top: 22px;
     right: 26px; }
     .film-cont .shituf-icons .icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       margin-left: 6px;
       background: #d4adbb; }
       .film-cont .shituf-icons .icon svg {
         width: 16px;
         height: 16px;
-        top: 4px;
-        left: 4px; }
+        top: 5px;
+        left: 5px; }
         .film-cont .shituf-icons .icon svg path {
           fill: white; }
       .film-cont .shituf-icons .icon:hover {
@@ -980,6 +997,7 @@ body {
   padding: 20px 30px; }
   .panel.panda {
     min-height: 0;
+    background: none;
     margin-bottom: 0;
     padding: 0;
     text-align: center; }
@@ -1493,7 +1511,8 @@ body {
     display: inline-block;
     text-align: left;
     padding: 40px 30px;
-    font-size: 0; }
+    font-size: 0;
+    width: 100%; }
     .store-cont .items-cont .store-item {
       display: inline-block;
       width: 100%;
@@ -1560,6 +1579,11 @@ body {
         .store-cont .items-cont .store-item .image img {
           width: 100%;
           cursor: pointer; }
+      .store-cont .items-cont .store-item.poster .image {
+        width: 230px; }
+      .store-cont .items-cont .store-item.poster .info {
+        padding-left: 240px;
+        padding-top: 16px; }
 
 .contact-form {
   font-size: 14px; }
@@ -1881,8 +1905,12 @@ body {
     display: block;
     margin-bottom: 8px; }
   html .store-cont .items-cont .store-item .info {
-    padding-left: 0;
+    padding-left: 0 !important;
     margin-bottom: 20px; }
+  html .store-cont .store-tabs {
+    height: auto; }
+    html .store-cont .store-tabs .store-tab {
+      display: block; }
   html .home-pandas .panda-cont.larger-panda {
     display: none; }
   html .home-pandas .panda-cont.smaller-panda {
@@ -1986,13 +2014,7 @@ body {
     display: block; }
   html .footer .right-cont {
     padding-left: 20px;
-    padding-right: 20px; }
-  html .store-cont h1 .title-icon {
-    display: block; }
-  html .store-cont .store-tabs {
-    height: auto; }
-    html .store-cont .store-tabs .store-tab {
-      display: block; } }
+    padding-right: 20px; } }
 @media all and (max-width: 370px) {
   html .header .logo {
     width: 200px;

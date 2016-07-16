@@ -50,6 +50,9 @@ description: La Filmothèque store - buy and explore classic films on DVD and bl
       <div class="store-tab" data-category="box-set">
         <h2>Box sets</h2>
       </div>
+      <div class="store-tab" data-category="poster">
+        <h2>Posters</h2>
+      </div>
     </div>
 
     {% assign store-items = site.data.store-items | sort: 'rating' | reverse %}
@@ -85,6 +88,15 @@ description: La Filmothèque store - buy and explore classic films on DVD and bl
       </div>
     </div>
 
+    <div class="store-items" id="poster">
+      <div class="items-cont">
+        {% for item in site.data.store-items %}
+        {% if item.category contains 'poster' %}
+        {% include store-item.html %}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
 
   </div>
   <footer>
