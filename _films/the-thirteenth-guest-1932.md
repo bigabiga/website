@@ -27,6 +27,7 @@ editors-rating: 3
 runtime: 69
 
 image: /feature-images/The-Thirteenth-Guest-1932.png
+image-offset: 35
 
 video: https://www.youtube.com/embed/71IJjCbbK7k?rel=0&amp;controls=0&amp;showinfo=0
 
