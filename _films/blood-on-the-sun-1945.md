@@ -28,7 +28,7 @@ runtime: 98
 image: /feature-images/Blood-on-the-Sun-1945.jpg
 
 
-video: https://www.youtube.com/embed/bVdd6LrUD4s?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/G2iOvnRP_rM?rel=0&amp;showinfo=0
 
 
 synopsis: An American journalist in 1930s Japan decides to expose the government's scheme for world domination.
