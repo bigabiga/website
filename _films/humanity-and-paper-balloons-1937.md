@@ -13,7 +13,7 @@ decade: 1930s
 editors-rating: 4
 image:  /feature-images/Humanity-&-Paper-Balloons-1937.jpg
 video: https://www.youtube.com/embed/2B_bP9ViNrU?rel=0&amp;controls=0&amp;showinfo=0
-director: Drama  
+director: Sadao Yamanaka  
 year: 1937
 country: Japan
 language: Japanese

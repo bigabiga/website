@@ -12,7 +12,7 @@ silent: no
 decade: 1940s
 editors-rating: 4
 image:  /feature-images/there-was-a-father-1942.jpg
-video: https://www.youtube.com/embed/Ix0BxTHKLTk?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/EWG7EY-M5f0?rel=0&amp;showinfo=0
 director: Yasujirô Ozu 
 year: 1942
 country: Japan
