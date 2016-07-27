@@ -1230,9 +1230,8 @@ body {
     .panda-message {
       display: none;
       position: absolute;
-      color: #bbb;
       cursor: pointer;
-      background: #444;
+      background: #333;
       top: $film-padding;
       right: $film-padding;
       bottom: $film-padding;
@@ -1242,14 +1241,14 @@ body {
       h3 {
         font-family: $title-font;
         font-size: 18px;
-        color: lighten($feature-background, 10);
+        color: #ccc;
         margin-bottom: 7px;
       }
 
       p {
         font-weight: 300;
         font-size: 13px;
-        color: lighten($feature-background, 28);
+        color: #999;
       }
     }
 
@@ -1260,7 +1259,7 @@ body {
     .inside {
       position: absolute;
       display: inline-block;
-      background: #444;
+      background: #333;
       top: $film-padding;
       right: $film-padding;
       bottom: $film-padding;

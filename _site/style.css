@@ -1035,9 +1035,8 @@ body {
     .home-pandas .panda-cont .panda-message {
       display: none;
       position: absolute;
-      color: #bbb;
       cursor: pointer;
-      background: #444;
+      background: #333;
       top: 5px;
       right: 5px;
       bottom: 5px;
@@ -1046,18 +1045,18 @@ body {
       .home-pandas .panda-cont .panda-message h3 {
         font-family: "Tenor Sans", sans-serif;
         font-size: 18px;
-        color: #994f6a;
+        color: #ccc;
         margin-bottom: 7px; }
       .home-pandas .panda-cont .panda-message p {
         font-weight: 300;
         font-size: 13px;
-        color: #bf859a; }
+        color: #999; }
     .home-pandas .panda-cont.smaller-panda {
       display: none; }
     .home-pandas .panda-cont .inside {
       position: absolute;
       display: inline-block;
-      background: #444;
+      background: #333;
       top: 5px;
       right: 5px;
       bottom: 5px;
