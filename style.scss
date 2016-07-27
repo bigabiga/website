@@ -1230,8 +1230,9 @@ body {
     .panda-message {
       display: none;
       position: absolute;
+      color: #bbb;
       cursor: pointer;
-      background: #FFF;
+      background: #444;
       top: $film-padding;
       right: $film-padding;
       bottom: $film-padding;
@@ -1259,7 +1260,7 @@ body {
     .inside {
       position: absolute;
       display: inline-block;
-      background: #FFF;
+      background: #444;
       top: $film-padding;
       right: $film-padding;
       bottom: $film-padding;

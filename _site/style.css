@@ -1035,8 +1035,9 @@ body {
     .home-pandas .panda-cont .panda-message {
       display: none;
       position: absolute;
+      color: #bbb;
       cursor: pointer;
-      background: #FFF;
+      background: #444;
       top: 5px;
       right: 5px;
       bottom: 5px;
@@ -1056,7 +1057,7 @@ body {
     .home-pandas .panda-cont .inside {
       position: absolute;
       display: inline-block;
-      background: #FFF;
+      background: #444;
       top: 5px;
       right: 5px;
       bottom: 5px;
