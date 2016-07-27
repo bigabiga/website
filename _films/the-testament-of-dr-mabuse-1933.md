@@ -13,7 +13,7 @@ decade: 1930s
 recommended: yes
 editors-rating: 5
 image:  /feature-images/The-Testament-of-Dr.-Mabuse-1933.jpg
-video: https://www.youtube.com/embed/_PDkiPQHAbs?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/d_vLllt5Qy4?rel=0&amp;showinfo=0
 director:  Fritz Lang
 year: 1933
 country:  Germany
