@@ -14,7 +14,7 @@ decade: 1920s
 recommended: 
 editors-rating: 4
 image:  /feature-images/Battling-Butler-1926.jpg  
-video: https://www.youtube.com/embed/0gm1JXYhrJ0?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/dAf2jrVu2qo?rel=0&amp;showinfo=0
 director: Buster Keaton
 year: 1926
 country: USA
