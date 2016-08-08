@@ -1,0 +1,32 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include basic-head.html %}
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <title>Monitor</title>
+</head>
+<body>
+  <div class="monitor-cont">
+    {% assign sorted-films = site.films | sort:"editors-rating" | reverse %}
+    <ul class="film-list">
+    {% for film in sorted-films %}
+    {% if film.video-type != "archive" %}
+    <li onclick="var $content='<p>{{ film.title }}</p><iframe src=&quot;{{ film.video }}autoplay=1&quot;></iframe>'; $('#preview').empty(); $('#preview').append($content)">
+      {{ film.title }}
+    </li>
+    {% else %}
+    <li onclick="var $content='<p>{{ film.title }}</p><iframe src=&quot;{{ film.video }}&autoplay=1&quo;t class=&quot;archive-video&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; allowfullscreen></iframe>'; $('#preview').empty(); $('#preview').append($content)">
+    {{ film.title }}
+    </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    <div class="preview" id="preview">
+      <p>Preview</p>
+    </div>
+  </div>
+</body>
+</html>
