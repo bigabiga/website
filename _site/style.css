@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("reset.css");
 .right-bar .film .info, .center-bar .film .info, .recommended .film .info, .about-cont .article-film .info {
   position: absolute;
@@ -1747,19 +1748,35 @@ body {
     list-style: none;
     color: #773E53;
     cursor: pointer;
-    text-decoration: underline;
-    line-height: 30px;
-    font-size: 14px; }
+    line-height: 38px;
+    font-size: 14px;
+    background: white;
+    margin-bottom: 2px;
+    width: 338px;
+    padding-left: 8px;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .monitor-cont ul.film-list li:hover::after {
+      opacity: 1; }
+    .monitor-cont ul.film-list li::after {
+      content: "❯";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      pointer-events: none;
+      opacity: 0.4; }
   .monitor-cont .preview {
     position: fixed;
     top: 20px;
-    left: 360px;
+    left: 368px;
     width: 480px;
     height: 320px;
-    background: #bbb; }
+    background: #333; }
     .monitor-cont .preview p {
-      font-size: 16px;
-      color: #444;
+      font-size: 14px;
+      color: #ddd;
       line-height: 38px;
       padding-left: 8px; }
     .monitor-cont .preview iframe {

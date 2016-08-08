@@ -2088,22 +2088,42 @@ body {
     list-style: none;
     color: $feature-background;
     cursor: pointer;
-    text-decoration: underline;
-    line-height: 30px;
+    line-height: 38px;
     font-size: 14px;
+    background: white;
+    margin-bottom: 2px;
+    width: 338px;
+    padding-left: 8px;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &::after {
+      content: "❯";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      pointer-events: none;
+      opacity: 0.4;
+    }
   }
 
   .preview {
     position: fixed;
     top: 20px;
-    left: 360px;
+    left: 368px;
     width: 480px;
     height: 320px;
-    background: #bbb;
+    background: #333;
 
     p {
-      font-size: 16px;
-      color: #444;
+      font-size: 14px;
+      color: #ddd;
       line-height: 38px;
       padding-left: 8px;
     }
