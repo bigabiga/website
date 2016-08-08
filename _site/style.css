@@ -1741,6 +1741,31 @@ body {
       .newsletter-modal .modal .modal-close-button:hover svg path, .newsletter-modal .modal .modal-close-button:hover svg polygon {
         fill: #444; }
 
+.monitor-cont {
+  padding: 20px; }
+  .monitor-cont ul.film-list li {
+    list-style: none;
+    color: #773E53;
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 30px;
+    font-size: 14px; }
+  .monitor-cont .preview {
+    position: fixed;
+    top: 20px;
+    left: 360px;
+    width: 480px;
+    height: 320px;
+    background: #bbb; }
+    .monitor-cont .preview p {
+      font-size: 16px;
+      color: #444;
+      line-height: 38px;
+      padding-left: 8px; }
+    .monitor-cont .preview iframe {
+      width: 480px;
+      height: 320px; }
+
 @media all and (max-width: 1362px) {
   html .film-of-the-day .description .banner-2 {
     font-size: 21px; }

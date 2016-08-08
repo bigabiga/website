@@ -2081,6 +2081,40 @@ body {
   }
 }
 
+.monitor-cont {
+  padding: 20px;
+
+  ul.film-list li {
+    list-style: none;
+    color: $feature-background;
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .preview {
+    position: fixed;
+    top: 20px;
+    left: 360px;
+    width: 480px;
+    height: 320px;
+    background: #bbb;
+
+    p {
+      font-size: 16px;
+      color: #444;
+      line-height: 38px;
+      padding-left: 8px;
+    }
+
+    iframe {
+      width: 480px;
+      height: 320px;
+    }
+  }
+}
+
 html {
 
   @media all and (max-width: 1362px) {
