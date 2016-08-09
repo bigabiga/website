@@ -14,6 +14,7 @@ decade: 1930s
 recommended: yes
 editors-rating: 5
 image:  /feature-images/Earth-1930.jpg
+image-offset: 64
 video: https://www.youtube.com/embed/B7An8Il2AVM?rel=0&amp;controls=0&amp;showinfo=0
 director: Aleksandr Dovzhenko 
 year: 1930 
