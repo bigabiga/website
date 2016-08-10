@@ -1341,12 +1341,13 @@ body {
   .about-cont .resources {
     max-width: 500px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-bottom: 14px; }
     .about-cont .resources img {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       cursor: pointer; }
     .about-cont .resources p {
-      margin-bottom: 16px; }
+      margin-bottom: 36px; }
   .about-cont.no-space {
     margin-bottom: 20px; }
   .about-cont h1 {
