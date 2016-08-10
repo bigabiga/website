@@ -21,7 +21,7 @@ language: English
 cast:
 - William Smith
 - Michael Pataki
-- Lyn Peter
+- Lyn Peters
 imdb: http://www.imdb.com/title/tt0068658/?ref_=fn_al_tt_1
 
 --- 
