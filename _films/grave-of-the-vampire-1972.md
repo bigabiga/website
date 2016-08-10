@@ -13,7 +13,7 @@ silent: no
 decade: 1970s
 editors-rating: 2
 image:  /feature-images/Grave-of-the-Vampire-1972.jpg
-video: https://www.youtube.com/embed/crwqgX0gYaw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/xPGDOcXLu7U?rel=0&amp;showinfo=0
 director: John Hayes
 year: 1972
 country: USA

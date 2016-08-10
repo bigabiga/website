@@ -18,7 +18,7 @@ recommended: yes
 editors-rating: 4
 
 image: /feature-images/The-Fireman-1916.jpg
-video: https://www.youtube.com/embed/DErVouPUbjw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/d-Da_Xejybo?rel=0&amp;showinfo=0
 synopsis: The Fireman is Chaplin's second film for the Mutual Film Corporation, and a typical silent occupation comedy. Charlie is a no-good fireman, abused by his chief (Eric Campbell). Edna Purviance is a local rich man's daughter whose father plots to have his house burn down in order to put his hand on the insurance money. However, when her father sets up the fire he doesn't realize that his daughter is still in her room. Now Charlie must save the girl.
 
 director: Charlie Chaplin

@@ -16,7 +16,7 @@ decade: 1910S
 recommended: no
 editors-rating: 3
 image:  /feature-images/Cabiria-1914.jpg
-video: https://www.youtube.com/embed/rtLjCn7P7FY?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/iJcb-bMgoCg?rel=0&amp;showinfo=0
 director: Giovanni Pastrone  
 year: 1914
 country: Italy

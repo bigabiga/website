@@ -17,7 +17,7 @@ recommended: yes
 editors-rating: 5
 
 image:  /feature-images/The-General-1926.jpg
-video: https://www.youtube.com/embed/sEQevmLOeA8?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/ilPk-SCHv30?rel=0&amp;showinfo=0
 synopsis: The General is a silent comedy-adventure film, co-directed and starring Buster Keaton. It is one of Keaton’s classics and most admired films, made in the late days of the silent era. Union spies steal an engineman’s locomotive and he pursues it all by himself, right through enemy lines.
 director: 
 - Clyde Bruckman

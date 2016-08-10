@@ -13,7 +13,7 @@ silent: yes
 decade: 1930s
 editors-rating: 4
 image:  /feature-images/the-goddess-1934.jpg
-video: https://www.youtube.com/embed/TuEcpFfsGuE?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/sprjTDkzpUQ?rel=0&amp;showinfo=0
 director: Yonggang Wu
 year: 1934
 country: China

@@ -15,7 +15,7 @@ decade: 1920s
 recommended: 
 editors-rating: 4
 image:  /feature-images/The-Electric-House-1922.jpg  
-video: https://www.youtube.com/embed/Cfhq0IFMSHw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/a9bXV0ac1S4?rel=0&amp;showinfo=0
 director:
 - Edward F. Cline
 - Buster Keaton 

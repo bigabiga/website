@@ -5,8 +5,8 @@ excerpt: The story of a century&#58; a decades-long second World War leaves plag
 title: Things to Come
 runtime: 100
 genre: 
+- Sci-Fi
 - Drama
-- Sci-Fi 
 silent: no
 decade: 1930s
 recommended: yes

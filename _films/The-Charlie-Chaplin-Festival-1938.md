@@ -18,7 +18,7 @@ decade: 1940s
 recommended: yes
 editors-rating: 4.5
 image: /feature-images/The-Charlie-Chaplin-Festival-1938.jpg
-video: https://www.youtube.com/embed/Y-mxzp3KVWw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/zg6k8-Y9UMA?rel=0&amp;showinfo=0
 synopsis: A collection of four of the best Chaplin's shorts - The Adventurer, The Cure, Easy Street and The Immigrant. All from 1917, directed and written by Chaplin himself.
 
 director: Charlie Chaplin

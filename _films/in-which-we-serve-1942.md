@@ -12,7 +12,7 @@ decade: 1940s
 recommended: no
 editors-rating: 3
 image:  /feature-images/In-Which-We-Serve-1942.jpg
-video: https://www.youtube.com/embed/fvQ5pj3aXoc?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/25WhqWaAQMg?rel=0&amp;showinfo=0
 synopsis: This "story of a ship," the British destroyer HMS Torrin, is told in flash backs by survivors as they cling to a life raft.
 director: 
 - Noël Coward 
