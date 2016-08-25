@@ -18,7 +18,7 @@ recommended: yes
 editors-rating: 4.5
 
 image: /feature-images/The-Cure-1917.jpg
-video: https://www.youtube.com/embed/xKzACBoKLhg?rel=0&amp;showinfo=0
+video: https://www.youtube.com/embed/QoJ8KDdaOOU?rel=0&amp;showinfo=0
 synopsis: The Cure is one of the 12 films Chaplin made with Mutual Films Company and one of his best and funniest shorts. Charlie plays an alcoholic - a role he perfected during his theater days in England. He checks into a health spa to dry out, but takes a suitcase full of alcohol with him and soon gets extremely drunk and throw the place into chaos.
 
 director: Charlie Chaplin

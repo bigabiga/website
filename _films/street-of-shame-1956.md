@@ -12,7 +12,7 @@ silent: no
 decade: 1950s
 editors-rating: 4
 image:  /feature-images/Street-of-Shame-1956.jpg
-video: https://www.youtube.com/embed/RJQ3RdAukvw?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/UnIWkb-NtUU
 director: Kenji Mizoguchi
 year: 1956
 country: Japan

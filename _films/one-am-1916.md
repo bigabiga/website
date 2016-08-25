@@ -16,7 +16,7 @@ decade: 1910s
 recommended: 
 editors-rating: 3.5
 image:  /feature-images/One-AM-1916.jpg 
-video: https://www.youtube.com/embed/w2sewbP5P3o?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/8hlFsUKMJCg
 director: Charlie Chaplin
 year: 1916
 country: USA
