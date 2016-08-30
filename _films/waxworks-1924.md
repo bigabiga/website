@@ -13,7 +13,7 @@ genre:
 silent: yes
 decade: 1920s
 recommended: 
-editors-rating: 3.5
+editors-rating: 3.6
 image:  /feature-images/Waxworks-1924.jpg 
 video: https://www.youtube.com/embed/CVOyQfbZgco?rel=0&amp;showinfo=0
 director: 
