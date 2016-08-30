@@ -15,7 +15,7 @@ decade: 1920s
 recommended: 
 editors-rating: 3.5
 image:  /feature-images/Waxworks-1924.jpg 
-video: https://www.youtube.com/embed/qEfihDLCyXM?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/CVOyQfbZgco?rel=0&amp;showinfo=0
 director: 
 - Leo Birinsky
 - Paul Leni
