@@ -305,6 +305,13 @@ $(function() {
     window.location.href = url;
   });
 
+  /*var $globalSearch = $('#global-search');
+  var $globalSearchForm = $('#global-search-form');
+  $globalSearch.submit(function() {
+    var url = "/search-2/#sort=recommended&search=" + $globalSearch.val();
+    window.location.href = url;
+  });*/
+
   var currentPath = window.location.pathname;
   if (currentPath === "/search-2/") {
     $("#categorySearch").focus();
