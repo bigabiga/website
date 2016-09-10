@@ -16,7 +16,7 @@ decade: 1920s
 recommended: 
 editors-rating: 5
 image:  /feature-images/Pandoras-Box-1929.jpg  
-video: https://www.youtube.com/embed/JajPa69djTA?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/uxq3J4D1IqM?rel=0&amp;showinfo=0
 director: Georg Wilhelm Pabst
 year: 1929
 country: Germany

@@ -15,7 +15,7 @@ decade: 1920s
 recommended: 
 editors-rating: 3.5
 image:  /feature-images/Storm-Over-Asia-1928.jpg
-video: https://www.youtube.com/embed/_xc6OncdsdI?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/zxrctVIjCZk?rel=0&amp;showinfo=0
 director: Vsevolod Pudovkin 
 year: 1928
 country: Soviet Union

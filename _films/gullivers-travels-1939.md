@@ -13,7 +13,7 @@ genre:
 silent: no
 decade: 1930s
 editors-rating: 3.5
-image:  /feature-images/Gullivers-Travels-1939.jpg
+image:  /feature-images/Gullivers-Travels-1939.JPG
 video: https://www.youtube.com/embed/Lx4n3aUK3is?rel=0&amp;controls=0&amp;showinfo=0
 director: Dave Fleischer
 year: 1939

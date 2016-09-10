@@ -16,7 +16,7 @@ decade: 1910s
 recommended: yes
 editors-rating: 4.5
 image:  /feature-images/The-Immigrant-1917.jpg 
-video: https://www.youtube.com/embed/kEXjjogVM3E?rel=0&amp;showinfo=0
+video: https://www.youtube.com/embed/7emZjen8KVo?rel=0&amp;showinfo=0
 director: Charlie Chaplin
 year: 1917
 country:  USA

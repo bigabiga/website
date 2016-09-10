@@ -12,7 +12,7 @@ decade: 1960s
 recommended: yes
 editors-rating: 4
 image:  /feature-images/The-Battle-of-Algiers-1966.jpg
-video: https://www.youtube.com/embed/y-7j4WVTgWc?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/IGSxAkjkvH4?rel=0&amp;showinfo=0
 synopsis: A film commissioned by the Algerian government that shows the Algerian revolution from both sides. The French foreign legion has left Vietnam in defeat and has something to prove. The Algerians are seeking independence. The two clash. The torture used by the French is contrasted with the Algerian's use of bombs in soda shops. A look at war as a nasty thing that harms and sullies everyone who participates in it.
 director: Gillo Pontecorvo
 year: 1966
