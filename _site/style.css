@@ -420,9 +420,13 @@ body {
     line-height: 28px;
     font-weight: 300;
     text-align: center;
-    color: #999; }
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .thumbnails .search-note.no-results {
+      color: #444; }
   .thumbnails .thumbnail {
-    display: inline-block;
+    display: none;
     width: 25%;
     padding: 4px 6px 14px 6px; }
   .thumbnails .film-image {
@@ -1011,6 +1015,8 @@ body {
   min-height: 800px; }
   .main.thumbs {
     background: white; }
+    .main.thumbs.search-thumbs {
+      background: #e0e0e0; }
 
 .element-title {
   font-family: "Tenor Sans", sans-serif;
@@ -1330,6 +1336,56 @@ body {
         font-size: 17px;
         line-height: 21px;
         font-weight: 300; }
+
+.search-cont {
+  padding-top: 40px;
+  padding-right: 126px;
+  margin-bottom: -20px;
+  z-index: 50; }
+  .search-cont input.search-input {
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12); }
+  .search-cont .remove-search {
+    position: absolute;
+    cursor: pointer;
+    top: 40px;
+    right: 136px;
+    padding: 8px; }
+    .search-cont .remove-search svg {
+      width: 28px;
+      height: 28px; }
+      .search-cont .remove-search svg path, .search-cont .remove-search svg polygon {
+        fill: #aaa; }
+    .search-cont .remove-search:hover .svg path, .search-cont .remove-search:hover polygon {
+      fill: #777; }
+  .search-cont .search-action {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 110px;
+    height: 46px;
+    line-height: 46px;
+    background: #773E53;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer; }
+    .search-cont .search-action svg {
+      margin-top: 8px;
+      width: 28px;
+      height: 28px; }
+      .search-cont .search-action svg path {
+        fill: #f7f0f3; }
+    .search-cont .search-action:hover {
+      background: #663547; }
+    .search-cont .search-action:active {
+      background: #552d3c; }
 
 .about-cont {
   max-width: 700px;
@@ -1869,6 +1925,12 @@ body {
   html .panel.panda.flexible {
     display: block; } }
 @media all and (max-width: 700px) {
+  html .search-cont {
+    padding-right: 106px; }
+    html .search-cont .search-action {
+      width: 90px; }
+    html .search-cont .remove-search {
+      right: 116px; }
   html .newsletter-modal .modal {
     top: 0;
     width: auto;
@@ -2049,6 +2111,12 @@ body {
   html .inner-nav .controls .sort-by .colon, html .inner-nav .controls .sort-by .value {
     display: none; } }
 @media all and (max-width: 410px) {
+  html .search-cont {
+    padding-right: 76px; }
+    html .search-cont .search-action {
+      width: 60px; }
+    html .search-cont .remove-search {
+      right: 80px; }
   html .element-title {
     font-size: 25px; }
   html .film-of-the-day .shituf-icons {

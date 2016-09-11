@@ -65,6 +65,7 @@ function updateState() {
       var country = $this.attr('data-country').toLowerCase();
       var match = title.indexOf(query) !== -1 || director.indexOf(query) !== -1 || genre.indexOf(query) !== -1 || cast.indexOf(query) !== -1 || country.indexOf(query) !== -1;
       if (match) {
+        $this.css('display','inline-block');
         $this.show();
         anyResults = 1;
       } else {
@@ -77,11 +78,12 @@ function updateState() {
     else {
       $searchNoteNone.hide();
     }
-  } else if (currentPath !== "/search-2/") {
+  } else if (currentPath !== "/search-2/" && currentPath !== "/search-3/") {
     $categorySearch.removeClass("full");
     $removeSearch.hide();
     $thumbnail.each(function() {
       var $this = $(this);
+      $this.css('display','inline-block');
       $this.show();
     });
   } else {
@@ -294,15 +296,26 @@ $(function() {
 
   updateState();
 
-  var $categorySearch = $('#categorySearch');
+  /*var $categorySearch = $('#categorySearch');
   $categorySearch.on('input', function() {
+    replaceHashParam('search', $categorySearch.val());
+  });*/
+
+  var $categorySearch = $('#categorySearch');
+   $categorySearch.pressEnter(function() {
+   replaceHashParam('search', $categorySearch.val());
+   });
+
+  var $searchAction = $('#search-action');
+  $searchAction.click(function() {
     replaceHashParam('search', $categorySearch.val());
   });
 
-  var $globalSearch = $('#global-search');
-  $globalSearch.pressEnter(function() {
-    var url = "/search-2/#sort=recommended&search=" + $globalSearch.val();
-    window.location.href = url;
+
+  var $removeSearch2 = $('#remove-search-2');
+  $removeSearch2.click(function() {
+    $categorySearch.val('');
+    updateSearch('');
   });
 
   /*var $globalSearch = $('#global-search');
@@ -314,6 +327,11 @@ $(function() {
 
   var currentPath = window.location.pathname;
   if (currentPath === "/search-2/") {
+    $("#categorySearch").focus();
+  }
+
+  var currentPath = window.location.pathname;
+  if (currentPath === "/search-3/") {
     $("#categorySearch").focus();
   }
 
