@@ -2,8 +2,8 @@
 
 layout: film
 
-excerpt: Triangle story&#58;  painter, his young male model, unscrupulous princess.
-synopsis: Mikaël is an artist who rises as his teacher, the aging Zoret, falls. Zoret gives Mikaël his start, and their relationship is sexual as well. Then Mikaël takes up with the Princess Zamikoff, selling gifts from Zoret and even stealing from the master to pay for his carnal and luxurious life with her. He abandons Zoret, whose health begins to fail but who also discovers spirituality in his solitude. In a subplot, Alice Adelsskjold cuckolds her husband and takes a lover, the Duke of Monthieu; their relationship, infused with the eroticism of art, also gives way to religion as the duke becomes ill.
+excerpt: Mikaël is an artist who rises as his teacher, the aging Zoret, falls. Then Mikaël takes up with the Princess Zamikoff, selling gifts from Zoret and even stealing from the master to pay for his carnal and luxurious life with her. He abandons Zoret, whose health begins to fail but who also discovers spirituality in his solitude.
+synopsis: Mikaël is an artist who rises as his teacher, the aging Zoret, falls. Then Mikaël takes up with the Princess Zamikoff, selling gifts from Zoret and even stealing from the master to pay for his carnal and luxurious life with her. He abandons Zoret, whose health begins to fail but who also discovers spirituality in his solitude. In a subplot, Alice Adelsskjold cuckolds her husband and takes a lover, the Duke of Monthieu; their relationship, infused with the eroticism of art, also gives way to religion as the duke becomes ill.
 title: Michael 
 runtime: 86
 genre: 
