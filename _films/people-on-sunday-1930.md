@@ -15,7 +15,8 @@ silent: yes
 decade: 1930s
 recommended: 
 editors-rating: 4.5
-image:  /feature-images/PEOPLE-ON-SUNDAY-1930.jpg 
+image:  /feature-images/PEOPLE-ON-SUNDAY-1930.jpg
+image-offset: 80
 video: https://www.youtube.com/embed/7ooNxs68vk4?rel=0&amp;controls=0&amp;showinfo=0
 director: 
 - Curt Siodmak 
