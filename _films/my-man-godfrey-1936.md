@@ -12,7 +12,7 @@ decade: 1930s
 recommended: yes
 editors-rating: 4
 image:  /feature-images/My-Man-Godfrey-1936.jpg
-video: https://www.youtube.com/embed/HBVpblp5Ee8?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/fiSjeLhg25w?rel=0&amp;showinfo=0
 synopsis: In the depths of the Depression, a party game brings dizzy socialite Irene Bullock to the city dump where she meets Godfrey, a derelict, and ends by hiring him as family butler. He finds the Bullocks to be the epitome of idle rich, and nutty as the proverbial fruitcake. Soon, the dramatizing Irene is in love with her 'protege'...who feels strongly that a romance between servant and employer is out of place, regardless of that servant's mysterious past...
 director:  Gregory La Cava
 year: 1936
