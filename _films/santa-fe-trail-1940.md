@@ -13,7 +13,7 @@ decade: 1940s
 recommended: no
 editors-rating: 3
 image:  /feature-images/Santa-Fe-Trail-1940.jpg
-video: https://www.youtube.com/embed/gbDmrI9kjxs?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/gmX_Jt4gfeI?rel=0&amp;showinfo=0
 synopsis: In 1854, Jeb Stuart, George Custer and other graduates from West Point are posted to Kansas to help pacify the territory before railroad construction to Santa Fe can resume.
 director:  Michael Curtiz
 year: 1940
