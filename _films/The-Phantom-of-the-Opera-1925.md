@@ -19,7 +19,7 @@ director:
 - Rupert Julian
 - Lon Chaney 
 year: 1925
-country: USA
+country: USa
 cast:
 - Lon Chaney
 - Mary Philbin
