@@ -21,7 +21,7 @@ director: Benjamin Christensen
 year: 1922
 country: Sweden
 cast:
-- Benjamin Christense
+- Benjamin Christensen
 - Elisabeth Christensen
 - Maren Pedersen
 imdb: http://www.imdb.com/title/tt0013257/?ref_=nv_sr_1
