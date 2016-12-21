@@ -335,11 +335,11 @@
 <script type="text/javascript">
   $( "#videoCover" ).click(function() {
     $("#videoCover").remove();
-    $("#filmCont").prepend("<iframe src='{{ page.video }}autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    $("#filmCont").prepend("<iframe src='{{ page.video }}&autoplay=1' frameborder='0' allowfullscreen></iframe>");
   });
   $( "#videoCover2" ).click(function() {
     $("#videoCover2").remove();
-    $("#filmCont2").prepend("<iframe src='{{ page.video-2 }}autoplay=1' frameborder='0' allowfullscreen></iframe>");
+    $("#filmCont2").prepend("<iframe src='{{ page.video-2 }}&autoplay=1' frameborder='0' allowfullscreen></iframe>");
   });
 </script>
 {% else %}

@@ -13,7 +13,7 @@ decade: 1930s
 recommended: 
 editors-rating: 5
 image:  /feature-images/Vampyr-1932.jpg  
-video: https://www.youtube.com/embed/oVFIF955Ry0?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/44B07oaEr6g
 director: Carl Theodor Dreyer 
 year: 1932
 country: 
