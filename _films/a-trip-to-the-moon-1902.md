@@ -16,7 +16,7 @@ decade: 1900s
 recommended: yes
 editors-rating: 5
 image: /feature-images/Le-Voyage-dans-la-Lune-1902.jpg
-video: https://www.youtube.com/embed/lUAD4lKNDI8?rel=0&amp;controls=0&amp;showinfo=0
+video: https://www.youtube.com/embed/_FrdVdKlxUk
 synopsis: A Trip to the Moon is a 1902 French silent film directed by Georges Méliès. This early, remarkable film follows a group of astronomers who travel to the Moon in a cannon-propelled capsule, explore the Moon's surface, escape from an underground group of Selenites (lunar inhabitants), and return to Earth with a captive Selenite.
 director: Georges Méliès
 year: 1902
